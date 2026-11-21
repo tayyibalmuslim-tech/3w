@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="lecture-status" content="filled">
+<title>العروة الوثقى — المحاضرة 02 | أصل الدين غير أصول الدين</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@700&family=Cairo:wght@400;600;700;800&family=El+Messiri:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1f2433;--ink2:#3d4457;--sub:#69708a;--bg:#f6f4ef;--paper:#fffdf9;--line:#e4dfd3;
+  --brand:#25305a;--brand2:#3b4b86;--accent:#2a7f7a;--gold:#c9b27c;--goldbg:#f4eedf;
+  --s1:#3a5a98;--s2:#2a7f7a;--s3:#b0623a;--s4:#5a5f8a;--s5:#1e7aa0;
+  --sec:var(--brand);
+  --sem-aya:#14532d;--sem-hadith:#5b2d90;--sem-sahabi:#8a5a00;--sem-scholar:#8f1d21;
+  --fs:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cairo','Noto Sans Arabic',Tahoma,sans-serif;font-size:var(--fs);line-height:1.95;text-align:right;direction:rtl}
+a{color:inherit}
+.sem-aya{color:var(--sem-aya);font-family:'Amiri','Noto Naskh Arabic',serif;font-size:1.12em}
+.sem-hadith{color:var(--sem-hadith)}
+.sem-name{color:var(--sem-scholar)}
+.sem-name.sem-sahabi,.sem-sahabi{color:var(--sem-sahabi);font-weight:700}
+.sem-name.sem-scholar,.sem-scholar{color:var(--sem-scholar);font-weight:700}
+#progress{position:fixed;top:0;right:0;height:4px;background:linear-gradient(90deg,var(--accent),var(--brand2));width:0;z-index:50}
+/* hero */
+.hero{background:radial-gradient(ellipse at 20% 0%,#3b4b86 0%,#25305a 55%,#1a2142 100%);color:#f3efe4;padding:64px 20px 70px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(201,178,124,.07) 0 2px,transparent 2px 26px)}
+.hero .in{max-width:900px;margin:0 auto;position:relative}
+.hero .series{font-family:'Aref Ruqaa','Amiri',serif;font-size:58px;line-height:1.3;color:#f1e6c8;margin:0}
+.hero .rope{display:flex;align-items:center;margin:14px 0 18px;max-width:420px}
+.hero .rope span{flex:1;height:3px;background:repeating-linear-gradient(90deg,var(--gold) 0 10px,transparent 10px 14px);border-radius:2px}
+.hero .rope b{width:16px;height:16px;border:3px solid var(--gold);border-radius:50%;margin:0 10px}
+.hero h1{font-family:'El Messiri','Cairo',sans-serif;font-size:34px;line-height:1.5;margin:0 0 10px;font-weight:600}
+.hero .meta{font-size:15.5px;color:#d7d2c4}
+.wrap{max-width:1180px;margin:0 auto;display:flex;align-items:flex-start;padding:0 18px}
+main{flex:1 1 auto;min-width:0;max-width:800px;margin:0 auto}
+aside.toc{flex:0 0 250px;position:sticky;top:18px;margin:28px 0 0 26px;order:2;max-height:calc(100vh - 40px);overflow:auto;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:14px 14px 16px;font-size:14.5px;line-height:1.7}
+.toc .t{font-weight:800;color:var(--brand);margin-bottom:6px;font-family:'El Messiri','Cairo'}
+.toc a{display:block;text-decoration:none;padding:4px 8px;border-radius:8px;color:var(--ink2)}
+.toc a.l2{padding-right:20px;font-size:13.5px;color:var(--sub)}
+.toc a:hover,.toc a.on{background:var(--goldbg);color:var(--brand)}
+.tools{display:flex;flex-wrap:wrap;margin-top:10px;border-top:1px solid var(--line);padding-top:10px}
+.tools button{font:inherit;font-size:13px;margin:0 0 6px 6px;padding:5px 10px;border:1px solid var(--line);background:#fff;border-radius:9px;cursor:pointer;color:var(--brand)}
+@media(max-width:1020px){aside.toc{display:none}}
+/* intro cards */
+.ai-note{margin:26px 0 0;background:#fff7e6;border:1px solid #ecd9ae;border-radius:12px;padding:10px 16px;font-size:15px;color:#6b4e16}
+.src{margin:16px 0;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 20px;font-size:16px}
+.src .row{display:flex;flex-wrap:wrap;margin-bottom:2px}.src .k{flex:0 0 120px;color:var(--sub);font-weight:700}.src .v{flex:1 1 300px}
+.orient{margin:22px 0 10px;background:linear-gradient(180deg,#fffdf8,#f7f3e8);border:1px solid #e6dcc3;border-radius:20px;padding:22px 24px}
+.orient .lab{font-size:13px;font-weight:800;color:var(--accent);letter-spacing:.2px}
+.orient .cq{font-family:'El Messiri','Cairo';font-size:23px;color:var(--brand);line-height:1.6;margin:2px 0 14px}
+.orient .idea{font-size:17px;color:var(--ink2);margin-bottom:6px}
+.orient .ed{font-size:12.5px;color:var(--sub)}
+/* mindmap */
+.mm{margin:18px 0 6px}
+.mm-center{display:inline-block;background:var(--brand);color:#f5efe0;border-radius:14px;padding:10px 18px;font-weight:800;font-family:'El Messiri','Cairo';font-size:18px}
+.mm-branches{border-right:3px solid var(--gold);margin:10px 18px 0 0;padding:4px 0 0}
+.mm-node{position:relative;margin:0 0 10px;padding-right:22px}
+.mm-node:before{content:"";position:absolute;right:0;top:20px;width:18px;border-top:3px solid var(--gold)}
+.mm-node>a{display:inline-block;text-decoration:none;background:#fff;border:1px solid var(--line);border-right:5px solid var(--c,var(--brand));border-radius:12px;padding:6px 14px;font-weight:700;color:var(--ink)}
+.mm-node>a:hover{background:var(--goldbg)}
+.mm-kids{margin:6px 22px 0 0;display:flex;flex-wrap:wrap}
+.mm-kids a{font-size:14.5px;text-decoration:none;margin:0 0 6px 8px;padding:3px 11px;border-radius:20px;background:#f1efe8;color:var(--ink2);border:1px solid #e6e1d4}
+.mm-kids a:hover{background:var(--goldbg)}
+/* sections */
+section.lec{--sec:var(--brand);margin:46px 0 0}
+section.lec[data-s="1"]{--sec:var(--s1)}section.lec[data-s="2"]{--sec:var(--s2)}section.lec[data-s="3"]{--sec:var(--s3)}section.lec[data-s="4"]{--sec:var(--s4)}section.lec[data-s="5"]{--sec:var(--s5)}
+.lec-head{position:relative;background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--sec);border-radius:20px;padding:22px 24px 18px;margin-bottom:18px}
+.lec-head .num{font-size:13.5px;font-weight:800;color:var(--sec);letter-spacing:.3px}
+.lec-head h2{font-family:'El Messiri','Cairo';font-size:30px;line-height:1.5;margin:4px 0 6px;color:var(--ink)}
+.lec-head .fn{display:inline-block;font-size:13px;background:var(--goldbg);color:#6b5a2e;border-radius:20px;padding:2px 12px}
+.divider{height:34px;margin:40px 0 0;background:radial-gradient(circle,var(--gold) 3px,transparent 4px) center/26px 34px repeat-x;opacity:.7}
+main h3{font-family:'El Messiri','Cairo';font-size:23px;line-height:1.6;color:var(--sec);margin:32px 0 8px;padding-right:14px;border-right:4px solid var(--sec)}
+main h4{font-size:19px;margin:20px 0 4px;color:var(--ink)}
+main p{margin:0 0 14px}
+.where,.next{border-radius:14px;padding:12px 18px;font-size:16px;margin:0 0 16px}
+.where{background:#eef1f8;border:1px dashed #b9c2dd}
+.next{background:#eef6f5;border:1px dashed #a9cfcb;margin-top:18px}
+.where b,.next b{display:block;font-size:13px;color:var(--sec)}
+/* blocks */
+.aya-block{background:#f0f6f1;border:1px solid #d6e7da;border-right:4px solid #3f7d57;border-radius:14px;padding:12px 20px 10px;margin:14px 0 16px;text-align:center}
+.aya-block p{margin:0;font-size:1.08em;line-height:2.15}
+.aya-block .sem-aya{font-size:1.22em}
+.ref{font-size:13.5px;color:var(--sub);text-align:left}
+blockquote{margin:14px 0 16px;padding:12px 20px 10px;border-radius:14px}
+blockquote p{margin:0 0 6px}
+.hadith-block{background:#f6f3fa;border:1px solid #e6dff0;border-right:4px solid #8b77ad}
+.naql{background:#fbf8f1;border:1px solid #ebe2cc;border-right:4px solid #b9a06a}
+.who{display:block;font-size:13.5px;color:#7a6a45;font-weight:700;margin-top:2px}
+.hadith-block .who{color:#6b5d86}
+.key{background:#eef3fb;border-right:4px solid var(--brand2);border-radius:12px;padding:12px 18px;margin:14px 0}
+.key:before{content:"فكرة محورية";display:block;font-size:12.5px;font-weight:800;color:var(--brand2)}
+.warn{background:#fdf1ea;border-right:4px solid #c46a3b;border-radius:12px;padding:12px 18px;margin:14px 0}
+.warn:before{content:"تنبيه";display:block;font-size:12.5px;font-weight:800;color:#a2512a}
+.fix{background:#fff6e0;border:1px dashed #d8b45d;border-radius:12px;padding:10px 16px;margin:12px 0;font-size:15.5px}
+.fix:before{content:"تصحيح / توضيح تحريري";display:block;font-size:12.5px;font-weight:800;color:#8a6414}
+.ed-note{background:#f3f3f1;border-radius:12px;padding:10px 16px;margin:12px 0;font-size:15.5px;color:var(--ink2)}
+.ed-note:before{content:"إضافة تحريرية (ليست من كلام الشيخ)";display:block;font-size:12.5px;font-weight:800;color:#6c6c64}
+.story{background:#fffaf2;border:1px solid #efdfc4;border-radius:16px;padding:14px 20px 4px;margin:16px 0}
+.story .st{font-weight:800;color:#8a5f2b;font-size:15px;margin-bottom:4px}
+/* structures */
+.lab-org{font-size:12.5px;font-weight:800;color:var(--sec);margin:0 0 6px}
+.cmp{margin:16px 0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.cmp .cap{background:#f4f2ec;padding:8px 16px;font-weight:800;font-size:15px;color:var(--ink2)}
+.cmp .r{display:flex;flex-wrap:wrap;border-top:1px solid var(--line)}
+.cmp .r>div{flex:1 1 200px;padding:10px 16px;font-size:16px;line-height:1.85;min-width:0}
+.cmp .r>div+div{border-right:1px solid var(--line)}
+.cmp .r.h>div{font-weight:800;color:var(--sec);background:#fafaf7}
+.cmp .r>div.k{flex:0 0 140px;font-weight:700;color:var(--sub);background:#fbfaf6}
+@media(max-width:580px){.cmp .r.h{display:none}.cmp .r>div.k{flex-basis:100%;border-bottom:1px dashed var(--line);color:var(--sec)}.cmp .r>div+div{border-right:0;border-top:1px dashed var(--line)}.cmp .r>div[data-h]:before{content:attr(data-h);display:block;font-size:12.5px;font-weight:800;color:var(--sub)}}
+.tree{margin:16px 0;padding:16px;background:#fff;border:1px solid var(--line);border-radius:16px}
+.tree .root{font-weight:800;color:#fff;background:var(--sec);display:inline-block;border-radius:10px;padding:5px 14px}
+.tree .kids{margin:10px 16px 0 0;border-right:2px solid #d7d2c3;padding-right:14px}
+.tree .kid{position:relative;margin:0 0 10px;background:#faf8f3;border:1px solid #ebe5d6;border-radius:12px;padding:8px 14px;font-size:16px}
+.tree .kid:before{content:"";position:absolute;right:-16px;top:20px;width:14px;border-top:2px solid #d7d2c3}
+.tree .kid b{color:var(--sec)}
+.timeline{margin:16px 0;padding:6px 0}
+.tl-i{position:relative;padding:0 46px 14px 0}
+.tl-i:before{content:attr(data-n);position:absolute;right:0;top:2px;width:32px;height:32px;border-radius:50%;background:var(--sec);color:#fff;font-weight:800;text-align:center;line-height:32px;font-size:15px}
+.tl-i:after{content:"";position:absolute;right:15px;top:36px;bottom:0;border-right:2px solid #d4cfbf}
+.tl-i:last-child:after{display:none}
+.tl-i .tt{font-weight:800;color:var(--ink)}
+.tl-i .td{font-size:16px;color:var(--ink2)}
+.chain{display:flex;flex-direction:column;margin:16px 0}
+.chain .c{background:#fff;border:1px solid var(--line);border-right:4px solid var(--sec);border-radius:12px;padding:9px 16px;font-size:16px}
+.chain .c b{display:block;font-size:12.5px;color:var(--sec)}
+.chain .ar{height:22px;text-align:center;color:var(--sec);line-height:22px;font-size:18px}
+.evid{margin:16px 0;border:1px solid #d9e6dd;border-radius:16px;background:#fcfefc;overflow:hidden}
+.evid .er{display:flex;flex-wrap:wrap;border-top:1px solid #e3ede6}
+.evid .er:first-child{border-top:0}
+.evid .el{flex:0 0 120px;padding:9px 14px;font-size:13.5px;font-weight:800;color:#3f6b52;background:#f2f8f3}
+.evid .ev{flex:1 1 260px;padding:9px 16px;font-size:16px;min-width:0}
+@media(max-width:580px){.evid .el{flex-basis:100%}}
+.arg{margin:16px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.arg .claim{background:var(--sec);color:#fff;border-radius:12px;padding:10px 16px;font-weight:700}
+.arg .claim b{display:block;font-size:12.5px;opacity:.85}
+.arg .grp{margin:12px 0 0;display:flex;flex-wrap:wrap}
+.arg .g{flex:1 1 220px;margin:0 0 10px 10px;background:#f7f6fb;border:1px solid #e3e1ee;border-radius:12px;padding:10px 14px;font-size:15.5px}
+.arg .g b{display:block;color:var(--sec);font-size:13px}
+.num{margin:14px 0}
+.num .n{display:flex;align-items:flex-start;margin-bottom:10px}
+.num .n .b{flex:0 0 34px;height:34px;border-radius:10px;background:var(--goldbg);color:#6b5a2e;font-weight:800;text-align:center;line-height:34px;margin-left:12px;border:1px solid #e3d6b4}
+.num .n .t{flex:1;min-width:0}
+.stat{display:flex;flex-wrap:wrap;margin:14px -6px}
+.stat .s{flex:1 1 180px;margin:0 6px 12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;text-align:center}
+.stat .s .v{font-size:34px;font-weight:800;color:var(--sec);line-height:1.3;font-family:'El Messiri','Cairo'}
+.stat .s .d{font-size:14.5px;color:var(--ink2);line-height:1.7}
+/* takeaway */
+.takeaway{margin:26px 0 8px;background:linear-gradient(180deg,#fffaf0,#fbf3e2);border:1px solid #e8d7b0;border-radius:18px;padding:16px 20px}
+.takeaway .tt{font-family:'El Messiri','Cairo';font-weight:700;font-size:19px;color:#7a5b1d}
+.takeaway .tt small{font-size:12px;color:#9b8456;font-family:'Cairo';margin-right:6px}
+.tk-i{position:relative;padding-right:22px;margin:7px 0;font-size:16.5px}
+.tk-i:before{content:"";position:absolute;right:2px;top:12px;width:9px;height:9px;border-radius:50%;background:var(--sec)}
+.score{font-size:13.5px;color:var(--sub);margin-bottom:4px}
+/* quiz */
+.quiz{margin:20px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 18px 12px;box-shadow:0 2px 10px rgba(30,40,70,.04)}
+.quiz .qh{font-size:12.5px;font-weight:800;color:var(--sec);margin-bottom:4px}
+.quiz .qq{font-weight:700;font-size:17px;margin-bottom:8px}
+.quiz button.op{display:block;width:100%;min-height:44px;text-align:right;font:inherit;font-size:16px;line-height:1.7;background:#faf9f5;border:1px solid #e6e1d4;border-radius:12px;padding:8px 14px;margin:0 0 8px;cursor:pointer;color:var(--ink)}
+.quiz button.op:hover{background:var(--goldbg)}
+.quiz button.op.ok{background:#e6f3ec;border-color:#86bf9d}
+.quiz button.op.no{background:#fbe9e4;border-color:#e0a28f}
+.quiz .ex{display:none;font-size:15px;background:#f4f6fb;border-radius:10px;padding:8px 12px;color:var(--ink2)}
+.quiz.done .ex{display:block}
+.quiz .again{display:none;font:inherit;font-size:13px;border:0;background:none;color:var(--brand2);cursor:pointer;padding:4px 0}
+.quiz.done .again{display:inline-block}
+/* cards area */
+#cards{margin:56px 0 20px}
+#cards h2{font-family:'El Messiri','Cairo';font-size:30px;color:var(--brand);margin:0 0 4px}
+.cfil{display:flex;flex-wrap:wrap;margin:10px 0}
+.cfil button,.cnav button,.dl{font:inherit;font-size:14px;margin:0 0 8px 8px;padding:6px 14px;border-radius:20px;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--ink2);min-height:38px}
+.cfil button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+.dl{background:var(--accent);color:#fff;border-color:var(--accent)}
+.cstage{max-width:740px;margin:8px auto}
+.cbox{background:#fff;border:1px solid #dfe3e0;border-radius:18px;padding:20px 22px;cursor:pointer;min-height:220px;box-shadow:0 4px 22px rgba(31,49,46,.06)}
+.cbox .flip{font-size:12.5px;color:var(--sub);text-align:center;margin-top:12px}
+.cbox .back{display:none;margin-top:16px;padding-top:16px;border-top:1px solid #e1e0d8}
+.cbox.shown .back{display:block}
+.cnav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px}
+.cnav .pos{font-size:14px;color:var(--sub);margin:0 10px 8px}
+footer{margin:60px 0 0;background:#1d2547;color:#cfc9b8;padding:26px 20px;text-align:center;font-size:14.5px}
+@media(max-width:580px){
+  body{font-size:17px}.hero{padding:44px 16px 50px}.hero .series{font-size:42px}.hero h1{font-size:25px}
+  .lec-head h2{font-size:24px}main h3{font-size:20px}.wrap{padding:0 12px}
+  .orient{padding:16px}.orient .cq{font-size:19px}.cbox{padding:16px 14px}
+}
+@media print{aside.toc,#progress,.quiz,.cnav,.cfil,.dl,.tools{display:none}.hero{background:#25305a;-webkit-print-color-adjust:exact}}
+
+/* نسخة عرض من قسم mz- في anki/final.css — لعرض البطاقات داخل الصفحة بنفس HTML المُصدَّر */
+.mz-calm{--mz-title:#293c35;--mz-ink:#33423c;--mz-accent:#296257;--mz-sub:#66766f;--mz-line:#e1e0d8;--mz-b1:#e9f3ef;--mz-b1bd:#cfe3da;--mz-b2:#f5f5f1;--mz-b2bd:#e1e0d8;--mz-b2lab:#7d6338;--mz-alert:#f5f0e4;--mz-alertbd:#e6dcc4;--mz-alertlab:#7d6338}
+.mz-compare{--mz-title:#273e5d;--mz-ink:#2f3f55;--mz-accent:#47668c;--mz-sub:#62748b;--mz-line:#d8e1ec;--mz-b1:#e9f1ed;--mz-b1bd:#c9dcd2;--mz-b1lab:#2c6a55;--mz-b2:#f5eee7;--mz-b2bd:#e5d6c6;--mz-b2lab:#9a5a2a;--mz-alert:#eff3f9;--mz-alertbd:#d3dded;--mz-alertlab:#273e5d}
+.mz-quran{--mz-title:#3a3426;--mz-ink:#3a3426;--mz-accent:#7a6030;--mz-sub:#7a7060;--mz-line:#dfd9c8;--mz-b1:#f0ede5;--mz-b1bd:#dfd9c8;--mz-b2:#f0ede5;--mz-b2bd:#dfd9c8;--mz-b2lab:#7a6030;--mz-alert:#f6f1e2;--mz-alertbd:#e6dcc0;--mz-alertlab:#7a6030}
+.mz-method{--mz-title:#332d49;--mz-ink:#3a3550;--mz-accent:#605785;--mz-sub:#6e6890;--mz-line:#e0dcec;--mz-b1:#f2f0f9;--mz-b1bd:#e0dcec;--mz-b2:#e8e5f4;--mz-b2bd:#d5cfe8;--mz-b2lab:#605785;--mz-alert:#f4f0e6;--mz-alertbd:#e6dcc0;--mz-alertlab:#7a6030;--mz-step:#e8e5f4;--mz-conn:#9891b4;--mz-num:#605785;--mz-numink:#fff;--mz-err:#f7ebe5;--mz-errbd:#ecd2c3;--mz-errlab:#995531}
+.mz-face,.mz-ans{direction:rtl;text-align:right;font-family:'Cairo','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif;color:var(--mz-ink);line-height:1.95;font-size:18px;overflow-wrap:break-word}
+.mz-face p,.mz-ans p{margin:0}
+.mz-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:0 0 12px;margin:0 0 16px;border-bottom:1px solid var(--mz-line)}
+.mz-subject{display:flex;align-items:center;font-size:14.5px;font-weight:800;color:var(--mz-accent)}
+.mz-kicker{font-size:12.5px;font-weight:600;color:var(--mz-sub)}
+.mz-ico{display:inline-block;width:20px;height:20px;margin-left:9px;border-radius:6px;background:var(--mz-accent);opacity:.85}
+.mz-label{font-size:12.5px;font-weight:700;color:var(--mz-sub);margin:0 0 4px}
+.mz-q{font-size:21px;line-height:1.95;font-weight:700;color:var(--mz-title)}
+.mz-q .mz-qt{margin:0 0 4px}
+.mz-box{margin:0 0 12px;padding:13px 18px 14px;border:1px solid var(--mz-b1bd);border-radius:14px;background:var(--mz-b1)}
+.mz-box:last-child{margin-bottom:0}
+.mz-box[data-label]:before{content:attr(data-label);display:block;font-size:13px;font-weight:800;color:var(--mz-accent);margin:0 0 4px}
+.mz-b-excl,.mz-b-wajh{background:var(--mz-b2);border-color:var(--mz-b2bd)}
+.mz-b-excl[data-label]:before,.mz-b-wajh[data-label]:before{color:var(--mz-b2lab)}
+.mz-b-alert,.mz-b-exc{background:var(--mz-alert);border-color:var(--mz-alertbd)}
+.mz-b-alert[data-label]:before,.mz-b-exc[data-label]:before{display:inline;margin:0;font-size:inherit;color:var(--mz-alertlab);content:attr(data-label) ": "}
+.mz-b-err{background:var(--mz-err);border-color:var(--mz-errbd)}
+.mz-b-err[data-label]:before{color:var(--mz-errlab);display:inline;margin:0;font-size:inherit;content:attr(data-label) ": "}
+.mz-cols{display:flex;flex-wrap:wrap;margin:0 -6px 6px}
+.mz-col{flex:1 1 220px;min-width:0;margin:0 6px 12px;padding:13px 16px 14px;border:1px solid var(--mz-b1bd);border-radius:14px;background:var(--mz-b1)}
+.mz-col2{background:var(--mz-b2);border-color:var(--mz-b2bd)}
+.mz-col[data-label]:before{content:attr(data-label);display:block;font-size:14px;font-weight:800;padding:0 0 7px;margin:0 0 8px;color:var(--mz-b1lab);border-bottom:1px solid var(--mz-b1bd)}
+.mz-col2[data-label]:before{color:var(--mz-b2lab);border-bottom-color:var(--mz-b2bd)}
+.mz-steps{margin:0 0 12px}
+.mz-step{display:flex;align-items:flex-start;padding:12px 14px;border-radius:14px;background:var(--mz-step,var(--mz-b2));border:1px solid var(--mz-b2bd)}
+.mz-step-n{flex:0 0 34px;width:34px;height:34px;margin-left:12px;border-radius:50%;background:var(--mz-num,var(--mz-accent));color:#fff;font-weight:800;font-size:16px;line-height:34px;text-align:center}
+.mz-step-b{flex:1 1 auto;min-width:0}
+.mz-step-t{font-weight:800;color:var(--mz-title);line-height:1.8}
+.mz-step-d{margin-top:2px;line-height:1.9}
+.mz-steps-list{counter-reset:mzstep}
+.mz-steps-list .mz-step{counter-increment:mzstep;margin:0 0 10px}
+.mz-steps-list .mz-step:last-child{margin-bottom:0}
+.mz-steps-list .mz-step-n:before{content:counter(mzstep)}
+.mz-arrow{height:20px;padding:5px 15px 0 0;line-height:0}
+.mz-arrow:before{content:"";display:inline-block;border-right:6px solid transparent;border-left:6px solid transparent;border-top:9px solid var(--mz-conn,#9891b4);margin-right:5px}
+.mz-em{font-weight:800;color:var(--mz-title)}
+.mz-v{font-family:'Amiri','Noto Naskh Arabic','Traditional Arabic',serif;font-weight:700;font-size:1.15em;line-height:2}
+.mz-face .sem-aya,.mz-ans .sem-aya,.mz-face .sem-hadith,.mz-ans .sem-hadith{font-weight:700}
+@media (max-width:580px){.mz-q{font-size:19px}.mz-face,.mz-ans{font-size:17px}.mz-box{padding:12px 14px 13px}.mz-col{flex-basis:100%}}
+
+/* ===== ملفات المحاضرات المنفصلة + صفحة الفهرس ===== */
+.hero-s{padding:40px 20px 44px}
+.hero-s .series{font-size:40px;text-decoration:none;display:inline-block}
+.hero-s h1{font-size:30px}
+.lnav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;max-width:1180px;margin:0 auto;padding:12px 18px;font-size:15px}
+.lnav a,.lnav span{display:inline-block;padding:7px 14px;border-radius:20px;text-decoration:none;background:var(--paper);border:1px solid var(--line);color:var(--brand);margin:4px 0;min-height:38px}
+.lnav a.home{background:var(--brand);color:#f5efe0;border-color:var(--brand);font-weight:700}
+.lnav .off{color:var(--sub);background:transparent;border-style:dashed}
+.lnav a:hover{background:var(--goldbg)}.lnav a.home:hover{background:var(--brand2)}
+.orient .ed2{font-size:15.5px;color:var(--ink2)}
+main.idx{max-width:960px;margin:0 auto;padding:0 18px}
+.ih{font-family:'El Messiri','Cairo';font-size:28px;color:var(--brand);margin:34px 0 12px}
+.grid{display:flex;flex-wrap:wrap;margin:0 -8px}
+.lc{flex:1 1 280px;margin:0 8px 16px;display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--c,var(--brand));border-radius:18px;padding:16px 18px 14px;transition:transform .15s,box-shadow .15s}
+.lc:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(30,40,70,.09)}
+.lc .no{font-family:'El Messiri','Cairo';font-size:34px;font-weight:700;color:var(--c,var(--brand));line-height:1.2}
+.lc .lt{font-family:'El Messiri','Cairo';font-size:20px;font-weight:700;line-height:1.6;margin:2px 0 6px}
+.lc .lq{font-size:15.5px;color:var(--ink2);line-height:1.8;flex:1}
+.lc .ls{font-size:13.5px;color:var(--sub);margin-top:8px}
+.lc .go{font-size:14.5px;font-weight:700;color:var(--c,var(--brand));margin-top:6px}
+.lc-off{border-top-color:#cfcabd;border-style:dashed;opacity:.75}.lc-off .no,.lc-off .lt{color:var(--sub)}
+.alldl{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;background:#eef6f5;border:1px solid #c7e0dd;border-radius:16px;padding:14px 18px;margin:18px 0 10px}
+.alldl div{flex:1 1 320px;margin-left:12px}.alldl b{display:block;color:var(--accent)}.alldl span{font-size:14.5px;color:var(--ink2)}
+@media(max-width:580px){.hero-s .series{font-size:32px}.hero-s h1{font-size:23px}.lc .no{font-size:28px}.lnav{font-size:13px;padding:10px 8px;flex-wrap:nowrap}.lnav a,.lnav span{flex:1 1 0;text-align:center;margin:4px 3px;padding:7px 4px;min-width:0}}
+
+</style>
+</head>
+<body data-lecture-id="stage1_urwa_02">
+<div id="progress"></div>
+<header class="hero hero-s"><div class="in"><a class="series" href="index.html">العروة الوثقى</a><div class="rope"><span></span><b></b><span></span></div><h1>المحاضرة 02</h1><div class="meta">سلسلة في أصل دين الإسلام · 6 سؤال فهم · 24 بطاقة مراجعة</div></div></header>
+<nav class="lnav"><a href="01.html">→ المحاضرة 01</a><a class="home" href="index.html">فهرس السلسلة</a><a href="03.html">المحاضرة 03 ←</a></nav>
+<div class="wrap">
+<aside class="toc"><div class="t">فهرس المحاضرة</div><a href="#orient">لوحة التوجيه</a><a href="#s2-a">وصية الأنبياء بالإخلاص: لماذا نبدأ بالتوحيد؟</a><a href="#s2-b">كيف يبهت التوحيد؟</a><a href="#s2-c">الأصل والأصول: التعريف والحكم</a><a href="#s2-d">الدليل على التفريق من كلام <span class="sem-name sem-scholar">ابن رجب</span></a><a href="#s2-e">لا اجتهاد في الأصول</a><a href="#s2-f">استطراد: أشاعرة الأمس غير أشاعرة اليوم</a><a href="#cards">بطاقات المراجعة</a><a href="index.html">↩ فهرس السلسلة</a><div class="tools"><button type="button" id="fsUp">تكبير الخط +</button><button type="button" id="fsDn">تصغير الخط −</button></div></aside>
+<main data-ilm-highlight-zone>
+<div class="ai-note">أُعدّ هذا المحتوى بمساعدة الذكاء الاصطناعي، وقد يحتوي أخطاء، ويُرجى مراجعته.</div><div class="src"><div class="row"><div class="k">نوع المادة</div><div class="v">تفريغ صوتي للمحاضرة 02 من سلسلة «العروة الوثقى»، وهي مجلس قصير كان يُلقى قبل الدرس الأصلي. لم يُذكر اسم الشيخ في التفريغ.</div></div><div class="row"><div class="k">المنهج</div><div class="v">كلام الشيخ مُعاد تنظيمه بلا حذف لفكرة أو دليل؛ والخلاصات والصناديق الموسومة «تحريرية» إضافة ليست من كلامه. وما بين «» لكلام الشيخ وأسماء الكتب.</div></div></div>
+<div class="orient" id="orient"><div class="lab">السؤال المركزي</div><div class="cq">ما الفرق بين أصل الدين وأصول الدين، وما أثر هذا الفرق في الحكم على الناس؟</div><div class="lab">الفكرة المحورية</div><div class="idea">أصل الدين الشهادتان، ومن نقضهما خرج من الإسلام؛ وأصول الدين لوازمهما، والخطأ فيها مع بقاء الأصل يوجب التبديع لا التكفير.</div><div class="ed">صياغة تحريرية تجمع معنى المحاضرة.</div><div class="lab" style="margin-top:12px">مسار المحاضرة</div><div class="ed2">الوظيفة: تفريق بين مصطلحين ← استدلال على التفريق ← استطراد في تطوّر البدع</div></div>
+
+<section class="lec" id="s2" data-s="2">
+<div class="lec-head">
+  <div class="num">المجلس الثاني</div>
+  <h2>أصل الدين غير أصول الدين</h2>
+  <span class="fn">الوظيفة: تفريق بين مصطلحين ← استدلال على التفريق ← استطراد في تطوّر البدع</span>
+</div>
+<div class="where"><b>أين نحن</b>اقترح بعض الإخوة — في ظروف الاختلاط بعد الثورة، حين صارت قضايا إسلامية مهمة مطروحة للنقاش وبهتت — أن نتكلم في أصل دين الإسلام. فتكلمنا في المجلس الماضي كمقدمة عن «الانفصام النكد» أو «إيمان بلا انتماء»: يدافع عن الإسلام وهو منتمٍ له جدًا، فإذا عُرضت عليه بعض الأحكام ناقشها. ومثاله إحصائية <span class="sem-name">تونس</span>: «مسلم أولًا»، ومع ذلك يقول كثير منهم في تحكيم الشرع: «طب ممكن نقعد شوية سنين نعمل بالديمقراطية لحد ما نوصل للشرع». وهذا المجلس يبني المسألة من الأصل.</div>
+
+<h3 id="s2-a">وصية الأنبياء بالإخلاص: لماذا نبدأ بالتوحيد؟</h3>
+<p>ذكرنا قوله تعالى: <span class="sem-aya">﴿أَمْ كُنتُمْ شُهَدَاءَ إِذْ حَضَرَ يَعْقُوبَ الْمَوْتُ إِذْ قَالَ لِبَنِيهِ مَا تَعْبُدُونَ مِن بَعْدِي﴾</span>، وأن <span class="sem-name sem-sahabi">يعقوب</span> عليه السلام نبي يتكلم مع أنبياء: ابنه <span class="sem-name sem-sahabi">يوسف</span> عليه السلام والأسباط — وهم في قول بعض أهل العلم أولاد <span class="sem-name sem-sahabi">يعقوب</span> إخوة <span class="sem-name sem-sahabi">يوسف</span>، وقيل أولادهم. فأنت تتكلم مع شخصيات لها قدر عظيم جدًا، ومع ذلك يوصيهم.</p>
+<blockquote class="naql"><p>ذكر في التاريخ أن <span class="sem-name sem-sahabi">يعقوب</span> عليه السلام أوصى بنيه بالإخلاص، وهو الإسلام: أن يعبدوا الله عز وجل مخلصين له الدين، وحده بلا شريك.</p><span class="who"><span class="sem-name sem-scholar">ابن كثير</span> — «البداية والنهاية» (بالمعنى كما نقله الشيخ)</span></blockquote>
+<p>لماذا هذا الكلام؟ لأن الأنبياء هم الذين يقومون بدعوة الناس؛ هذا عملهم الأول الأساس. ومع ذلك يؤكَّد عليهم التوحيد.</p>
+
+<h3 id="s2-b">كيف يبهت التوحيد؟</h3>
+<p>التوحيد يبهت. قال <span class="sem-name sem-sahabi">النبي ﷺ</span>: «يَدْرُسُ الإسلامُ كما يَدْرُسُ وَشْيُ الثوب، حتى لا يُدرى ما صلاةٌ ولا صيامٌ ولا زكاةٌ ولا حجّ».</p>
+<p>والثوب يدرس حين يكون فيه ألوان مميزة بعضها من بعض، فإذا قدُم دخلت الألوان في بعضها، فلا تدري: هذا كان أصفر أم أخضر أم أسود؟ وكذلك يحدث مع الإسلام، حتى تجد أشياء بهتت وراحت، لدرجة أن تقول له: الصلاة، فيقول: ما أعرف ما الصلاة. وقد وصلوا إلى هذه المرحلة.</p>
+<p>والتوحيد يحدث فيه ذلك: يدخل معه الشرك، وصاحبه يتصوّر أن هذا يقرّبه إلى الله، كما ذكر الله عز وجل عن الكفار الأوائل:</p>
+<div class="aya-block"><p><span class="sem-aya">﴿مَا نَعْبُدُهُمْ إِلَّا لِيُقَرِّبُونَا إِلَى اللَّهِ زُلْفَىٰ﴾</span></p><div class="ref">[الزمر: 3]</div></div>
+<p>إذن لا بد من مراجعة لهذا الأمر؛ فالتوحيد هامّ جدًا، ولا سيما أن <span class="sem-name sem-scholar">ابن القيم</span> رحمه الله قال كلمة خطيرة جدًا:</p>
+<blockquote class="naql"><p>«التوحيد أصفى شيء وأنقى شيء، ويعكّره أي شيء».</p><span class="who"><span class="sem-name sem-scholar">ابن القيم</span> — كما نقله الشيخ بالمعنى (وأصله في «الفوائد»: التوحيد ألطف شيء وأنزهه وأنظفه وأصفاه، فأدنى شيء يخدشه ويدنّسه ويؤثّر فيه)</span></blockquote>
+<p>فأي شيء يُحدث عكَرًا في التوحيد، فهذا العكر بقدره: قد يُسقط التوحيد كله، وقد يُسقط بعضه. لكن <strong>أصل الدين لا يدخله نقصان</strong>، كما يقول <span class="sem-name sem-scholar">ابن رجب</span> رحمه الله:</p>
+<blockquote class="naql"><p>«واسم الإسلام لا ينقص بفعل المحرمات وترك الواجبات، وإنما يسقط جملة».</p><span class="who"><span class="sem-name sem-scholar">ابن رجب</span> — كما نقله الشيخ</span></blockquote>
+<p>ومعنى «يسقط جملة»: أن يقع في الشرك الأكبر عياذًا بالله، فيرتفع اسم الإسلام كله. فتأمّل هذه المسألة، فهي مهمة جدًا.</p>
+<div class="quiz" data-q="q2-1"></div>
+
+<h3 id="s2-c">الأصل والأصول: التعريف والحكم</h3>
+<p>حتى إذا كلّمتك عن «أصل الدين» تكون عارفًا أنه غير «أصول الدين». هناك أصل، وهناك أصول:</p>
+<div class="cmp">
+  <div class="cap">الفرق بين أصل الدين وأصول الدين</div>
+  <div class="r h"><div class="k">المعيار</div><div>أصل الدين</div><div>أصول الدين</div></div>
+  <div class="r"><div class="k">التعريف</div><div>شهادة أن لا إله إلا الله وأن محمدًا رسول الله؛ هي الإطار العام للإسلام.</div><div>ما كان من لوازم لا إله إلا الله.</div></div>
+  <div class="r"><div class="k">الحكم</div><div>لو نقض إنسان هذه الشهادة خرج عن الإطار العام، فلم يعد داخلًا في الإسلام.</div><div>يقع فيها الخطأ والاجتهاد بين أهل القبلة، ويقولون في صاحبه: «أخطأ في كذا، لكن معه أصل الدين».</div></div>
+</div>
+<h4>مثال الشجرة</h4>
+<p>قال الشيخ: الإسلام كالشجرة، كما قال <span class="sem-name sem-scholar">شيخ الإسلام ابن تيمية</span> رحمه الله وهو يشرح قوله تعالى:</p>
+<div class="aya-block"><p><span class="sem-aya">﴿ضَرَبَ اللَّهُ مَثَلًا كَلِمَةً طَيِّبَةً كَشَجَرَةٍ طَيِّبَةٍ﴾</span></p><div class="ref">[إبراهيم: 24]</div></div>
+<div class="tree">
+  <span class="root">الإسلام كالشجرة</span>
+  <div class="kids">
+    <div class="kid"><b>الجذور في الأرض = أصل الدين:</b> لو اتشالت فالشجرة غير موجودة.</div>
+    <div class="kid"><b>الجذع = واجبات الدين:</b> لو اتشال تنقص الشجرة، لكنها لا تموت من الأرض كلها. (مع التنبيه: أحيانًا يقع الإنسان في شيء يُسقط الإيمان أيضًا.)</div>
+    <div class="kid"><b>الثمر فوق = مستحبات الدين.</b></div>
+  </div>
+</div>
+<p>فعندنا درجات. وسيأتي عند الكلام عن المسائل الظاهرة والخفية بيان أدلة تقسيم المسائل: أن مسائل الإسلام ليست كلها شيئًا واحدًا؛ ففيها مسائل الشرك الأكبر، والمسائل الظاهرة، والمسائل الخفية. فهذه هيئة الدين: أصل الدين هو الجذور في الأرض، أما أصول الدين فهي التي جاءت من لوازمه.</p>
+<div class="quiz" data-q="q2-2"></div>
+
+<h3 id="s2-d">الدليل على التفريق من كلام <span class="sem-name sem-scholar">ابن رجب</span></h3>
+<p>أوصى الشيخ بكتاب «جامع العلوم والحكم» لـ<span class="sem-name sem-scholar">ابن رجب</span> رحمه الله، وقال إنه كتاب جليل القدر، وإن <span class="sem-name sem-scholar">ابن رجب</span> كان عالمًا ربانيًا راسخًا، وهو تلميذ <span class="sem-name sem-scholar">ابن القيم</span> رحمه الله. قال <span class="sem-name sem-scholar">ابن رجب</span> في شرح حديث «أُمرتُ أن أقاتل الناس حتى يشهدوا أن لا إله إلا الله»:</p>
+<blockquote class="naql"><p>«و<span class="sem-name sem-sahabi">النبي ﷺ</span> كان يقبل من كل من جاءه يريد الدخول في الإسلام الشهادتين فقط، ويعصم دمه بذلك ويجعله مسلمًا... ولم يكن ﷺ يشترط على من جاءه يريد الإسلام» شرطًا غير ذلك.</p><span class="who"><span class="sem-name sem-scholar">ابن رجب</span> — «جامع العلوم والحكم»</span></blockquote>
+<p>يعني: يشهد أن لا إله إلا الله وأن محمدًا رسول الله، وخلاص، كده دخل في الإسلام. وقال رحمه الله: <strong>«من ترك الشهادتين خرج من الإسلام»</strong>. ثم قال في موضع آخر (شرح حديث جبريل):</p>
+<blockquote class="naql"><p>«الإيمان بالرسل يلزم منه» الإيمان بجميع ما أخبروا به من البعث والنشور، وغير ذلك من صفات الله، واليوم الآخر كالصراط والميزان والجنة والنار ونحو ذلك.</p><span class="who"><span class="sem-name sem-scholar">ابن رجب</span> — شرح حديث جبريل</span></blockquote>
+<div class="evid">
+  <div class="er"><div class="el">الدليل</div><div class="ev">تعبير <span class="sem-name sem-scholar">ابن رجب</span> عن الشهادتين بأنهما «الأصل العظيم» ومن تركهما خرج من الإسلام، وتعبيره عن تفاصيل الإيمان بالرسل بأنها «يلزم منه».</div></div>
+  <div class="er"><div class="el">وجه الدلالة</div><div class="ev">لفظ «يلزم منه» يجعل هذه الأمور في مرتبة ثانية؛ فهي «اللازم» من الأصل. ولذلك سمّاها أهل العلم «أصول الدين». فخلِّ بالك من ألفاظ أهل العلم.</div></div>
+</div>
+<p>وفي حديث جبريل لما سُئل عن الإيمان قال: «أن تؤمن بالله وملائكته وكتبه ورسله واليوم الآخر»، ولما سُئل عن الإسلام قال: «شهادة أن لا إله إلا الله...»، ولما تكلم <span class="sem-name sem-scholar">ابن رجب</span> عن شهادة أن لا إله إلا الله قال: <strong>«وهذا هو الأصل العظيم»</strong>. وستأتي نقولات تسدّد قضية أن هذا هو أصل الدين.</p>
+<div class="quiz" data-q="q2-3"></div>
+
+<h3 id="s2-e">لا اجتهاد في الأصول</h3>
+<blockquote class="naql"><p>«ولا يجوز أن يقال: كل مجتهد في الأصول مصيب؛ لأن ذلك يؤدي إلى تصويب أهل الضلالة».</p><span class="who"><span class="sem-name sem-scholar">أبو المعالي الجويني</span> — «الورقات»</span></blockquote>
+<p>وهي مسألة أصولية: المجتهد يجوز له أن يجتهد في الفروع؛ وبعضهم يقول: كل مجتهد مصيب، وبعضهم يقول: يصيب ويخطئ. المهم أن المصيب له أجران والمخطئ له أجر، للحديث المشهور:</p>
+<blockquote class="hadith-block"><p>«إذا اجتهد الحاكم فأصاب فله أجران، وإذا اجتهد فأخطأ فله أجر واحد».</p><span class="who">متفق عليه</span></blockquote>
+<p>والأجر الواحد هو أجر الاجتهاد والتعب، أما أجر الإصابة فلم يأخذه؛ والأول أخذ التعب والإصابة معًا.</p>
+<div class="cmp">
+  <div class="cap">الاجتهاد بين الفروع والأصول</div>
+  <div class="r h"><div class="k">المعيار</div><div>الفروع</div><div>أصول الدين</div></div>
+  <div class="r"><div class="k">الحكم</div><div>فيها اجتهاد؛ المصيب له أجران والمخطئ له أجر.</div><div>ليس فيها اجتهاد: لا يأتي أحد يقول «اجتهدت فوجدت أنه يمكن أن يُعبد مع الله غيره، أو يُشرَّع مع الله غيره»؛ لو اجتهد كذلك نقول له: أنت غلطان.</div></div>
+  <div class="r"><div class="k">القاعدة</div><div>مسائل يجتهد فيها العالم فيصيب ويخطئ فيُعذر.</div><div>ومسائل لا يُعذر بخطئه.</div></div>
+</div>
+<p>وهذا قاله <span class="sem-name sem-scholar">الشوكاني</span> في «إرشاد الفحول»، و<span class="sem-name sem-scholar">النووي</span> في شرح مسلم وغيرهما، وسيأتي عند مسألة الاجتهاد.</p>
+<h4>قول العنبري ومراده</h4>
+<blockquote class="naql"><p>«ونُقل عن <span class="sem-name sem-scholar">عبيد الله بن الحسن العنبري</span> جواز الاجتهاد في الأصول... والظاهر من إطلاقه أنه إنما أراد الخلاف الواقع بين أهل القبلة، كالخلاف الواقع بين الأشعرية والمعتزلة في خلق الأفعال، ورؤيته تعالى في الآخرة».</p><span class="who"><span class="sem-name sem-scholar">المارديني</span> — «الأنجم الزاهرات في حل ألفاظ الورقات»</span></blockquote>
+<div class="fix">ورد في التفريغ «ثبوت الأفعال»، والمعروف في هذا الموضع «خلق الأفعال»، وورد اسم الكتاب صوتيًا «الانجو المظاهرات»، وصوابه «الأنجم الزاهرات».</div>
+<p>فلما تكلم عن «أصول الدين» قصد المسائل التي تنازع فيها أهل السنة مع الفرق، والمسائل التي حصلت بين الفرق نفسها: المعتزلة والأشاعرة والجهمية والمرجئة... وهم لا يزالون في الإطار. ولهذا قال <span class="sem-name sem-scholar">القاضي عياض</span> رحمه الله في «الشفا»: إنما اختلفوا في الحكم عليهم — فبعضهم أطلق وبعضهم قال كذا — <strong>لأن معهم أصل الدين</strong>.</p>
+<p>وقال <span class="sem-name sem-scholar">الشوكاني</span> في «إرشاد الفحول»: نُقل عن <span class="sem-name sem-scholar">الشافعي</span> أن من اجتهد في هذه الأصول فأخطأ فهو كافر، ونُقل عن أصحابه أنهم قالوا: يقصد <strong>كفر النعمة</strong>، لا الكفر المخرج من الملة.</p>
+<h4>لماذا بُدّعوا ولم يُكفَّروا؟</h4>
+<p>لأن هذه مسائل تخفى مسالكها؛ يحصل فيها بعض المزاحمة في اللغة وبعض المزاحمة في الفهوم. فالعلماء بدّعوهم، وقالوا إنهم على بدعة، أما أنهم كفّروهم فلا. ولذلك يقول بعض أهل العلم: إن تكفير هؤلاء إطلاقٌ لا تعيين. وكما قال <span class="sem-name sem-scholar">ابن تيمية</span>: هناك مسائل خفية، ومسائل تخفى المسالك إليها فيحصل فيها إشكال وشبهة؛ فهذه لا يُحكم على صاحبها. <strong>أما أصل الدين فمن ينقض لا إله إلا الله خلاص.</strong></p>
+<div class="quiz" data-q="q2-4"></div>
+<div class="quiz" data-q="q2-5"></div>
+
+<h3 id="s2-f">استطراد: أشاعرة الأمس غير أشاعرة اليوم</h3>
+<p>بمناسبة ذكر الخلاف بين الأشاعرة وغيرهم، أراد الشيخ أن ينبّه على معلومة مهمة جدًا في وقت «اختلاط الأزياء» الذي صار فيه الكل شيئًا واحدًا: لما أكلّمك عن أشعرية اليوم لا تتذكر فورًا <span class="sem-name sem-scholar">النووي</span> و<span class="sem-name sem-scholar">القرطبي</span> و<span class="sem-name sem-scholar">أبو بكر بن العربي</span> المالكي و<span class="sem-name sem-scholar">ابن حجر العسقلاني</span> وهؤلاء الأعاظم الكبار.</p>
+<div class="cmp">
+  <div class="cap">أشاعرة الأمس وأشاعرة اليوم</div>
+  <div class="r h"><div class="k">المعيار</div><div>أشاعرة الأمس</div><div>أشاعرة اليوم</div></div>
+  <div class="r"><div class="k">مدار مشكلتهم</div><div>قضية الصفات المعيّنة التي يقولونها. وفيهم «الأشعرية الأولى»، و«المتأخرة» التي تلتقي مع المعتزلة في الجملة وفي بعض التفاصيل.</div><div>صوفية قبورية — كثير منهم لا كلهم: يذهب إلى القبر ويقول له: اغفر لي ذنبي.</div></div>
+  <div class="r"><div class="k">مكانتهم</div><div>كان منهم أئمة عظام. قال <span class="sem-name sem-scholar">ابن تيمية</span>: والأشاعرة هم أهل السنة في البلاد التي تكون البدعة فيها كبدعة الرافضة.</div><div>في احتفالات المولد يقف خطيبهم فيقول: «<span class="sem-name">السيد البدوي</span> المهاب الذي إذا دُعي في البر والبحر أجاب»، ويقول إن الكون يتصرف فيه أربعة أقطاب.</div></div>
+</div>
+<div class="fix">ورد صوتيًا «سمّاهم الهربي الأشعرية المخنّثة»، والأقرب أنه <span class="sem-name sem-scholar">أبو إسماعيل الهروي</span>، والمنقول عنه وصفهم بـ«مخانيث المعتزلة». وورد «أربعة أقطار»، والمقصود «أربعة أقطاب».</div>
+<p>لكن إذا خلا بهم أهل السنة حصل نقاش بينهم، كما ناظر <span class="sem-name sem-scholar">ابن تيمية</span> <span class="sem-name sem-scholar">ابن الزملكاني</span> و<span class="sem-name sem-scholar">ابن مخلوف</span> و<span class="sem-name sem-scholar">صفي الدين الهندي</span> و<span class="sem-name sem-scholar">ابن الوكيل</span> في المناظرة الشهيرة حول «العقيدة الواسطية». وليست قضية التبرّك بالبقعة هي المقصودة هنا — فتلك فيها كلام أهل العلم بأنها بدعة — بل دعاء القبر وسؤاله.</p>
+<p>وكذلك الجهمية: كانت جهمية، ثم صارت حلولًا واتحادًا وصوفية، وهم الذين تكلم عليهم <span class="sem-name sem-scholar">سليمان بن سحمان</span> وغيره.</p>
+<h4>البدعة تتطوّر: مثال الشيعة</h4>
+<div class="timeline">
+  <div class="tl-i" data-n="1"><div class="tt">الشيعة زمان</div><div class="td">كانوا يضعون <span class="sem-name sem-sahabi">أبا بكر وعمر</span> رضي الله عنهما على الرؤوس، والمشكلة عندهم بين <span class="sem-name sem-sahabi">عثمان</span> و<span class="sem-name sem-sahabi">سيدنا علي</span>: أن عليًّا أحق بالتقديم. وكان هذا قولًا لبعض أهل السنة، فلم تكن فيه مشكلة.</div></div>
+  <div class="tl-i" data-n="2"><div class="tt">ثم تطوّرت إلى الرفض</div><div class="td">صار فيهم من يسبّ، ويردّ القرآن ويقول إنه ناقص.</div></div>
+</div>
+<p>وهؤلاء الرافضة هم الذين قال فيهم <span class="sem-name sem-scholar">البخاري</span> رحمه الله ما معناه: لأن آكل ذبيحة يهودي أو نصراني أحبّ إليّ من أن آكل ذبيحة رافضي؛ فإن الله أباح ذبيحة أهل الكتاب، أما الرافضة فلم يُبِح الله ذبيحتهم. وسيأتي الكلام في مسألة العامة والخاصة وفتوى <span class="sem-name sem-scholar">ابن تيمية</span>.</p>
+<div class="warn">إذا قيل «الأشاعرة» في زمن الالتباس واختلاط الأزياء، فلا يُستحضر مباشرة أئمة الأشعرية الأوائل؛ فالبدعة تطوّرت، ولكل زمان وصفه.</div>
+<div class="quiz" data-q="q2-6"></div>
+
+<div class="takeaway"><div class="tt">خلاصة المجلس الثاني <small>(إضافة تحريرية)</small></div>
+<div class="score" data-s="s2"></div>
+<div class="tk-i">أصل الدين: الشهادتان، ومن نقضهما خرج من الإسلام. وأصول الدين: لوازم الشهادتين، ويقع فيها خلاف أهل القبلة.</div>
+<div class="tk-i">مثال الشجرة: الجذور أصل، والجذع واجبات، والثمر مستحبات.</div>
+<div class="tk-i">اسم الإسلام لا ينقص بالمعاصي، وإنما يسقط جملة بالشرك الأكبر (<span class="sem-name sem-scholar">ابن رجب</span>).</div>
+<div class="tk-i">لا اجتهاد في الأصول، والخلاف بين الفرق مع بقاء أصل الدين معهم أوجب التبديع لا التكفير.</div>
+<div class="tk-i">البدع تتطور: أشاعرة اليوم غير أشاعرة الأمس، والرافضة غير الشيعة الأوائل.</div>
+</div>
+<div class="next"><b>الخيط التالي</b>تذكّر أن هناك فرقًا بين الأصل والأصول، وكلامنا عن أصل الدين لا عن أصول الدين، ونكمل في اللقاء الآتي.</div>
+</section>
+
+
+<div id="cards"><h2>بطاقات المراجعة — المحاضرة 02</h2><div class="score">تُراجَع بعد يومين من القراءة. التصدير: TSV بمعرّف ثابت (GUID) لكل بطاقة، وتاج المحاضرة وتاج المستوى، لنوع الملاحظة «أساسي» مع anki/final.css.</div><div class="cstage"><div class="cbox" id="cbox"></div></div><div class="cnav"><button type="button" id="cprev">→ السابقة</button><span class="pos" id="cpos"></span><button type="button" id="cnext">التالية ←</button><button type="button" class="dl" id="cdl" data-name="العروة_الوثقى_م02_بطاقات.tsv">تحميل بطاقات المحاضرة (TSV)</button></div></div>
+</main>
+</div>
+<nav class="lnav"><a href="01.html">→ المحاضرة 01</a><a class="home" href="index.html">فهرس السلسلة</a><a href="03.html">المحاضرة 03 ←</a></nav>
+<footer>العروة الوثقى — المحاضرة 02 · أُعدّ بمساعدة الذكاء الاصطناعي ويُرجى مراجعته</footer>
+<script>
+const NAMES={"sahabi": ["النبي ﷺ", "رسول الله ﷺ", "يعقوب", "إسحاق", "إبراهيم", "إسماعيل", "يوسف", "نوح", "هود", "عبد الله بن سلام", "حذيفة بن اليمان", "حذيفة", "معاذ بن جبل", "معاذ", "معاوية بن حيدة", "أبو هريرة", "أبي هريرة", "أبا هريرة", "أبو ذر", "أبي ذر", "أبا ذر", "عبد الله بن مسعود", "ابن مسعود", "عثمان", "سيدنا علي", "أبي بكر وعمر", "أبا بكر وعمر"], "scholar": ["ابن كثير", "ابن القيم", "ابن رجب", "شيخ الإسلام ابن تيمية", "ابن تيمية", "أبو المعالي الجويني", "الجويني", "المارديني", "عبيد الله بن الحسن العنبري", "القاضي عياض", "الشوكاني", "الشافعي", "النووي", "القرطبي", "أبو بكر بن العربي", "ابن حجر العسقلاني", "البخاري", "الإمام أحمد", "ابن مفلح", "القرافي", "العز بن عبد السلام", "الشاطبي", "ابن أبي عاصم", "الطحاوي", "أبو إسماعيل الهروي", "الهروي", "ابن الزملكاني", "ابن مخلوف", "صفي الدين الهندي", "ابن الوكيل", "سليمان بن سحمان", "محمود شاكر", "محمد محمد حسين", "محمد حامد الفقي"], "name": ["جان دولومو", "غريس ديفي", "محمد علي", "نابليون", "كليبر", "عمر مكرم", "عبد الله الشرقاوي", "نور الدين زنكي", "نور الدين", "صلاح الدين", "كافور الإخشيدي", "المتنبي", "رفاعة الطهطاوي", "محمد عبده", "جمال الدين الأفغاني", "قاسم أمين", "سعد زغلول", "صفية زغلول", "هدى شعراوي", "طه حسين", "عبد الحميد الأول", "السيد البدوي", "مصر", "تونس", "العراق", "باكستان", "لبنان", "تركيا", "باريس", "فرنسا", "اليمن"]};
+const CARDS_DATA=[{"id": "c014", "sectionId": "s2", "level": 3, "anchor": "وصية يعقوب عليه السلام لبنيه في التاريخ — بمَ وصفها ابن كثير في «البدا", "pattern": "calm", "q": "وصية يعقوب عليه السلام لبنيه في التاريخ — بمَ وصفها ابن كثير في «البداية والنهاية»، ولماذا يُؤكَّد التوحيد على الأنبياء وهم الدعاة؟", "a": "أوصى بنيه بالإخلاص وهو الإسلام: أن يعبدوا الله مخلصين له الدين وحده بلا شريك. والأنبياء هم الذين يقومون بدعوة الناس، فإذا أُكّد عليهم التوحيد فغيرهم أحوج.", "blocks": [{"type": "ans", "s": "أوصى بنيه", "e": "بلا شريك."}, {"type": "wajh", "s": "والأنبياء هم", "e": "فغيرهم أحوج."}], "marks": [], "review": ""}, {"id": "c015", "sectionId": "s2", "level": 3, "anchor": "﴿مَا نَعْبُدُهُمْ إِلَّا لِيُقَرِّبُونَا إِلَى اللَّهِ زُلْفَىٰ﴾ [الزم", "pattern": "quran", "q": "﴿مَا نَعْبُدُهُمْ إِلَّا لِيُقَرِّبُونَا إِلَى اللَّهِ زُلْفَىٰ﴾ [الزمر: 3]\nكيف استُشهد بها على أن التوحيد «يبهت»؟", "a": "يدخل الشرك على التوحيد وصاحبه يتصوّر أن ما يفعله يقرّبه إلى الله، كما قال الكفار الأوائل. فلا بد من مراجعة التوحيد دائمًا، لأن الشرك قد يلبس لباس القربة.", "blocks": [{"type": "ans", "s": "يدخل الشرك", "e": "الكفار الأوائل."}, {"type": "wajh", "s": "فلا بد", "e": "لباس القربة."}], "marks": [], "review": ""}, {"id": "c016", "sectionId": "s2", "level": 2, "anchor": "قول ابن القيم في صفاء التوحيد — ما نصه بالمعنى، وما أثر «العكر» في الت", "pattern": "calm", "q": "قول ابن القيم في صفاء التوحيد — ما نصه بالمعنى، وما أثر «العكر» في التوحيد؟", "a": "«التوحيد أصفى شيء وأنقى شيء، ويعكّره أي شيء». والعكر بقدره: قد يُسقط التوحيد كله وقد يُسقط بعضه.", "blocks": [{"type": "ans", "s": "«التوحيد أصفى", "e": "أي شيء»."}, {"type": "wajh", "s": "والعكر بقدره:", "e": "يُسقط بعضه."}], "marks": [], "review": ""}, {"id": "c017", "sectionId": "s2", "level": 1, "anchor": "قال ابن رجب: «واسم الإسلام لا ينقص بفعل المحرمات وترك الواجبات، وإنما ", "pattern": "method", "q": "قال ابن رجب: «واسم الإسلام لا ينقص بفعل المحرمات وترك الواجبات، وإنما يسقط جملة» — ما القاعدة في أصل الدين، ومتى يسقط جملة؟", "a": "أصل الدين لا يدخله نقصان بالمعاصي؛ فاسم الإسلام باقٍ مع فعل المحرمات وترك الواجبات. ويسقط جملة بالوقوع في الشرك الأكبر، فيرتفع اسم الإسلام كله.", "blocks": [{"type": "rule", "s": "أصل الدين", "e": "وترك الواجبات."}, {"type": "exc", "s": "ويسقط جملة", "e": "الإسلام كله."}], "marks": [], "review": ""}, {"id": "c018", "sectionId": "s2", "level": 1, "anchor": "ما الفرق بين «أصل الدين» و«أصول الدين» تعريفًا وحكمًا؟", "pattern": "compare", "q": "ما الفرق بين «أصل الدين» و«أصول الدين» تعريفًا وحكمًا؟", "a": "أصل الدين: شهادة أن لا إله إلا الله وأن محمدًا رسول الله، وهي الإطار العام؛ من نقضها خرج من الإسلام. وأصول الدين: ما كان من لوازم لا إله إلا الله، ويقع فيها خطأ أهل القبلة فيقال: أخطأ في كذا لكن معه أصل الدين.", "blocks": [{"type": "cols", "parts": [{"s": "أصل الدين:", "e": "من الإسلام."}, {"s": "وأصول الدين:", "e": "أصل الدين."}]}], "marks": [], "review": ""}, {"id": "c019", "sectionId": "s2", "level": 2, "anchor": "﴿ضَرَبَ اللَّهُ مَثَلًا كَلِمَةً طَيِّبَةً كَشَجَرَةٍ طَيِّبَةٍ﴾ [إبرا", "pattern": "method", "q": "﴿ضَرَبَ اللَّهُ مَثَلًا كَلِمَةً طَيِّبَةً كَشَجَرَةٍ طَيِّبَةٍ﴾ [إبراهيم: 24]\nعلى شرح ابن تيمية: ما مراتب الدين الثلاث في مثال الشجرة، وما حكم زوال كل منها؟", "a": "الجذور في الأرض = أصل الدين: لو زالت فالشجرة غير موجودة. الجذع = واجبات الدين: لو زال نقصت الشجرة ولم تمت من الأرض كلها. الثمر = مستحبات الدين. وقد يقع الإنسان أحيانًا في شيء يُسقط الإيمان أيضًا.", "blocks": [{"type": "steps", "seq": false, "items": [{"s": "الجذور في", "e": "أصل الدين:", "ds": "لو زالت", "de": "غير موجودة."}, {"s": "الجذع =", "e": "واجبات الدين:", "ds": "لو زال", "de": "الأرض كلها."}, {"s": "الثمر =", "e": "مستحبات الدين."}]}, {"type": "alert", "s": "وقد يقع", "e": "الإيمان أيضًا."}], "marks": [], "review": ""}, {"id": "c020", "sectionId": "s2", "level": 4, "anchor": "مسائل الإسلام ليست شيئًا واحدًا — ما أقسامها الثلاثة في التقسيم الذي ت", "pattern": "method", "q": "مسائل الإسلام ليست شيئًا واحدًا — ما أقسامها الثلاثة في التقسيم الذي تُبنى عليه أحكامها؟", "a": "مسائل الشرك الأكبر. والمسائل الظاهرة. والمسائل الخفية.", "blocks": [{"type": "steps", "seq": false, "items": [{"s": "مسائل الشرك", "e": "الشرك الأكبر."}, {"s": "والمسائل الظاهرة.", "e": "والمسائل الظاهرة."}, {"s": "والمسائل الخفية.", "e": "والمسائل الخفية."}]}], "marks": [], "review": ""}, {"id": "c021", "sectionId": "s2", "level": 2, "anchor": "قال ابن رجب في شرح «أمرت أن أقاتل الناس»: إن النبي ﷺ كان يقبل ممن يريد", "pattern": "calm", "q": "قال ابن رجب في شرح «أمرت أن أقاتل الناس»: إن النبي ﷺ كان يقبل ممن يريد الإسلام الشهادتين فقط — ما الذي يترتب عليهما، وما حكم تاركهما؟", "a": "يُعصم دمه بهما ويُجعل مسلمًا، ولم يكن ﷺ يشترط على من جاءه شرطًا غيرهما. ومن ترك الشهادتين خرج من الإسلام.", "blocks": [{"type": "ans", "s": "يُعصم دمه", "e": "شرطًا غيرهما."}, {"type": "ruling", "s": "ومن ترك", "e": "من الإسلام."}], "marks": [], "review": ""}, {"id": "c022", "sectionId": "s2", "level": 2, "anchor": "عبّر ابن رجب عن البعث والنشور والصراط والميزان بأن الإيمان بالرسل «يلز", "pattern": "calm", "q": "عبّر ابن رجب عن البعث والنشور والصراط والميزان بأن الإيمان بالرسل «يلزم منه» الإيمان بها — كيف يُستدل بهذا اللفظ على الفرق بين الأصل والأصول؟", "a": "لفظ «يلزم منه» يجعل هذه الأمور في مرتبة ثانية؛ فهي لوازم الأصل، ولذلك سمّاها أهل العلم «أصول الدين». أما الشهادتان فقال فيهما: «وهذا هو الأصل العظيم».", "blocks": [{"type": "ans", "s": "لفظ «يلزم", "e": "«أصول الدين»."}, {"type": "wajh", "s": "أما الشهادتان", "e": "الأصل العظيم»."}], "marks": [], "review": ""}, {"id": "c023", "sectionId": "s2", "level": 3, "anchor": "حديث جبريل: لما سُئل عن الإسلام قال: «شهادة أن لا إله إلا الله...»، ول", "pattern": "quran", "q": "حديث جبريل: لما سُئل عن الإسلام قال: «شهادة أن لا إله إلا الله...»، ولما سُئل عن الإيمان قال: «أن تؤمن بالله وملائكته وكتبه ورسله واليوم الآخر»\nبمَ وصف ابن رجب الشهادة في شرحه، وما دلالة ذلك؟", "a": "وصفها بأنها الأصل العظيم. فالشهادتان أصل الدين، وتفاصيل الإيمان لوازم له.", "blocks": [{"type": "ans", "s": "وصفها بأنها", "e": "الأصل العظيم."}, {"type": "wajh", "s": "فالشهادتان أصل", "e": "لوازم له."}], "marks": [{"t": "hadith", "w": "«شهادة أن لا إله إلا الله...»"}, {"t": "hadith", "w": "«أن تؤمن بالله وملائكته وكتبه ورسله واليوم الآخر»"}], "review": ""}, {"id": "c024", "sectionId": "s2", "level": 2, "anchor": "قال الجويني في «الورقات»: لا يجوز أن يقال «كل مجتهد في الأصول مصيب» — ", "pattern": "method", "q": "قال الجويني في «الورقات»: لا يجوز أن يقال «كل مجتهد في الأصول مصيب» — ما علّة المنع، وما القاعدة في الاجتهاد بين الفروع والأصول؟", "a": "لأن ذلك يؤدي إلى تصويب أهل الضلالة. الفروع فيها اجتهاد؛ أما أصول الدين فلا اجتهاد فيها، فلا يقول أحد «اجتهدت فرأيت أنه يجوز أن يُعبد أو يُشرَّع مع الله غيره»؛ فهذا غلطان.", "blocks": [{"type": "ans", "s": "لأن ذلك", "e": "أهل الضلالة."}, {"type": "rule", "s": "الفروع فيها", "e": "فهذا غلطان."}], "marks": [], "review": ""}, {"id": "c025", "sectionId": "s2", "level": 3, "anchor": "«إذا اجتهد الحاكم فأصاب فله أجران، وإذا اجتهد فأخطأ فله أجر واحد»", "pattern": "quran", "q": "«إذا اجتهد الحاكم فأصاب فله أجران، وإذا اجتهد فأخطأ فله أجر واحد»\nما الأجر الذي فات المخطئ، وفي أي المسائل يجري هذا الحديث؟", "a": "فاته أجر الإصابة وبقي له أجر الاجتهاد والتعب، والمصيب أخذ الأجرين. ويجري في الفروع لا في أصول الدين.", "blocks": [{"type": "ans", "s": "فاته أجر", "e": "أخذ الأجرين."}, {"type": "alert", "s": "ويجري في", "e": "أصول الدين."}], "marks": [{"t": "hadith", "w": "«إذا اجتهد الحاكم فأصاب فله أجران، وإذا اجتهد فأخطأ فله أجر واحد»"}], "review": ""}, {"id": "c026", "sectionId": "s2", "level": 2, "anchor": "المسائل التي يجتهد فيها العالم والمسائل التي لا يُعذر بخطئه — ما الفرق", "pattern": "compare", "q": "المسائل التي يجتهد فيها العالم والمسائل التي لا يُعذر بخطئه — ما الفرق بينهما كما في «إرشاد الفحول» وشرح مسلم؟", "a": "مسائل يجتهد فيها العالم فيصيب ويخطئ فيُعذر، وهي الفروع. ومسائل لا يُعذر بخطئه، وهي أصول الدين.", "blocks": [{"type": "cols", "parts": [{"s": "مسائل يجتهد", "e": "وهي الفروع."}, {"s": "ومسائل لا", "e": "أصول الدين."}]}], "marks": [], "review": ""}, {"id": "c027", "sectionId": "s2", "level": 3, "anchor": "نُقل عن عبيد الله بن الحسن العنبري جواز الاجتهاد في الأصول — كيف حمل ا", "pattern": "calm", "q": "نُقل عن عبيد الله بن الحسن العنبري جواز الاجتهاد في الأصول — كيف حمل المارديني قوله في شرح الورقات؟", "a": "حمله على الخلاف الواقع بين أهل القبلة، كالخلاف بين الأشعرية والمعتزلة في خلق الأفعال ورؤية الله في الآخرة. فـ«أصول الدين» هنا مسائل نزاع الفرق وهم لا يزالون في الإطار، لا أصل الدين.", "blocks": [{"type": "ans", "s": "حمله على", "e": "في الآخرة."}, {"type": "wajh", "s": "فـ«أصول الدين»", "e": "أصل الدين."}], "marks": [], "review": ""}, {"id": "c028", "sectionId": "s2", "level": 2, "anchor": "لماذا اختلف العلماء في الحكم على الفرق كالمعتزلة والأشاعرة والجهمية وا", "pattern": "calm", "q": "لماذا اختلف العلماء في الحكم على الفرق كالمعتزلة والأشاعرة والجهمية والمرجئة دون أن يتفقوا على إخراجهم من الإسلام، كما قال القاضي عياض في «الشفا»؟", "a": "لأن معهم أصل الدين، أي لا إله إلا الله: عبادة الله وحده بلا شريك.", "blocks": [{"type": "ans", "s": "لأن معهم", "e": "بلا شريك."}], "marks": [], "review": ""}, {"id": "c029", "sectionId": "s2", "level": 3, "anchor": "نُقل عن الشافعي أن من اجتهد في أصول الدين فأخطأ فهو كافر — كيف فسّره أ", "pattern": "calm", "q": "نُقل عن الشافعي أن من اجتهد في أصول الدين فأخطأ فهو كافر — كيف فسّره أصحابه كما في «إرشاد الفحول»، ولماذا؟", "a": "قالوا: يقصد كفر النعمة لا الكفر المخرج من الملة. لأن هذه مسائل تخفى مسالكها وتقع فيها مزاحمة في اللغة والفهوم، فبدّعهم العلماء ولم يكفّروهم، وتكفيرهم إطلاق لا تعيين.", "blocks": [{"type": "ans", "s": "قالوا: يقصد", "e": "من الملة."}, {"type": "wajh", "s": "لأن هذه", "e": "لا تعيين."}], "marks": [], "review": ""}, {"id": "c030", "sectionId": "s2", "level": 1, "anchor": "المسائل الخفية التي يقع فيها خلاف الفرق، ونقض لا إله إلا الله — ما الف", "pattern": "compare", "q": "المسائل الخفية التي يقع فيها خلاف الفرق، ونقض لا إله إلا الله — ما الفرق بينهما في الحكم على صاحبها؟", "a": "المسائل الخفية التي تخفى المسالك إليها فيحصل فيها إشكال وشبهة: لا يُحكم على صاحبها، كما قال ابن تيمية. أما أصل الدين فمن ينقض لا إله إلا الله فقد خرج.", "blocks": [{"type": "cols", "parts": [{"s": "المسائل الخفية", "e": "ابن تيمية."}, {"s": "أما أصل", "e": "فقد خرج."}]}], "marks": [], "review": ""}, {"id": "c031", "sectionId": "s2", "level": 2, "anchor": "أشاعرة الأمس وأشاعرة اليوم — ما الفرق بينهما؟", "pattern": "compare", "q": "أشاعرة الأمس وأشاعرة اليوم — ما الفرق بينهما؟", "a": "أشاعرة الأمس مشكلتهم في الصفات المعيّنة التي يقولونها، وكان منهم أئمة عظام كالنووي والقرطبي وأبي بكر بن العربي وابن حجر العسقلاني. وأشاعرة اليوم كثير منهم لا كلهم صوفية قبورية: يذهب إلى القبر ويقول له اغفر لي ذنبي.", "blocks": [{"type": "cols", "parts": [{"s": "أشاعرة الأمس", "e": "حجر العسقلاني."}, {"s": "وأشاعرة اليوم", "e": "لي ذنبي."}]}], "marks": [], "review": ""}, {"id": "c032", "sectionId": "s2", "level": 4, "anchor": "قال ابن تيمية في الأشاعرة الأوائل كلمة تبيّن منزلتهم في بعض البلاد — م", "pattern": "calm", "q": "قال ابن تيمية في الأشاعرة الأوائل كلمة تبيّن منزلتهم في بعض البلاد — ما هي، وما حالهم إذا خلا بهم أهل السنة؟", "a": "«والأشاعرة هم أهل السنة في البلاد التي تكون البدعة فيها كبدعة الرافضة». فإذا خلا بهم أهل السنة حصل بينهم نقاش، كمناظرة ابن تيمية لابن الزملكاني وابن مخلوف وصفي الدين الهندي وابن الوكيل في العقيدة الواسطية.", "blocks": [{"type": "ans", "s": "«والأشاعرة هم", "e": "كبدعة الرافضة»."}, {"type": "wajh", "s": "فإذا خلا", "e": "العقيدة الواسطية."}], "marks": [], "review": ""}, {"id": "c033", "sectionId": "s2", "level": 5, "anchor": "قسّم بعض العلماء الأشاعرة إلى «أشعرية أولى» وأخرى متأخرة — ما وصف المت", "pattern": "calm", "q": "قسّم بعض العلماء الأشاعرة إلى «أشعرية أولى» وأخرى متأخرة — ما وصف المتأخرة، ومن الذي وصفهم وصفًا مشهورًا؟", "a": "المتأخرة تلتقي مع المعتزلة في الجملة وفي بعض التفاصيل. والوصف المشهور لأبي إسماعيل الهروي: «مخانيث المعتزلة»، وورد في التفريغ مصحّفًا.", "blocks": [{"type": "ans", "s": "المتأخرة تلتقي", "e": "بعض التفاصيل."}, {"type": "alert", "s": "والوصف المشهور", "e": "التفريغ مصحّفًا."}], "marks": [], "review": ""}, {"id": "c034", "sectionId": "s2", "level": 4, "anchor": "ما الذي يُقال في احتفالات المولد عند بعض متبوعي أشاعرة اليوم، ويدل على", "pattern": "calm", "q": "ما الذي يُقال في احتفالات المولد عند بعض متبوعي أشاعرة اليوم، ويدل على أن انحرافهم تجاوز تأويل الصفات؟", "a": "يقف خطيبهم فيقول: «السيد البدوي المهاب الذي إذا دُعي في البر والبحر أجاب»، ويقول إن الكون يتصرف فيه أربعة أقطاب.", "blocks": [{"type": "ans", "s": "يقف خطيبهم", "e": "أربعة أقطاب."}], "marks": [], "review": ""}, {"id": "c035", "sectionId": "s2", "level": 4, "anchor": "البدعة تتطوّر — كيف تطورت الجهمية من بدعة إلى أخرى؟", "pattern": "method", "q": "البدعة تتطوّر — كيف تطورت الجهمية من بدعة إلى أخرى؟", "a": "كانت جهمية، ثم صارت حلولًا واتحادًا، ثم صوفية، وهم الذين تكلم عليهم سليمان بن سحمان وغيره.", "blocks": [{"type": "steps", "seq": true, "items": [{"s": "كانت جهمية،", "e": "كانت جهمية،"}, {"s": "ثم صارت", "e": "حلولًا واتحادًا،"}, {"s": "ثم صوفية،", "e": "سحمان وغيره."}]}], "marks": [], "review": ""}, {"id": "c036", "sectionId": "s2", "level": 3, "anchor": "تطور التشيّع مثالًا على تطور البدعة — ما مرحلتاه؟", "pattern": "method", "q": "تطور التشيّع مثالًا على تطور البدعة — ما مرحلتاه؟", "a": "الشيعة زمان: كانوا يقدّمون أبا بكر وعمر، ومشكلتهم تقديم علي على عثمان، وكان قولًا لبعض أهل السنة فلم تكن فيه مشكلة. ثم الرفض: صار فيهم من يسبّ، ويردّ القرآن ويقول إنه ناقص.", "blocks": [{"type": "steps", "seq": true, "items": [{"s": "الشيعة زمان:", "e": "الشيعة زمان:", "ds": "كانوا يقدّمون", "de": "فيه مشكلة."}, {"s": "ثم الرفض:", "e": "ثم الرفض:", "ds": "صار فيهم", "de": "إنه ناقص."}]}], "marks": [], "review": ""}, {"id": "c037", "sectionId": "s2", "level": 4, "anchor": "ما معنى كلمة البخاري في ذبيحة الرافضي مقارنةً بذبيحة اليهودي والنصراني", "pattern": "calm", "q": "ما معنى كلمة البخاري في ذبيحة الرافضي مقارنةً بذبيحة اليهودي والنصراني؟", "a": "أن أكل ذبيحة اليهودي أو النصراني أحب إليه من ذبيحة الرافضي، لأن الله أباح ذبيحة أهل الكتاب، والرافضة لم يُبح الله ذبيحتهم.", "blocks": [{"type": "ans", "s": "أن أكل", "e": "الله ذبيحتهم."}], "marks": [], "review": ""}];
+const QUIZ_DATA=[{"id": "q2-1", "sectionId": "s2", "question": "قال <span class=\"sem-name sem-scholar\">ابن رجب</span>: اسم الإسلام لا ينقص بفعل المحرمات وترك الواجبات، «وإنما يسقط جملة». متى يسقط جملة؟", "options": ["بترك سنة مؤكدة", "بفعل كبيرة من الكبائر", "بالوقوع في الشرك الأكبر", "بالخطأ في مسألة فرعية"], "correctIndex": 2, "explanation": "الشرك الأكبر يرفع اسم الإسلام كله، أما المعاصي فلا تنقض الأصل."}, {"id": "q2-2", "sectionId": "s2", "question": "في مثال الشجرة، رجل ترك واجبًا من الواجبات دون أن يأتي بناقض. حاله كـ:", "options": ["شجرة اقتُلعت جذورها", "شجرة نقص جذعها لكنها لم تمت من الأرض", "شجرة لم يتأثر منها شيء", "شجرة سقط ثمرها فقط"], "correctIndex": 1, "explanation": "الجذع هو الواجبات؛ نقصه ينقص الشجرة ولا يميتها، والجذور هي أصل الدين."}, {"id": "q2-3", "sectionId": "s2", "question": "ما الذي استدل به على أن تفاصيل الإيمان (البعث والصراط والميزان) في مرتبة «أصول» لا «أصل»؟", "options": ["قول <span class=\"sem-name sem-scholar\">ابن رجب</span> فيها: «يلزم منه»", "أنها لم ترد في القرآن", "أن الصحابة اختلفوا فيها", "أنها من المستحبات"], "correctIndex": 0, "explanation": "لفظ «يلزم منه» يجعلها لوازم للأصل، أي مرتبة ثانية."}, {"id": "q2-4", "sectionId": "s2", "question": "رجل يقول: «اجتهدتُ فرأيت أنه يجوز أن يُشرَّع مع الله غيره». ما حكم اجتهاده على ما قرره المجلس؟", "options": ["له أجر واحد لأنه مجتهد مخطئ", "له أجران إن أصاب", "لا اجتهاد في هذا؛ هو غلطان ولا يُعذر بخطئه", "يُتوقف فيه"], "correctIndex": 2, "explanation": "الأجر للمخطئ في الفروع؛ أما أصول الدين فلا اجتهاد فيها، وهذا من المسائل التي لا يُعذر بخطئها."}, {"id": "q2-5", "sectionId": "s2", "question": "لماذا اختلف العلماء في الحكم على الفرق كالمعتزلة والأشاعرة ولم يُخرجوهم من الإسلام؟", "options": ["لأنهم أكثرية", "لأن معهم أصل الدين، ومسائلهم تخفى مسالكها", "لأنهم لم يخالفوا أهل السنة", "لأن البدعة لا حكم لها"], "correctIndex": 1, "explanation": "قال <span class=\"sem-name sem-scholar\">القاضي عياض</span>: معهم أصل الدين، فبدّعوهم ولم يكفّروهم أعيانهم."}, {"id": "q2-6", "sectionId": "s2", "question": "إذا أُطلق لفظ «الأشاعرة» اليوم، فما الذي نبّه الشيخ على عدم استحضاره مباشرة؟", "options": ["أن فيهم قبورية", "أئمة الأشعرية الأوائل كالنووي وابن حجر", "أن فيهم من يقول بخلق القرآن", "أنهم يدّعون أنهم أهل السنة"], "correctIndex": 1, "explanation": "البدعة تطورت؛ وكثير من أشاعرة اليوم صوفية قبورية بخلاف الأوائل."}];
+const MAP_DATA=[];
+</script>
+<script>
+(function(){
+"use strict";
+var SUBJECT="العروة الوثقى";
+var LABELS={def:"التعريف",excl:"ما يخرج عن التعريف",ans:"الإجابة",wajh:"وجه الدلالة والمقصد",alert:"تنبيه مهم",rule:"القاعدة",exc:"الاستثناء",err:"الخطأ المنهجي",ruling:"الحكم"};
+var PLABEL={calm:"السؤال",quran:"السؤال",compare:"مقارنة",method:"قاعدة منهجية"};
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function reEsc(s){return s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");}
+var NAME_RE=null;
+function buildNameRe(){
+  var all=[];Object.keys(NAMES).forEach(function(k){NAMES[k].forEach(function(n){all.push([n,k]);});});
+  all.sort(function(a,b){return b[0].length-a[0].length;});
+  NAME_RE={re:new RegExp("(^|[^\\u0621-\\u064A])([وفبل]?)("+all.map(function(x){return reEsc(x[0]);}).join("|")+")(?![\\u0621-\\u064A])","g"),map:all.reduce(function(m,x){m[x[0]]=x[1];return m;},{})};
+}
+var CLS={sahabi:"sem-name sem-sahabi",scholar:"sem-name sem-scholar",name:"sem-name",hadith:"sem-hadith"};
+/* تلوين نص خام: آيات + أسماء + علامات صريحة — لا يغيّر حرفًا */
+function colorize(txt,marks,inQ){
+  var parts=[],rest=txt,re=/﴿[^﴾]*﴾/g,last=0,m;
+  while((m=re.exec(txt))){parts.push([0,txt.slice(last,m.index)]);parts.push([1,m[0]]);last=m.index+m[0].length;}
+  parts.push([0,txt.slice(last)]);
+  return parts.map(function(p){
+    if(p[1]==="")return "";
+    if(p[0]===1)return '<span class="sem-aya'+(inQ?' mz-v':'')+'">'+esc(p[1])+'</span>';
+    var s=esc(p[1]);
+    var held=[];
+    (marks||[]).forEach(function(mk){var e=esc(mk.w);if(s.indexOf(e)>-1){s=s.split(e).join("\u0001"+held.length+"\u0002");held.push('<span class="'+CLS[mk.t]+'">'+e+'</span>');}});
+    s=s.replace(NAME_RE.re,function(all,pre,cj,n){if(pre==="[")return all;return pre+cj+'<span class="'+CLS[NAME_RE.map[n]]+'">'+n+'</span>';});
+    s=s.replace(/\u0001(\d+)\u0002/g,function(a,i){return held[+i];});
+    return s;
+  }).join("");
+}
+function slice(a,cur,s,e){var i=a.indexOf(s,cur);if(i<0)throw new Error("s:"+s);var j=a.indexOf(e,i);if(j<0)throw new Error("e:"+e);return [i,j+e.length];}
+function cardFront(c){
+  var lines=c.q.split("\n").map(function(l){return '<p class="mz-qt'+(l.indexOf("﴿")>-1?' mz-sh':'')+'">'+colorize(l,c.marks,true)+'</p>';}).join("");
+  return '<div class="mz-face mz-'+c.pattern+'"><header class="mz-head"><span class="mz-subject"><span class="mz-ico"></span>'+SUBJECT+'</span><span class="mz-kicker">المحاضرة 0'+c.sectionId.slice(1)+'</span></header><div class="mz-label">'+PLABEL[c.pattern]+'</div><div class="mz-q">'+lines+'</div></div>';
+}
+function cardBack(c){
+  var a=c.a,cur=0,out="";
+  c.blocks.forEach(function(b){
+    if(b.type==="cols"){
+      out+='<div class="mz-cols">'+b.parts.map(function(p,k){var r=slice(a,cur,p.s,p.e);cur=r[1];return '<div class="mz-col mz-col'+(k+1)+'" data-label="'+(k?"الطرف الثاني":"الطرف الأول")+'">'+colorize(a.slice(r[0],r[1]),c.marks)+'</div>';}).join("")+'</div>';
+    }else if(b.type==="steps"){
+      out+='<div class="mz-steps mz-steps-list">'+b.items.map(function(it,k){
+        var r=slice(a,cur,it.s,it.e);cur=r[1];var t=a.slice(r[0],r[1]),d="";
+        if(it.ds){var r2=slice(a,cur,it.ds,it.de);cur=r2[1];d='<div class="mz-step-d">'+colorize(a.slice(r2[0],r2[1]),c.marks)+'</div>';}
+        return (k&&b.seq?'<div class="mz-arrow" aria-hidden="true"></div>':'')+'<div class="mz-step"><span class="mz-step-n"></span><div class="mz-step-b"><div class="mz-step-t">'+colorize(t,c.marks)+'</div>'+d+'</div></div>';
+      }).join("")+'</div>';
+    }else{
+      var r=slice(a,cur,b.s,b.e);cur=r[1];
+      out+='<div class="mz-box mz-b-'+b.type+'" data-label="'+LABELS[b.type]+'">'+colorize(a.slice(r[0],r[1]),c.marks)+'</div>';
+    }
+  });
+  return '<div class="mz-ans mz-'+c.pattern+'">'+out+'</div>';
+}
+window.URWA_CARD={front:cardFront,back:cardBack,init:function(){buildNameRe();}};
+function tsv(cards){
+  var head=["#separator:tab","#html:true","#guid column:1","#tags column:4"];
+  return head.concat(cards.map(function(c){var n=c.sectionId.slice(1);
+    return ["stage1_urwa_0"+n+"_"+c.id,cardFront(c),cardBack(c),"البناء_المنهجي::المرحلة_1::العروة_الوثقى::م0"+n+" مستوى_"+c.level]
+      .map(function(x){return x.replace(/[\t\r\n]+/g," ");}).join("\t");})).join("\n");
+}
+window.URWA_CARD.tsv=tsv;
+if(typeof document==="undefined")return;
+buildNameRe();
+function $(id){return document.getElementById(id);}
+/* quiz */
+var QZ={};QUIZ_DATA.forEach(function(q){QZ[q.id]=q;});var score={};
+document.querySelectorAll(".quiz[data-q]").forEach(function(box){var q=QZ[box.getAttribute("data-q")];if(!q)return;
+  var h='<div class="qh">سؤال فهم</div><div class="qq">'+q.question+'</div>';
+  q.options.forEach(function(o,i){h+='<button class="op" type="button" data-i="'+i+'">'+o+'</button>';});
+  box.innerHTML=h+'<div class="ex">'+q.explanation+'</div><button class="again" type="button">إعادة المحاولة</button>';});
+document.addEventListener("click",function(e){
+  var b=e.target.closest(".quiz .op");
+  if(b){var box=b.closest(".quiz");if(box.classList.contains("done"))return;var q=QZ[box.getAttribute("data-q")],i=+b.getAttribute("data-i");
+    box.classList.add("done");box.querySelectorAll(".op")[q.correctIndex].classList.add("ok");if(i!==q.correctIndex)b.classList.add("no");
+    (score[q.sectionId]=score[q.sectionId]||{})[q.id]=(i===q.correctIndex);
+    var el=document.querySelector('.score[data-s="'+q.sectionId+'"]');if(el){var s=score[q.sectionId],ok=0,n=0;for(var k in s){n++;if(s[k])ok++;}
+      el.textContent="نتيجتك في أسئلة هذه المحاضرة: "+ok+" من "+n+" (المجموع "+QUIZ_DATA.filter(function(x){return x.sectionId===q.sectionId;}).length+")";}return;}
+  var a=e.target.closest(".quiz .again");if(a){var bx=a.closest(".quiz");bx.classList.remove("done");bx.querySelectorAll(".op").forEach(function(o){o.classList.remove("ok","no");});}
+});
+/* cmp labels for phones */
+document.querySelectorAll(".cmp").forEach(function(t){var h=t.querySelector(".r.h");if(!h)return;var hs=[].map.call(h.children,function(c){return c.textContent;});
+  t.querySelectorAll(".r:not(.h)").forEach(function(r){[].forEach.call(r.children,function(c,i){if(i&&hs[i])c.setAttribute("data-h",hs[i]);});});});
+/* mind map */
+MAP_DATA.forEach(function(m){var host=$(m.id);if(!host)return;
+  var h='<div class="mm-center">'+m.center+'</div><div class="mm-branches">';
+  m.nodes.forEach(function(n){h+='<div class="mm-node" style="--c:'+n.color+'"><a href="'+n.target+'">'+n.text+'</a>';
+    if(n.children&&n.children.length)h+='<div class="mm-kids">'+n.children.map(function(c){return '<a href="'+c.target+'">'+c.text+'</a>';}).join("")+'</div>';
+    h+='</div>';});host.innerHTML=h+'</div>';});
+/* download */
+var dlb=$("cdl");
+if(dlb)dlb.onclick=function(){var blob=new Blob([tsv(CARDS_DATA)],{type:"text/tab-separated-values;charset=utf-8"});
+  var a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=dlb.getAttribute("data-name");document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},500);};
+/* flashcards */
+var box=$("cbox");
+if(box){var list=CARDS_DATA,pos=0;
+  var show=function(){var c=list[pos];box.classList.remove("shown");
+    box.innerHTML='<div class="front">'+cardFront(c)+'</div><div class="back">'+cardBack(c)+'</div><div class="flip">انقر على البطاقة لإظهار الإجابة</div>';
+    $("cpos").textContent=(pos+1)+" / "+list.length;};
+  box.addEventListener("click",function(){box.classList.toggle("shown");});
+  $("cprev").onclick=function(){pos=(pos-1+list.length)%list.length;show();};
+  $("cnext").onclick=function(){pos=(pos+1)%list.length;show();};
+  show();}
+/* progress / toc / font */
+var bar=$("progress"),tl=[].slice.call(document.querySelectorAll(".toc a[href^='#']"));
+var targets=tl.map(function(a){return $(a.getAttribute("href").slice(1));});
+window.addEventListener("scroll",function(){var h=document.documentElement;if(bar)bar.style.width=(h.scrollTop/Math.max(1,h.scrollHeight-h.clientHeight)*100)+"%";
+  var cur=-1;targets.forEach(function(t,i){if(t&&t.getBoundingClientRect().top<120)cur=i;});tl.forEach(function(a,i){a.classList.toggle("on",i===cur);});},{passive:true});
+var fs=18;function setFs(){document.documentElement.style.setProperty("--fs",fs+"px");}
+if($("fsUp")){$("fsUp").onclick=function(){if(fs<22){fs++;setFs();}};$("fsDn").onclick=function(){if(fs>16){fs--;setFs();}};}
+})();
+
+</script>
+<script type="module" src="../../../firebase-sync-manhaj.js"></script>
+<script src="../../../ilm-track.js"></script>
+<script src="../../../ilm-highlight.js" data-hadith="off"></script>
+</body>
+</html>

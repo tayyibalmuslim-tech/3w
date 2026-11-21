@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="lecture-status" content="filled">
+<title>العروة الوثقى — المحاضرة 04 | الدليل على أن «لا إله إلا الله» هي أصل دين الإسلام</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@700&family=Cairo:wght@400;600;700;800&family=El+Messiri:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1f2433;--ink2:#3d4457;--sub:#69708a;--bg:#f6f4ef;--paper:#fffdf9;--line:#e4dfd3;
+  --brand:#25305a;--brand2:#3b4b86;--accent:#2a7f7a;--gold:#c9b27c;--goldbg:#f4eedf;
+  --s1:#3a5a98;--s2:#2a7f7a;--s3:#b0623a;--s4:#5a5f8a;--s5:#1e7aa0;
+  --sec:var(--brand);
+  --sem-aya:#14532d;--sem-hadith:#5b2d90;--sem-sahabi:#8a5a00;--sem-scholar:#8f1d21;
+  --fs:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cairo','Noto Sans Arabic',Tahoma,sans-serif;font-size:var(--fs);line-height:1.95;text-align:right;direction:rtl}
+a{color:inherit}
+.sem-aya{color:var(--sem-aya);font-family:'Amiri','Noto Naskh Arabic',serif;font-size:1.12em}
+.sem-hadith{color:var(--sem-hadith)}
+.sem-name{color:var(--sem-scholar)}
+.sem-name.sem-sahabi,.sem-sahabi{color:var(--sem-sahabi);font-weight:700}
+.sem-name.sem-scholar,.sem-scholar{color:var(--sem-scholar);font-weight:700}
+#progress{position:fixed;top:0;right:0;height:4px;background:linear-gradient(90deg,var(--accent),var(--brand2));width:0;z-index:50}
+/* hero */
+.hero{background:radial-gradient(ellipse at 20% 0%,#3b4b86 0%,#25305a 55%,#1a2142 100%);color:#f3efe4;padding:64px 20px 70px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(201,178,124,.07) 0 2px,transparent 2px 26px)}
+.hero .in{max-width:900px;margin:0 auto;position:relative}
+.hero .series{font-family:'Aref Ruqaa','Amiri',serif;font-size:58px;line-height:1.3;color:#f1e6c8;margin:0}
+.hero .rope{display:flex;align-items:center;margin:14px 0 18px;max-width:420px}
+.hero .rope span{flex:1;height:3px;background:repeating-linear-gradient(90deg,var(--gold) 0 10px,transparent 10px 14px);border-radius:2px}
+.hero .rope b{width:16px;height:16px;border:3px solid var(--gold);border-radius:50%;margin:0 10px}
+.hero h1{font-family:'El Messiri','Cairo',sans-serif;font-size:34px;line-height:1.5;margin:0 0 10px;font-weight:600}
+.hero .meta{font-size:15.5px;color:#d7d2c4}
+.wrap{max-width:1180px;margin:0 auto;display:flex;align-items:flex-start;padding:0 18px}
+main{flex:1 1 auto;min-width:0;max-width:800px;margin:0 auto}
+aside.toc{flex:0 0 250px;position:sticky;top:18px;margin:28px 0 0 26px;order:2;max-height:calc(100vh - 40px);overflow:auto;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:14px 14px 16px;font-size:14.5px;line-height:1.7}
+.toc .t{font-weight:800;color:var(--brand);margin-bottom:6px;font-family:'El Messiri','Cairo'}
+.toc a{display:block;text-decoration:none;padding:4px 8px;border-radius:8px;color:var(--ink2)}
+.toc a.l2{padding-right:20px;font-size:13.5px;color:var(--sub)}
+.toc a:hover,.toc a.on{background:var(--goldbg);color:var(--brand)}
+.tools{display:flex;flex-wrap:wrap;margin-top:10px;border-top:1px solid var(--line);padding-top:10px}
+.tools button{font:inherit;font-size:13px;margin:0 0 6px 6px;padding:5px 10px;border:1px solid var(--line);background:#fff;border-radius:9px;cursor:pointer;color:var(--brand)}
+@media(max-width:1020px){aside.toc{display:none}}
+/* intro cards */
+.ai-note{margin:26px 0 0;background:#fff7e6;border:1px solid #ecd9ae;border-radius:12px;padding:10px 16px;font-size:15px;color:#6b4e16}
+.src{margin:16px 0;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 20px;font-size:16px}
+.src .row{display:flex;flex-wrap:wrap;margin-bottom:2px}.src .k{flex:0 0 120px;color:var(--sub);font-weight:700}.src .v{flex:1 1 300px}
+.orient{margin:22px 0 10px;background:linear-gradient(180deg,#fffdf8,#f7f3e8);border:1px solid #e6dcc3;border-radius:20px;padding:22px 24px}
+.orient .lab{font-size:13px;font-weight:800;color:var(--accent);letter-spacing:.2px}
+.orient .cq{font-family:'El Messiri','Cairo';font-size:23px;color:var(--brand);line-height:1.6;margin:2px 0 14px}
+.orient .idea{font-size:17px;color:var(--ink2);margin-bottom:6px}
+.orient .ed{font-size:12.5px;color:var(--sub)}
+/* mindmap */
+.mm{margin:18px 0 6px}
+.mm-center{display:inline-block;background:var(--brand);color:#f5efe0;border-radius:14px;padding:10px 18px;font-weight:800;font-family:'El Messiri','Cairo';font-size:18px}
+.mm-branches{border-right:3px solid var(--gold);margin:10px 18px 0 0;padding:4px 0 0}
+.mm-node{position:relative;margin:0 0 10px;padding-right:22px}
+.mm-node:before{content:"";position:absolute;right:0;top:20px;width:18px;border-top:3px solid var(--gold)}
+.mm-node>a{display:inline-block;text-decoration:none;background:#fff;border:1px solid var(--line);border-right:5px solid var(--c,var(--brand));border-radius:12px;padding:6px 14px;font-weight:700;color:var(--ink)}
+.mm-node>a:hover{background:var(--goldbg)}
+.mm-kids{margin:6px 22px 0 0;display:flex;flex-wrap:wrap}
+.mm-kids a{font-size:14.5px;text-decoration:none;margin:0 0 6px 8px;padding:3px 11px;border-radius:20px;background:#f1efe8;color:var(--ink2);border:1px solid #e6e1d4}
+.mm-kids a:hover{background:var(--goldbg)}
+/* sections */
+section.lec{--sec:var(--brand);margin:46px 0 0}
+section.lec[data-s="1"]{--sec:var(--s1)}section.lec[data-s="2"]{--sec:var(--s2)}section.lec[data-s="3"]{--sec:var(--s3)}section.lec[data-s="4"]{--sec:var(--s4)}section.lec[data-s="5"]{--sec:var(--s5)}
+.lec-head{position:relative;background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--sec);border-radius:20px;padding:22px 24px 18px;margin-bottom:18px}
+.lec-head .num{font-size:13.5px;font-weight:800;color:var(--sec);letter-spacing:.3px}
+.lec-head h2{font-family:'El Messiri','Cairo';font-size:30px;line-height:1.5;margin:4px 0 6px;color:var(--ink)}
+.lec-head .fn{display:inline-block;font-size:13px;background:var(--goldbg);color:#6b5a2e;border-radius:20px;padding:2px 12px}
+.divider{height:34px;margin:40px 0 0;background:radial-gradient(circle,var(--gold) 3px,transparent 4px) center/26px 34px repeat-x;opacity:.7}
+main h3{font-family:'El Messiri','Cairo';font-size:23px;line-height:1.6;color:var(--sec);margin:32px 0 8px;padding-right:14px;border-right:4px solid var(--sec)}
+main h4{font-size:19px;margin:20px 0 4px;color:var(--ink)}
+main p{margin:0 0 14px}
+.where,.next{border-radius:14px;padding:12px 18px;font-size:16px;margin:0 0 16px}
+.where{background:#eef1f8;border:1px dashed #b9c2dd}
+.next{background:#eef6f5;border:1px dashed #a9cfcb;margin-top:18px}
+.where b,.next b{display:block;font-size:13px;color:var(--sec)}
+/* blocks */
+.aya-block{background:#f0f6f1;border:1px solid #d6e7da;border-right:4px solid #3f7d57;border-radius:14px;padding:12px 20px 10px;margin:14px 0 16px;text-align:center}
+.aya-block p{margin:0;font-size:1.08em;line-height:2.15}
+.aya-block .sem-aya{font-size:1.22em}
+.ref{font-size:13.5px;color:var(--sub);text-align:left}
+blockquote{margin:14px 0 16px;padding:12px 20px 10px;border-radius:14px}
+blockquote p{margin:0 0 6px}
+.hadith-block{background:#f6f3fa;border:1px solid #e6dff0;border-right:4px solid #8b77ad}
+.naql{background:#fbf8f1;border:1px solid #ebe2cc;border-right:4px solid #b9a06a}
+.who{display:block;font-size:13.5px;color:#7a6a45;font-weight:700;margin-top:2px}
+.hadith-block .who{color:#6b5d86}
+.key{background:#eef3fb;border-right:4px solid var(--brand2);border-radius:12px;padding:12px 18px;margin:14px 0}
+.key:before{content:"فكرة محورية";display:block;font-size:12.5px;font-weight:800;color:var(--brand2)}
+.warn{background:#fdf1ea;border-right:4px solid #c46a3b;border-radius:12px;padding:12px 18px;margin:14px 0}
+.warn:before{content:"تنبيه";display:block;font-size:12.5px;font-weight:800;color:#a2512a}
+.fix{background:#fff6e0;border:1px dashed #d8b45d;border-radius:12px;padding:10px 16px;margin:12px 0;font-size:15.5px}
+.fix:before{content:"تصحيح / توضيح تحريري";display:block;font-size:12.5px;font-weight:800;color:#8a6414}
+.ed-note{background:#f3f3f1;border-radius:12px;padding:10px 16px;margin:12px 0;font-size:15.5px;color:var(--ink2)}
+.ed-note:before{content:"إضافة تحريرية (ليست من كلام الشيخ)";display:block;font-size:12.5px;font-weight:800;color:#6c6c64}
+.story{background:#fffaf2;border:1px solid #efdfc4;border-radius:16px;padding:14px 20px 4px;margin:16px 0}
+.story .st{font-weight:800;color:#8a5f2b;font-size:15px;margin-bottom:4px}
+/* structures */
+.lab-org{font-size:12.5px;font-weight:800;color:var(--sec);margin:0 0 6px}
+.cmp{margin:16px 0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.cmp .cap{background:#f4f2ec;padding:8px 16px;font-weight:800;font-size:15px;color:var(--ink2)}
+.cmp .r{display:flex;flex-wrap:wrap;border-top:1px solid var(--line)}
+.cmp .r>div{flex:1 1 200px;padding:10px 16px;font-size:16px;line-height:1.85;min-width:0}
+.cmp .r>div+div{border-right:1px solid var(--line)}
+.cmp .r.h>div{font-weight:800;color:var(--sec);background:#fafaf7}
+.cmp .r>div.k{flex:0 0 140px;font-weight:700;color:var(--sub);background:#fbfaf6}
+@media(max-width:580px){.cmp .r.h{display:none}.cmp .r>div.k{flex-basis:100%;border-bottom:1px dashed var(--line);color:var(--sec)}.cmp .r>div+div{border-right:0;border-top:1px dashed var(--line)}.cmp .r>div[data-h]:before{content:attr(data-h);display:block;font-size:12.5px;font-weight:800;color:var(--sub)}}
+.tree{margin:16px 0;padding:16px;background:#fff;border:1px solid var(--line);border-radius:16px}
+.tree .root{font-weight:800;color:#fff;background:var(--sec);display:inline-block;border-radius:10px;padding:5px 14px}
+.tree .kids{margin:10px 16px 0 0;border-right:2px solid #d7d2c3;padding-right:14px}
+.tree .kid{position:relative;margin:0 0 10px;background:#faf8f3;border:1px solid #ebe5d6;border-radius:12px;padding:8px 14px;font-size:16px}
+.tree .kid:before{content:"";position:absolute;right:-16px;top:20px;width:14px;border-top:2px solid #d7d2c3}
+.tree .kid b{color:var(--sec)}
+.timeline{margin:16px 0;padding:6px 0}
+.tl-i{position:relative;padding:0 46px 14px 0}
+.tl-i:before{content:attr(data-n);position:absolute;right:0;top:2px;width:32px;height:32px;border-radius:50%;background:var(--sec);color:#fff;font-weight:800;text-align:center;line-height:32px;font-size:15px}
+.tl-i:after{content:"";position:absolute;right:15px;top:36px;bottom:0;border-right:2px solid #d4cfbf}
+.tl-i:last-child:after{display:none}
+.tl-i .tt{font-weight:800;color:var(--ink)}
+.tl-i .td{font-size:16px;color:var(--ink2)}
+.chain{display:flex;flex-direction:column;margin:16px 0}
+.chain .c{background:#fff;border:1px solid var(--line);border-right:4px solid var(--sec);border-radius:12px;padding:9px 16px;font-size:16px}
+.chain .c b{display:block;font-size:12.5px;color:var(--sec)}
+.chain .ar{height:22px;text-align:center;color:var(--sec);line-height:22px;font-size:18px}
+.evid{margin:16px 0;border:1px solid #d9e6dd;border-radius:16px;background:#fcfefc;overflow:hidden}
+.evid .er{display:flex;flex-wrap:wrap;border-top:1px solid #e3ede6}
+.evid .er:first-child{border-top:0}
+.evid .el{flex:0 0 120px;padding:9px 14px;font-size:13.5px;font-weight:800;color:#3f6b52;background:#f2f8f3}
+.evid .ev{flex:1 1 260px;padding:9px 16px;font-size:16px;min-width:0}
+@media(max-width:580px){.evid .el{flex-basis:100%}}
+.arg{margin:16px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.arg .claim{background:var(--sec);color:#fff;border-radius:12px;padding:10px 16px;font-weight:700}
+.arg .claim b{display:block;font-size:12.5px;opacity:.85}
+.arg .grp{margin:12px 0 0;display:flex;flex-wrap:wrap}
+.arg .g{flex:1 1 220px;margin:0 0 10px 10px;background:#f7f6fb;border:1px solid #e3e1ee;border-radius:12px;padding:10px 14px;font-size:15.5px}
+.arg .g b{display:block;color:var(--sec);font-size:13px}
+.num{margin:14px 0}
+.num .n{display:flex;align-items:flex-start;margin-bottom:10px}
+.num .n .b{flex:0 0 34px;height:34px;border-radius:10px;background:var(--goldbg);color:#6b5a2e;font-weight:800;text-align:center;line-height:34px;margin-left:12px;border:1px solid #e3d6b4}
+.num .n .t{flex:1;min-width:0}
+.stat{display:flex;flex-wrap:wrap;margin:14px -6px}
+.stat .s{flex:1 1 180px;margin:0 6px 12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;text-align:center}
+.stat .s .v{font-size:34px;font-weight:800;color:var(--sec);line-height:1.3;font-family:'El Messiri','Cairo'}
+.stat .s .d{font-size:14.5px;color:var(--ink2);line-height:1.7}
+/* takeaway */
+.takeaway{margin:26px 0 8px;background:linear-gradient(180deg,#fffaf0,#fbf3e2);border:1px solid #e8d7b0;border-radius:18px;padding:16px 20px}
+.takeaway .tt{font-family:'El Messiri','Cairo';font-weight:700;font-size:19px;color:#7a5b1d}
+.takeaway .tt small{font-size:12px;color:#9b8456;font-family:'Cairo';margin-right:6px}
+.tk-i{position:relative;padding-right:22px;margin:7px 0;font-size:16.5px}
+.tk-i:before{content:"";position:absolute;right:2px;top:12px;width:9px;height:9px;border-radius:50%;background:var(--sec)}
+.score{font-size:13.5px;color:var(--sub);margin-bottom:4px}
+/* quiz */
+.quiz{margin:20px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 18px 12px;box-shadow:0 2px 10px rgba(30,40,70,.04)}
+.quiz .qh{font-size:12.5px;font-weight:800;color:var(--sec);margin-bottom:4px}
+.quiz .qq{font-weight:700;font-size:17px;margin-bottom:8px}
+.quiz button.op{display:block;width:100%;min-height:44px;text-align:right;font:inherit;font-size:16px;line-height:1.7;background:#faf9f5;border:1px solid #e6e1d4;border-radius:12px;padding:8px 14px;margin:0 0 8px;cursor:pointer;color:var(--ink)}
+.quiz button.op:hover{background:var(--goldbg)}
+.quiz button.op.ok{background:#e6f3ec;border-color:#86bf9d}
+.quiz button.op.no{background:#fbe9e4;border-color:#e0a28f}
+.quiz .ex{display:none;font-size:15px;background:#f4f6fb;border-radius:10px;padding:8px 12px;color:var(--ink2)}
+.quiz.done .ex{display:block}
+.quiz .again{display:none;font:inherit;font-size:13px;border:0;background:none;color:var(--brand2);cursor:pointer;padding:4px 0}
+.quiz.done .again{display:inline-block}
+/* cards area */
+#cards{margin:56px 0 20px}
+#cards h2{font-family:'El Messiri','Cairo';font-size:30px;color:var(--brand);margin:0 0 4px}
+.cfil{display:flex;flex-wrap:wrap;margin:10px 0}
+.cfil button,.cnav button,.dl{font:inherit;font-size:14px;margin:0 0 8px 8px;padding:6px 14px;border-radius:20px;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--ink2);min-height:38px}
+.cfil button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+.dl{background:var(--accent);color:#fff;border-color:var(--accent)}
+.cstage{max-width:740px;margin:8px auto}
+.cbox{background:#fff;border:1px solid #dfe3e0;border-radius:18px;padding:20px 22px;cursor:pointer;min-height:220px;box-shadow:0 4px 22px rgba(31,49,46,.06)}
+.cbox .flip{font-size:12.5px;color:var(--sub);text-align:center;margin-top:12px}
+.cbox .back{display:none;margin-top:16px;padding-top:16px;border-top:1px solid #e1e0d8}
+.cbox.shown .back{display:block}
+.cnav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px}
+.cnav .pos{font-size:14px;color:var(--sub);margin:0 10px 8px}
+footer{margin:60px 0 0;background:#1d2547;color:#cfc9b8;padding:26px 20px;text-align:center;font-size:14.5px}
+@media(max-width:580px){
+  body{font-size:17px}.hero{padding:44px 16px 50px}.hero .series{font-size:42px}.hero h1{font-size:25px}
+  .lec-head h2{font-size:24px}main h3{font-size:20px}.wrap{padding:0 12px}
+  .orient{padding:16px}.orient .cq{font-size:19px}.cbox{padding:16px 14px}
+}
+@media print{aside.toc,#progress,.quiz,.cnav,.cfil,.dl,.tools{display:none}.hero{background:#25305a;-webkit-print-color-adjust:exact}}
+
+/* نسخة عرض من قسم mz- في anki/final.css — لعرض البطاقات داخل الصفحة بنفس HTML المُصدَّر */
+.mz-calm{--mz-title:#293c35;--mz-ink:#33423c;--mz-accent:#296257;--mz-sub:#66766f;--mz-line:#e1e0d8;--mz-b1:#e9f3ef;--mz-b1bd:#cfe3da;--mz-b2:#f5f5f1;--mz-b2bd:#e1e0d8;--mz-b2lab:#7d6338;--mz-alert:#f5f0e4;--mz-alertbd:#e6dcc4;--mz-alertlab:#7d6338}
+.mz-compare{--mz-title:#273e5d;--mz-ink:#2f3f55;--mz-accent:#47668c;--mz-sub:#62748b;--mz-line:#d8e1ec;--mz-b1:#e9f1ed;--mz-b1bd:#c9dcd2;--mz-b1lab:#2c6a55;--mz-b2:#f5eee7;--mz-b2bd:#e5d6c6;--mz-b2lab:#9a5a2a;--mz-alert:#eff3f9;--mz-alertbd:#d3dded;--mz-alertlab:#273e5d}
+.mz-quran{--mz-title:#3a3426;--mz-ink:#3a3426;--mz-accent:#7a6030;--mz-sub:#7a7060;--mz-line:#dfd9c8;--mz-b1:#f0ede5;--mz-b1bd:#dfd9c8;--mz-b2:#f0ede5;--mz-b2bd:#dfd9c8;--mz-b2lab:#7a6030;--mz-alert:#f6f1e2;--mz-alertbd:#e6dcc0;--mz-alertlab:#7a6030}
+.mz-method{--mz-title:#332d49;--mz-ink:#3a3550;--mz-accent:#605785;--mz-sub:#6e6890;--mz-line:#e0dcec;--mz-b1:#f2f0f9;--mz-b1bd:#e0dcec;--mz-b2:#e8e5f4;--mz-b2bd:#d5cfe8;--mz-b2lab:#605785;--mz-alert:#f4f0e6;--mz-alertbd:#e6dcc0;--mz-alertlab:#7a6030;--mz-step:#e8e5f4;--mz-conn:#9891b4;--mz-num:#605785;--mz-numink:#fff;--mz-err:#f7ebe5;--mz-errbd:#ecd2c3;--mz-errlab:#995531}
+.mz-face,.mz-ans{direction:rtl;text-align:right;font-family:'Cairo','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif;color:var(--mz-ink);line-height:1.95;font-size:18px;overflow-wrap:break-word}
+.mz-face p,.mz-ans p{margin:0}
+.mz-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:0 0 12px;margin:0 0 16px;border-bottom:1px solid var(--mz-line)}
+.mz-subject{display:flex;align-items:center;font-size:14.5px;font-weight:800;color:var(--mz-accent)}
+.mz-kicker{font-size:12.5px;font-weight:600;color:var(--mz-sub)}
+.mz-ico{display:inline-block;width:20px;height:20px;margin-left:9px;border-radius:6px;background:var(--mz-accent);opacity:.85}
+.mz-label{font-size:12.5px;font-weight:700;color:var(--mz-sub);margin:0 0 4px}
+.mz-q{font-size:21px;line-height:1.95;font-weight:700;color:var(--mz-title)}
+.mz-q .mz-qt{margin:0 0 4px}
+.mz-box{margin:0 0 12px;padding:13px 18px 14px;border:1px solid var(--mz-b1bd);border-radius:14px;background:var(--mz-b1)}
+.mz-box:last-child{margin-bottom:0}
+.mz-box[data-label]:before{content:attr(data-label);display:block;font-size:13px;font-weight:800;color:var(--mz-accent);margin:0 0 4px}
+.mz-b-excl,.mz-b-wajh{background:var(--mz-b2);border-color:var(--mz-b2bd)}
+.mz-b-excl[data-label]:before,.mz-b-wajh[data-label]:before{color:var(--mz-b2lab)}
+.mz-b-alert,.mz-b-exc{background:var(--mz-alert);border-color:var(--mz-alertbd)}
+.mz-b-alert[data-label]:before,.mz-b-exc[data-label]:before{display:inline;margin:0;font-size:inherit;color:var(--mz-alertlab);content:attr(data-label) ": "}
+.mz-b-err{background:var(--mz-err);border-color:var(--mz-errbd)}
+.mz-b-err[data-label]:before{color:var(--mz-errlab);display:inline;margin:0;font-size:inherit;content:attr(data-label) ": "}
+.mz-cols{display:flex;flex-wrap:wrap;margin:0 -6px 6px}
+.mz-col{flex:1 1 220px;min-width:0;margin:0 6px 12px;padding:13px 16px 14px;border:1px solid var(--mz-b1bd);border-radius:14px;background:var(--mz-b1)}
+.mz-col2{background:var(--mz-b2);border-color:var(--mz-b2bd)}
+.mz-col[data-label]:before{content:attr(data-label);display:block;font-size:14px;font-weight:800;padding:0 0 7px;margin:0 0 8px;color:var(--mz-b1lab);border-bottom:1px solid var(--mz-b1bd)}
+.mz-col2[data-label]:before{color:var(--mz-b2lab);border-bottom-color:var(--mz-b2bd)}
+.mz-steps{margin:0 0 12px}
+.mz-step{display:flex;align-items:flex-start;padding:12px 14px;border-radius:14px;background:var(--mz-step,var(--mz-b2));border:1px solid var(--mz-b2bd)}
+.mz-step-n{flex:0 0 34px;width:34px;height:34px;margin-left:12px;border-radius:50%;background:var(--mz-num,var(--mz-accent));color:#fff;font-weight:800;font-size:16px;line-height:34px;text-align:center}
+.mz-step-b{flex:1 1 auto;min-width:0}
+.mz-step-t{font-weight:800;color:var(--mz-title);line-height:1.8}
+.mz-step-d{margin-top:2px;line-height:1.9}
+.mz-steps-list{counter-reset:mzstep}
+.mz-steps-list .mz-step{counter-increment:mzstep;margin:0 0 10px}
+.mz-steps-list .mz-step:last-child{margin-bottom:0}
+.mz-steps-list .mz-step-n:before{content:counter(mzstep)}
+.mz-arrow{height:20px;padding:5px 15px 0 0;line-height:0}
+.mz-arrow:before{content:"";display:inline-block;border-right:6px solid transparent;border-left:6px solid transparent;border-top:9px solid var(--mz-conn,#9891b4);margin-right:5px}
+.mz-em{font-weight:800;color:var(--mz-title)}
+.mz-v{font-family:'Amiri','Noto Naskh Arabic','Traditional Arabic',serif;font-weight:700;font-size:1.15em;line-height:2}
+.mz-face .sem-aya,.mz-ans .sem-aya,.mz-face .sem-hadith,.mz-ans .sem-hadith{font-weight:700}
+@media (max-width:580px){.mz-q{font-size:19px}.mz-face,.mz-ans{font-size:17px}.mz-box{padding:12px 14px 13px}.mz-col{flex-basis:100%}}
+
+/* ===== ملفات المحاضرات المنفصلة + صفحة الفهرس ===== */
+.hero-s{padding:40px 20px 44px}
+.hero-s .series{font-size:40px;text-decoration:none;display:inline-block}
+.hero-s h1{font-size:30px}
+.lnav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;max-width:1180px;margin:0 auto;padding:12px 18px;font-size:15px}
+.lnav a,.lnav span{display:inline-block;padding:7px 14px;border-radius:20px;text-decoration:none;background:var(--paper);border:1px solid var(--line);color:var(--brand);margin:4px 0;min-height:38px}
+.lnav a.home{background:var(--brand);color:#f5efe0;border-color:var(--brand);font-weight:700}
+.lnav .off{color:var(--sub);background:transparent;border-style:dashed}
+.lnav a:hover{background:var(--goldbg)}.lnav a.home:hover{background:var(--brand2)}
+.orient .ed2{font-size:15.5px;color:var(--ink2)}
+main.idx{max-width:960px;margin:0 auto;padding:0 18px}
+.ih{font-family:'El Messiri','Cairo';font-size:28px;color:var(--brand);margin:34px 0 12px}
+.grid{display:flex;flex-wrap:wrap;margin:0 -8px}
+.lc{flex:1 1 280px;margin:0 8px 16px;display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--c,var(--brand));border-radius:18px;padding:16px 18px 14px;transition:transform .15s,box-shadow .15s}
+.lc:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(30,40,70,.09)}
+.lc .no{font-family:'El Messiri','Cairo';font-size:34px;font-weight:700;color:var(--c,var(--brand));line-height:1.2}
+.lc .lt{font-family:'El Messiri','Cairo';font-size:20px;font-weight:700;line-height:1.6;margin:2px 0 6px}
+.lc .lq{font-size:15.5px;color:var(--ink2);line-height:1.8;flex:1}
+.lc .ls{font-size:13.5px;color:var(--sub);margin-top:8px}
+.lc .go{font-size:14.5px;font-weight:700;color:var(--c,var(--brand));margin-top:6px}
+.lc-off{border-top-color:#cfcabd;border-style:dashed;opacity:.75}.lc-off .no,.lc-off .lt{color:var(--sub)}
+.alldl{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;background:#eef6f5;border:1px solid #c7e0dd;border-radius:16px;padding:14px 18px;margin:18px 0 10px}
+.alldl div{flex:1 1 320px;margin-left:12px}.alldl b{display:block;color:var(--accent)}.alldl span{font-size:14.5px;color:var(--ink2)}
+@media(max-width:580px){.hero-s .series{font-size:32px}.hero-s h1{font-size:23px}.lc .no{font-size:28px}.lnav{font-size:13px;padding:10px 8px;flex-wrap:nowrap}.lnav a,.lnav span{flex:1 1 0;text-align:center;margin:4px 3px;padding:7px 4px;min-width:0}}
+
+</style>
+</head>
+<body data-lecture-id="stage1_urwa_04">
+<div id="progress"></div>
+<header class="hero hero-s"><div class="in"><a class="series" href="index.html">العروة الوثقى</a><div class="rope"><span></span><b></b><span></span></div><h1>المحاضرة 04</h1><div class="meta">سلسلة في أصل دين الإسلام · 5 سؤال فهم · 26 بطاقة مراجعة</div></div></header>
+<nav class="lnav"><a href="03.html">→ المحاضرة 03</a><a class="home" href="index.html">فهرس السلسلة</a><a href="05.html">المحاضرة 05 ←</a></nav>
+<div class="wrap">
+<aside class="toc"><div class="t">فهرس المحاضرة</div><a href="#orient">لوحة التوجيه</a><a href="#s4-a">الدعوى وبنية الاستدلال</a><a href="#s4-b">الأدلة من القرآن</a><a href="#s4-c">الأدلة من السنة</a><a href="#s4-d">أقوال العلماء: «حتى لا تقول هذا فهمي»</a><a href="#s4-e">نقولات <span class="sem-name sem-scholar">ابن رجب</span> في «جامع العلوم والحكم»</a><a href="#cards">بطاقات المراجعة</a><a href="index.html">↩ فهرس السلسلة</a><div class="tools"><button type="button" id="fsUp">تكبير الخط +</button><button type="button" id="fsDn">تصغير الخط −</button></div></aside>
+<main data-ilm-highlight-zone>
+<div class="ai-note">أُعدّ هذا المحتوى بمساعدة الذكاء الاصطناعي، وقد يحتوي أخطاء، ويُرجى مراجعته.</div><div class="src"><div class="row"><div class="k">نوع المادة</div><div class="v">تفريغ صوتي للمحاضرة 04 من سلسلة «العروة الوثقى»، وهي مجلس قصير كان يُلقى قبل الدرس الأصلي. لم يُذكر اسم الشيخ في التفريغ.</div></div><div class="row"><div class="k">المنهج</div><div class="v">كلام الشيخ مُعاد تنظيمه بلا حذف لفكرة أو دليل؛ والخلاصات والصناديق الموسومة «تحريرية» إضافة ليست من كلامه. وما بين «» لكلام الشيخ وأسماء الكتب.</div></div></div>
+<div class="orient" id="orient"><div class="lab">السؤال المركزي</div><div class="cq">ما الدليل من القرآن والسنة وأقوال العلماء على أن الشهادتين هما أصل الدين؟</div><div class="lab">الفكرة المحورية</div><div class="idea">دعوة الرسل قاطبة، وعصمة الدم بالشهادتين، وتقديم التوحيد على الصلاة، ونصوص <span class="sem-name sem-scholar">ابن تيمية</span> و<span class="sem-name sem-scholar">ابن القيم</span> و<span class="sem-name sem-scholar">ابن رجب</span> — كلها تقرر أن الشهادتين أصل الدين.</div><div class="ed">صياغة تحريرية تجمع معنى المحاضرة.</div><div class="lab" style="margin-top:12px">مسار المحاضرة</div><div class="ed2">الوظيفة: إثبات دعوى بالأدلة (القرآن ← السنة ← أقوال العلماء)</div></div>
+
+<section class="lec" id="s4" data-s="4">
+<div class="lec-head">
+  <div class="num">المجلس الرابع</div>
+  <h2>الدليل على أن «لا إله إلا الله» هي أصل دين الإسلام</h2>
+  <span class="fn">الوظيفة: إثبات دعوى بالأدلة (القرآن ← السنة ← أقوال العلماء)</span>
+</div>
+<div class="where"><b>أين نحن</b>كانت هناك رغبة في الدخول في الغزو الفكري، لكن الشيخ رأى أنه لا بد من الكلام عن أصل الدين أولًا، على أن يذكر بعض الأحداث في أثناء الطريق. وقد قلنا إن الأصل غير الأصول، وذكرنا كلام أهل العلم في ذلك. والآن: ما الدليل على أن أصل الدين هو لا إله إلا الله؟</div>
+<div class="ed-note">الكتابان اللذان أوصى بهما الشيخ للاطلاع على تاريخ الغزو الفكري: «رسالة في الطريق إلى ثقافتنا» لـ<span class="sem-name sem-scholar">محمود شاكر</span> — وقال: ليست آراؤه فيه دائمًا مسلَّمة، لكنه في الجملة جيد — و«حصوننا مهددة من داخلها» لـ<span class="sem-name sem-scholar">محمد محمد حسين</span>. (هذا من كلام الشيخ، وُضع في صندوق لأنه توجيه قراءة لا متن.)</div>
+<div class="fix">ورد اسم الكتاب الأول صوتيًا «رسالة في الطريق لثقفتني»، وصوابه «رسالة في الطريق إلى ثقافتنا».</div>
+
+<h3 id="s4-a">الدعوى وبنية الاستدلال</h3>
+<div class="arg">
+  <div class="claim"><b>الدعوى</b>أصل الدين هو الأصل الكبير الذي لا يكون الإنسان مسلمًا إلا به، وهو شهادة أن لا إله إلا الله وأن محمدًا رسول الله.</div>
+  <div class="grp">
+    <div class="g"><b>الدليل من القرآن</b>آيات الأمر بالعلم بها، واستكبار المشركين عنها، ودعوة الرسل قاطبة إليها.</div>
+    <div class="g"><b>الدليل من السنة</b>«أمرت أن أقاتل الناس»، وحديثا <span class="sem-name sem-sahabi">معاذ</span>، وحديث <span class="sem-name sem-sahabi">معاوية بن حيدة</span>.</div>
+    <div class="g"><b>أقوال العلماء</b><span class="sem-name sem-scholar">ابن تيمية</span>، و<span class="sem-name sem-scholar">ابن القيم</span>، و<span class="sem-name sem-scholar">ابن رجب</span> — «حتى لا تقول إن هذا فهمي أنا».</div>
+  </div>
+</div>
+
+<h3 id="s4-b">الأدلة من القرآن</h3>
+<div class="aya-block"><p><span class="sem-aya">﴿فَاعْلَمْ أَنَّهُ لَا إِلَٰهَ إِلَّا اللَّهُ وَاسْتَغْفِرْ لِذَنبِكَ﴾</span></p><div class="ref">[محمد: 19]</div></div>
+<div class="aya-block"><p><span class="sem-aya">﴿إِنَّهُمْ كَانُوا إِذَا قِيلَ لَهُمْ لَا إِلَٰهَ إِلَّا اللَّهُ يَسْتَكْبِرُونَ﴾</span></p><div class="ref">[الصافات: 35]</div></div>
+<p>خلِّ بالك من مواضع الاستدلال هنا: <strong>هذا كان المناط الذي يدعونهم إليه</strong>؛ كانوا يدعونهم من هنا، لا بطريقة أخرى.</p>
+<div class="aya-block"><p><span class="sem-aya">﴿وَمَا أَرْسَلْنَا مِن قَبْلِكَ مِن رَّسُولٍ إِلَّا نُوحِي إِلَيْهِ أَنَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدُونِ﴾</span></p><div class="ref">[الأنبياء: 25]</div></div>
+<p>هذه دعوة الرسل قاطبة. <strong>وإجماع الرسل هو أقوى الإجماعات</strong>: أجمعوا كلهم على هذه الدعوة.</p>
+<div class="aya-block"><p><span class="sem-aya">﴿لَقَدْ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِ فَقَالَ يَا قَوْمِ اعْبُدُوا اللَّهَ مَا لَكُم مِّنْ إِلَٰهٍ غَيْرُهُ﴾</span></p><div class="ref">[الأعراف: 59]</div></div>
+<p>وهكذا جميع الأنبياء:</p>
+<div class="aya-block"><p><span class="sem-aya">﴿وَإِلَىٰ عَادٍ أَخَاهُمْ هُودًا قَالَ يَا قَوْمِ اعْبُدُوا اللَّهَ مَا لَكُم مِّنْ إِلَٰهٍ غَيْرُهُ﴾</span></p><div class="ref">[الأعراف: 65]</div></div>
+<div class="aya-block"><p><span class="sem-aya">﴿وَإِلَىٰ ثَمُودَ أَخَاهُمْ صَالِحًا قَالَ يَا قَوْمِ اعْبُدُوا اللَّهَ مَا لَكُم مِّنْ إِلَٰهٍ غَيْرُهُ﴾</span></p><div class="ref">[الأعراف: 73]</div></div>
+<div class="key">قوله <span class="sem-aya">﴿اعْبُدُوا اللَّهَ مَا لَكُم مِّنْ إِلَٰهٍ غَيْرُهُ﴾</span> هو تفسير لا إله إلا الله. أما آيات الإيمان بالله والكفر بالطاغوت فستأتي في التعريف؛ والمقصود هنا الدليل على أن هذا هو أصل الدين.</div>
+<div class="quiz" data-q="q4-1"></div>
+
+<h3 id="s4-c">الأدلة من السنة</h3>
+<blockquote class="hadith-block"><p>قال <span class="sem-name sem-sahabi">النبي ﷺ</span>: «أُمرتُ أن أقاتل الناس حتى يقولوا لا إله إلا الله، فإذا قالوها عصموا مني دماءهم وأموالهم إلا بحق الإسلام، وحسابهم على الله».</p><span class="who">متفق عليه</span></blockquote>
+<blockquote class="hadith-block"><p>قال <span class="sem-name sem-sahabi">معاذ</span> رضي الله عنه: قلت: يا رسول الله، أخبرني بعمل يدخلني الجنة ويباعدني عن النار. قال: «لقد سألت عن عظيم، وإنه ليسير على من يسّره الله عليه: تعبد الله لا تشرك به شيئًا، وتقيم الصلاة، وتؤتي الزكاة، وتصوم رمضان، وتحج البيت». ثم قال: «ألا أدلك على أبواب الخير؟ الصوم جُنّة، والصدقة تطفئ الخطيئة كما يطفئ الماء النار...».</p><span class="who">رواه الترمذي وغيره — والحديث طويل</span></blockquote>
+<p>والمقصود منه الجزء الأول: قال له في الأول: <strong>«تعبد الله لا تشرك به شيئًا»</strong>.</p>
+<h4>حديث بعث <span class="sem-name sem-sahabi">معاذ</span> إلى <span class="sem-name">اليمن</span>: ترتيب الدعوة</h4>
+<p>لما أرسل <span class="sem-name sem-sahabi">النبي ﷺ</span> <span class="sem-name sem-sahabi">معاذًا</span> إلى <span class="sem-name">اليمن</span> قال له: «إنك تقدم على قوم أهل كتاب...» (متفق عليه)، وخلِّ بالك من التدرّج:</p>
+<div class="chain">
+  <div class="c"><b>المرحلة الأولى</b>«فليكن أول ما تدعوهم إليه أن يوحّدوا الله» — وفي رواية: «أن يقولوا لا إله إلا الله». هذه أول الدعوة، وهي أصل الدعوة.</div>
+  <div class="ar">↓</div>
+  <div class="c"><b>الشرط</b>«فإن هم أجابوك لذلك...»</div>
+  <div class="ar">↓</div>
+  <div class="c"><b>المرحلة الثانية</b>«...فأعلمهم أن الله قد فرض عليهم خمس صلوات في كل يوم».</div>
+</div>
+<div class="key">إن أجابوا يصلح أن نقول لهم: صلّوا. أما لو لم يجب في لا إله إلا الله فلم ينعقد له حكم الإسلام. ولهذا نقول: هذا هو أصل الدين.</div>
+<p>وقال الشيخ: ومشكلتنا الآن يا إخوة في الكلام على أصل الدين، كما سيبيّنه، نسأل الله العافية.</p>
+<div class="quiz" data-q="q4-2"></div>
+<div class="story"><div class="st">حديث <span class="sem-name sem-sahabi">معاوية بن حيدة</span> رضي الله عنه</div>
+<p>قال <span class="sem-name sem-sahabi">معاوية بن حيدة</span> ل<span class="sem-name sem-sahabi">رسول الله ﷺ</span>: يا نبي الله، ما أتيتك حتى حلفتُ أكثر من عدد أصابع يدي ألّا آتيك ولا آتي دينك، وإني كنت امرأً لا أعقل شيئًا إلا ما علّمني الله ورسوله، وإني أسألك بوحي الله: بمَ بعثك ربك إلينا؟ قال: «بالإسلام». قلت: وما آيات الإسلام؟ قال: «أن تقول: أسلمتُ وجهي إلى الله وتخلّيت...».</p></div>
+<div class="evid">
+  <div class="er"><div class="el">الدليل</div><div class="ev">«أن تقول: أسلمتُ وجهي إلى الله وتخلّيت».</div></div>
+  <div class="er"><div class="el">موضعه</div><div class="ev">رواه أحمد والنسائي</div></div>
+  <div class="er"><div class="el">وجه الدلالة</div><div class="ev">«تخلّيت» يعني تخلّيت عن الشريك؛ فالإسلام لا يصلح إلا بعبادة الله والكفر بكل ما يُعبد من دون الله. أما عبادة الله وحده مع الإقرار لشيء معه فلا تنفع.</div></div>
+</div>
+<p>ولذلك هي قضية <span class="sem-aya">﴿أَفَتُؤْمِنُونَ بِبَعْضِ الْكِتَابِ وَتَكْفُرُونَ بِبَعْضٍ﴾</span> التي ستأتي إن شاء الله.</p>
+<div class="quiz" data-q="q4-3"></div>
+
+<h3 id="s4-d">أقوال العلماء: «حتى لا تقول هذا فهمي»</h3>
+<p>قال الشيخ: ركّز معي، أنا آخذها نقطة نقطة: قلنا إن أصل الدين غير أصول الدين، واستدللنا أن أصل الدين هو لا إله إلا الله وحدها. ما دليله؟ طائفة من الآيات، وطائفة من الأحاديث، وكلام أهل العلم، حتى لا تقول إن هذا فهمي أنا، بل هو فهم أهل العلم. ومن ذلك كتاب «اقتضاء الصراط المستقيم مخالفة أصحاب الجحيم» لـ<span class="sem-name sem-scholar">ابن تيمية</span> — وأوصى به في قضية الولاء والبراء:</p>
+<blockquote class="naql"><p>«فالله تعالى مستحق أن نعبده ولا نشرك به شيئًا، وهذا أصل التوحيد الذي بُعثت به الرسل».</p><span class="who"><span class="sem-name sem-scholar">ابن تيمية</span> — «اقتضاء الصراط المستقيم»</span></blockquote>
+<blockquote class="naql"><p>«وهذان الأصلان هما تحقيق الشهادتين اللتين هما رأس الإسلام... فإذا كان بعض الدين لله وبعضه لغير الله، كان في ذلك من الشرك بحسب ذلك».</p><span class="who"><span class="sem-name sem-scholar">ابن تيمية</span> — «اقتضاء الصراط المستقيم»</span></blockquote>
+<p>وقال رحمه الله عن المشركين إنهم أقرّوا بتوحيد الربوبية، وأقرّوا أن الله خالق كل شيء وأنه قدّر كل شيء، ومع ذلك:</p>
+<blockquote class="naql"><p>«وإذا أقرّوا بذلك كله لم يخرجوا من الشرك الذي وصفهم الله به وقاتلهم عليه <span class="sem-name sem-sahabi">النبي ﷺ</span>، بل لا بد أن يعترفوا أنه لا إله إلا الله... والإله الحق هو الذي يستحق أن يُعبد، فهو إله بمعنى مألوه، والتوحيد أن يُعبد الله وحده لا شريك له، والإشراك أن يُجعل مع الله إلهًا آخر».</p><span class="who"><span class="sem-name sem-scholar">ابن تيمية</span></span></blockquote>
+<div class="cmp">
+  <div class="cap">ما يدل عليه النقل السابق</div>
+  <div class="r h"><div class="k">المعيار</div><div>ما لا يكفي وحده</div><div>ما لا بد منه</div></div>
+  <div class="r"><div class="k">الإقرار</div><div>الإقرار بالربوبية: أن الله خالق كل شيء ومقدّر كل شيء — ولم يُخرج المشركين من الشرك.</div><div>الاعتراف بأنه لا إله إلا الله: أن يُعبد الله وحده.</div></div>
+  <div class="r"><div class="k">تعريف التوحيد</div><div>لم يقل: التوحيد أن تُثبت الصفات — مع أن هذا من التوحيد.</div><div>التوحيد أن يُعبد الله وحده لا شريك له؛ والإشراك أن يُجعل معه إله آخر.</div></div>
+</div>
+<p>ولهذا لما تكلم العلماء عن الفرق التي تأوّلت ووقع بينهم الخلاف — فسّقت، كفّرت... — لماذا لم يُخرجوهم؟ قال <span class="sem-name sem-scholar">القاضي عياض</span> في «الشفا» وغيره: <strong>معهم أصل الدين</strong>، أي معهم لا إله إلا الله: عبادة الله وحده بلا شريك.</p>
+<blockquote class="naql"><p>«فهنا أصل عظيم على المسلم أن يعرفه؛ فإنه أصل الإسلام الذي يتميز به أهل الإيمان من أهل الكفر، وهو الإيمان بالوحدانية... شهادة أن لا إله إلا الله وأن محمدًا رسول الله، فلا يستحق العبادة إلا هو».</p><span class="who"><span class="sem-name sem-scholar">ابن تيمية</span> — «التدمرية» (وقال الشيخ: عقيدة متخصصة شيئًا ما، فيها ردّ دقيق جدًا ولطائف عظيمة)</span></blockquote>
+<blockquote class="naql"><p>«أصل الدين: شهادة أن لا إله إلا الله، وشهادة أن محمدًا رسول الله».</p><span class="who"><span class="sem-name sem-scholar">ابن تيمية</span> — «مجموع الفتاوى»</span></blockquote>
+<blockquote class="naql"><p>«والإسلام هو توحيد الله وعبادته وحده لا شريك له، والإيمان بالله وبرسوله واتباعه فيما جاء به؛ فمتى لم يأتِ العبد بهذا فليس بمسلم».</p><span class="who"><span class="sem-name sem-scholar">ابن القيم</span> — «طريق الهجرتين»</span></blockquote>
+<div class="quiz" data-q="q4-4"></div>
+
+<h3 id="s4-e">نقولات <span class="sem-name sem-scholar">ابن رجب</span> في «جامع العلوم والحكم»</h3>
+<p>و«جامع العلوم والحكم» شرح خمسين حديثًا: الأربعين النووية وزاد عليها <span class="sem-name sem-scholar">ابن رجب</span> عشرة. وتمنّى الشيخ أن يقتنيه الإخوة ويثبّتوا منه هذه المواضع.</p>
+<blockquote class="naql"><p>«وهذا هو حقيقة التوحيد، وهو معنى قول لا إله إلا الله؛ فلا صلاح للقلوب حتى يكون إلهُها الذي تعرفه وتحبه وتخشاه هو إله واحد لا شريك له».</p><span class="who"><span class="sem-name sem-scholar">ابن رجب</span> — شرح حديث «إن الحلال بيّن وإن الحرام بيّن»</span></blockquote>
+<blockquote class="naql"><p>«فإن كلمتي الشهادتين بمجرّدهما تعصم من أتى بهما، ويصير بذلك مسلمًا».</p><span class="who"><span class="sem-name sem-scholar">ابن رجب</span> — شرح حديث «أمرت أن أقاتل الناس» (في الصحيحين)</span></blockquote>
+<blockquote class="naql"><p>«وقد عُلم بالضرورة أن <span class="sem-name sem-sahabi">النبي ﷺ</span> كان يقبل من كل من جاءه يريد الدخول في الإسلام الشهادتين فقط، ويعصم دمه بذلك ويجعله مسلمًا».</p><span class="who"><span class="sem-name sem-scholar">ابن رجب</span> — شرح الحديث نفسه</span></blockquote>
+<blockquote class="naql"><p>«فأما رأس الأمر، فيعني بالأمر: الدين الذي بُعث به، وهو الإسلام، وقد جاء تفسيره في رواية أخرى بالشهادتين؛ فمن لم يقرّ بهما ظاهرًا وباطنًا فليس من الإسلام في شيء».</p><span class="who"><span class="sem-name sem-scholar">ابن رجب</span> — شرح حديث <span class="sem-name sem-sahabi">معاذ</span></span></blockquote>
+<div class="cmp">
+  <div class="cap">الإقرار بالشهادتين ظاهرًا وباطنًا</div>
+  <div class="r h"><div class="k">الحال</div><div>أقرّ ظاهرًا لا باطنًا (المنافقون)</div><div>أبطن الدين ولم يُظهره</div></div>
+  <div class="r"><div class="k">الحكم</div><div>كانوا يقولون للنبي ﷺ: إنك رسول الله، وفي داخلهم يكفرون به؛ فلم ينفعهم ذلك في حقيقة الأمر، لكن نفعهم أنهم يُعصمون بالظاهر، لأن لنا الظاهر بالإجماع؛ ويُبعث أحدهم بين يدي الله كافرًا في باطنه.</div><div>له أحكام أخرى في مسائل الإكراه والخوف.</div></div>
+</div>
+<div class="warn">التكرار مقصود: الشيخ يكرر حتى يتقرر أن أصل الدين هو لا إله إلا الله، فيُعرف الفرق بين أصل الدين وأصول الدين، حتى لا يأتي أحد بمقالات <span class="sem-name sem-scholar">ابن تيمية</span> في الفرق — أنهم معذورون مجتهدون — فيُنزلها على أصل الدين.</div>
+<div class="quiz" data-q="q4-5"></div>
+
+<div class="takeaway"><div class="tt">خلاصة المجلس الرابع <small>(إضافة تحريرية)</small></div>
+<div class="score" data-s="s4"></div>
+<div class="tk-i">أصل الدين: الشهادتان؛ لا يكون الإنسان مسلمًا إلا بهما.</div>
+<div class="tk-i">من القرآن: هي ما استكبر عنه المشركون، وما أجمع عليه الرسل — وإجماع الرسل أقوى الإجماعات.</div>
+<div class="tk-i">من السنة: بها يُعصم الدم، وهي أول الدعوة قبل الصلاة، والإسلام: «أسلمت وجهي إلى الله وتخلّيت» عن الشريك.</div>
+<div class="tk-i">الإقرار بالربوبية وحده لم يُخرج المشركين من الشرك؛ والإله بمعنى المألوه المعبود.</div>
+<div class="tk-i">من لم يقرّ بالشهادتين ظاهرًا وباطنًا فليس من الإسلام في شيء، والمنافق يُعصم بالظاهر فقط.</div>
+</div>
+<div class="next"><b>الخيط التالي</b>عرفنا ما أصل الدين؛ فما معنى الشهادة؟ هذا ما سننزل عليه في لقاء آخر إن شاء الله.</div>
+</section>
+
+
+<div id="cards"><h2>بطاقات المراجعة — المحاضرة 04</h2><div class="score">تُراجَع بعد يومين من القراءة. التصدير: TSV بمعرّف ثابت (GUID) لكل بطاقة، وتاج المحاضرة وتاج المستوى، لنوع الملاحظة «أساسي» مع anki/final.css.</div><div class="cstage"><div class="cbox" id="cbox"></div></div><div class="cnav"><button type="button" id="cprev">→ السابقة</button><span class="pos" id="cpos"></span><button type="button" id="cnext">التالية ←</button><button type="button" class="dl" id="cdl" data-name="العروة_الوثقى_م04_بطاقات.tsv">تحميل بطاقات المحاضرة (TSV)</button></div></div>
+</main>
+</div>
+<nav class="lnav"><a href="03.html">→ المحاضرة 03</a><a class="home" href="index.html">فهرس السلسلة</a><a href="05.html">المحاضرة 05 ←</a></nav>
+<footer>العروة الوثقى — المحاضرة 04 · أُعدّ بمساعدة الذكاء الاصطناعي ويُرجى مراجعته</footer>
+<script>
+const NAMES={"sahabi": ["النبي ﷺ", "رسول الله ﷺ", "يعقوب", "إسحاق", "إبراهيم", "إسماعيل", "يوسف", "نوح", "هود", "عبد الله بن سلام", "حذيفة بن اليمان", "حذيفة", "معاذ بن جبل", "معاذ", "معاوية بن حيدة", "أبو هريرة", "أبي هريرة", "أبا هريرة", "أبو ذر", "أبي ذر", "أبا ذر", "عبد الله بن مسعود", "ابن مسعود", "عثمان", "سيدنا علي", "أبي بكر وعمر", "أبا بكر وعمر"], "scholar": ["ابن كثير", "ابن القيم", "ابن رجب", "شيخ الإسلام ابن تيمية", "ابن تيمية", "أبو المعالي الجويني", "الجويني", "المارديني", "عبيد الله بن الحسن العنبري", "القاضي عياض", "الشوكاني", "الشافعي", "النووي", "القرطبي", "أبو بكر بن العربي", "ابن حجر العسقلاني", "البخاري", "الإمام أحمد", "ابن مفلح", "القرافي", "العز بن عبد السلام", "الشاطبي", "ابن أبي عاصم", "الطحاوي", "أبو إسماعيل الهروي", "الهروي", "ابن الزملكاني", "ابن مخلوف", "صفي الدين الهندي", "ابن الوكيل", "سليمان بن سحمان", "محمود شاكر", "محمد محمد حسين", "محمد حامد الفقي"], "name": ["جان دولومو", "غريس ديفي", "محمد علي", "نابليون", "كليبر", "عمر مكرم", "عبد الله الشرقاوي", "نور الدين زنكي", "نور الدين", "صلاح الدين", "كافور الإخشيدي", "المتنبي", "رفاعة الطهطاوي", "محمد عبده", "جمال الدين الأفغاني", "قاسم أمين", "سعد زغلول", "صفية زغلول", "هدى شعراوي", "طه حسين", "عبد الحميد الأول", "السيد البدوي", "مصر", "تونس", "العراق", "باكستان", "لبنان", "تركيا", "باريس", "فرنسا", "اليمن"]};
+const CARDS_DATA=[{"id": "c069", "sectionId": "s4", "level": 6, "anchor": "كتابان أُوصي بهما للاطلاع على تاريخ الغزو الفكري — ما هما ومن مؤلفاهما", "pattern": "calm", "q": "كتابان أُوصي بهما للاطلاع على تاريخ الغزو الفكري — ما هما ومن مؤلفاهما؟", "a": "«رسالة في الطريق إلى ثقافتنا» لمحمود شاكر، وليست آراؤه فيه دائمًا مسلّمة لكنه في الجملة جيد. و«حصوننا مهددة من داخلها» لمحمد محمد حسين.", "blocks": [{"type": "steps", "seq": false, "items": [{"s": "«رسالة في", "e": "الجملة جيد."}, {"s": "و«حصوننا مهددة", "e": "محمد حسين."}]}], "marks": [], "review": ""}, {"id": "c070", "sectionId": "s4", "level": 1, "anchor": "ما أصل دين الإسلام الذي لا يكون الإنسان مسلمًا إلا به، وبأي أنواع الأد", "pattern": "calm", "q": "ما أصل دين الإسلام الذي لا يكون الإنسان مسلمًا إلا به، وبأي أنواع الأدلة يُثبَت؟", "a": "شهادة أن لا إله إلا الله وأن محمدًا رسول الله. ويُثبَت بآيات من القرآن، وأحاديث من السنة، وأقوال أهل العلم، حتى لا يُقال إنه فهم شخصي.", "blocks": [{"type": "def", "s": "شهادة أن", "e": "رسول الله."}, {"type": "ans", "s": "ويُثبَت بآيات", "e": "فهم شخصي."}], "marks": [], "review": ""}, {"id": "c071", "sectionId": "s4", "level": 3, "anchor": "﴿فَاعْلَمْ أَنَّهُ لَا إِلَٰهَ إِلَّا اللَّهُ وَاسْتَغْفِرْ لِذَنبِكَ﴾", "pattern": "quran", "q": "﴿فَاعْلَمْ أَنَّهُ لَا إِلَٰهَ إِلَّا اللَّهُ وَاسْتَغْفِرْ لِذَنبِكَ﴾ [محمد: 19]\nبمَ تتصدّر هذه الآية أدلة أن الشهادة أصل الدين؟", "a": "بأن الله أمر بالعلم بأنه لا إله إلا الله قبل الأمر بالاستغفار، فهي أول ما يُطلب علمه.", "blocks": [{"type": "ans", "s": "بأن الله", "e": "يُطلب علمه."}], "marks": [], "review": ""}, {"id": "c072", "sectionId": "s4", "level": 1, "anchor": "﴿إِنَّهُمْ كَانُوا إِذَا قِيلَ لَهُمْ لَا إِلَٰهَ إِلَّا اللَّهُ يَسْت", "pattern": "quran", "q": "﴿إِنَّهُمْ كَانُوا إِذَا قِيلَ لَهُمْ لَا إِلَٰهَ إِلَّا اللَّهُ يَسْتَكْبِرُونَ﴾ [الصافات: 35]\nما وجه الاستدلال بها على أن لا إله إلا الله أصل الدين؟", "a": "أن هذه الكلمة كانت المناط الذي دُعي إليه المشركون، فكانت الدعوة تبدأ من هنا لا بطريقة أخرى.", "blocks": [{"type": "wajh", "s": "أن هذه", "e": "بطريقة أخرى."}], "marks": [], "review": ""}, {"id": "c073", "sectionId": "s4", "level": 1, "anchor": "﴿وَمَا أَرْسَلْنَا مِن قَبْلِكَ مِن رَّسُولٍ إِلَّا نُوحِي إِلَيْهِ أَ", "pattern": "quran", "q": "﴿وَمَا أَرْسَلْنَا مِن قَبْلِكَ مِن رَّسُولٍ إِلَّا نُوحِي إِلَيْهِ أَنَّهُ لَا إِلَٰهَ إِلَّا أَنَا فَاعْبُدُونِ﴾ [الأنبياء: 25]\nما وجه الاستدلال بها، وما منزلة الإجماع الذي تدل عليه؟", "a": "هذه دعوة الرسل قاطبة؛ أجمعوا كلهم على هذه الدعوة. وإجماع الرسل هو أقوى الإجماعات.", "blocks": [{"type": "ans", "s": "هذه دعوة", "e": "هذه الدعوة."}, {"type": "wajh", "s": "وإجماع الرسل", "e": "أقوى الإجماعات."}], "marks": [], "review": ""}, {"id": "c074", "sectionId": "s4", "level": 2, "anchor": "﴿لَقَدْ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِ فَقَالَ يَا قَوْمِ اعْبُدُو", "pattern": "quran", "q": "﴿لَقَدْ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِ فَقَالَ يَا قَوْمِ اعْبُدُوا اللَّهَ مَا لَكُم مِّنْ إِلَٰهٍ غَيْرُهُ﴾ [الأعراف: 59]\nما علاقة قول نوح هذا بكلمة لا إله إلا الله؟", "a": "هو تفسير لا إله إلا الله: إثبات العبادة لله ونفي كل إله غيره.", "blocks": [{"type": "ans", "s": "هو تفسير", "e": "إله غيره."}], "marks": [], "review": ""}, {"id": "c075", "sectionId": "s4", "level": 3, "anchor": "﴿وَإِلَىٰ عَادٍ أَخَاهُمْ هُودًا قَالَ يَا قَوْمِ اعْبُدُوا اللَّهَ مَ", "pattern": "quran", "q": "﴿وَإِلَىٰ عَادٍ أَخَاهُمْ هُودًا قَالَ يَا قَوْمِ اعْبُدُوا اللَّهَ مَا لَكُم مِّنْ إِلَٰهٍ غَيْرُهُ﴾ [الأعراف: 65]\nما الذي يدل عليه تكرار عبارة نوح نفسها على لسان هود؟", "a": "أن جميع الأنبياء دعوا إلى الأصل نفسه، فهي دعوة واحدة متكررة على ألسنة الرسل.", "blocks": [{"type": "ans", "s": "أن جميع", "e": "ألسنة الرسل."}], "marks": [], "review": ""}, {"id": "c076", "sectionId": "s4", "level": 3, "anchor": "﴿وَإِلَىٰ ثَمُودَ أَخَاهُمْ صَالِحًا قَالَ يَا قَوْمِ اعْبُدُوا اللَّه", "pattern": "quran", "q": "﴿وَإِلَىٰ ثَمُودَ أَخَاهُمْ صَالِحًا قَالَ يَا قَوْمِ اعْبُدُوا اللَّهَ مَا لَكُم مِّنْ إِلَٰهٍ غَيْرُهُ﴾ [الأعراف: 73]\nما الشاهد من دعوة صالح لثمود في إثبات أصل الدين؟", "a": "أن صالحًا افتتح دعوته بما افتتح به نوح وهود: عبادة الله وحده ونفي الإله غيره، وهذا معنى لا إله إلا الله.", "blocks": [{"type": "ans", "s": "أن صالحًا", "e": "إلا الله."}], "marks": [], "review": ""}, {"id": "c077", "sectionId": "s4", "level": 1, "anchor": "«أُمرتُ أن أقاتل الناس حتى يقولوا لا إله إلا الله، فإذا قالوها عصموا م", "pattern": "quran", "q": "«أُمرتُ أن أقاتل الناس حتى يقولوا لا إله إلا الله، فإذا قالوها عصموا مني دماءهم وأموالهم إلا بحق الإسلام، وحسابهم على الله»\nما دلالة الحديث على أصل الدين؟", "a": "أن قول لا إله إلا الله هو الذي يعصم الدم والمال ويُدخل في الإسلام، فهو الأصل الذي تنعقد به أحكام الإسلام.", "blocks": [{"type": "ans", "s": "أن قول", "e": "أحكام الإسلام."}], "marks": [{"t": "hadith", "w": "«أُمرتُ أن أقاتل الناس حتى يقولوا لا إله إلا الله، فإذا قالوها عصموا مني دماءهم وأموالهم إلا بحق الإسلام، وحسابهم على الله»"}], "review": ""}, {"id": "c078", "sectionId": "s4", "level": 2, "anchor": "سأل معاذ: «أخبرني بعمل يدخلني الجنة ويباعدني عن النار»، فقال ﷺ: «لقد س", "pattern": "quran", "q": "سأل معاذ: «أخبرني بعمل يدخلني الجنة ويباعدني عن النار»، فقال ﷺ: «لقد سألت عن عظيم، وإنه ليسير على من يسّره الله عليه: تعبد الله لا تشرك به شيئًا...»\nما الشاهد من ترتيب الجواب، وما الذي ذكره بعده من أبواب الخير؟", "a": "بدأ بعبادة الله وحده لا شريك له قبل الصلاة والزكاة والصوم والحج، فهي الأصل. ثم دلّه على أبواب الخير: «الصوم جُنّة، والصدقة تطفئ الخطيئة كما يطفئ الماء النار».", "blocks": [{"type": "ans", "s": "بدأ بعبادة", "e": "فهي الأصل."}, {"type": "wajh", "s": "ثم دلّه", "e": "الماء النار»."}], "marks": [{"t": "hadith", "w": "«أخبرني بعمل يدخلني الجنة ويباعدني عن النار»"}, {"t": "hadith", "w": "«لقد سألت عن عظيم، وإنه ليسير على من يسّره الله عليه: تعبد الله لا تشرك به شيئًا...»"}, {"t": "hadith", "w": "«الصوم جُنّة، والصدقة تطفئ الخطيئة كما يطفئ الماء النار»"}], "review": ""}, {"id": "c079", "sectionId": "s4", "level": 1, "anchor": "حديث بعث معاذ إلى اليمن: «إنك تقدم على قوم أهل كتاب...» — ما ترتيب الد", "pattern": "method", "q": "حديث بعث معاذ إلى اليمن: «إنك تقدم على قوم أهل كتاب...» — ما ترتيب الدعوة فيه، وما الحكم المستفاد من هذا الترتيب؟", "a": "الأولى: «فليكن أول ما تدعوهم إليه أن يوحّدوا الله»، وفي رواية: «أن يقولوا لا إله إلا الله». ثم الشرط: «فإن هم أجابوك لذلك فأعلمهم أن الله قد فرض عليهم خمس صلوات في كل يوم». من لم يُجب في لا إله إلا الله لم ينعقد له حكم الإسلام، فلا يُخاطَب بالصلاة قبلها.", "blocks": [{"type": "steps", "seq": true, "items": [{"s": "الأولى:", "e": "الأولى:", "ds": "«فليكن أول", "de": "إلا الله»."}, {"s": "ثم الشرط:", "e": "ثم الشرط:", "ds": "«فإن هم", "de": "كل يوم»."}]}, {"type": "ruling", "s": "من لم", "e": "بالصلاة قبلها."}], "marks": [{"t": "hadith", "w": "«إنك تقدم على قوم أهل كتاب...»"}, {"t": "hadith", "w": "«فليكن أول ما تدعوهم إليه أن يوحّدوا الله»"}, {"t": "hadith", "w": "«أن يقولوا لا إله إلا الله»"}, {"t": "hadith", "w": "«فإن هم أجابوك لذلك فأعلمهم أن الله قد فرض عليهم خمس صلوات في كل يوم»"}], "review": ""}, {"id": "c080", "sectionId": "s4", "level": 2, "anchor": "حديث معاوية بن حيدة: «أن تقول: أسلمتُ وجهي إلى الله وتخلّيت»", "pattern": "quran", "q": "حديث معاوية بن حيدة: «أن تقول: أسلمتُ وجهي إلى الله وتخلّيت»\nما معنى «وتخلّيت»، وما القاعدة المستفادة منه؟", "a": "تخلّيت عن الشريك. الإسلام لا يصلح إلا بعبادة الله والكفر بكل ما يُعبد من دونه؛ أما عبادة الله مع الإقرار لشيء معه فلا تنفع.", "blocks": [{"type": "ans", "s": "تخلّيت عن", "e": "عن الشريك."}, {"type": "rule", "s": "الإسلام لا", "e": "فلا تنفع."}], "marks": [{"t": "hadith", "w": "«أن تقول: أسلمتُ وجهي إلى الله وتخلّيت»"}, {"t": "hadith", "w": "«وتخلّيت»"}], "review": ""}, {"id": "c081", "sectionId": "s4", "level": 5, "anchor": "معاوية بن حيدة رضي الله عنه — ما الذي قاله للنبي ﷺ قبل أن يسأله عمّا ب", "pattern": "calm", "q": "معاوية بن حيدة رضي الله عنه — ما الذي قاله للنبي ﷺ قبل أن يسأله عمّا بُعث به؟", "a": "قال: ما أتيتك حتى حلفت أكثر من عدد أصابع يدي ألا آتيك ولا آتي دينك، وإني كنت امرأً لا أعقل شيئًا إلا ما علّمني الله ورسوله، وسأله بوحي الله: بمَ بعثك ربك إلينا؟ فقال: بالإسلام.", "blocks": [{"type": "ans", "s": "قال: ما", "e": "فقال: بالإسلام."}], "marks": [], "review": ""}, {"id": "c082", "sectionId": "s4", "level": 2, "anchor": "قال ابن تيمية في «اقتضاء الصراط المستقيم»: «فالله تعالى مستحق أن نعبده", "pattern": "calm", "q": "قال ابن تيمية في «اقتضاء الصراط المستقيم»: «فالله تعالى مستحق أن نعبده ولا نشرك به شيئًا...» — بمَ ختم العبارة؟ ولماذا أُوصي بالكتاب؟", "a": "«وهذا أصل التوحيد الذي بُعثت به الرسل». وأُوصي به في قضية الولاء والبراء.", "blocks": [{"type": "ans", "s": "«وهذا أصل", "e": "به الرسل»."}, {"type": "wajh", "s": "وأُوصي به", "e": "الولاء والبراء."}], "marks": [], "review": ""}, {"id": "c083", "sectionId": "s4", "level": 2, "anchor": "قال ابن تيمية: «فإذا كان بعض الدين لله وبعضه لغير الله...» — ما حكم ذل", "pattern": "method", "q": "قال ابن تيمية: «فإذا كان بعض الدين لله وبعضه لغير الله...» — ما حكم ذلك، وما الأصلان اللذان جعلهما تحقيق الشهادتين؟", "a": "كان في ذلك من الشرك بحسب ذلك. والأصلان هما تحقيق الشهادتين اللتين هما رأس الإسلام.", "blocks": [{"type": "rule", "s": "كان في", "e": "بحسب ذلك."}, {"type": "ans", "s": "والأصلان هما", "e": "رأس الإسلام."}], "marks": [], "review": ""}, {"id": "c084", "sectionId": "s4", "level": 1, "anchor": "أقرّ مشركو العرب أن الله خالق كل شيء ومقدّر كل شيء — لماذا لم يُخرجهم ", "pattern": "compare", "q": "أقرّ مشركو العرب أن الله خالق كل شيء ومقدّر كل شيء — لماذا لم يُخرجهم ذلك من الشرك على ما قرّره ابن تيمية؟", "a": "الإقرار بالربوبية وحده لم يُخرجهم من الشرك الذي وصفهم الله به وقاتلهم عليه النبي ﷺ. بل لا بد أن يعترفوا أنه لا إله إلا الله: أن الإله الحق هو الذي يستحق أن يُعبد.", "blocks": [{"type": "cols", "parts": [{"s": "الإقرار بالربوبية", "e": "النبي ﷺ."}, {"s": "بل لا", "e": "أن يُعبد."}]}], "marks": [], "review": ""}, {"id": "c085", "sectionId": "s4", "level": 1, "anchor": "على تقرير ابن تيمية: ما معنى «الإله»، وما تعريف التوحيد والإشراك؟", "pattern": "calm", "q": "على تقرير ابن تيمية: ما معنى «الإله»، وما تعريف التوحيد والإشراك؟", "a": "الإله الحق هو الذي يستحق أن يُعبد، فهو إله بمعنى مألوه. والتوحيد أن يُعبد الله وحده لا شريك له، والإشراك أن يُجعل مع الله إلهًا آخر.", "blocks": [{"type": "def", "s": "الإله الحق", "e": "بمعنى مألوه."}, {"type": "ans", "s": "والتوحيد أن", "e": "إلهًا آخر."}], "marks": [], "review": ""}, {"id": "c086", "sectionId": "s4", "level": 2, "anchor": "هل التوحيد الذي هو أصل الدين هو إثبات الصفات؟ وما صلة ذلك بالحكم على ا", "pattern": "compare", "q": "هل التوحيد الذي هو أصل الدين هو إثبات الصفات؟ وما صلة ذلك بالحكم على الفرق المتأوّلة؟", "a": "لم يُعرَّف التوحيد بأنه إثبات الصفات، مع أن إثباتها من التوحيد. بل التوحيد الذي هو أصل الدين أن يُعبد الله وحده؛ ولذلك قيل في الفرق المتأوّلة: معهم أصل الدين.", "blocks": [{"type": "cols", "parts": [{"s": "لم يُعرَّف", "e": "من التوحيد."}, {"s": "بل التوحيد", "e": "أصل الدين."}]}], "marks": [], "review": ""}, {"id": "c087", "sectionId": "s4", "level": 2, "anchor": "قال ابن تيمية في «التدمرية»: «فهنا أصل عظيم على المسلم أن يعرفه» — ما ", "pattern": "calm", "q": "قال ابن تيمية في «التدمرية»: «فهنا أصل عظيم على المسلم أن يعرفه» — ما هذا الأصل، وبمَ يتميز؟", "a": "أصل الإسلام الذي يتميز به أهل الإيمان من أهل الكفر: الإيمان بالوحدانية، شهادة أن لا إله إلا الله وأن محمدًا رسول الله، فلا يستحق العبادة إلا هو.", "blocks": [{"type": "ans", "s": "أصل الإسلام", "e": "إلا هو."}], "marks": [], "review": ""}, {"id": "c088", "sectionId": "s4", "level": 2, "anchor": "ما نص ابن تيمية في «مجموع الفتاوى» في تحديد أصل الدين؟", "pattern": "calm", "q": "ما نص ابن تيمية في «مجموع الفتاوى» في تحديد أصل الدين؟", "a": "«أصل الدين: شهادة أن لا إله إلا الله، وشهادة أن محمدًا رسول الله».", "blocks": [{"type": "def", "s": "«أصل الدين:", "e": "رسول الله»."}], "marks": [], "review": ""}, {"id": "c089", "sectionId": "s4", "level": 2, "anchor": "عرّف ابن القيم الإسلام في «طريق الهجرتين» — ما تعريفه، وما حكم من لم ي", "pattern": "calm", "q": "عرّف ابن القيم الإسلام في «طريق الهجرتين» — ما تعريفه، وما حكم من لم يأتِ به؟", "a": "الإسلام هو توحيد الله وعبادته وحده لا شريك له، والإيمان بالله وبرسوله واتباعه فيما جاء به. فمتى لم يأتِ العبد بهذا فليس بمسلم.", "blocks": [{"type": "def", "s": "الإسلام هو", "e": "جاء به."}, {"type": "ruling", "s": "فمتى لم", "e": "فليس بمسلم."}], "marks": [], "review": ""}, {"id": "c090", "sectionId": "s4", "level": 2, "anchor": "قال ابن رجب في شرح حديث «إن الحلال بيّن وإن الحرام بيّن»: «وهذا هو حقي", "pattern": "calm", "q": "قال ابن رجب في شرح حديث «إن الحلال بيّن وإن الحرام بيّن»: «وهذا هو حقيقة التوحيد، وهو معنى قول لا إله إلا الله» — فما الذي لا تصلح القلوب إلا به؟", "a": "لا صلاح للقلوب حتى يكون إلهها الذي تعرفه وتحبه وتخشاه إلهًا واحدًا لا شريك له.", "blocks": [{"type": "ans", "s": "لا صلاح", "e": "شريك له."}], "marks": [], "review": ""}, {"id": "c091", "sectionId": "s4", "level": 2, "anchor": "قال ابن رجب في شرح «أمرت أن أقاتل الناس»: «فإن كلمتي الشهادتين بمجرّده", "pattern": "calm", "q": "قال ابن رجب في شرح «أمرت أن أقاتل الناس»: «فإن كلمتي الشهادتين بمجرّدهما...» — ما تمام العبارة، وما الذي عُلم بالضرورة من فعل النبي ﷺ؟", "a": "«تعصم من أتى بهما، ويصير بذلك مسلمًا». وعُلم بالضرورة أنه ﷺ كان يقبل ممن جاءه يريد الإسلام الشهادتين فقط ويعصم دمه بذلك ويجعله مسلمًا، بلا شرط آخر.", "blocks": [{"type": "ans", "s": "«تعصم من", "e": "بذلك مسلمًا»."}, {"type": "wajh", "s": "وعُلم بالضرورة", "e": "شرط آخر."}], "marks": [], "review": ""}, {"id": "c092", "sectionId": "s4", "level": 1, "anchor": "«رأس الأمر» في حديث معاذ — بمَ فسّره ابن رجب، وما حكم من لم يقرّ بالشه", "pattern": "method", "q": "«رأس الأمر» في حديث معاذ — بمَ فسّره ابن رجب، وما حكم من لم يقرّ بالشهادتين ظاهرًا وباطنًا؟", "a": "الأمر هو الدين الذي بُعث به النبي ﷺ وهو الإسلام، وجاء تفسيره بالشهادتين. فمن لم يقرّ بهما ظاهرًا وباطنًا فليس من الإسلام في شيء.", "blocks": [{"type": "ans", "s": "الأمر هو", "e": "تفسيره بالشهادتين."}, {"type": "ruling", "s": "فمن لم", "e": "في شيء."}], "marks": [], "review": ""}, {"id": "c093", "sectionId": "s4", "level": 2, "anchor": "من أقرّ بالشهادتين ظاهرًا لا باطنًا كالمنافقين، ومن أبطن الدين ولم يُظ", "pattern": "compare", "q": "من أقرّ بالشهادتين ظاهرًا لا باطنًا كالمنافقين، ومن أبطن الدين ولم يُظهره — ما حكم كلٍّ منهما؟", "a": "المنافق يُعصم بالظاهر لأن لنا الظاهر بالإجماع، لكنه يُبعث بين يدي الله كافرًا في باطنه. ومن أبطن الدين ولم يُظهره فله أحكام أخرى في مسائل الإكراه والخوف.", "blocks": [{"type": "cols", "parts": [{"s": "المنافق يُعصم", "e": "في باطنه."}, {"s": "ومن أبطن", "e": "الإكراه والخوف."}]}], "marks": [], "review": ""}, {"id": "c094", "sectionId": "s4", "level": 3, "anchor": "لماذا يُلحّ على تقرير أن أصل الدين هو لا إله إلا الله وحدها، والتفريق ", "pattern": "method", "q": "لماذا يُلحّ على تقرير أن أصل الدين هو لا إله إلا الله وحدها، والتفريق بينه وبين أصول الدين؟", "a": "حتى لا يأتي أحد بمقالات ابن تيمية في الفرق — أنهم معذورون مجتهدون — فيُنزلها على أصل الدين. نقل حكم الخطأ في المسائل الخفية من أصول الدين إلى نقض أصل الدين نفسه.", "blocks": [{"type": "ans", "s": "حتى لا", "e": "أصل الدين."}, {"type": "err", "s": "نقل حكم", "e": "الدين نفسه."}], "marks": [], "review": ""}];
+const QUIZ_DATA=[{"id": "q4-1", "sectionId": "s4", "question": "ما وجه الاستدلال بقوله تعالى <span class=\"sem-aya\">﴿إِنَّهُمْ كَانُوا إِذَا قِيلَ لَهُمْ لَا إِلَٰهَ إِلَّا اللَّهُ يَسْتَكْبِرُونَ﴾</span> على أنها أصل الدين؟", "options": ["أنها تذكر عذاب المستكبرين", "أن هذه الكلمة كانت المناط الذي دُعي إليه المشركون", "أنها نزلت في المنافقين", "أنها تأمر بالاستغفار"], "correctIndex": 1, "explanation": "كانت الدعوة تبدأ من هنا؛ فهي مناط الدخول في الإسلام."}, {"id": "q4-2", "sectionId": "s4", "question": "قوم أجابوا داعيًا إلى الصلاة والزكاة لكنهم لم يجيبوا إلى التوحيد. ما حكمهم بحسب حديث بعث <span class=\"sem-name sem-sahabi\">معاذ</span>؟", "options": ["مسلمون ناقصو الإيمان", "لم ينعقد لهم حكم الإسلام، لأن الأمر بالصلاة مرتب على إجابة التوحيد", "مسلمون لأنهم صلّوا", "يُكتفى منهم بالزكاة"], "correctIndex": 1, "explanation": "«فإن هم أجابوك لذلك» شرط؛ فمن لم يُجب في لا إله إلا الله لم ينعقد له الإسلام."}, {"id": "q4-3", "sectionId": "s4", "question": "ما معنى «وتخلّيت» في حديث <span class=\"sem-name sem-sahabi\">معاوية بن حيدة</span> «أن تقول: أسلمت وجهي إلى الله وتخلّيت»؟", "options": ["تخلّيت عن الدنيا كلها", "تخلّيت عن الشريك والكفر بكل ما يُعبد من دون الله", "تخلّيت عن قومي", "تخلّيت عن المعاصي"], "correctIndex": 1, "explanation": "الإسلام لا يصلح إلا بعبادة الله والكفر بما يُعبد من دونه."}, {"id": "q4-4", "sectionId": "s4", "question": "المشركون أقرّوا أن الله خالق كل شيء ومقدّره. لماذا لم يُخرجهم ذلك من الشرك؟", "options": ["لأنهم لم يُثبتوا الصفات", "لأنه لا بد أن يعترفوا أنه لا إله إلا الله، أي أن يُعبد الله وحده", "لأنهم لم يصلّوا", "لأن إقرارهم كان كذبًا"], "correctIndex": 1, "explanation": "الإقرار بالربوبية لا يكفي؛ الإله بمعنى المألوه، والتوحيد أن يُعبد الله وحده."}, {"id": "q4-5", "sectionId": "s4", "question": "رجل يقول الشهادتين بلسانه ويكفر بهما في قلبه. ما حكمه بحسب ما نقله <span class=\"sem-name sem-scholar\">ابن رجب</span> ومعه قاعدة الظاهر؟", "options": ["مسلم ظاهرًا وباطنًا", "يُعصم في الدنيا بالظاهر، وليس من الإسلام في شيء في حقيقة أمره", "كافر يُقاتَل", "يُتوقف فيه حتى يعمل"], "correctIndex": 1, "explanation": "لنا الظاهر بالإجماع، ومن لم يقرّ بهما ظاهرًا وباطنًا فليس من الإسلام في شيء."}];
+const MAP_DATA=[];
+</script>
+<script>
+(function(){
+"use strict";
+var SUBJECT="العروة الوثقى";
+var LABELS={def:"التعريف",excl:"ما يخرج عن التعريف",ans:"الإجابة",wajh:"وجه الدلالة والمقصد",alert:"تنبيه مهم",rule:"القاعدة",exc:"الاستثناء",err:"الخطأ المنهجي",ruling:"الحكم"};
+var PLABEL={calm:"السؤال",quran:"السؤال",compare:"مقارنة",method:"قاعدة منهجية"};
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function reEsc(s){return s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");}
+var NAME_RE=null;
+function buildNameRe(){
+  var all=[];Object.keys(NAMES).forEach(function(k){NAMES[k].forEach(function(n){all.push([n,k]);});});
+  all.sort(function(a,b){return b[0].length-a[0].length;});
+  NAME_RE={re:new RegExp("(^|[^\\u0621-\\u064A])([وفبل]?)("+all.map(function(x){return reEsc(x[0]);}).join("|")+")(?![\\u0621-\\u064A])","g"),map:all.reduce(function(m,x){m[x[0]]=x[1];return m;},{})};
+}
+var CLS={sahabi:"sem-name sem-sahabi",scholar:"sem-name sem-scholar",name:"sem-name",hadith:"sem-hadith"};
+/* تلوين نص خام: آيات + أسماء + علامات صريحة — لا يغيّر حرفًا */
+function colorize(txt,marks,inQ){
+  var parts=[],rest=txt,re=/﴿[^﴾]*﴾/g,last=0,m;
+  while((m=re.exec(txt))){parts.push([0,txt.slice(last,m.index)]);parts.push([1,m[0]]);last=m.index+m[0].length;}
+  parts.push([0,txt.slice(last)]);
+  return parts.map(function(p){
+    if(p[1]==="")return "";
+    if(p[0]===1)return '<span class="sem-aya'+(inQ?' mz-v':'')+'">'+esc(p[1])+'</span>';
+    var s=esc(p[1]);
+    var held=[];
+    (marks||[]).forEach(function(mk){var e=esc(mk.w);if(s.indexOf(e)>-1){s=s.split(e).join("\u0001"+held.length+"\u0002");held.push('<span class="'+CLS[mk.t]+'">'+e+'</span>');}});
+    s=s.replace(NAME_RE.re,function(all,pre,cj,n){if(pre==="[")return all;return pre+cj+'<span class="'+CLS[NAME_RE.map[n]]+'">'+n+'</span>';});
+    s=s.replace(/\u0001(\d+)\u0002/g,function(a,i){return held[+i];});
+    return s;
+  }).join("");
+}
+function slice(a,cur,s,e){var i=a.indexOf(s,cur);if(i<0)throw new Error("s:"+s);var j=a.indexOf(e,i);if(j<0)throw new Error("e:"+e);return [i,j+e.length];}
+function cardFront(c){
+  var lines=c.q.split("\n").map(function(l){return '<p class="mz-qt'+(l.indexOf("﴿")>-1?' mz-sh':'')+'">'+colorize(l,c.marks,true)+'</p>';}).join("");
+  return '<div class="mz-face mz-'+c.pattern+'"><header class="mz-head"><span class="mz-subject"><span class="mz-ico"></span>'+SUBJECT+'</span><span class="mz-kicker">المحاضرة 0'+c.sectionId.slice(1)+'</span></header><div class="mz-label">'+PLABEL[c.pattern]+'</div><div class="mz-q">'+lines+'</div></div>';
+}
+function cardBack(c){
+  var a=c.a,cur=0,out="";
+  c.blocks.forEach(function(b){
+    if(b.type==="cols"){
+      out+='<div class="mz-cols">'+b.parts.map(function(p,k){var r=slice(a,cur,p.s,p.e);cur=r[1];return '<div class="mz-col mz-col'+(k+1)+'" data-label="'+(k?"الطرف الثاني":"الطرف الأول")+'">'+colorize(a.slice(r[0],r[1]),c.marks)+'</div>';}).join("")+'</div>';
+    }else if(b.type==="steps"){
+      out+='<div class="mz-steps mz-steps-list">'+b.items.map(function(it,k){
+        var r=slice(a,cur,it.s,it.e);cur=r[1];var t=a.slice(r[0],r[1]),d="";
+        if(it.ds){var r2=slice(a,cur,it.ds,it.de);cur=r2[1];d='<div class="mz-step-d">'+colorize(a.slice(r2[0],r2[1]),c.marks)+'</div>';}
+        return (k&&b.seq?'<div class="mz-arrow" aria-hidden="true"></div>':'')+'<div class="mz-step"><span class="mz-step-n"></span><div class="mz-step-b"><div class="mz-step-t">'+colorize(t,c.marks)+'</div>'+d+'</div></div>';
+      }).join("")+'</div>';
+    }else{
+      var r=slice(a,cur,b.s,b.e);cur=r[1];
+      out+='<div class="mz-box mz-b-'+b.type+'" data-label="'+LABELS[b.type]+'">'+colorize(a.slice(r[0],r[1]),c.marks)+'</div>';
+    }
+  });
+  return '<div class="mz-ans mz-'+c.pattern+'">'+out+'</div>';
+}
+window.URWA_CARD={front:cardFront,back:cardBack,init:function(){buildNameRe();}};
+function tsv(cards){
+  var head=["#separator:tab","#html:true","#guid column:1","#tags column:4"];
+  return head.concat(cards.map(function(c){var n=c.sectionId.slice(1);
+    return ["stage1_urwa_0"+n+"_"+c.id,cardFront(c),cardBack(c),"البناء_المنهجي::المرحلة_1::العروة_الوثقى::م0"+n+" مستوى_"+c.level]
+      .map(function(x){return x.replace(/[\t\r\n]+/g," ");}).join("\t");})).join("\n");
+}
+window.URWA_CARD.tsv=tsv;
+if(typeof document==="undefined")return;
+buildNameRe();
+function $(id){return document.getElementById(id);}
+/* quiz */
+var QZ={};QUIZ_DATA.forEach(function(q){QZ[q.id]=q;});var score={};
+document.querySelectorAll(".quiz[data-q]").forEach(function(box){var q=QZ[box.getAttribute("data-q")];if(!q)return;
+  var h='<div class="qh">سؤال فهم</div><div class="qq">'+q.question+'</div>';
+  q.options.forEach(function(o,i){h+='<button class="op" type="button" data-i="'+i+'">'+o+'</button>';});
+  box.innerHTML=h+'<div class="ex">'+q.explanation+'</div><button class="again" type="button">إعادة المحاولة</button>';});
+document.addEventListener("click",function(e){
+  var b=e.target.closest(".quiz .op");
+  if(b){var box=b.closest(".quiz");if(box.classList.contains("done"))return;var q=QZ[box.getAttribute("data-q")],i=+b.getAttribute("data-i");
+    box.classList.add("done");box.querySelectorAll(".op")[q.correctIndex].classList.add("ok");if(i!==q.correctIndex)b.classList.add("no");
+    (score[q.sectionId]=score[q.sectionId]||{})[q.id]=(i===q.correctIndex);
+    var el=document.querySelector('.score[data-s="'+q.sectionId+'"]');if(el){var s=score[q.sectionId],ok=0,n=0;for(var k in s){n++;if(s[k])ok++;}
+      el.textContent="نتيجتك في أسئلة هذه المحاضرة: "+ok+" من "+n+" (المجموع "+QUIZ_DATA.filter(function(x){return x.sectionId===q.sectionId;}).length+")";}return;}
+  var a=e.target.closest(".quiz .again");if(a){var bx=a.closest(".quiz");bx.classList.remove("done");bx.querySelectorAll(".op").forEach(function(o){o.classList.remove("ok","no");});}
+});
+/* cmp labels for phones */
+document.querySelectorAll(".cmp").forEach(function(t){var h=t.querySelector(".r.h");if(!h)return;var hs=[].map.call(h.children,function(c){return c.textContent;});
+  t.querySelectorAll(".r:not(.h)").forEach(function(r){[].forEach.call(r.children,function(c,i){if(i&&hs[i])c.setAttribute("data-h",hs[i]);});});});
+/* mind map */
+MAP_DATA.forEach(function(m){var host=$(m.id);if(!host)return;
+  var h='<div class="mm-center">'+m.center+'</div><div class="mm-branches">';
+  m.nodes.forEach(function(n){h+='<div class="mm-node" style="--c:'+n.color+'"><a href="'+n.target+'">'+n.text+'</a>';
+    if(n.children&&n.children.length)h+='<div class="mm-kids">'+n.children.map(function(c){return '<a href="'+c.target+'">'+c.text+'</a>';}).join("")+'</div>';
+    h+='</div>';});host.innerHTML=h+'</div>';});
+/* download */
+var dlb=$("cdl");
+if(dlb)dlb.onclick=function(){var blob=new Blob([tsv(CARDS_DATA)],{type:"text/tab-separated-values;charset=utf-8"});
+  var a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=dlb.getAttribute("data-name");document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},500);};
+/* flashcards */
+var box=$("cbox");
+if(box){var list=CARDS_DATA,pos=0;
+  var show=function(){var c=list[pos];box.classList.remove("shown");
+    box.innerHTML='<div class="front">'+cardFront(c)+'</div><div class="back">'+cardBack(c)+'</div><div class="flip">انقر على البطاقة لإظهار الإجابة</div>';
+    $("cpos").textContent=(pos+1)+" / "+list.length;};
+  box.addEventListener("click",function(){box.classList.toggle("shown");});
+  $("cprev").onclick=function(){pos=(pos-1+list.length)%list.length;show();};
+  $("cnext").onclick=function(){pos=(pos+1)%list.length;show();};
+  show();}
+/* progress / toc / font */
+var bar=$("progress"),tl=[].slice.call(document.querySelectorAll(".toc a[href^='#']"));
+var targets=tl.map(function(a){return $(a.getAttribute("href").slice(1));});
+window.addEventListener("scroll",function(){var h=document.documentElement;if(bar)bar.style.width=(h.scrollTop/Math.max(1,h.scrollHeight-h.clientHeight)*100)+"%";
+  var cur=-1;targets.forEach(function(t,i){if(t&&t.getBoundingClientRect().top<120)cur=i;});tl.forEach(function(a,i){a.classList.toggle("on",i===cur);});},{passive:true});
+var fs=18;function setFs(){document.documentElement.style.setProperty("--fs",fs+"px");}
+if($("fsUp")){$("fsUp").onclick=function(){if(fs<22){fs++;setFs();}};$("fsDn").onclick=function(){if(fs>16){fs--;setFs();}};}
+})();
+
+</script>
+<script type="module" src="../../../firebase-sync-manhaj.js"></script>
+<script src="../../../ilm-track.js"></script>
+<script src="../../../ilm-highlight.js" data-hadith="off"></script>
+</body>
+</html>

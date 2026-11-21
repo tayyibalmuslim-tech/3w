@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="lecture-status" content="filled">
+<title>العروة الوثقى — المحاضرة 03 | الفقه تفصيل لا إجمال، وجذور «المذهب التلفيقي»</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@700&family=Cairo:wght@400;600;700;800&family=El+Messiri:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1f2433;--ink2:#3d4457;--sub:#69708a;--bg:#f6f4ef;--paper:#fffdf9;--line:#e4dfd3;
+  --brand:#25305a;--brand2:#3b4b86;--accent:#2a7f7a;--gold:#c9b27c;--goldbg:#f4eedf;
+  --s1:#3a5a98;--s2:#2a7f7a;--s3:#b0623a;--s4:#5a5f8a;--s5:#1e7aa0;
+  --sec:var(--brand);
+  --sem-aya:#14532d;--sem-hadith:#5b2d90;--sem-sahabi:#8a5a00;--sem-scholar:#8f1d21;
+  --fs:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cairo','Noto Sans Arabic',Tahoma,sans-serif;font-size:var(--fs);line-height:1.95;text-align:right;direction:rtl}
+a{color:inherit}
+.sem-aya{color:var(--sem-aya);font-family:'Amiri','Noto Naskh Arabic',serif;font-size:1.12em}
+.sem-hadith{color:var(--sem-hadith)}
+.sem-name{color:var(--sem-scholar)}
+.sem-name.sem-sahabi,.sem-sahabi{color:var(--sem-sahabi);font-weight:700}
+.sem-name.sem-scholar,.sem-scholar{color:var(--sem-scholar);font-weight:700}
+#progress{position:fixed;top:0;right:0;height:4px;background:linear-gradient(90deg,var(--accent),var(--brand2));width:0;z-index:50}
+/* hero */
+.hero{background:radial-gradient(ellipse at 20% 0%,#3b4b86 0%,#25305a 55%,#1a2142 100%);color:#f3efe4;padding:64px 20px 70px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(201,178,124,.07) 0 2px,transparent 2px 26px)}
+.hero .in{max-width:900px;margin:0 auto;position:relative}
+.hero .series{font-family:'Aref Ruqaa','Amiri',serif;font-size:58px;line-height:1.3;color:#f1e6c8;margin:0}
+.hero .rope{display:flex;align-items:center;margin:14px 0 18px;max-width:420px}
+.hero .rope span{flex:1;height:3px;background:repeating-linear-gradient(90deg,var(--gold) 0 10px,transparent 10px 14px);border-radius:2px}
+.hero .rope b{width:16px;height:16px;border:3px solid var(--gold);border-radius:50%;margin:0 10px}
+.hero h1{font-family:'El Messiri','Cairo',sans-serif;font-size:34px;line-height:1.5;margin:0 0 10px;font-weight:600}
+.hero .meta{font-size:15.5px;color:#d7d2c4}
+.wrap{max-width:1180px;margin:0 auto;display:flex;align-items:flex-start;padding:0 18px}
+main{flex:1 1 auto;min-width:0;max-width:800px;margin:0 auto}
+aside.toc{flex:0 0 250px;position:sticky;top:18px;margin:28px 0 0 26px;order:2;max-height:calc(100vh - 40px);overflow:auto;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:14px 14px 16px;font-size:14.5px;line-height:1.7}
+.toc .t{font-weight:800;color:var(--brand);margin-bottom:6px;font-family:'El Messiri','Cairo'}
+.toc a{display:block;text-decoration:none;padding:4px 8px;border-radius:8px;color:var(--ink2)}
+.toc a.l2{padding-right:20px;font-size:13.5px;color:var(--sub)}
+.toc a:hover,.toc a.on{background:var(--goldbg);color:var(--brand)}
+.tools{display:flex;flex-wrap:wrap;margin-top:10px;border-top:1px solid var(--line);padding-top:10px}
+.tools button{font:inherit;font-size:13px;margin:0 0 6px 6px;padding:5px 10px;border:1px solid var(--line);background:#fff;border-radius:9px;cursor:pointer;color:var(--brand)}
+@media(max-width:1020px){aside.toc{display:none}}
+/* intro cards */
+.ai-note{margin:26px 0 0;background:#fff7e6;border:1px solid #ecd9ae;border-radius:12px;padding:10px 16px;font-size:15px;color:#6b4e16}
+.src{margin:16px 0;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 20px;font-size:16px}
+.src .row{display:flex;flex-wrap:wrap;margin-bottom:2px}.src .k{flex:0 0 120px;color:var(--sub);font-weight:700}.src .v{flex:1 1 300px}
+.orient{margin:22px 0 10px;background:linear-gradient(180deg,#fffdf8,#f7f3e8);border:1px solid #e6dcc3;border-radius:20px;padding:22px 24px}
+.orient .lab{font-size:13px;font-weight:800;color:var(--accent);letter-spacing:.2px}
+.orient .cq{font-family:'El Messiri','Cairo';font-size:23px;color:var(--brand);line-height:1.6;margin:2px 0 14px}
+.orient .idea{font-size:17px;color:var(--ink2);margin-bottom:6px}
+.orient .ed{font-size:12.5px;color:var(--sub)}
+/* mindmap */
+.mm{margin:18px 0 6px}
+.mm-center{display:inline-block;background:var(--brand);color:#f5efe0;border-radius:14px;padding:10px 18px;font-weight:800;font-family:'El Messiri','Cairo';font-size:18px}
+.mm-branches{border-right:3px solid var(--gold);margin:10px 18px 0 0;padding:4px 0 0}
+.mm-node{position:relative;margin:0 0 10px;padding-right:22px}
+.mm-node:before{content:"";position:absolute;right:0;top:20px;width:18px;border-top:3px solid var(--gold)}
+.mm-node>a{display:inline-block;text-decoration:none;background:#fff;border:1px solid var(--line);border-right:5px solid var(--c,var(--brand));border-radius:12px;padding:6px 14px;font-weight:700;color:var(--ink)}
+.mm-node>a:hover{background:var(--goldbg)}
+.mm-kids{margin:6px 22px 0 0;display:flex;flex-wrap:wrap}
+.mm-kids a{font-size:14.5px;text-decoration:none;margin:0 0 6px 8px;padding:3px 11px;border-radius:20px;background:#f1efe8;color:var(--ink2);border:1px solid #e6e1d4}
+.mm-kids a:hover{background:var(--goldbg)}
+/* sections */
+section.lec{--sec:var(--brand);margin:46px 0 0}
+section.lec[data-s="1"]{--sec:var(--s1)}section.lec[data-s="2"]{--sec:var(--s2)}section.lec[data-s="3"]{--sec:var(--s3)}section.lec[data-s="4"]{--sec:var(--s4)}section.lec[data-s="5"]{--sec:var(--s5)}
+.lec-head{position:relative;background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--sec);border-radius:20px;padding:22px 24px 18px;margin-bottom:18px}
+.lec-head .num{font-size:13.5px;font-weight:800;color:var(--sec);letter-spacing:.3px}
+.lec-head h2{font-family:'El Messiri','Cairo';font-size:30px;line-height:1.5;margin:4px 0 6px;color:var(--ink)}
+.lec-head .fn{display:inline-block;font-size:13px;background:var(--goldbg);color:#6b5a2e;border-radius:20px;padding:2px 12px}
+.divider{height:34px;margin:40px 0 0;background:radial-gradient(circle,var(--gold) 3px,transparent 4px) center/26px 34px repeat-x;opacity:.7}
+main h3{font-family:'El Messiri','Cairo';font-size:23px;line-height:1.6;color:var(--sec);margin:32px 0 8px;padding-right:14px;border-right:4px solid var(--sec)}
+main h4{font-size:19px;margin:20px 0 4px;color:var(--ink)}
+main p{margin:0 0 14px}
+.where,.next{border-radius:14px;padding:12px 18px;font-size:16px;margin:0 0 16px}
+.where{background:#eef1f8;border:1px dashed #b9c2dd}
+.next{background:#eef6f5;border:1px dashed #a9cfcb;margin-top:18px}
+.where b,.next b{display:block;font-size:13px;color:var(--sec)}
+/* blocks */
+.aya-block{background:#f0f6f1;border:1px solid #d6e7da;border-right:4px solid #3f7d57;border-radius:14px;padding:12px 20px 10px;margin:14px 0 16px;text-align:center}
+.aya-block p{margin:0;font-size:1.08em;line-height:2.15}
+.aya-block .sem-aya{font-size:1.22em}
+.ref{font-size:13.5px;color:var(--sub);text-align:left}
+blockquote{margin:14px 0 16px;padding:12px 20px 10px;border-radius:14px}
+blockquote p{margin:0 0 6px}
+.hadith-block{background:#f6f3fa;border:1px solid #e6dff0;border-right:4px solid #8b77ad}
+.naql{background:#fbf8f1;border:1px solid #ebe2cc;border-right:4px solid #b9a06a}
+.who{display:block;font-size:13.5px;color:#7a6a45;font-weight:700;margin-top:2px}
+.hadith-block .who{color:#6b5d86}
+.key{background:#eef3fb;border-right:4px solid var(--brand2);border-radius:12px;padding:12px 18px;margin:14px 0}
+.key:before{content:"فكرة محورية";display:block;font-size:12.5px;font-weight:800;color:var(--brand2)}
+.warn{background:#fdf1ea;border-right:4px solid #c46a3b;border-radius:12px;padding:12px 18px;margin:14px 0}
+.warn:before{content:"تنبيه";display:block;font-size:12.5px;font-weight:800;color:#a2512a}
+.fix{background:#fff6e0;border:1px dashed #d8b45d;border-radius:12px;padding:10px 16px;margin:12px 0;font-size:15.5px}
+.fix:before{content:"تصحيح / توضيح تحريري";display:block;font-size:12.5px;font-weight:800;color:#8a6414}
+.ed-note{background:#f3f3f1;border-radius:12px;padding:10px 16px;margin:12px 0;font-size:15.5px;color:var(--ink2)}
+.ed-note:before{content:"إضافة تحريرية (ليست من كلام الشيخ)";display:block;font-size:12.5px;font-weight:800;color:#6c6c64}
+.story{background:#fffaf2;border:1px solid #efdfc4;border-radius:16px;padding:14px 20px 4px;margin:16px 0}
+.story .st{font-weight:800;color:#8a5f2b;font-size:15px;margin-bottom:4px}
+/* structures */
+.lab-org{font-size:12.5px;font-weight:800;color:var(--sec);margin:0 0 6px}
+.cmp{margin:16px 0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.cmp .cap{background:#f4f2ec;padding:8px 16px;font-weight:800;font-size:15px;color:var(--ink2)}
+.cmp .r{display:flex;flex-wrap:wrap;border-top:1px solid var(--line)}
+.cmp .r>div{flex:1 1 200px;padding:10px 16px;font-size:16px;line-height:1.85;min-width:0}
+.cmp .r>div+div{border-right:1px solid var(--line)}
+.cmp .r.h>div{font-weight:800;color:var(--sec);background:#fafaf7}
+.cmp .r>div.k{flex:0 0 140px;font-weight:700;color:var(--sub);background:#fbfaf6}
+@media(max-width:580px){.cmp .r.h{display:none}.cmp .r>div.k{flex-basis:100%;border-bottom:1px dashed var(--line);color:var(--sec)}.cmp .r>div+div{border-right:0;border-top:1px dashed var(--line)}.cmp .r>div[data-h]:before{content:attr(data-h);display:block;font-size:12.5px;font-weight:800;color:var(--sub)}}
+.tree{margin:16px 0;padding:16px;background:#fff;border:1px solid var(--line);border-radius:16px}
+.tree .root{font-weight:800;color:#fff;background:var(--sec);display:inline-block;border-radius:10px;padding:5px 14px}
+.tree .kids{margin:10px 16px 0 0;border-right:2px solid #d7d2c3;padding-right:14px}
+.tree .kid{position:relative;margin:0 0 10px;background:#faf8f3;border:1px solid #ebe5d6;border-radius:12px;padding:8px 14px;font-size:16px}
+.tree .kid:before{content:"";position:absolute;right:-16px;top:20px;width:14px;border-top:2px solid #d7d2c3}
+.tree .kid b{color:var(--sec)}
+.timeline{margin:16px 0;padding:6px 0}
+.tl-i{position:relative;padding:0 46px 14px 0}
+.tl-i:before{content:attr(data-n);position:absolute;right:0;top:2px;width:32px;height:32px;border-radius:50%;background:var(--sec);color:#fff;font-weight:800;text-align:center;line-height:32px;font-size:15px}
+.tl-i:after{content:"";position:absolute;right:15px;top:36px;bottom:0;border-right:2px solid #d4cfbf}
+.tl-i:last-child:after{display:none}
+.tl-i .tt{font-weight:800;color:var(--ink)}
+.tl-i .td{font-size:16px;color:var(--ink2)}
+.chain{display:flex;flex-direction:column;margin:16px 0}
+.chain .c{background:#fff;border:1px solid var(--line);border-right:4px solid var(--sec);border-radius:12px;padding:9px 16px;font-size:16px}
+.chain .c b{display:block;font-size:12.5px;color:var(--sec)}
+.chain .ar{height:22px;text-align:center;color:var(--sec);line-height:22px;font-size:18px}
+.evid{margin:16px 0;border:1px solid #d9e6dd;border-radius:16px;background:#fcfefc;overflow:hidden}
+.evid .er{display:flex;flex-wrap:wrap;border-top:1px solid #e3ede6}
+.evid .er:first-child{border-top:0}
+.evid .el{flex:0 0 120px;padding:9px 14px;font-size:13.5px;font-weight:800;color:#3f6b52;background:#f2f8f3}
+.evid .ev{flex:1 1 260px;padding:9px 16px;font-size:16px;min-width:0}
+@media(max-width:580px){.evid .el{flex-basis:100%}}
+.arg{margin:16px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.arg .claim{background:var(--sec);color:#fff;border-radius:12px;padding:10px 16px;font-weight:700}
+.arg .claim b{display:block;font-size:12.5px;opacity:.85}
+.arg .grp{margin:12px 0 0;display:flex;flex-wrap:wrap}
+.arg .g{flex:1 1 220px;margin:0 0 10px 10px;background:#f7f6fb;border:1px solid #e3e1ee;border-radius:12px;padding:10px 14px;font-size:15.5px}
+.arg .g b{display:block;color:var(--sec);font-size:13px}
+.num{margin:14px 0}
+.num .n{display:flex;align-items:flex-start;margin-bottom:10px}
+.num .n .b{flex:0 0 34px;height:34px;border-radius:10px;background:var(--goldbg);color:#6b5a2e;font-weight:800;text-align:center;line-height:34px;margin-left:12px;border:1px solid #e3d6b4}
+.num .n .t{flex:1;min-width:0}
+.stat{display:flex;flex-wrap:wrap;margin:14px -6px}
+.stat .s{flex:1 1 180px;margin:0 6px 12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;text-align:center}
+.stat .s .v{font-size:34px;font-weight:800;color:var(--sec);line-height:1.3;font-family:'El Messiri','Cairo'}
+.stat .s .d{font-size:14.5px;color:var(--ink2);line-height:1.7}
+/* takeaway */
+.takeaway{margin:26px 0 8px;background:linear-gradient(180deg,#fffaf0,#fbf3e2);border:1px solid #e8d7b0;border-radius:18px;padding:16px 20px}
+.takeaway .tt{font-family:'El Messiri','Cairo';font-weight:700;font-size:19px;color:#7a5b1d}
+.takeaway .tt small{font-size:12px;color:#9b8456;font-family:'Cairo';margin-right:6px}
+.tk-i{position:relative;padding-right:22px;margin:7px 0;font-size:16.5px}
+.tk-i:before{content:"";position:absolute;right:2px;top:12px;width:9px;height:9px;border-radius:50%;background:var(--sec)}
+.score{font-size:13.5px;color:var(--sub);margin-bottom:4px}
+/* quiz */
+.quiz{margin:20px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 18px 12px;box-shadow:0 2px 10px rgba(30,40,70,.04)}
+.quiz .qh{font-size:12.5px;font-weight:800;color:var(--sec);margin-bottom:4px}
+.quiz .qq{font-weight:700;font-size:17px;margin-bottom:8px}
+.quiz button.op{display:block;width:100%;min-height:44px;text-align:right;font:inherit;font-size:16px;line-height:1.7;background:#faf9f5;border:1px solid #e6e1d4;border-radius:12px;padding:8px 14px;margin:0 0 8px;cursor:pointer;color:var(--ink)}
+.quiz button.op:hover{background:var(--goldbg)}
+.quiz button.op.ok{background:#e6f3ec;border-color:#86bf9d}
+.quiz button.op.no{background:#fbe9e4;border-color:#e0a28f}
+.quiz .ex{display:none;font-size:15px;background:#f4f6fb;border-radius:10px;padding:8px 12px;color:var(--ink2)}
+.quiz.done .ex{display:block}
+.quiz .again{display:none;font:inherit;font-size:13px;border:0;background:none;color:var(--brand2);cursor:pointer;padding:4px 0}
+.quiz.done .again{display:inline-block}
+/* cards area */
+#cards{margin:56px 0 20px}
+#cards h2{font-family:'El Messiri','Cairo';font-size:30px;color:var(--brand);margin:0 0 4px}
+.cfil{display:flex;flex-wrap:wrap;margin:10px 0}
+.cfil button,.cnav button,.dl{font:inherit;font-size:14px;margin:0 0 8px 8px;padding:6px 14px;border-radius:20px;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--ink2);min-height:38px}
+.cfil button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+.dl{background:var(--accent);color:#fff;border-color:var(--accent)}
+.cstage{max-width:740px;margin:8px auto}
+.cbox{background:#fff;border:1px solid #dfe3e0;border-radius:18px;padding:20px 22px;cursor:pointer;min-height:220px;box-shadow:0 4px 22px rgba(31,49,46,.06)}
+.cbox .flip{font-size:12.5px;color:var(--sub);text-align:center;margin-top:12px}
+.cbox .back{display:none;margin-top:16px;padding-top:16px;border-top:1px solid #e1e0d8}
+.cbox.shown .back{display:block}
+.cnav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px}
+.cnav .pos{font-size:14px;color:var(--sub);margin:0 10px 8px}
+footer{margin:60px 0 0;background:#1d2547;color:#cfc9b8;padding:26px 20px;text-align:center;font-size:14.5px}
+@media(max-width:580px){
+  body{font-size:17px}.hero{padding:44px 16px 50px}.hero .series{font-size:42px}.hero h1{font-size:25px}
+  .lec-head h2{font-size:24px}main h3{font-size:20px}.wrap{padding:0 12px}
+  .orient{padding:16px}.orient .cq{font-size:19px}.cbox{padding:16px 14px}
+}
+@media print{aside.toc,#progress,.quiz,.cnav,.cfil,.dl,.tools{display:none}.hero{background:#25305a;-webkit-print-color-adjust:exact}}
+
+/* نسخة عرض من قسم mz- في anki/final.css — لعرض البطاقات داخل الصفحة بنفس HTML المُصدَّر */
+.mz-calm{--mz-title:#293c35;--mz-ink:#33423c;--mz-accent:#296257;--mz-sub:#66766f;--mz-line:#e1e0d8;--mz-b1:#e9f3ef;--mz-b1bd:#cfe3da;--mz-b2:#f5f5f1;--mz-b2bd:#e1e0d8;--mz-b2lab:#7d6338;--mz-alert:#f5f0e4;--mz-alertbd:#e6dcc4;--mz-alertlab:#7d6338}
+.mz-compare{--mz-title:#273e5d;--mz-ink:#2f3f55;--mz-accent:#47668c;--mz-sub:#62748b;--mz-line:#d8e1ec;--mz-b1:#e9f1ed;--mz-b1bd:#c9dcd2;--mz-b1lab:#2c6a55;--mz-b2:#f5eee7;--mz-b2bd:#e5d6c6;--mz-b2lab:#9a5a2a;--mz-alert:#eff3f9;--mz-alertbd:#d3dded;--mz-alertlab:#273e5d}
+.mz-quran{--mz-title:#3a3426;--mz-ink:#3a3426;--mz-accent:#7a6030;--mz-sub:#7a7060;--mz-line:#dfd9c8;--mz-b1:#f0ede5;--mz-b1bd:#dfd9c8;--mz-b2:#f0ede5;--mz-b2bd:#dfd9c8;--mz-b2lab:#7a6030;--mz-alert:#f6f1e2;--mz-alertbd:#e6dcc0;--mz-alertlab:#7a6030}
+.mz-method{--mz-title:#332d49;--mz-ink:#3a3550;--mz-accent:#605785;--mz-sub:#6e6890;--mz-line:#e0dcec;--mz-b1:#f2f0f9;--mz-b1bd:#e0dcec;--mz-b2:#e8e5f4;--mz-b2bd:#d5cfe8;--mz-b2lab:#605785;--mz-alert:#f4f0e6;--mz-alertbd:#e6dcc0;--mz-alertlab:#7a6030;--mz-step:#e8e5f4;--mz-conn:#9891b4;--mz-num:#605785;--mz-numink:#fff;--mz-err:#f7ebe5;--mz-errbd:#ecd2c3;--mz-errlab:#995531}
+.mz-face,.mz-ans{direction:rtl;text-align:right;font-family:'Cairo','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif;color:var(--mz-ink);line-height:1.95;font-size:18px;overflow-wrap:break-word}
+.mz-face p,.mz-ans p{margin:0}
+.mz-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:0 0 12px;margin:0 0 16px;border-bottom:1px solid var(--mz-line)}
+.mz-subject{display:flex;align-items:center;font-size:14.5px;font-weight:800;color:var(--mz-accent)}
+.mz-kicker{font-size:12.5px;font-weight:600;color:var(--mz-sub)}
+.mz-ico{display:inline-block;width:20px;height:20px;margin-left:9px;border-radius:6px;background:var(--mz-accent);opacity:.85}
+.mz-label{font-size:12.5px;font-weight:700;color:var(--mz-sub);margin:0 0 4px}
+.mz-q{font-size:21px;line-height:1.95;font-weight:700;color:var(--mz-title)}
+.mz-q .mz-qt{margin:0 0 4px}
+.mz-box{margin:0 0 12px;padding:13px 18px 14px;border:1px solid var(--mz-b1bd);border-radius:14px;background:var(--mz-b1)}
+.mz-box:last-child{margin-bottom:0}
+.mz-box[data-label]:before{content:attr(data-label);display:block;font-size:13px;font-weight:800;color:var(--mz-accent);margin:0 0 4px}
+.mz-b-excl,.mz-b-wajh{background:var(--mz-b2);border-color:var(--mz-b2bd)}
+.mz-b-excl[data-label]:before,.mz-b-wajh[data-label]:before{color:var(--mz-b2lab)}
+.mz-b-alert,.mz-b-exc{background:var(--mz-alert);border-color:var(--mz-alertbd)}
+.mz-b-alert[data-label]:before,.mz-b-exc[data-label]:before{display:inline;margin:0;font-size:inherit;color:var(--mz-alertlab);content:attr(data-label) ": "}
+.mz-b-err{background:var(--mz-err);border-color:var(--mz-errbd)}
+.mz-b-err[data-label]:before{color:var(--mz-errlab);display:inline;margin:0;font-size:inherit;content:attr(data-label) ": "}
+.mz-cols{display:flex;flex-wrap:wrap;margin:0 -6px 6px}
+.mz-col{flex:1 1 220px;min-width:0;margin:0 6px 12px;padding:13px 16px 14px;border:1px solid var(--mz-b1bd);border-radius:14px;background:var(--mz-b1)}
+.mz-col2{background:var(--mz-b2);border-color:var(--mz-b2bd)}
+.mz-col[data-label]:before{content:attr(data-label);display:block;font-size:14px;font-weight:800;padding:0 0 7px;margin:0 0 8px;color:var(--mz-b1lab);border-bottom:1px solid var(--mz-b1bd)}
+.mz-col2[data-label]:before{color:var(--mz-b2lab);border-bottom-color:var(--mz-b2bd)}
+.mz-steps{margin:0 0 12px}
+.mz-step{display:flex;align-items:flex-start;padding:12px 14px;border-radius:14px;background:var(--mz-step,var(--mz-b2));border:1px solid var(--mz-b2bd)}
+.mz-step-n{flex:0 0 34px;width:34px;height:34px;margin-left:12px;border-radius:50%;background:var(--mz-num,var(--mz-accent));color:#fff;font-weight:800;font-size:16px;line-height:34px;text-align:center}
+.mz-step-b{flex:1 1 auto;min-width:0}
+.mz-step-t{font-weight:800;color:var(--mz-title);line-height:1.8}
+.mz-step-d{margin-top:2px;line-height:1.9}
+.mz-steps-list{counter-reset:mzstep}
+.mz-steps-list .mz-step{counter-increment:mzstep;margin:0 0 10px}
+.mz-steps-list .mz-step:last-child{margin-bottom:0}
+.mz-steps-list .mz-step-n:before{content:counter(mzstep)}
+.mz-arrow{height:20px;padding:5px 15px 0 0;line-height:0}
+.mz-arrow:before{content:"";display:inline-block;border-right:6px solid transparent;border-left:6px solid transparent;border-top:9px solid var(--mz-conn,#9891b4);margin-right:5px}
+.mz-em{font-weight:800;color:var(--mz-title)}
+.mz-v{font-family:'Amiri','Noto Naskh Arabic','Traditional Arabic',serif;font-weight:700;font-size:1.15em;line-height:2}
+.mz-face .sem-aya,.mz-ans .sem-aya,.mz-face .sem-hadith,.mz-ans .sem-hadith{font-weight:700}
+@media (max-width:580px){.mz-q{font-size:19px}.mz-face,.mz-ans{font-size:17px}.mz-box{padding:12px 14px 13px}.mz-col{flex-basis:100%}}
+
+/* ===== ملفات المحاضرات المنفصلة + صفحة الفهرس ===== */
+.hero-s{padding:40px 20px 44px}
+.hero-s .series{font-size:40px;text-decoration:none;display:inline-block}
+.hero-s h1{font-size:30px}
+.lnav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;max-width:1180px;margin:0 auto;padding:12px 18px;font-size:15px}
+.lnav a,.lnav span{display:inline-block;padding:7px 14px;border-radius:20px;text-decoration:none;background:var(--paper);border:1px solid var(--line);color:var(--brand);margin:4px 0;min-height:38px}
+.lnav a.home{background:var(--brand);color:#f5efe0;border-color:var(--brand);font-weight:700}
+.lnav .off{color:var(--sub);background:transparent;border-style:dashed}
+.lnav a:hover{background:var(--goldbg)}.lnav a.home:hover{background:var(--brand2)}
+.orient .ed2{font-size:15.5px;color:var(--ink2)}
+main.idx{max-width:960px;margin:0 auto;padding:0 18px}
+.ih{font-family:'El Messiri','Cairo';font-size:28px;color:var(--brand);margin:34px 0 12px}
+.grid{display:flex;flex-wrap:wrap;margin:0 -8px}
+.lc{flex:1 1 280px;margin:0 8px 16px;display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--c,var(--brand));border-radius:18px;padding:16px 18px 14px;transition:transform .15s,box-shadow .15s}
+.lc:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(30,40,70,.09)}
+.lc .no{font-family:'El Messiri','Cairo';font-size:34px;font-weight:700;color:var(--c,var(--brand));line-height:1.2}
+.lc .lt{font-family:'El Messiri','Cairo';font-size:20px;font-weight:700;line-height:1.6;margin:2px 0 6px}
+.lc .lq{font-size:15.5px;color:var(--ink2);line-height:1.8;flex:1}
+.lc .ls{font-size:13.5px;color:var(--sub);margin-top:8px}
+.lc .go{font-size:14.5px;font-weight:700;color:var(--c,var(--brand));margin-top:6px}
+.lc-off{border-top-color:#cfcabd;border-style:dashed;opacity:.75}.lc-off .no,.lc-off .lt{color:var(--sub)}
+.alldl{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;background:#eef6f5;border:1px solid #c7e0dd;border-radius:16px;padding:14px 18px;margin:18px 0 10px}
+.alldl div{flex:1 1 320px;margin-left:12px}.alldl b{display:block;color:var(--accent)}.alldl span{font-size:14.5px;color:var(--ink2)}
+@media(max-width:580px){.hero-s .series{font-size:32px}.hero-s h1{font-size:23px}.lc .no{font-size:28px}.lnav{font-size:13px;padding:10px 8px;flex-wrap:nowrap}.lnav a,.lnav span{flex:1 1 0;text-align:center;margin:4px 3px;padding:7px 4px;min-width:0}}
+
+</style>
+</head>
+<body data-lecture-id="stage1_urwa_03">
+<div id="progress"></div>
+<header class="hero hero-s"><div class="in"><a class="series" href="index.html">العروة الوثقى</a><div class="rope"><span></span><b></b><span></span></div><h1>المحاضرة 03</h1><div class="meta">سلسلة في أصل دين الإسلام · 7 سؤال فهم · 31 بطاقة مراجعة</div></div></header>
+<nav class="lnav"><a href="02.html">→ المحاضرة 02</a><a class="home" href="index.html">فهرس السلسلة</a><a href="04.html">المحاضرة 04 ←</a></nav>
+<div class="wrap">
+<aside class="toc"><div class="t">فهرس المحاضرة</div><a href="#orient">لوحة التوجيه</a><a href="#s3-a">استدراك: هل في وصف أشاعرة اليوم توسّع؟</a><a href="#s3-b">الفقه هو الجمع والتفرقة</a><a href="#s3-c">تطبيق القاعدة على «الديمقراطية» و«العلمانية»</a><a href="#s3-d">«كلمة حق تحتها ألف كلمة باطل»</a><a href="#s3-e">الغزو الفكري: من أين بدأ التهتّك؟</a><a href="#s3-f"><span class="sem-name">محمد علي</span>: كيف حكم <span class="sem-name">مصر</span>َ جابٍ صغير؟</a><a href="#s3-g">خطة <span class="sem-name">نابليون</span>: «هجيب لك واحد شبهك»</a><a href="#s3-h">ثلاث فرق أمام حضارة الغرب</a><a href="#s3-i">المذهب التلفيقي: تعريفه وثمراته</a><a href="#cards">بطاقات المراجعة</a><a href="index.html">↩ فهرس السلسلة</a><div class="tools"><button type="button" id="fsUp">تكبير الخط +</button><button type="button" id="fsDn">تصغير الخط −</button></div></aside>
+<main data-ilm-highlight-zone>
+<div class="ai-note">أُعدّ هذا المحتوى بمساعدة الذكاء الاصطناعي، وقد يحتوي أخطاء، ويُرجى مراجعته.</div><div class="src"><div class="row"><div class="k">نوع المادة</div><div class="v">تفريغ صوتي للمحاضرة 03 من سلسلة «العروة الوثقى»، وهي مجلس قصير كان يُلقى قبل الدرس الأصلي. لم يُذكر اسم الشيخ في التفريغ.</div></div><div class="row"><div class="k">المنهج</div><div class="v">كلام الشيخ مُعاد تنظيمه بلا حذف لفكرة أو دليل؛ والخلاصات والصناديق الموسومة «تحريرية» إضافة ليست من كلامه. وما بين «» لكلام الشيخ وأسماء الكتب.</div></div></div>
+<div class="orient" id="orient"><div class="lab">السؤال المركزي</div><div class="cq">لماذا كان التفصيل منهج أهل السنة، وكيف نشأ المذهب التلفيقي الذي يجمع بين الشريعة وقوانين الغرب؟</div><div class="lab">الفكرة المحورية</div><div class="idea">لا يُحكم على لفظ حادث قبل تفصيل معناه؛ والتلفيق — أخذ بعض الشريعة وبعض القوانين — هو الإيمان ببعض الكتاب والكفر ببعض.</div><div class="ed">صياغة تحريرية تجمع معنى المحاضرة.</div><div class="lab" style="margin-top:12px">مسار المحاضرة</div><div class="ed2">الوظيفة: تصحيح تصوّر ← قاعدة منهجية (التفصيل) ← تسلسل تاريخي للغزو الفكري</div></div>
+
+<section class="lec" id="s3" data-s="3">
+<div class="lec-head">
+  <div class="num">المجلس الثالث · مجلس استثنائي</div>
+  <h2>الفقه تفصيل لا إجمال، وجذور «المذهب التلفيقي»</h2>
+  <span class="fn">الوظيفة: تصحيح تصوّر ← قاعدة منهجية (التفصيل) ← تسلسل تاريخي للغزو الفكري</span>
+</div>
+<div class="where"><b>أين نحن</b>تكلمنا في المجلس الماضي عن أن أصل الدين شيء وأصول الدين شيء، واستطردنا في أن أشاعرة اليوم ليسوا كالنووي و<span class="sem-name sem-scholar">القرطبي</span>. وهذا المجلس يبدأ باستدراك على ذلك، ثم يقرّر قاعدة التفصيل، ثم يعرض جذور المذهب التلفيقي قبل الدخول في تعريف أصل الدين.</div>
+
+<h3 id="s3-a">استدراك: هل في وصف أشاعرة اليوم توسّع؟</h3>
+<p>سأل بعض الإخوة: قلنا إن الأشاعرة في هذه الأيام ليسوا كـ<span class="sem-name sem-scholar">النووي</span> و<span class="sem-name sem-scholar">القرطبي</span>، وإنما هم صوفية أو قبورية؛ أليس في العبارة توسّع؟ والقصد أن أشعرية اليوم ليست مشكلتها تأويل الصفات فقط، بل صار عندهم مشاكل أخرى كبيرة غير السلف. ولذلك هم دائمًا يقولون «نحن أهل السنة» يريدون أن يخدعوا الناس بذلك.</p>
+<p>لكن عندهم قبورية فعلًا — يسأل القبر فعلًا — وعندهم من يؤمن بالاتحاد، وعندهم من يقول بعقيدة الجهمية في القرآن أنه مخلوق. ولعل الكل رأى بعض المشاهير على التلفاز يقول إن القرآن مخلوق، وينسب ذلك إلى <span class="sem-name sem-scholar">الإمام أحمد</span>، وهذا شيء في غاية الفوضى. فالبدع انحرفت وتطورت. نعم، يوجد أشاعرة فقط كهؤلاء الأئمة، لكن لا شك أن جمهورًا كبيرًا منهم قبوريون، وسيتضح هذا حين يتضح أصل دين الإسلام.</p>
+
+<h3 id="s3-b">الفقه هو الجمع والتفرقة</h3>
+<p>لا بد من التفاصيل والتفاريق. يقول الفقهاء: <strong>الفقه هو الجمع والتفرقة</strong>؛ يعني أن تعلم المسائل التي يُجمع بعضها إلى بعض لأنها تتشابه، وتعلم المسائل المفرّقة التي بينها فرق. ولذلك صنّف العلماء في هذا الفن كتب الفروق، مثل «الفروق» لـ<span class="sem-name sem-scholar">القرافي</span>، و«الفروق» لـ<span class="sem-name sem-scholar">العز بن عبد السلام</span>، لتعلم المسائل التي يتداخل بعضها في بعض. <strong>وهذا هو صميم مذهب أهل السنة.</strong></p>
+<p>وقدّم الشيخ بهذه المقدمة لأنه حين يفصّل المسائل بعد ذلك — هذه شيء وتلك شيء آخر، هذه لها حكم وتلك لها حكم، أو يشتركان في حكم ويفترقان في اسم — لا بد أن تعرف أن هذه تفاصيل أهل السنة.</p>
+<div class="cmp">
+  <div class="cap">منهج أهل السنة ومنهج أهل البدعة في الأحكام</div>
+  <div class="r h"><div class="k">المعيار</div><div>أهل السنة</div><div>أهل البدعة</div></div>
+  <div class="r"><div class="k">الطريقة</div><div>التفصيل والتفريق بين المسائل.</div><div>من سيماهم الإجمال: يضع الموضوع مجملًا.</div></div>
+  <div class="r"><div class="k">مثال</div><div>الأحكام الإجمالية موجودة، لكن بمناطاتها الصحيحة.</div><div>الخوارج: «الناس دول كلهم كفار» بإجمال، والأحكام الإجمالية أحكام جائرة.</div></div>
+</div>
+<blockquote class="naql"><p>«لم يذمّ السلف والأئمة الكلام لمجرد ما فيه من الاصطلاحات المولّدة كلفظ الجوهر والعرض والجسم وغير ذلك، بل لأن المعاني التي يعبّرون عنها بهذه العبارات فيها من الباطل المذموم في الأدلة والأحكام ما يجب النهي عنه، لاشتمال هذه الألفاظ على معانٍ مجملة في النفي والإثبات، كما قال <span class="sem-name sem-scholar">الإمام أحمد</span> في وصفه لأهل البدع: هم مختلفون في الكتاب، مخالفون للكتاب، متفقون على مخالفة الكتاب، يتكلمون بالمتشابه من الكلام، ويلبّسون على جهّال الناس بما يتكلمون به من المتشابه.</p>
+<p>فإذا عُرفت المعاني التي يقصدونها بأمثال هذه العبارات، ووُزنت بالكتاب والسنة، بحيث يُثبَت الحقّ الذي أثبته الكتاب والسنة، ويُنفى الباطل الذي نفاه الكتاب والسنة — كان ذلك هو الحق، بخلاف مسلك أهل الأهواء من التكلم بهذه الألفاظ نفيًا وإثباتًا في المسائل والوسائل من غير التفصيل والتقسيم الذي هو من الصراط المستقيم. فهذا من مثارات الشُّبه».</p><span class="who"><span class="sem-name sem-scholar">ابن تيمية</span> — نقله <span class="sem-name sem-scholar">ابن مفلح</span> في «الآداب الشرعية»</span></blockquote>
+<p>وهذا كلام في غاية النفاسة، وتمنّى الشيخ أن يُراجَع في «الآداب الشرعية» لـ<span class="sem-name sem-scholar">ابن مفلح</span>.</p>
+<div class="quiz" data-q="q3-1"></div>
+
+<h3 id="s3-c">تطبيق القاعدة على «الديمقراطية» و«العلمانية»</h3>
+<p>فلما تسمع اليوم من يتكلم عن الديمقراطية وأن هذا هو السبيل وأن هذا حكم دين، ومن يقول: «لا والله، الشريعة محكَّمة already» — فما معنى «محكّمة already»؟ إن كانت محكّمة فلماذا تعمل مشاكل؟ ثم يقال لمن يعترض: «تبقى من الخوارج». ولو كانت محكّمة فالذين يحكمون بها حكّام صدق؟ لا طبعًا، ليس هناك هذا الكلام.</p>
+<h4>العلمانية: الفصل بين الدين والقانون</h4>
+<p>وإنما لا بد أن تعلم أن <strong>العلمانية هي الفصل بين الأشياء</strong> ابتداءً — وسيأتي تفصيلها في الكلام عن أصل الدين — أي الفصل بين الأشياء وواقعها: <strong>الفصل بين الدين وبين القانون</strong>. هذا كلام صريح «دُغري» لا نقاش فيه، وستأتي أدلته.</p>
+<p>ولا يلبّس عليك أحد فيقول: «معلش، ديمقراطية في الشرق، أما ديمقراطية في الغرب فهي المشكلة». ليس هناك هذا الكلام. قل لي أولًا: ما تعريف الديمقراطية؟ أنا لا أقرأ في كتاب الله ولا في سنة <span class="sem-name sem-sahabi">رسول الله ﷺ</span> شيئًا اسمه الديمقراطية، لكن الذي أعرفه أن هذه المسائل تُبيَّن أولًا، فإذا بُيّنت معانيها أقدر أن أُصاحبها بالحكم من الكتاب والسنة. وهذا هو كلام <span class="sem-name sem-scholar">ابن تيمية</span> النفيس.</p>
+<div class="warn">الحكم على لفظ حادث يأتي بعد تفصيل معناه، لا قبله؛ فلا يُقبل لفظ مجمل ولا يُرفض قبل أن يُعرف ما تحته.</div>
+<div class="quiz" data-q="q3-2"></div>
+
+<h3 id="s3-d">«كلمة حق تحتها ألف كلمة باطل»</h3>
+<p>وأحال الشيخ على كلام <span class="sem-name sem-scholar">ابن القيم</span> في «الفوائد» على قوله تعالى:</p>
+<div class="aya-block"><p><span class="sem-aya">﴿وَكَذَٰلِكَ نُفَصِّلُ الْآيَاتِ وَلِتَسْتَبِينَ سَبِيلُ الْمُجْرِمِينَ﴾</span></p><div class="ref">[الأنعام: 55]</div></div>
+<p>فإذا فُصّلت الآيات بانت سبيل المجرمين. ومعنى كلام <span class="sem-name sem-scholar">ابن القيم</span>: أنه لا يستطيع أن يسلك إلى الله إلا من عرف سبيل الله مفصّلة على وجه التفصيل، وعرف سبل الجاهلية مفصّلة أيضًا على وجه التفصيل.</p>
+<p>وكل ما نقع فيه اليوم سببه أن يقول لي أحدهم كلمة شرعية ويضع تحتها ألف كلمة غير شرعية؛ لأن هؤلاء شياطين الإنس الذين يشبهون إخوانهم من شياطين الجن. ومثاله الحديث المعروف:</p>
+<blockquote class="hadith-block"><p>أن الشيطان يسترق السمع في السماء فيُرجَم، فينزل وقد سمع كلمة حق، فيضيف عليها مائة كذبة، ويلقيها إلى وليّه.</p><span class="who">بمعنى ما ساقه الشيخ — وأصله في <span class="sem-name sem-scholar">البخاري</span>: «فيكذبون معها مائة كذبة»</span></blockquote>
+<p>ووليّه هو الساحر والعرّاف وهؤلاء الضُّلّال. يقول له الشيطان كلمة سمعها فعلًا، فيضيف عليها مائة كلمة، فإذا سمعت الكلمة الحق قلت: «والله ده عنده حق، الراجل بيعرف أهو»، وهو في الحقيقة لا يعرف شيئًا أبدًا، وإنما أخذ كلمة استرقها يبتلي الله بها عباده. فهل ستقف وتقول: «كذبت عيني وكذبت أذني وصدق الله»، أم ستقول: «هذا يعرف الغيب»؟ والله عز وجل يقول:</p>
+<div class="aya-block"><p><span class="sem-aya">﴿قُل لَّا يَعْلَمُ مَن فِي السَّمَاوَاتِ وَالْأَرْضِ الْغَيْبَ إِلَّا اللَّهُ وَمَا يَشْعُرُونَ أَيَّانَ يُبْعَثُونَ﴾</span></p><div class="ref">[النمل: 65]</div></div>
+<p>فخلِّ بالك؛ لأن هذه مزالّ أقدام شديدة وفتنة عظيمة جدًا. ولذلك <strong>كل لفظة سنفصّلها، والألفاظ الحديثة الداخلة سنفسّرها</strong>: ما معنى الكلمة الفلانية؟ حتى نقدر أن نأخذ منها حكمًا شرعيًا.</p>
+<div class="quiz" data-q="q3-3"></div>
+
+<h3 id="s3-e">الغزو الفكري: من أين بدأ التهتّك؟</h3>
+<p>قبل الدخول في تعريف أصل الدين، أخذ الشيخ «حتة» في الغزو الفكري، وتمنّى أن يكون هناك سعة للكلام فيه: ماذا حدث بالضبط في القرن الرابع عشر تحديدًا؟</p>
+<div class="timeline">
+  <div class="tl-i" data-n="1"><div class="tt">قبل ذلك: مشاكل مع تماسك الدولة</div><div class="td">حصلت مشاكل في الدولة الأموية والعباسية والعثمانية، لكن الدولة كانت لا تزال متماسكة.</div></div>
+  <div class="tl-i" data-n="2"><div class="tt">غزو <span class="sem-name">نابليون</span> ل<span class="sem-name">مصر</span> ودخوله</div><div class="td">بعده تحديدًا بدأت الإشكالات الكبيرة.</div></div>
+  <div class="tl-i" data-n="3"><div class="tt"><span class="sem-name">محمد علي</span> وما بعده</div><div class="td">بدأوا يرخون من هنا، فحصل تهتّك في أصول كبيرة للدين في دولة الإسلام، فضلًا عن تهتّك الأرض نفسها التي بدأت تتفرق وتتقطع.</div></div>
+</div>
+<h4>المذهب التلفيقي: البلية العظيمة إلى الآن</h4>
+<p>هناك شيء اسمه <strong>المذهب التلفيقي</strong>، وهو البلية العظيمة التي عندنا منها إلى الآن. وخلفيته كما شرحها الشيخ:</p>
+<div class="num">
+  <div class="n"><span class="b">1</span><div class="t">دخل الاحتلال، وحصل تخلف شديد جدًا في أواخر الدولة العثمانية، وإهمال جامد.</div></div>
+  <div class="n"><span class="b">2</span><div class="t">بدأ بعض السلاطين يحكم بغير ما أنزل الله، مثل <span class="sem-name">عبد الحميد الأول</span> وغيره، وبعضهم يرجع ثانية، وبعضهم يأخذ مرة أخرى.</div></div>
+  <div class="n"><span class="b">3</span><div class="t">انساقوا وراء الغرب كناس، لا كدولة مستقلة، فأهملوا كل ما يُغضب الغرب: أن تُعدّ سلاحك ونفسك ويكون لك جيشك، وطبعًا تحكيم الشريعة ابتداءً.</div></div>
+  <div class="n"><span class="b">4</span><div class="t">بدأت العلمانية تدخل، والمستشرقون يشتغلون «من تحت لتحت».</div></div>
+  <div class="n"><span class="b">5</span><div class="t">مع الترهّل والتخلف والجور والشدة في بعض المواضع، حصلت تطلعات: «إحنا عايشين كده ليه؟ نعيش زي الناس».</div></div>
+</div>
+<div class="warn">الدولة العثمانية تحتاج تفصيلًا في الكلام عنها، لا إعلاءً مطلقًا من منارها؛ فقد حصل فيها ترهّل شديد في أواخرها.</div>
+
+<h3 id="s3-f"><span class="sem-name">محمد علي</span>: كيف حكم <span class="sem-name">مصر</span>َ جابٍ صغير؟</h3>
+<p><span class="sem-name">محمد علي</span> كان رجلًا جابيًا من جُباة الدولة العثمانية، وكان لقبه «شرسمه» — وهي كلمة تركية بمعنى أمير سرية صغيرة. فأمير سرية صغيرة يحكم <span class="sem-name">مصر</span>! على حدّ قول <span class="sem-name">المتنبي</span> حين كان يذمّ <span class="sem-name">كافور الإخشيدي</span>:</p>
+<blockquote class="naql"><p>أكلّما اغتال عبدُ السوء سيّدَه<br>أو خانه فله في <span class="sem-name">مصر</span> تمهيدُ</p><span class="who"><span class="sem-name">المتنبي</span> — في هجاء كافور</span></blockquote>
+<div class="fix">ساق الشيخ البيت بالمعنى: «أكلما خان عبد السوء سيده نجد له في <span class="sem-name">مصر</span> أعوانًا»، والمثبت لفظه في ديوان <span class="sem-name">المتنبي</span>. ولقب <span class="sem-name">محمد علي</span> يُكتب في المصادر «سرچشمه».</div>
+<p>ونبّه الشيخ على تلاعب في تناول تاريخ هذه البلاد: ساعة يجدون تقدّمًا يقولون: «الشعب المصري متديّن بطبعه»، ويمدحونه، وساعة تحصل مشكلة يقولون: «دول طول عمرهم محتلين، وناس سيئين جدًا، وعمر ما حد طلع منهم قائد أبدًا». <strong>وهذا من النفاق في نقل العلم وفي المناظرات.</strong> فهذه البلاد لها قدرها العلمي والعسكري، لا بالضرورة بأهلها، وإنما خلقها الله هكذا.</p>
+<div class="story"><div class="st"><span class="sem-name">نور الدين</span> و<span class="sem-name">صلاح الدين</span>: سمعة <span class="sem-name">مصر</span></div>
+<p>كان من يحكم <span class="sem-name">مصر</span> قديمًا يُسامي الخليفة. وهذا ما حصل بين <span class="sem-name">نور الدين زنكي</span> و<span class="sem-name">صلاح الدين</span>: بعد أن قضى <span class="sem-name">صلاح الدين</span> على الدولة العبيدية الملحدة — المسمّاة زورًا بالفاطمية — استدعاه <span class="sem-name">نور الدين</span>، فأبطأ عليه. فقال بعض الناس: لقد حكم <span class="sem-name">مصر</span>، فرأى أنه صار رأسًا برأس، بعد أن كان عسكريًا من عساكره. فبدأ <span class="sem-name">نور الدين</span> يجهّز له جيشًا، حتى بعث إليه <span class="sem-name">صلاح الدين</span> يستعطفه، وقال له ما معناه: إن شئت فأرسل نجّابًا (رسولًا) يجرّني إليك.</p>
+<p>والشاهد أن هذه كانت سمعة هذه البلاد: تأتي بعسكري ليس قائدًا كبيرًا — قائد ثلاثة أو أربعة أو عشرة أو عشرين — فيحكمها فيصير هكذا.</p></div>
+<h4>صفات <span class="sem-name">محمد علي</span></h4>
+<p>و<span class="sem-name">محمد علي</span> كان غير متعلم تمامًا. فكيف حكمها؟ كان كثيف الكبد، يجبي الأموال من الناس بالقهر والقوة، سفّاكًا للدماء، شديدًا، رجلًا داهية. ومن الأشياء التي يريد الشيخ أن يتكلم فيها لاحقًا: كيف جاؤوا بمثل هذا فصار هو البلد، وكان موجودًا <span class="sem-name">عمر مكرم</span> و<span class="sem-name">عبد الله الشرقاوي</span> ومشايخ كثيرون؟ والمقصود الآن أنه في المجمل صار تخلّف شديد مع قهر شديد، فتطلّع الناس، فجاءت البعثات والإرساليات.</p>
+<div class="quiz" data-q="q3-4"></div>
+
+<h3 id="s3-g">خطة <span class="sem-name">نابليون</span>: «هجيب لك واحد شبهك»</h3>
+<div class="story"><div class="st">رسالة <span class="sem-name">نابليون</span> إلى <span class="sem-name">كليبر</span></div>
+<p>كتب <span class="sem-name">نابليون</span> — وكان رجلًا شيطانًا — كتابًا مشهورًا جدًا إلى <span class="sem-name">كليبر</span> يقول فيه ما معناه: أريدك أن تُعدّ خمسمائة إنسان من جميع طبقات سكان البلاد: من الشيوخ، والوجهاء، وشيوخ القبائل، ورؤوس العائلات... وترسلهم كلهم إلى <span class="sem-name">فرنسا</span> ينظرون إلى حضارتنا، ثم يرجعون إلى <span class="sem-name">مصر</span>، فيكون هؤلاء هم الذين يدعون إلينا.</p></div>
+<p>يعني: «هجيب لك واحد شبهك». لن آتيك بمحتلّ تريد أن تحاربه، بل بواحد يشبهك بالضبط، اسمه مثل اسمك، لكنك تجده أمريكيًا أكثر من الأمريكي، ويهوديًا أكثر من اليهودي، وفرنسيًا أكثر من الفرنسي. <strong>وهذه الخطة نحن ماشون بها إلى الآن.</strong></p>
+<h4>البعثات والأصوات العلمانية</h4>
+<p>فبدأ <span class="sem-name">محمد علي</span> يرسل البعثات، يرون التقدّم بالخارج والناس عائشة في رفاهية، فيُسلَّط على المبعوث غانيةٌ ومستشرق، وتبدأ الخطة، كما حصل مع <span class="sem-name">طه حسين</span>. فهناك تقدّم جامد جدًا بالخارج، ونحن في الداخل لا شيء.</p>
+<p>فبدأت بعض الأصوات العلمانية السيئة المعادية للدين تقول: «هذا بسبب الدين؛ لأننا متمسكون بحكم الشرع». كما خرج قبل ذلك من قال إن البنت تسقط في المدرسة لأنها لابسة الحجاب! وما علاقة الحجاب بالسقوط؟ هل تنجح لو سرّحت شعرها، وتأخذ مائة في المائة لو عملت قصّة معيّنة؟ لا يمكن أن يفكر العقل بهذه الطريقة، لكنه غزو للدين:</p>
+<div class="aya-block"><p><span class="sem-aya">﴿وَفِيكُمْ سَمَّاعُونَ لَهُمْ﴾</span></p><div class="ref">[التوبة: 47]</div></div>
+<div class="quiz" data-q="q3-5"></div>
+
+<h3 id="s3-h">ثلاث فرق أمام حضارة الغرب</h3>
+<p>لما قيل هذا الكلام، ومع القهر الشديد والتخلف، انقسم الناس — كما قسّمهم العلماء — ثلاثة أقسام:</p>
+<div class="tree">
+  <span class="root">الناس أمام حضارة الغرب</span>
+  <div class="kids">
+    <div class="kid"><b>الأولى:</b> «لا نريد دينًا مطلقًا»؛ ديني هو دين الغرب.</div>
+    <div class="kid"><b>الثانية:</b> «ماسك في ديني لا يمكن أن أتركه؛ هو الحل، ولو طبقناه صح لعشنا سادة الناس، لكننا لا نعمل به». وكانت فئة يسيرة جدًا، تُعدّ بالفرد والفردين.</div>
+    <div class="kid"><b>الثالثة (الوسط):</b> «نأخذ منهم ما ينفعنا وما يأذن فيه الشرع، ولن نمتنع». فقيل: هذا كلام جميل جدًا — ثم فوجئنا أنهم يلوون أعناق الدين ليوافق ما بالخارج.</div>
+  </div>
+</div>
+<div class="fix">بعد الفرقة الأولى عبارة في التفريغ غير مفهومة («وسير بنا على دين برهمي...») فلم تُنقل.</div>
+<div class="story"><div class="st">من قلّة الفرقة الثانية: مشهد من ثورة 1919</div>
+<p>يحكون أنه في ثورة 19 كانت هناك لافتة مكتوب عليها: «<span class="sem-name">سعد زغلول</span> معبود الشعب»، وخرج شيخ من الأزهر وغيره في المظاهرات. فقالوا للشيخ <span class="sem-name sem-scholar">محمد حامد الفقي</span> رحمه الله: اطلع معنا في المظاهرات، فقال: «إن الله لا ينصر الناس» بهذه الصورة التي هم خارجون بها.</p>
+<p>وزغلول لما نزل مدّ يده على نقاب <span class="sem-name">صفية زغلول</span> و<span class="sem-name">هدى شعراوي</span> فرفعه، وعملوا ميدان الإسماعيلية من ساعتها «ميدان التحرير» — لتحرير المرأة. حضرتك كنت بالخارج لتحلّ مشكلتنا مع الإنجليز، تأتي فتشيل النقاب؟! وما علاقة النقاب وحرق الحجاب بالقضية؟</p></div>
+<div class="fix">ورد الاسم صوتيًا «حمد الفقهي»، والأقرب أنه الشيخ <span class="sem-name sem-scholar">محمد حامد الفقي</span> (مؤسس جماعة أنصار السنة)، وذلك اجتهاد في قراءة التفريغ. والرواية التاريخية لنزع النقاب وتسمية ميدان التحرير منقولة كما حكاها الشيخ؛ وفي كتب التاريخ روايات أخرى في تفاصيلها وتوقيتها.</div>
+<h4><span class="sem-name">رفاعة الطهطاوي</span> والرقص «الرياضي»</h4>
+<p>ومن الفرقة الثالثة كتاب <span class="sem-name">رفاعة الطهطاوي</span> «تخليص الإبريز في تلخيص باريز». خرج الرجل شيخًا كويسًا «زي الفل»، ثم رجع يقول: «يا جماعة، الرقص ده حاجة كويسة جدًا، والشرع ما بيحرّمهاش». كيف لا يحرّمها الشرع، وامرأة واقفة تهتزّ أمام الخلق؟ قال: لأن هذا الاهتزاز حركات رياضية؛ تجري الدورة الدموية وتفيد العضلات! كأنه حصر الإسلام في الرياضة. وبدأ ينقل مثل هذه الأشياء، وكان رائدًا، ثم بعده <span class="sem-name">محمد عبده</span> و<span class="sem-name">جمال الدين الأفغاني</span> ودولة عظيمة جدًا من هذا الاتجاه.</p>
+<div class="fix">ورد اسم الكتاب صوتيًا «ذهب الإبريز في وصف <span class="sem-name">باريس</span>»، وصوابه «تخليص الإبريز في تلخيص باريز».</div>
+<div class="quiz" data-q="q3-6"></div>
+
+<h3 id="s3-i">المذهب التلفيقي: تعريفه وثمراته</h3>
+<p>المذهب التلفيقي باختصار هو قول الله عز وجل:</p>
+<div class="aya-block"><p><span class="sem-aya">﴿أَفَتُؤْمِنُونَ بِبَعْضِ الْكِتَابِ وَتَكْفُرُونَ بِبَعْضٍ﴾</span></p><div class="ref">[البقرة: 85]</div></div>
+<p>أن آخذ شوية من القانون الفرنسي، وأحطّ شوية عندنا من الشريعة، ويبقى «شوية وشوية، وحبّ عليك وحبّ عليّ، ودِيْنا تمشي». فأين الاستقلال التام لحكم الله عز وجل؟ يقولون: لا يوجد هذا الكلام.</p>
+<div class="cmp">
+  <div class="cap">الفرق الدقيق في المدرسة التلفيقية</div>
+  <div class="r h"><div class="k">الطرفان</div><div>ما تزعمه</div><div>حقيقتها</div></div>
+  <div class="r"><div class="k">العلاقة بحضارة الغرب</div><div>«يأذن الشرع في حضارة الغرب» فيما ينفع.</div><div>«يُطوَّع الشرع لحضارة الغرب».</div></div>
+</div>
+<p>ومن آثار هذا المذهب اليوم:</p>
+<div class="num">
+  <div class="n"><span class="b">1</span><div class="t">كلمة صدرت مع الأسف الشديد من بعض المشايخ المنسوبين لأهل السنة: «من أراد أن يغيّر البلاد ويحكم بالإسلام دون أخطاء فهو حمار». فيُسأل: ما هذه الأخطاء في نظرك؟ نحن نتكلم في مشاركةٍ لله عز وجل في التشريع؛ هل هي عندك شيء مكروه، أم داخلة في صلب الدين؟ ولهذا استدعانا الكلام في صلب الدين.</div></div>
+  <div class="n"><span class="b">2</span><div class="t">بعض النواب في مجلس الشعب قال: «مذهبي أن أُحيي مدرسة الشيخ <span class="sem-name">محمد عبده</span>». ومدرسته: «أنا برضه لي رأي» — ولو كان الرأي بخلاف الإجماع.</div></div>
+  <div class="n"><span class="b">3</span><div class="t">ما قيل من أن مقدمة كتاب <span class="sem-name">قاسم أمين</span> كتبها <span class="sem-name">محمد عبده</span>، بل قال بعضهم إنه كتب الكتاب كله ثم كُتب عليه اسم <span class="sem-name">قاسم أمين</span>.</div></div>
+  <div class="n"><span class="b">4</span><div class="t">بعد ذلك: «الاشتراكية الإسلامية»، ثم «العلمانية الإسلامية»، و«الديمقراطية الإسلامية»، و«عندنا آليات الديمقراطية وجسم الديمقراطية»؛ ولا تعرف ما الذي يقولونه بالضبط، لأنهم لم يقولوا أصلًا ما هي الديمقراطية نفسها، ولا ما هي الاشتراكية.</div></div>
+</div>
+<div class="fix">ورد في التفريغ «مقدمة كتاب المرأة الجديدة»، والمشهور أن الكلام في مشاركة <span class="sem-name">محمد عبده</span> يدور على كتاب <span class="sem-name">قاسم أمين</span> «تحرير المرأة».</div>
+<div class="key">المذهب التلفيقي أصل كبير جدًا؛ استحضره لأنك ستراه كثيرًا في التراجعات التي سقطت فيها الدولة الإسلامية منذ هذا الوقت.</div>
+<div class="quiz" data-q="q3-7"></div>
+
+<div class="takeaway"><div class="tt">خلاصة المجلس الثالث <small>(إضافة تحريرية)</small></div>
+<div class="score" data-s="s3"></div>
+<div class="tk-i">الفقه هو الجمع والتفرقة؛ والتفصيل من سيما أهل السنة، والإجمال من سيما أهل البدع.</div>
+<div class="tk-i">الألفاظ الحادثة (الديمقراطية...) لا يُحكم عليها حتى تُفصَّل معانيها وتُوزن بالكتاب والسنة.</div>
+<div class="tk-i">العلمانية: الفصل بين الدين والقانون.</div>
+<div class="tk-i">بعد غزو <span class="sem-name">نابليون</span> و<span class="sem-name">محمد علي</span> حصل تهتّك في أصول كبيرة للدين، ونشأت خطة «واحد شبهك» عبر البعثات.</div>
+<div class="tk-i">الناس أمام الغرب ثلاث فرق، والتلفيق هو «الإيمان ببعض الكتاب والكفر ببعض»، وتطويع الشرع للغرب.</div>
+</div>
+<div class="next"><b>الخيط التالي</b>ندخل في قضية أصل الدين وتعريف لا إله إلا الله والدليل على أنه هو أصل الدين الكبير، في اللقاء الآتي.</div>
+</section>
+
+
+<div id="cards"><h2>بطاقات المراجعة — المحاضرة 03</h2><div class="score">تُراجَع بعد يومين من القراءة. التصدير: TSV بمعرّف ثابت (GUID) لكل بطاقة، وتاج المحاضرة وتاج المستوى، لنوع الملاحظة «أساسي» مع anki/final.css.</div><div class="cstage"><div class="cbox" id="cbox"></div></div><div class="cnav"><button type="button" id="cprev">→ السابقة</button><span class="pos" id="cpos"></span><button type="button" id="cnext">التالية ←</button><button type="button" class="dl" id="cdl" data-name="العروة_الوثقى_م03_بطاقات.tsv">تحميل بطاقات المحاضرة (TSV)</button></div></div>
+</main>
+</div>
+<nav class="lnav"><a href="02.html">→ المحاضرة 02</a><a class="home" href="index.html">فهرس السلسلة</a><a href="04.html">المحاضرة 04 ←</a></nav>
+<footer>العروة الوثقى — المحاضرة 03 · أُعدّ بمساعدة الذكاء الاصطناعي ويُرجى مراجعته</footer>
+<script>
+const NAMES={"sahabi": ["النبي ﷺ", "رسول الله ﷺ", "يعقوب", "إسحاق", "إبراهيم", "إسماعيل", "يوسف", "نوح", "هود", "عبد الله بن سلام", "حذيفة بن اليمان", "حذيفة", "معاذ بن جبل", "معاذ", "معاوية بن حيدة", "أبو هريرة", "أبي هريرة", "أبا هريرة", "أبو ذر", "أبي ذر", "أبا ذر", "عبد الله بن مسعود", "ابن مسعود", "عثمان", "سيدنا علي", "أبي بكر وعمر", "أبا بكر وعمر"], "scholar": ["ابن كثير", "ابن القيم", "ابن رجب", "شيخ الإسلام ابن تيمية", "ابن تيمية", "أبو المعالي الجويني", "الجويني", "المارديني", "عبيد الله بن الحسن العنبري", "القاضي عياض", "الشوكاني", "الشافعي", "النووي", "القرطبي", "أبو بكر بن العربي", "ابن حجر العسقلاني", "البخاري", "الإمام أحمد", "ابن مفلح", "القرافي", "العز بن عبد السلام", "الشاطبي", "ابن أبي عاصم", "الطحاوي", "أبو إسماعيل الهروي", "الهروي", "ابن الزملكاني", "ابن مخلوف", "صفي الدين الهندي", "ابن الوكيل", "سليمان بن سحمان", "محمود شاكر", "محمد محمد حسين", "محمد حامد الفقي"], "name": ["جان دولومو", "غريس ديفي", "محمد علي", "نابليون", "كليبر", "عمر مكرم", "عبد الله الشرقاوي", "نور الدين زنكي", "نور الدين", "صلاح الدين", "كافور الإخشيدي", "المتنبي", "رفاعة الطهطاوي", "محمد عبده", "جمال الدين الأفغاني", "قاسم أمين", "سعد زغلول", "صفية زغلول", "هدى شعراوي", "طه حسين", "عبد الحميد الأول", "السيد البدوي", "مصر", "تونس", "العراق", "باكستان", "لبنان", "تركيا", "باريس", "فرنسا", "اليمن"]};
+const CARDS_DATA=[{"id": "c038", "sectionId": "s3", "level": 4, "anchor": "أشاعرة اليوم — ما الانحرافات التي تجاوزوا بها مسألة تأويل الصفات ؟", "pattern": "calm", "q": "أشاعرة اليوم — ما الانحرافات التي تجاوزوا بها مسألة تأويل الصفات ؟", "a": "عندهم قبورية يسألون القبر فعلًا، وعندهم من يؤمن بالاتحاد، ومن يقول بعقيدة الجهمية أن القرآن مخلوق وينسب ذلك إلى الإمام أحمد. ولذلك يقولون دائمًا «نحن أهل السنة» ليخدعوا الناس، مع وجود أشاعرة فقط كالأئمة الأوائل.", "blocks": [{"type": "ans", "s": "عندهم قبورية", "e": "الإمام أحمد."}, {"type": "alert", "s": "ولذلك يقولون", "e": "كالأئمة الأوائل."}], "marks": [], "review": ""}, {"id": "c039", "sectionId": "s3", "level": 2, "anchor": "«الفقه هو الجمع والتفرقة» — ما معنى هذه العبارة، وما الكتب التي صُنّفت", "pattern": "calm", "q": "«الفقه هو الجمع والتفرقة» — ما معنى هذه العبارة، وما الكتب التي صُنّفت في هذا الفن؟", "a": "أن تعلم المسائل التي يُجمع بعضها إلى بعض لتشابهها، والمسائل المفرّقة التي بينها فرق. وصُنّفت فيه كتب الفروق، مثل «الفروق» للقرافي و«الفروق» للعز بن عبد السلام، وهذا صميم مذهب أهل السنة.", "blocks": [{"type": "def", "s": "أن تعلم", "e": "بينها فرق."}, {"type": "ans", "s": "وصُنّفت فيه", "e": "أهل السنة."}], "marks": [], "review": ""}, {"id": "c040", "sectionId": "s3", "level": 1, "anchor": "التفصيل والإجمال في الأحكام — ما الفرق بين منهج أهل السنة ومنهج أهل ال", "pattern": "compare", "q": "التفصيل والإجمال في الأحكام — ما الفرق بين منهج أهل السنة ومنهج أهل البدع؟", "a": "أهل السنة يفصّلون ويفرّقون، والأحكام الإجمالية عندهم موجودة لكن بمناطاتها الصحيحة. وأهل البدع من سيماهم الإجمال، كقول الخوارج «الناس كلهم كفار»؛ والأحكام الإجمالية أحكام جائرة.", "blocks": [{"type": "cols", "parts": [{"s": "أهل السنة", "e": "بمناطاتها الصحيحة."}, {"s": "وأهل البدع", "e": "أحكام جائرة."}]}], "marks": [], "review": ""}, {"id": "c041", "sectionId": "s3", "level": 2, "anchor": "لماذا ذمّ السلف علم الكلام على ما نقله ابن مفلح في «الآداب الشرعية» عن", "pattern": "method", "q": "لماذا ذمّ السلف علم الكلام على ما نقله ابن مفلح في «الآداب الشرعية» عن ابن تيمية؟ وما المنهج الصحيح مع ألفاظه؟", "a": "لم يذمّوه لمجرد اصطلاحاته المولّدة كالجوهر والعرض والجسم، بل لأن تحتها معاني مجملة في النفي والإثبات فيها باطل مذموم. والمنهج أن تُعرف المعاني المقصودة وتُوزن بالكتاب والسنة، فيُثبَت ما أثبتاه ويُنفى ما نفياه؛ أما الكلام بها نفيًا وإثباتًا من غير تفصيل وتقسيم فمن مثارات الشبه.", "blocks": [{"type": "rule", "s": "لم يذمّوه", "e": "باطل مذموم."}, {"type": "ans", "s": "والمنهج أن", "e": "مثارات الشبه."}], "marks": [], "review": ""}, {"id": "c042", "sectionId": "s3", "level": 3, "anchor": "وصف الإمام أحمد أهل البدع بأوصاف نقلها ابن تيمية — ما هي؟", "pattern": "calm", "q": "وصف الإمام أحمد أهل البدع بأوصاف نقلها ابن تيمية — ما هي؟", "a": "مختلفون في الكتاب، مخالفون للكتاب، متفقون على مخالفة الكتاب، يتكلمون بالمتشابه من الكلام، ويلبّسون على جهّال الناس بما يتكلمون به من المتشابه.", "blocks": [{"type": "ans", "s": "مختلفون في", "e": "من المتشابه."}], "marks": [], "review": ""}, {"id": "c043", "sectionId": "s3", "level": 2, "anchor": "ما تعريف العلمانية الذي قُرّر في سياق الكلام عن الديمقراطية وتحكيم الش", "pattern": "calm", "q": "ما تعريف العلمانية الذي قُرّر في سياق الكلام عن الديمقراطية وتحكيم الشريعة؟", "a": "الفصل بين الأشياء وواقعها: الفصل بين الدين وبين القانون.", "blocks": [{"type": "def", "s": "الفصل بين", "e": "وبين القانون."}], "marks": [], "review": ""}, {"id": "c044", "sectionId": "s3", "level": 3, "anchor": "ما القاعدة في الحكم على لفظ حادث كـ«الديمقراطية»، وما الخطأ في قول «دي", "pattern": "method", "q": "ما القاعدة في الحكم على لفظ حادث كـ«الديمقراطية»، وما الخطأ في قول «ديمقراطية في الشرق لا مشكلة فيها، والمشكلة في ديمقراطية الغرب»؟", "a": "لا يُحكم على اللفظ حتى تُبيَّن معانيه أولًا ثم يُصحَب لها الحكم من الكتاب والسنة؛ وليس في الكتاب والسنة شيء اسمه الديمقراطية. الحكم على اللفظ بالقبول أو الرفض قبل أن يُطلب تعريفه ويُفصَّل ما تحته.", "blocks": [{"type": "rule", "s": "لا يُحكم", "e": "اسمه الديمقراطية."}, {"type": "err", "s": "الحكم على", "e": "ما تحته."}], "marks": [], "review": ""}, {"id": "c045", "sectionId": "s3", "level": 4, "anchor": "من يقول: «الشريعة محكّمة already» — ما الإلزامات التي أُوردت عليه؟", "pattern": "calm", "q": "من يقول: «الشريعة محكّمة already» — ما الإلزامات التي أُوردت عليه؟", "a": "إن كانت محكّمة فلماذا المشاكل؟ ولو كانت محكّمة لكان الحاكمون بها حكّام صدق، وليس الأمر كذلك؛ بل العلمانية فصل بين الدين والقانون.", "blocks": [{"type": "ans", "s": "إن كانت", "e": "الدين والقانون."}], "marks": [], "review": ""}, {"id": "c046", "sectionId": "s3", "level": 3, "anchor": "﴿وَكَذَٰلِكَ نُفَصِّلُ الْآيَاتِ وَلِتَسْتَبِينَ سَبِيلُ الْمُجْرِمِين", "pattern": "quran", "q": "﴿وَكَذَٰلِكَ نُفَصِّلُ الْآيَاتِ وَلِتَسْتَبِينَ سَبِيلُ الْمُجْرِمِينَ﴾ [الأنعام: 55]\nما الفائدة التي قرّرها ابن القيم في «الفوائد» على الآية؟", "a": "لا يستطيع أن يسلك إلى الله إلا من عرف سبيل الله مفصّلة على وجه التفصيل، وعرف سبل الجاهلية مفصّلة كذلك. فإذا فُصّلت الآيات بانت سبيل المجرمين.", "blocks": [{"type": "ans", "s": "لا يستطيع", "e": "مفصّلة كذلك."}, {"type": "wajh", "s": "فإذا فُصّلت", "e": "سبيل المجرمين."}], "marks": [], "review": ""}, {"id": "c047", "sectionId": "s3", "level": 3, "anchor": "حديث الشيطان يسترق السمع فيسمع كلمة حق فيضيف عليها مائة كذبة ويلقيها إ", "pattern": "quran", "q": "حديث الشيطان يسترق السمع فيسمع كلمة حق فيضيف عليها مائة كذبة ويلقيها إلى وليّه — كيف شُبّه به حال دعاة الباطل اليوم؟", "a": "يقول أحدهم كلمة شرعية ويضع تحتها ألف كلمة غير شرعية؛ فهم شياطين الإنس الذين يشبهون إخوانهم من شياطين الجن. والكلمة الحق المسترقة يبتلي الله بها عباده، فيغترّ السامع ويقول: «الراجل بيعرف أهو».", "blocks": [{"type": "ans", "s": "يقول أحدهم", "e": "شياطين الجن."}, {"type": "wajh", "s": "والكلمة الحق", "e": "بيعرف أهو»."}], "marks": [], "review": ""}, {"id": "c048", "sectionId": "s3", "level": 3, "anchor": "﴿قُل لَّا يَعْلَمُ مَن فِي السَّمَاوَاتِ وَالْأَرْضِ الْغَيْبَ إِلَّا ", "pattern": "quran", "q": "﴿قُل لَّا يَعْلَمُ مَن فِي السَّمَاوَاتِ وَالْأَرْضِ الْغَيْبَ إِلَّا اللَّهُ وَمَا يَشْعُرُونَ أَيَّانَ يُبْعَثُونَ﴾ [النمل: 65]\nما الموقف الواجب ممن وافق خبرُ الكاهن عنده الواقع؟", "a": "أن يقول: «كذبت عيني وكذبت أذني وصدق الله»، لا أن يقول: هذا يعلم الغيب.", "blocks": [{"type": "ans", "s": "أن يقول:", "e": "يعلم الغيب."}], "marks": [], "review": ""}, {"id": "c049", "sectionId": "s3", "level": 2, "anchor": "ما المنهج الذي التُزم به في التعامل مع الألفاظ الشرعية والحديثة الداخل", "pattern": "method", "q": "ما المنهج الذي التُزم به في التعامل مع الألفاظ الشرعية والحديثة الداخلة في زمن الفتن؟", "a": "كل لفظة تُفصَّل، والألفاظ الحديثة تُفسَّر: ما معنى الكلمة الفلانية؟ حتى يمكن أخذ حكم شرعي منها.", "blocks": [{"type": "rule", "s": "كل لفظة", "e": "شرعي منها."}], "marks": [], "review": ""}, {"id": "c050", "sectionId": "s3", "level": 3, "anchor": "الغزو الفكري في القرن الرابع عشر — ما مراحل التهتّك في دولة الإسلام؟", "pattern": "method", "q": "الغزو الفكري في القرن الرابع عشر — ما مراحل التهتّك في دولة الإسلام؟", "a": "قبل ذلك: مشاكل في الدولة الأموية والعباسية والعثمانية مع بقاء الدولة متماسكة. ثم غزو نابليون لمصر: بعده تحديدًا بدأت الإشكالات الكبيرة. ثم محمد علي وما بعده: تهتّكت أصول كبيرة للدين في دولة الإسلام، وتهتّكت الأرض نفسها فتفرقت وتقطّعت.", "blocks": [{"type": "steps", "seq": true, "items": [{"s": "قبل ذلك:", "e": "قبل ذلك:", "ds": "مشاكل في", "de": "الدولة متماسكة."}, {"s": "ثم غزو", "e": "نابليون لمصر:", "ds": "بعده تحديدًا", "de": "الإشكالات الكبيرة."}, {"s": "ثم محمد", "e": "وما بعده:", "ds": "تهتّكت أصول", "de": "فتفرقت وتقطّعت."}]}], "marks": [], "review": ""}, {"id": "c051", "sectionId": "s3", "level": 2, "anchor": "ما المقصود بـ«المذهب التلفيقي»، البلية العظيمة في واقع المسلمين إلى ال", "pattern": "calm", "q": "ما المقصود بـ«المذهب التلفيقي»، البلية العظيمة في واقع المسلمين إلى الآن؟", "a": "أن يُؤخذ شيء من القانون الفرنسي ويُوضع شيء من الشريعة، فيكون «شوية وشوية»، بلا استقلال تام لحكم الله. وهو باختصار قوله تعالى: ﴿أَفَتُؤْمِنُونَ بِبَعْضِ الْكِتَابِ وَتَكْفُرُونَ بِبَعْضٍ﴾.", "blocks": [{"type": "def", "s": "أن يُؤخذ", "e": "لحكم الله."}, {"type": "ans", "s": "وهو باختصار", "e": "وَتَكْفُرُونَ بِبَعْضٍ﴾."}], "marks": [], "review": ""}, {"id": "c052", "sectionId": "s3", "level": 3, "anchor": "﴿أَفَتُؤْمِنُونَ بِبَعْضِ الْكِتَابِ وَتَكْفُرُونَ بِبَعْضٍ﴾ [البقرة: ", "pattern": "quran", "q": "﴿أَفَتُؤْمِنُونَ بِبَعْضِ الْكِتَابِ وَتَكْفُرُونَ بِبَعْضٍ﴾ [البقرة: 85]\nعلى أي حالين معاصرين أُنزلت الآية في سلسلة العروة الوثقى؟", "a": "المذهب التلفيقي: أخذ شيء من الشريعة وشيء من القوانين الوضعية. عبادة الله مع الإقرار لشيء معه: فلا تنفع، لأن الإسلام لا يصلح إلا بعبادة الله والكفر بما يُعبد من دونه.", "blocks": [{"type": "steps", "seq": false, "items": [{"s": "المذهب التلفيقي:", "e": "المذهب التلفيقي:", "ds": "أخذ شيء", "de": "القوانين الوضعية."}, {"s": "عبادة الله", "e": "لشيء معه:", "ds": "فلا تنفع،", "de": "من دونه."}]}], "marks": [], "review": ""}, {"id": "c053", "sectionId": "s3", "level": 3, "anchor": "ما الأسباب التي هيّأت لنشأة المذهب التلفيقي في أواخر الدولة العثمانية؟", "pattern": "method", "q": "ما الأسباب التي هيّأت لنشأة المذهب التلفيقي في أواخر الدولة العثمانية؟", "a": "دخول الاحتلال مع تخلّف شديد وإهمال. وحكم بعض السلاطين بغير ما أنزل الله، كعبد الحميد الأول وغيره. والانسياق وراء الغرب كناس لا كدولة مستقلة، وإهمال ما يُغضبه: إعداد السلاح والجيش وتحكيم الشريعة. ودخول العلمانية وعمل المستشرقين خفية. وتطلّع الناس مع الجور والتخلف: «نعيش زي الناس».", "blocks": [{"type": "steps", "seq": false, "items": [{"s": "دخول الاحتلال", "e": "شديد وإهمال."}, {"s": "وحكم بعض", "e": "الأول وغيره."}, {"s": "والانسياق وراء", "e": "وتحكيم الشريعة."}, {"s": "ودخول العلمانية", "e": "المستشرقين خفية."}, {"s": "وتطلّع الناس", "e": "زي الناس»."}]}], "marks": [], "review": ""}, {"id": "c054", "sectionId": "s3", "level": 5, "anchor": "محمد علي حاكم مصر — ما أصله، وما معنى لقبه، وما صفاته؟", "pattern": "calm", "q": "محمد علي حاكم مصر — ما أصله، وما معنى لقبه، وما صفاته؟", "a": "كان جابيًا من جباة الدولة العثمانية، ولقبه «شرسمه» كلمة تركية بمعنى أمير سرية صغيرة، وكان غير متعلم. وكان كثيف الكبد، يجبي الأموال بالقهر، سفّاكًا للدماء، شديدًا داهية.", "blocks": [{"type": "ans", "s": "كان جابيًا", "e": "غير متعلم."}, {"type": "wajh", "s": "وكان كثيف", "e": "شديدًا داهية."}], "marks": [], "review": ""}, {"id": "c055", "sectionId": "s3", "level": 5, "anchor": "بيت المتنبي في هجاء كافور الإخشيدي الذي استُشهد به على حكم محمد علي لم", "pattern": "calm", "q": "بيت المتنبي في هجاء كافور الإخشيدي الذي استُشهد به على حكم محمد علي لمصر — ما لفظه وما الشاهد منه؟", "a": "أكلّما اغتال عبدُ السوء سيّدَه أو خانه فله في مصر تمهيدُ. الشاهد: تعجّب من أن يحكم مصر من ليس أهلًا، كأمير سرية صغيرة.", "blocks": [{"type": "ans", "s": "أكلّما اغتال", "e": "مصر تمهيدُ."}, {"type": "wajh", "s": "الشاهد: تعجّب", "e": "سرية صغيرة."}], "marks": [], "review": ""}, {"id": "c056", "sectionId": "s3", "level": 4, "anchor": "«الشعب المصري متديّن بطبعه» عند التقدم، و«طول عمرهم محتلين ولم يخرج من", "pattern": "method", "q": "«الشعب المصري متديّن بطبعه» عند التقدم، و«طول عمرهم محتلين ولم يخرج منهم قائد» عند المشكلة — ما حكم هذا التناول، وما الحق في قدر مصر؟", "a": "هذا من النفاق في نقل العلم وفي المناظرات. والحق أن هذه البلاد لها قدرها العلمي والعسكري، لا بالضرورة بأهلها، وإنما خلقها الله هكذا.", "blocks": [{"type": "rule", "s": "هذا من", "e": "وفي المناظرات."}, {"type": "ans", "s": "والحق أن", "e": "الله هكذا."}], "marks": [], "review": ""}, {"id": "c057", "sectionId": "s3", "level": 5, "anchor": "قصة نور الدين زنكي وصلاح الدين بعد القضاء على الدولة العبيدية — ما ملخ", "pattern": "calm", "q": "قصة نور الدين زنكي وصلاح الدين بعد القضاء على الدولة العبيدية — ما ملخصها، وما الشاهد منها على مكانة مصر؟", "a": "استدعى نور الدين صلاحَ الدين فأبطأ، فقيل: حكم مصر فرأى نفسه رأسًا برأس بعد أن كان عسكريًا من عساكره، فجهّز نور الدين جيشًا حتى استعطفه صلاح الدين. الشاهد أن من يحكم مصر كان يُسامي الخليفة، ولو كان عسكريًا صغيرًا.", "blocks": [{"type": "ans", "s": "استدعى نور", "e": "صلاح الدين."}, {"type": "wajh", "s": "الشاهد أن", "e": "عسكريًا صغيرًا."}], "marks": [], "review": ""}, {"id": "c058", "sectionId": "s3", "level": 4, "anchor": "رسالة نابليون إلى كليبر — ما الخطة التي تضمنتها، وما خلاصتها في عبارة ", "pattern": "calm", "q": "رسالة نابليون إلى كليبر — ما الخطة التي تضمنتها، وما خلاصتها في عبارة «واحد شبهك»؟", "a": "أن يُعدّ خمسمائة من طبقات البلاد (شيوخ ووجهاء وشيوخ قبائل ورؤوس عائلات) ويُرسلهم إلى فرنسا ينظرون حضارتها ثم يرجعون دعاة لها. فلا يأتيك محتل تحاربه، بل واحد يشبهك واسمه كاسمك، وهو أمريكي أكثر من الأمريكي؛ وهذه الخطة ماشية إلى الآن.", "blocks": [{"type": "ans", "s": "أن يُعدّ", "e": "دعاة لها."}, {"type": "wajh", "s": "فلا يأتيك", "e": "إلى الآن."}], "marks": [], "review": ""}, {"id": "c059", "sectionId": "s3", "level": 5, "anchor": "البعثات التي أرسلها محمد علي — كيف كانت تُستعمل في التغريب؟", "pattern": "calm", "q": "البعثات التي أرسلها محمد علي — كيف كانت تُستعمل في التغريب؟", "a": "يرى المبعوث التقدم والرفاهية بالخارج، فيُسلَّط عليه غانية ومستشرق، فتبدأ الخطة، كما حصل مع طه حسين.", "blocks": [{"type": "ans", "s": "يرى المبعوث", "e": "طه حسين."}], "marks": [], "review": ""}, {"id": "c060", "sectionId": "s3", "level": 4, "anchor": "من قال: البنت تسقط في المدرسة لأنها محجبة — ما الخلل في هذا القول، وإل", "pattern": "method", "q": "من قال: البنت تسقط في المدرسة لأنها محجبة — ما الخلل في هذا القول، وإلى أي شيء رُدّ؟", "a": "ربط التخلف أو الرسوب بالدين بلا علاقة عقلية؛ فهل تنجح لو سرّحت شعرها؟ وهو غزو للدين، وقد قال تعالى: ﴿وَفِيكُمْ سَمَّاعُونَ لَهُمْ﴾.", "blocks": [{"type": "err", "s": "ربط التخلف", "e": "سرّحت شعرها؟"}, {"type": "ans", "s": "وهو غزو", "e": "سَمَّاعُونَ لَهُمْ﴾."}], "marks": [], "review": ""}, {"id": "c061", "sectionId": "s3", "level": 4, "anchor": "﴿وَفِيكُمْ سَمَّاعُونَ لَهُمْ﴾ [التوبة: 47]", "pattern": "quran", "q": "﴿وَفِيكُمْ سَمَّاعُونَ لَهُمْ﴾ [التوبة: 47]\nفي أي سياق استُشهد بها عند الكلام عن الأصوات العلمانية؟", "a": "في أن دعاوى ربط التخلف بالتمسك بالشرع غزو للدين يجد في المسلمين من يسمع له ويردده.", "blocks": [{"type": "ans", "s": "في أن", "e": "له ويردده."}], "marks": [], "review": ""}, {"id": "c062", "sectionId": "s3", "level": 1, "anchor": "حين اشتد القهر والتخلف وقيل «التخلف بسبب الدين»، انقسم الناس أمام حضار", "pattern": "method", "q": "حين اشتد القهر والتخلف وقيل «التخلف بسبب الدين»، انقسم الناس أمام حضارة الغرب ثلاث فرق — ما هي؟", "a": "الأولى: لا نريد دينًا مطلقًا، وديننا دين الغرب. الثانية: نتمسك بديننا ولو طبقناه صح لعشنا سادة الناس — وكانت يسيرة جدًا تُعدّ بالفرد والفردين. الثالثة (الوسط): نأخذ ما ينفع وما يأذن فيه الشرع — ثم لوت أعناق الدين ليوافق الخارج.", "blocks": [{"type": "steps", "seq": false, "items": [{"s": "الأولى:", "e": "الأولى:", "ds": "لا نريد", "de": "دين الغرب."}, {"s": "الثانية:", "e": "الثانية:", "ds": "نتمسك بديننا", "de": "بالفرد والفردين."}, {"s": "الثالثة (الوسط):", "e": "الثالثة (الوسط):", "ds": "نأخذ ما", "de": "ليوافق الخارج."}]}], "marks": [], "review": ""}, {"id": "c063", "sectionId": "s3", "level": 4, "anchor": "ثورة 1919 — ما المشاهد التي تدل على قلة المتمسكين بالدين يومئذ؟", "pattern": "calm", "q": "ثورة 1919 — ما المشاهد التي تدل على قلة المتمسكين بالدين يومئذ؟", "a": "لافتة «سعد زغلول معبود الشعب»، وامتناع الشيخ محمد حامد الفقي عن الخروج في المظاهرات قائلًا: إن الله لا ينصر الناس بهذه الصورة، ورفع زغلول نقاب صفية زغلول وهدى شعراوي، وتسمية ميدان الإسماعيلية «التحرير» لتحرير المرأة. اسم الفقي اجتهاد في قراءة التفريغ، وتفاصيل الواقعة منقولة كما حُكيت وفيها روايات تاريخية أخرى.", "blocks": [{"type": "ans", "s": "لافتة «سعد", "e": "لتحرير المرأة."}, {"type": "alert", "s": "اسم الفقي", "e": "تاريخية أخرى."}], "marks": [], "review": ""}, {"id": "c064", "sectionId": "s3", "level": 3, "anchor": "رفاعة الطهطاوي في «تخليص الإبريز في تلخيص باريز» — ما الذي قاله في الر", "pattern": "method", "q": "رفاعة الطهطاوي في «تخليص الإبريز في تلخيص باريز» — ما الذي قاله في الرقص، ولماذا جُعل مثالًا للفرقة الوسط؟", "a": "قال إن الرقص لا يحرّمه الشرع لأنه حركات رياضية تُجري الدورة الدموية وتفيد العضلات. ليّ أعناق الدين ليوافق الخارج، كأنه حصر الإسلام في الرياضة؛ ثم تبعه محمد عبده والأفغاني.", "blocks": [{"type": "ans", "s": "قال إن", "e": "وتفيد العضلات."}, {"type": "err", "s": "ليّ أعناق", "e": "عبده والأفغاني."}], "marks": [], "review": ""}, {"id": "c065", "sectionId": "s3", "level": 2, "anchor": "المدرسة التلفيقية — ما الفرق بين ما تزعمه في علاقة الشرع بحضارة الغرب ", "pattern": "compare", "q": "المدرسة التلفيقية — ما الفرق بين ما تزعمه في علاقة الشرع بحضارة الغرب وحقيقتها؟", "a": "تزعم أن الشرع يأذن في حضارة الغرب فيما ينفع. وحقيقتها أنها تُطوّع الشرع لحضارة الغرب.", "blocks": [{"type": "cols", "parts": [{"s": "تزعم أن", "e": "فيما ينفع."}, {"s": "وحقيقتها أنها", "e": "لحضارة الغرب."}]}], "marks": [], "review": ""}, {"id": "c066", "sectionId": "s3", "level": 2, "anchor": "قال بعض المشايخ المنسوبين لأهل السنة: «من أراد أن يغيّر البلاد ويحكم ب", "pattern": "method", "q": "قال بعض المشايخ المنسوبين لأهل السنة: «من أراد أن يغيّر البلاد ويحكم بالإسلام دون أخطاء فهو حمار» — ما وجه الرد عليه؟", "a": "يُسأل: ما هذه الأخطاء في نظرك؟ فالكلام في مشاركةٍ لله في التشريع. جعل الشرك في التشريع خطأً من جنس المكروهات، وهو داخل في صلب الدين.", "blocks": [{"type": "ans", "s": "يُسأل: ما", "e": "في التشريع."}, {"type": "err", "s": "جعل الشرك", "e": "صلب الدين."}], "marks": [], "review": ""}, {"id": "c067", "sectionId": "s3", "level": 5, "anchor": "مدرسة محمد عبده التي دعا بعض النواب إلى إحيائها — ما سمتها، وما الذي ق", "pattern": "calm", "q": "مدرسة محمد عبده التي دعا بعض النواب إلى إحيائها — ما سمتها، وما الذي قيل في صلته بكتاب قاسم أمين؟", "a": "سمتها «أنا برضه لي رأي» ولو كان الرأي بخلاف الإجماع. وقيل إنه كتب مقدمة كتاب قاسم أمين، بل قال بعضهم إنه كتب الكتاب كله ثم كُتب عليه اسم قاسم أمين.", "blocks": [{"type": "ans", "s": "سمتها «أنا", "e": "بخلاف الإجماع."}, {"type": "wajh", "s": "وقيل إنه", "e": "قاسم أمين."}], "marks": [], "review": ""}, {"id": "c068", "sectionId": "s3", "level": 3, "anchor": "ما المصطلحات التي ولّدها المذهب التلفيقي بعد ذلك، وما عيبها المشترك؟", "pattern": "method", "q": "ما المصطلحات التي ولّدها المذهب التلفيقي بعد ذلك، وما عيبها المشترك؟", "a": "الاشتراكية الإسلامية. والعلمانية الإسلامية. والديمقراطية الإسلامية، و«آليات الديمقراطية وجسم الديمقراطية». لم يُعرَّف أصلًا ما الديمقراطية نفسها ولا ما الاشتراكية، فلا يُدرى ما يقولون بالضبط.", "blocks": [{"type": "steps", "seq": false, "items": [{"s": "الاشتراكية الإسلامية.", "e": "الاشتراكية الإسلامية."}, {"s": "والعلمانية الإسلامية.", "e": "والعلمانية الإسلامية."}, {"s": "والديمقراطية الإسلامية،", "e": "وجسم الديمقراطية»."}]}, {"type": "err", "s": "لم يُعرَّف", "e": "يقولون بالضبط."}], "marks": [], "review": ""}];
+const QUIZ_DATA=[{"id": "q3-1", "sectionId": "s3", "question": "بمَ يتميز منهج أهل السنة عن منهج أهل البدع في إصدار الأحكام؟", "options": ["أهل السنة يحكمون بالإجمال وأهل البدع بالتفصيل", "أهل السنة يفصّلون ويفرّقون، وأهل البدع من سيماهم الإجمال", "لا فرق بينهما", "أهل السنة يتوقفون دائمًا"], "correctIndex": 1, "explanation": "الفقه الجمع والتفرقة، والإجمال كقول الخوارج «كلهم كفار» حكم جائر."}, {"id": "q3-2", "sectionId": "s3", "question": "سُئلت عن حكم «الديمقراطية». ما الخطوة الأولى بحسب منهج التفصيل؟", "options": ["قبولها لأنها في الشرق", "رفضها لأنها من الغرب", "طلب تعريفها وتفصيل معانيها ثم وزنها بالكتاب والسنة", "السكوت عنها مطلقًا"], "correctIndex": 2, "explanation": "الحكم على اللفظ الحادث بعد تفصيل معناه، كما قرر <span class=\"sem-name sem-scholar\">ابن تيمية</span>."}, {"id": "q3-3", "sectionId": "s3", "question": "عرّاف أخبر بشيء فوقع كما قال. ما الموقف الذي قرّره المجلس؟", "options": ["أنه يعلم بعض الغيب", "«كذبت عيني وأذني وصدق الله»؛ إنما هي كلمة مسترقة خُلطت بمائة كذبة", "يُصدَّق فيما وافق الواقع فقط", "يُسأل مرة أخرى للتأكد"], "correctIndex": 1, "explanation": "<span class=\"sem-aya\">﴿قُل لَّا يَعْلَمُ مَن فِي السَّمَاوَاتِ وَالْأَرْضِ الْغَيْبَ إِلَّا اللَّهُ﴾</span>، والكلمة الحق المسترقة فتنة."}, {"id": "q3-4", "sectionId": "s3", "question": "من يقول عند التقدم «الشعب متدين بطبعه»، وعند المشكلة «طول عمرهم محتلين ولم يخرج منهم قائد». هذا وصفه الشيخ بأنه:", "options": ["إنصاف تاريخي", "نفاق في نقل العلم وفي المناظرات", "نقد بنّاء", "قراءة محايدة"], "correctIndex": 1, "explanation": "تبديل الحكم بحسب المصلحة نفاق في نقل العلم."}, {"id": "q3-5", "sectionId": "s3", "question": "ما جوهر خطة <span class=\"sem-name\">نابليون</span> التي كتبها إلى <span class=\"sem-name\">كليبر</span>؟", "options": ["احتلال عسكري مباشر طويل", "إرسال وجهاء البلاد إلى <span class=\"sem-name\">فرنسا</span> ليرجعوا دعاة لها: «واحد شبهك»", "هدم المساجد", "نشر اللغة الفرنسية فقط"], "correctIndex": 1, "explanation": "لن يأتيك محتل تحاربه، بل واحد يشبهك اسمه كاسمك وهو أشد ولاءً للغرب."}, {"id": "q3-6", "sectionId": "s3", "question": "«نأخذ من الغرب ما ينفع وما يأذن فيه الشرع» ثم انتهى أصحابه إلى إباحة الرقص بوصفه رياضة. إلى أي الفرق الثلاث ينتمي هذا الاتجاه؟", "options": ["الفرقة التي لا تريد دينًا", "الفرقة المتمسكة بدينها", "الفرقة الوسط التي لوت أعناق الدين", "ليست من الثلاث"], "correctIndex": 2, "explanation": "بدأت بكلام جميل ثم لوت أعناق الدين ليوافق الخارج، كما في كتاب الطهطاوي."}, {"id": "q3-7", "sectionId": "s3", "question": "«شوية من القانون الفرنسي وشوية من الشريعة». أي آية جعلها الشيخ اختصارًا لهذا المذهب؟", "options": ["<span class=\"sem-aya\">﴿وَفِيكُمْ سَمَّاعُونَ لَهُمْ﴾</span>", "<span class=\"sem-aya\">﴿أَفَتُؤْمِنُونَ بِبَعْضِ الْكِتَابِ وَتَكْفُرُونَ بِبَعْضٍ﴾</span>", "<span class=\"sem-aya\">﴿وَكَذَٰلِكَ نُفَصِّلُ الْآيَاتِ﴾</span>", "<span class=\"sem-aya\">﴿مَا نَعْبُدُهُمْ إِلَّا لِيُقَرِّبُونَا﴾</span>"], "correctIndex": 1, "explanation": "المذهب التلفيقي هو الإيمان ببعض الكتاب والكفر ببعض."}];
+const MAP_DATA=[];
+</script>
+<script>
+(function(){
+"use strict";
+var SUBJECT="العروة الوثقى";
+var LABELS={def:"التعريف",excl:"ما يخرج عن التعريف",ans:"الإجابة",wajh:"وجه الدلالة والمقصد",alert:"تنبيه مهم",rule:"القاعدة",exc:"الاستثناء",err:"الخطأ المنهجي",ruling:"الحكم"};
+var PLABEL={calm:"السؤال",quran:"السؤال",compare:"مقارنة",method:"قاعدة منهجية"};
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function reEsc(s){return s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");}
+var NAME_RE=null;
+function buildNameRe(){
+  var all=[];Object.keys(NAMES).forEach(function(k){NAMES[k].forEach(function(n){all.push([n,k]);});});
+  all.sort(function(a,b){return b[0].length-a[0].length;});
+  NAME_RE={re:new RegExp("(^|[^\\u0621-\\u064A])([وفبل]?)("+all.map(function(x){return reEsc(x[0]);}).join("|")+")(?![\\u0621-\\u064A])","g"),map:all.reduce(function(m,x){m[x[0]]=x[1];return m;},{})};
+}
+var CLS={sahabi:"sem-name sem-sahabi",scholar:"sem-name sem-scholar",name:"sem-name",hadith:"sem-hadith"};
+/* تلوين نص خام: آيات + أسماء + علامات صريحة — لا يغيّر حرفًا */
+function colorize(txt,marks,inQ){
+  var parts=[],rest=txt,re=/﴿[^﴾]*﴾/g,last=0,m;
+  while((m=re.exec(txt))){parts.push([0,txt.slice(last,m.index)]);parts.push([1,m[0]]);last=m.index+m[0].length;}
+  parts.push([0,txt.slice(last)]);
+  return parts.map(function(p){
+    if(p[1]==="")return "";
+    if(p[0]===1)return '<span class="sem-aya'+(inQ?' mz-v':'')+'">'+esc(p[1])+'</span>';
+    var s=esc(p[1]);
+    var held=[];
+    (marks||[]).forEach(function(mk){var e=esc(mk.w);if(s.indexOf(e)>-1){s=s.split(e).join("\u0001"+held.length+"\u0002");held.push('<span class="'+CLS[mk.t]+'">'+e+'</span>');}});
+    s=s.replace(NAME_RE.re,function(all,pre,cj,n){if(pre==="[")return all;return pre+cj+'<span class="'+CLS[NAME_RE.map[n]]+'">'+n+'</span>';});
+    s=s.replace(/\u0001(\d+)\u0002/g,function(a,i){return held[+i];});
+    return s;
+  }).join("");
+}
+function slice(a,cur,s,e){var i=a.indexOf(s,cur);if(i<0)throw new Error("s:"+s);var j=a.indexOf(e,i);if(j<0)throw new Error("e:"+e);return [i,j+e.length];}
+function cardFront(c){
+  var lines=c.q.split("\n").map(function(l){return '<p class="mz-qt'+(l.indexOf("﴿")>-1?' mz-sh':'')+'">'+colorize(l,c.marks,true)+'</p>';}).join("");
+  return '<div class="mz-face mz-'+c.pattern+'"><header class="mz-head"><span class="mz-subject"><span class="mz-ico"></span>'+SUBJECT+'</span><span class="mz-kicker">المحاضرة 0'+c.sectionId.slice(1)+'</span></header><div class="mz-label">'+PLABEL[c.pattern]+'</div><div class="mz-q">'+lines+'</div></div>';
+}
+function cardBack(c){
+  var a=c.a,cur=0,out="";
+  c.blocks.forEach(function(b){
+    if(b.type==="cols"){
+      out+='<div class="mz-cols">'+b.parts.map(function(p,k){var r=slice(a,cur,p.s,p.e);cur=r[1];return '<div class="mz-col mz-col'+(k+1)+'" data-label="'+(k?"الطرف الثاني":"الطرف الأول")+'">'+colorize(a.slice(r[0],r[1]),c.marks)+'</div>';}).join("")+'</div>';
+    }else if(b.type==="steps"){
+      out+='<div class="mz-steps mz-steps-list">'+b.items.map(function(it,k){
+        var r=slice(a,cur,it.s,it.e);cur=r[1];var t=a.slice(r[0],r[1]),d="";
+        if(it.ds){var r2=slice(a,cur,it.ds,it.de);cur=r2[1];d='<div class="mz-step-d">'+colorize(a.slice(r2[0],r2[1]),c.marks)+'</div>';}
+        return (k&&b.seq?'<div class="mz-arrow" aria-hidden="true"></div>':'')+'<div class="mz-step"><span class="mz-step-n"></span><div class="mz-step-b"><div class="mz-step-t">'+colorize(t,c.marks)+'</div>'+d+'</div></div>';
+      }).join("")+'</div>';
+    }else{
+      var r=slice(a,cur,b.s,b.e);cur=r[1];
+      out+='<div class="mz-box mz-b-'+b.type+'" data-label="'+LABELS[b.type]+'">'+colorize(a.slice(r[0],r[1]),c.marks)+'</div>';
+    }
+  });
+  return '<div class="mz-ans mz-'+c.pattern+'">'+out+'</div>';
+}
+window.URWA_CARD={front:cardFront,back:cardBack,init:function(){buildNameRe();}};
+function tsv(cards){
+  var head=["#separator:tab","#html:true","#guid column:1","#tags column:4"];
+  return head.concat(cards.map(function(c){var n=c.sectionId.slice(1);
+    return ["stage1_urwa_0"+n+"_"+c.id,cardFront(c),cardBack(c),"البناء_المنهجي::المرحلة_1::العروة_الوثقى::م0"+n+" مستوى_"+c.level]
+      .map(function(x){return x.replace(/[\t\r\n]+/g," ");}).join("\t");})).join("\n");
+}
+window.URWA_CARD.tsv=tsv;
+if(typeof document==="undefined")return;
+buildNameRe();
+function $(id){return document.getElementById(id);}
+/* quiz */
+var QZ={};QUIZ_DATA.forEach(function(q){QZ[q.id]=q;});var score={};
+document.querySelectorAll(".quiz[data-q]").forEach(function(box){var q=QZ[box.getAttribute("data-q")];if(!q)return;
+  var h='<div class="qh">سؤال فهم</div><div class="qq">'+q.question+'</div>';
+  q.options.forEach(function(o,i){h+='<button class="op" type="button" data-i="'+i+'">'+o+'</button>';});
+  box.innerHTML=h+'<div class="ex">'+q.explanation+'</div><button class="again" type="button">إعادة المحاولة</button>';});
+document.addEventListener("click",function(e){
+  var b=e.target.closest(".quiz .op");
+  if(b){var box=b.closest(".quiz");if(box.classList.contains("done"))return;var q=QZ[box.getAttribute("data-q")],i=+b.getAttribute("data-i");
+    box.classList.add("done");box.querySelectorAll(".op")[q.correctIndex].classList.add("ok");if(i!==q.correctIndex)b.classList.add("no");
+    (score[q.sectionId]=score[q.sectionId]||{})[q.id]=(i===q.correctIndex);
+    var el=document.querySelector('.score[data-s="'+q.sectionId+'"]');if(el){var s=score[q.sectionId],ok=0,n=0;for(var k in s){n++;if(s[k])ok++;}
+      el.textContent="نتيجتك في أسئلة هذه المحاضرة: "+ok+" من "+n+" (المجموع "+QUIZ_DATA.filter(function(x){return x.sectionId===q.sectionId;}).length+")";}return;}
+  var a=e.target.closest(".quiz .again");if(a){var bx=a.closest(".quiz");bx.classList.remove("done");bx.querySelectorAll(".op").forEach(function(o){o.classList.remove("ok","no");});}
+});
+/* cmp labels for phones */
+document.querySelectorAll(".cmp").forEach(function(t){var h=t.querySelector(".r.h");if(!h)return;var hs=[].map.call(h.children,function(c){return c.textContent;});
+  t.querySelectorAll(".r:not(.h)").forEach(function(r){[].forEach.call(r.children,function(c,i){if(i&&hs[i])c.setAttribute("data-h",hs[i]);});});});
+/* mind map */
+MAP_DATA.forEach(function(m){var host=$(m.id);if(!host)return;
+  var h='<div class="mm-center">'+m.center+'</div><div class="mm-branches">';
+  m.nodes.forEach(function(n){h+='<div class="mm-node" style="--c:'+n.color+'"><a href="'+n.target+'">'+n.text+'</a>';
+    if(n.children&&n.children.length)h+='<div class="mm-kids">'+n.children.map(function(c){return '<a href="'+c.target+'">'+c.text+'</a>';}).join("")+'</div>';
+    h+='</div>';});host.innerHTML=h+'</div>';});
+/* download */
+var dlb=$("cdl");
+if(dlb)dlb.onclick=function(){var blob=new Blob([tsv(CARDS_DATA)],{type:"text/tab-separated-values;charset=utf-8"});
+  var a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=dlb.getAttribute("data-name");document.body.appendChild(a);a.click();setTimeout(function(){URL.revokeObjectURL(a.href);a.remove();},500);};
+/* flashcards */
+var box=$("cbox");
+if(box){var list=CARDS_DATA,pos=0;
+  var show=function(){var c=list[pos];box.classList.remove("shown");
+    box.innerHTML='<div class="front">'+cardFront(c)+'</div><div class="back">'+cardBack(c)+'</div><div class="flip">انقر على البطاقة لإظهار الإجابة</div>';
+    $("cpos").textContent=(pos+1)+" / "+list.length;};
+  box.addEventListener("click",function(){box.classList.toggle("shown");});
+  $("cprev").onclick=function(){pos=(pos-1+list.length)%list.length;show();};
+  $("cnext").onclick=function(){pos=(pos+1)%list.length;show();};
+  show();}
+/* progress / toc / font */
+var bar=$("progress"),tl=[].slice.call(document.querySelectorAll(".toc a[href^='#']"));
+var targets=tl.map(function(a){return $(a.getAttribute("href").slice(1));});
+window.addEventListener("scroll",function(){var h=document.documentElement;if(bar)bar.style.width=(h.scrollTop/Math.max(1,h.scrollHeight-h.clientHeight)*100)+"%";
+  var cur=-1;targets.forEach(function(t,i){if(t&&t.getBoundingClientRect().top<120)cur=i;});tl.forEach(function(a,i){a.classList.toggle("on",i===cur);});},{passive:true});
+var fs=18;function setFs(){document.documentElement.style.setProperty("--fs",fs+"px");}
+if($("fsUp")){$("fsUp").onclick=function(){if(fs<22){fs++;setFs();}};$("fsDn").onclick=function(){if(fs>16){fs--;setFs();}};}
+})();
+
+</script>
+<script type="module" src="../../../firebase-sync-manhaj.js"></script>
+<script src="../../../ilm-track.js"></script>
+<script src="../../../ilm-highlight.js" data-hadith="off"></script>
+</body>
+</html>
