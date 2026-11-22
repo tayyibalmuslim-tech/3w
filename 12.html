@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="lecture-status" content="filled">
+<title>العروة الوثقى — المحاضرة 12 | فائدة التحسين والتقبيح، وقاعدة الأسماء والأحكام، ومدخل معنى العبادة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@700&family=Cairo:wght@400;600;700;800&family=El+Messiri:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1f2433;--ink2:#3d4457;--sub:#69708a;--bg:#f6f4ef;--paper:#fffdf9;--line:#e4dfd3;
+  --brand:#25305a;--brand2:#3b4b86;--accent:#2a7f7a;--gold:#c9b27c;--goldbg:#f4eedf;
+  --s1:#3a5a98;--s2:#2a7f7a;--s3:#b0623a;--s4:#5a5f8a;--s5:#1e7aa0;--s6:#8c4a6b;--s7:#446a8a;--s8:#5e6b2f;--s9:#7a5636;--s10:#5d5a99;--s11:#2f6f8f;--s12:#8a4f2d;--s13:#4a6d3a;--s14:#6a4a8c;--s15:#2d7a6a;--s16:#9a4a4a;--s17:#3d5f8f;--s18:#7a6a2a;--s19:#5a3f7a;--s20:#2f7a8a;
+  --sec:var(--brand);
+  --sem-aya:#14532d;--sem-hadith:#5b2d90;--sem-sahabi:#8a5a00;--sem-scholar:#8f1d21;
+  --fs:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cairo','Noto Sans Arabic',Tahoma,sans-serif;font-size:var(--fs);line-height:1.95;text-align:right;direction:rtl}
+a{color:inherit}
+.sem-aya{color:var(--sem-aya);font-family:'Amiri','Noto Naskh Arabic',serif;font-size:1.12em}
+.sem-hadith{color:var(--sem-hadith)}
+.sem-name{color:var(--sem-scholar)}
+.sem-name.sem-sahabi,.sem-sahabi{color:var(--sem-sahabi);font-weight:700}
+.sem-name.sem-scholar,.sem-scholar{color:var(--sem-scholar);font-weight:700}
+#progress{position:fixed;top:0;right:0;height:4px;background:linear-gradient(90deg,var(--accent),var(--brand2));width:0;z-index:50}
+/* hero */
+.hero{background:radial-gradient(ellipse at 20% 0%,#3b4b86 0%,#25305a 55%,#1a2142 100%);color:#f3efe4;padding:64px 20px 70px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(201,178,124,.07) 0 2px,transparent 2px 26px)}
+.hero .in{max-width:900px;margin:0 auto;position:relative}
+.hero .series{font-family:'Aref Ruqaa','Amiri',serif;font-size:58px;line-height:1.3;color:#f1e6c8;margin:0}
+.hero .rope{display:flex;align-items:center;margin:14px 0 18px;max-width:420px}
+.hero .rope span{flex:1;height:3px;background:repeating-linear-gradient(90deg,var(--gold) 0 10px,transparent 10px 14px);border-radius:2px}
+.hero .rope b{width:16px;height:16px;border:3px solid var(--gold);border-radius:50%;margin:0 10px}
+.hero h1{font-family:'El Messiri','Cairo',sans-serif;font-size:34px;line-height:1.5;margin:0 0 10px;font-weight:600}
+.hero .meta{font-size:15.5px;color:#d7d2c4}
+.wrap{max-width:1180px;margin:0 auto;display:flex;align-items:flex-start;padding:0 18px}
+main{flex:1 1 auto;min-width:0;max-width:800px;margin:0 auto}
+aside.toc{flex:0 0 250px;position:sticky;top:18px;margin:28px 0 0 26px;order:2;max-height:calc(100vh - 40px);overflow:auto;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:14px 14px 16px;font-size:14.5px;line-height:1.7}
+.toc .t{font-weight:800;color:var(--brand);margin-bottom:6px;font-family:'El Messiri','Cairo'}
+.toc a{display:block;text-decoration:none;padding:4px 8px;border-radius:8px;color:var(--ink2)}
+.toc a.l2{padding-right:20px;font-size:13.5px;color:var(--sub)}
+.toc a:hover,.toc a.on{background:var(--goldbg);color:var(--brand)}
+.tools{display:flex;flex-wrap:wrap;margin-top:10px;border-top:1px solid var(--line);padding-top:10px}
+.tools button{font:inherit;font-size:13px;margin:0 0 6px 6px;padding:5px 10px;border:1px solid var(--line);background:#fff;border-radius:9px;cursor:pointer;color:var(--brand)}
+@media(max-width:1020px){aside.toc{display:none}}
+/* intro cards */
+.ai-note{margin:26px 0 0;background:#fff7e6;border:1px solid #ecd9ae;border-radius:12px;padding:10px 16px;font-size:15px;color:#6b4e16}
+.src{margin:16px 0;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 20px;font-size:16px}
+.src .row{display:flex;flex-wrap:wrap;margin-bottom:2px}.src .k{flex:0 0 120px;color:var(--sub);font-weight:700}.src .v{flex:1 1 300px}
+.orient{margin:22px 0 10px;background:linear-gradient(180deg,#fffdf8,#f7f3e8);border:1px solid #e6dcc3;border-radius:20px;padding:22px 24px}
+.orient .lab{font-size:13px;font-weight:800;color:var(--accent);letter-spacing:.2px}
+.orient .cq{font-family:'El Messiri','Cairo';font-size:23px;color:var(--brand);line-height:1.6;margin:2px 0 14px}
+.orient .idea{font-size:17px;color:var(--ink2);margin-bottom:6px}
+.orient .ed{font-size:12.5px;color:var(--sub)}
+/* mindmap */
+.mm{margin:18px 0 6px}
+.mm-center{display:inline-block;background:var(--brand);color:#f5efe0;border-radius:14px;padding:10px 18px;font-weight:800;font-family:'El Messiri','Cairo';font-size:18px}
+.mm-branches{border-right:3px solid var(--gold);margin:10px 18px 0 0;padding:4px 0 0}
+.mm-node{position:relative;margin:0 0 10px;padding-right:22px}
+.mm-node:before{content:"";position:absolute;right:0;top:20px;width:18px;border-top:3px solid var(--gold)}
+.mm-node>a{display:inline-block;text-decoration:none;background:#fff;border:1px solid var(--line);border-right:5px solid var(--c,var(--brand));border-radius:12px;padding:6px 14px;font-weight:700;color:var(--ink)}
+.mm-node>a:hover{background:var(--goldbg)}
+.mm-kids{margin:6px 22px 0 0;display:flex;flex-wrap:wrap}
+.mm-kids a{font-size:14.5px;text-decoration:none;margin:0 0 6px 8px;padding:3px 11px;border-radius:20px;background:#f1efe8;color:var(--ink2);border:1px solid #e6e1d4}
+.mm-kids a:hover{background:var(--goldbg)}
+/* sections */
+section.lec{--sec:var(--brand);margin:46px 0 0}
+section.lec[data-s="1"]{--sec:var(--s1)}section.lec[data-s="2"]{--sec:var(--s2)}section.lec[data-s="3"]{--sec:var(--s3)}section.lec[data-s="4"]{--sec:var(--s4)}section.lec[data-s="5"]{--sec:var(--s5)}section.lec[data-s="6"]{--sec:var(--s6)}section.lec[data-s="7"]{--sec:var(--s7)}section.lec[data-s="8"]{--sec:var(--s8)}section.lec[data-s="9"]{--sec:var(--s9)}section.lec[data-s="10"]{--sec:var(--s10)}section.lec[data-s="11"]{--sec:var(--s11)}section.lec[data-s="12"]{--sec:var(--s12)}section.lec[data-s="13"]{--sec:var(--s13)}section.lec[data-s="14"]{--sec:var(--s14)}section.lec[data-s="15"]{--sec:var(--s15)}section.lec[data-s="16"]{--sec:var(--s16)}section.lec[data-s="17"]{--sec:var(--s17)}section.lec[data-s="18"]{--sec:var(--s18)}section.lec[data-s="19"]{--sec:var(--s19)}section.lec[data-s="20"]{--sec:var(--s20)}
+.lec-head{position:relative;background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--sec);border-radius:20px;padding:22px 24px 18px;margin-bottom:18px}
+.lec-head .num{font-size:13.5px;font-weight:800;color:var(--sec);letter-spacing:.3px}
+.lec-head h2{font-family:'El Messiri','Cairo';font-size:30px;line-height:1.5;margin:4px 0 6px;color:var(--ink)}
+.lec-head .fn{display:inline-block;font-size:13px;background:var(--goldbg);color:#6b5a2e;border-radius:20px;padding:2px 12px}
+.divider{height:34px;margin:40px 0 0;background:radial-gradient(circle,var(--gold) 3px,transparent 4px) center/26px 34px repeat-x;opacity:.7}
+main h3{font-family:'El Messiri','Cairo';font-size:23px;line-height:1.6;color:var(--sec);margin:32px 0 8px;padding-right:14px;border-right:4px solid var(--sec)}
+main h4{font-size:19px;margin:20px 0 4px;color:var(--ink)}
+main p{margin:0 0 14px}
+.where,.next{border-radius:14px;padding:12px 18px;font-size:16px;margin:0 0 16px}
+.where{background:#eef1f8;border:1px dashed #b9c2dd}
+.next{background:#eef6f5;border:1px dashed #a9cfcb;margin-top:18px}
+.where b,.next b{display:block;font-size:13px;color:var(--sec)}
+/* blocks */
+.aya-block{background:#f0f6f1;border:1px solid #d6e7da;border-right:4px solid #3f7d57;border-radius:14px;padding:12px 20px 10px;margin:14px 0 16px;text-align:center}
+.aya-block p{margin:0;font-size:1.08em;line-height:2.15}
+.aya-block .sem-aya{font-size:1.22em}
+.ref{font-size:13.5px;color:var(--sub);text-align:left}
+blockquote{margin:14px 0 16px;padding:12px 20px 10px;border-radius:14px}
+blockquote p{margin:0 0 6px}
+.hadith-block{background:#f6f3fa;border:1px solid #e6dff0;border-right:4px solid #8b77ad}
+.naql{background:#fbf8f1;border:1px solid #ebe2cc;border-right:4px solid #b9a06a}
+.who{display:block;font-size:13.5px;color:#7a6a45;font-weight:700;margin-top:2px}
+.hadith-block .who{color:#6b5d86}
+.key{background:#eef3fb;border-right:4px solid var(--brand2);border-radius:12px;padding:12px 18px;margin:14px 0}
+.key:before{content:"فكرة محورية";display:block;font-size:12.5px;font-weight:800;color:var(--brand2)}
+.warn{background:#fdf1ea;border-right:4px solid #c46a3b;border-radius:12px;padding:12px 18px;margin:14px 0}
+.warn:before{content:"تنبيه";display:block;font-size:12.5px;font-weight:800;color:#a2512a}
+.fix{background:#fff6e0;border:1px dashed #d8b45d;border-radius:12px;padding:10px 16px;margin:12px 0;font-size:15.5px}
+.fix:before{content:"تصحيح / توضيح تحريري";display:block;font-size:12.5px;font-weight:800;color:#8a6414}
+.ed-note{background:#f3f3f1;border-radius:12px;padding:10px 16px;margin:12px 0;font-size:15.5px;color:var(--ink2)}
+.ed-note:before{content:"إضافة تحريرية (ليست من كلام الشيخ)";display:block;font-size:12.5px;font-weight:800;color:#6c6c64}
+.story{background:#fffaf2;border:1px solid #efdfc4;border-radius:16px;padding:14px 20px 4px;margin:16px 0}
+.story .st{font-weight:800;color:#8a5f2b;font-size:15px;margin-bottom:4px}
+/* structures */
+.lab-org{font-size:12.5px;font-weight:800;color:var(--sec);margin:0 0 6px}
+.cmp{margin:16px 0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.cmp .cap{background:#f4f2ec;padding:8px 16px;font-weight:800;font-size:15px;color:var(--ink2)}
+.cmp .r{display:flex;flex-wrap:wrap;border-top:1px solid var(--line)}
+.cmp .r>div{flex:1 1 200px;padding:10px 16px;font-size:16px;line-height:1.85;min-width:0}
+.cmp .r>div+div{border-right:1px solid var(--line)}
+.cmp .r.h>div{font-weight:800;color:var(--sec);background:#fafaf7}
+.cmp .r>div.k{flex:0 0 140px;font-weight:700;color:var(--sub);background:#fbfaf6}
+@media(max-width:580px){.cmp .r.h{display:none}.cmp .r>div.k{flex-basis:100%;border-bottom:1px dashed var(--line);color:var(--sec)}.cmp .r>div+div{border-right:0;border-top:1px dashed var(--line)}.cmp .r>div[data-h]:before{content:attr(data-h);display:block;font-size:12.5px;font-weight:800;color:var(--sub)}}
+.tree{margin:16px 0;padding:16px;background:#fff;border:1px solid var(--line);border-radius:16px}
+.tree .root{font-weight:800;color:#fff;background:var(--sec);display:inline-block;border-radius:10px;padding:5px 14px}
+.tree .kids{margin:10px 16px 0 0;border-right:2px solid #d7d2c3;padding-right:14px}
+.tree .kid{position:relative;margin:0 0 10px;background:#faf8f3;border:1px solid #ebe5d6;border-radius:12px;padding:8px 14px;font-size:16px}
+.tree .kid:before{content:"";position:absolute;right:-16px;top:20px;width:14px;border-top:2px solid #d7d2c3}
+.tree .kid b{color:var(--sec)}
+.timeline{margin:16px 0;padding:6px 0}
+.tl-i{position:relative;padding:0 46px 14px 0}
+.tl-i:before{content:attr(data-n);position:absolute;right:0;top:2px;width:32px;height:32px;border-radius:50%;background:var(--sec);color:#fff;font-weight:800;text-align:center;line-height:32px;font-size:15px}
+.tl-i:after{content:"";position:absolute;right:15px;top:36px;bottom:0;border-right:2px solid #d4cfbf}
+.tl-i:last-child:after{display:none}
+.tl-i .tt{font-weight:800;color:var(--ink)}
+.tl-i .td{font-size:16px;color:var(--ink2)}
+.chain{display:flex;flex-direction:column;margin:16px 0}
+.chain .c{background:#fff;border:1px solid var(--line);border-right:4px solid var(--sec);border-radius:12px;padding:9px 16px;font-size:16px}
+.chain .c b{display:block;font-size:12.5px;color:var(--sec)}
+.chain .ar{height:22px;text-align:center;color:var(--sec);line-height:22px;font-size:18px}
+.evid{margin:16px 0;border:1px solid #d9e6dd;border-radius:16px;background:#fcfefc;overflow:hidden}
+.evid .er{display:flex;flex-wrap:wrap;border-top:1px solid #e3ede6}
+.evid .er:first-child{border-top:0}
+.evid .el{flex:0 0 120px;padding:9px 14px;font-size:13.5px;font-weight:800;color:#3f6b52;background:#f2f8f3}
+.evid .ev{flex:1 1 260px;padding:9px 16px;font-size:16px;min-width:0}
+@media(max-width:580px){.evid .el{flex-basis:100%}}
+.arg{margin:16px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.arg .claim{background:var(--sec);color:#fff;border-radius:12px;padding:10px 16px;font-weight:700}
+.arg .claim b{display:block;font-size:12.5px;opacity:.85}
+.arg .grp{margin:12px 0 0;display:flex;flex-wrap:wrap}
+.arg .g{flex:1 1 220px;margin:0 0 10px 10px;background:#f7f6fb;border:1px solid #e3e1ee;border-radius:12px;padding:10px 14px;font-size:15.5px}
+.arg .g b{display:block;color:var(--sec);font-size:13px}
+.num{margin:14px 0}
+.num .n{display:flex;align-items:flex-start;margin-bottom:10px}
+.num .n .b{flex:0 0 34px;height:34px;border-radius:10px;background:var(--goldbg);color:#6b5a2e;font-weight:800;text-align:center;line-height:34px;margin-left:12px;border:1px solid #e3d6b4}
+.num .n .t{flex:1;min-width:0}
+.stat{display:flex;flex-wrap:wrap;margin:14px -6px}
+.stat .s{flex:1 1 180px;margin:0 6px 12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;text-align:center}
+.stat .s .v{font-size:34px;font-weight:800;color:var(--sec);line-height:1.3;font-family:'El Messiri','Cairo'}
+.stat .s .d{font-size:14.5px;color:var(--ink2);line-height:1.7}
+/* takeaway */
+.takeaway{margin:26px 0 8px;background:linear-gradient(180deg,#fffaf0,#fbf3e2);border:1px solid #e8d7b0;border-radius:18px;padding:16px 20px}
+.takeaway .tt{font-family:'El Messiri','Cairo';font-weight:700;font-size:19px;color:#7a5b1d}
+.takeaway .tt small{font-size:12px;color:#9b8456;font-family:'Cairo';margin-right:6px}
+.tk-i{position:relative;padding-right:22px;margin:7px 0;font-size:16.5px}
+.tk-i:before{content:"";position:absolute;right:2px;top:12px;width:9px;height:9px;border-radius:50%;background:var(--sec)}
+.score{font-size:13.5px;color:var(--sub);margin-bottom:4px}
+/* quiz */
+.quiz{margin:20px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 18px 12px;box-shadow:0 2px 10px rgba(30,40,70,.04)}
+.quiz .qh{font-size:12.5px;font-weight:800;color:var(--sec);margin-bottom:4px}
+.quiz .qq{font-weight:700;font-size:17px;margin-bottom:8px}
+.quiz button.op{display:block;width:100%;min-height:44px;text-align:right;font:inherit;font-size:16px;line-height:1.7;background:#faf9f5;border:1px solid #e6e1d4;border-radius:12px;padding:8px 14px;margin:0 0 8px;cursor:pointer;color:var(--ink)}
+.quiz button.op:hover{background:var(--goldbg)}
+.quiz button.op.ok{background:#e6f3ec;border-color:#86bf9d}
+.quiz button.op.no{background:#fbe9e4;border-color:#e0a28f}
+.quiz .ex{display:none;font-size:15px;background:#f4f6fb;border-radius:10px;padding:8px 12px;color:var(--ink2)}
+.quiz.done .ex{display:block}
+.quiz .again{display:none;font:inherit;font-size:13px;border:0;background:none;color:var(--brand2);cursor:pointer;padding:4px 0}
+.quiz.done .again{display:inline-block}
+/* cards area */
+#cards{margin:56px 0 20px}
+#cards h2{font-family:'El Messiri','Cairo';font-size:30px;color:var(--brand);margin:0 0 4px}
+.cfil{display:flex;flex-wrap:wrap;margin:10px 0}
+.cfil button,.cnav button,.dl{font:inherit;font-size:14px;margin:0 0 8px 8px;padding:6px 14px;border-radius:20px;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--ink2);min-height:38px}
+.cfil button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+.dl{background:var(--accent);color:#fff;border-color:var(--accent)}
+.cstage{max-width:740px;margin:8px auto}
+.cbox{background:#fff;border:1px solid #dfe3e0;border-radius:18px;padding:20px 22px;cursor:pointer;min-height:220px;box-shadow:0 4px 22px rgba(31,49,46,.06)}
+.cbox .flip{font-size:12.5px;color:var(--sub);text-align:center;margin-top:12px}
+.cbox .back{display:none;margin-top:16px;padding-top:16px;border-top:1px solid #e1e0d8}
+.cbox.shown .back{display:block}
+.cnav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px}
+.cnav .pos{font-size:14px;color:var(--sub);margin:0 10px 8px}
+footer{margin:60px 0 0;background:#1d2547;color:#cfc9b8;padding:26px 20px;text-align:center;font-size:14.5px}
+@media(max-width:580px){
+  body{font-size:17px}.hero{padding:44px 16px 50px}.hero .series{font-size:42px}.hero h1{font-size:25px}
+  .lec-head h2{font-size:24px}main h3{font-size:20px}.wrap{padding:0 12px}
+  .orient{padding:16px}.orient .cq{font-size:19px}.cbox{padding:16px 14px}
+}
+@media print{aside.toc,#progress,.quiz,.cnav,.cfil,.dl,.tools{display:none}.hero{background:#25305a;-webkit-print-color-adjust:exact}}
+
+/* نسخة عرض من قسم mz- في anki/final.css — لعرض البطاقات داخل الصفحة بنفس HTML المُصدَّر */
+.mz-calm{--mz-title:#293c35;--mz-ink:#33423c;--mz-accent:#296257;--mz-sub:#66766f;--mz-line:#e1e0d8;--mz-b1:#e9f3ef;--mz-b1bd:#cfe3da;--mz-b2:#f5f5f1;--mz-b2bd:#e1e0d8;--mz-b2lab:#7d6338;--mz-alert:#f5f0e4;--mz-alertbd:#e6dcc4;--mz-alertlab:#7d6338}
+.mz-compare{--mz-title:#273e5d;--mz-ink:#2f3f55;--mz-accent:#47668c;--mz-sub:#62748b;--mz-line:#d8e1ec;--mz-b1:#e9f1ed;--mz-b1bd:#c9dcd2;--mz-b1lab:#2c6a55;--mz-b2:#f5eee7;--mz-b2bd:#e5d6c6;--mz-b2lab:#9a5a2a;--mz-alert:#eff3f9;--mz-alertbd:#d3dded;--mz-alertlab:#273e5d}
+.mz-quran{--mz-title:#3a3426;--mz-ink:#3a3426;--mz-accent:#7a6030;--mz-sub:#7a7060;--mz-line:#dfd9c8;--mz-b1:#f0ede5;--mz-b1bd:#dfd9c8;--mz-b2:#f0ede5;--mz-b2bd:#dfd9c8;--mz-b2lab:#7a6030;--mz-alert:#f6f1e2;--mz-alertbd:#e6dcc0;--mz-alertlab:#7a6030}
+.mz-method{--mz-title:#332d49;--mz-ink:#3a3550;--mz-accent:#605785;--mz-sub:#6e6890;--mz-line:#e0dcec;--mz-b1:#f2f0f9;--mz-b1bd:#e0dcec;--mz-b2:#e8e5f4;--mz-b2bd:#d5cfe8;--mz-b2lab:#605785;--mz-alert:#f4f0e6;--mz-alertbd:#e6dcc0;--mz-alertlab:#7a6030;--mz-step:#e8e5f4;--mz-conn:#9891b4;--mz-num:#605785;--mz-numink:#fff;--mz-err:#f7ebe5;--mz-errbd:#ecd2c3;--mz-errlab:#995531}
+.mz-face,.mz-ans{direction:rtl;text-align:right;font-family:'Cairo','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif;color:var(--mz-ink);line-height:1.95;font-size:18px;overflow-wrap:break-word}
+.mz-face p,.mz-ans p{margin:0}
+.mz-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:0 0 12px;margin:0 0 16px;border-bottom:1px solid var(--mz-line)}
+.mz-subject{display:flex;align-items:center;font-size:14.5px;font-weight:800;color:var(--mz-accent)}
+.mz-kicker{font-size:12.5px;font-weight:600;color:var(--mz-sub)}
+.mz-ico{display:inline-block;width:20px;height:20px;margin-left:9px;border-radius:6px;background:var(--mz-accent);opacity:.85}
+.mz-label{font-size:12.5px;font-weight:700;color:var(--mz-sub);margin:0 0 4px}
+.mz-q{font-size:21px;line-height:1.95;font-weight:700;color:var(--mz-title)}
+.mz-q .mz-qt{margin:0 0 4px}
+.mz-box{margin:0 0 12px;padding:13px 18px 14px;border:1px solid var(--mz-b1bd);border-radius:14px;background:var(--mz-b1)}
+.mz-box:last-child{margin-bottom:0}
+.mz-box[data-label]:before{content:attr(data-label);display:block;font-size:13px;font-weight:800;color:var(--mz-accent);margin:0 0 4px}
+.mz-b-excl,.mz-b-wajh{background:var(--mz-b2);border-color:var(--mz-b2bd)}
+.mz-b-excl[data-label]:before,.mz-b-wajh[data-label]:before{color:var(--mz-b2lab)}
+.mz-b-alert,.mz-b-exc{background:var(--mz-alert);border-color:var(--mz-alertbd)}
+.mz-b-alert[data-label]:before,.mz-b-exc[data-label]:before{display:inline;margin:0;font-size:inherit;color:var(--mz-alertlab);content:attr(data-label) ": "}
+.mz-b-err{background:var(--mz-err);border-color:var(--mz-errbd)}
+.mz-b-err[data-label]:before{color:var(--mz-errlab);display:inline;margin:0;font-size:inherit;content:attr(data-label) ": "}
+.mz-cols{display:flex;flex-wrap:wrap;margin:0 -6px 6px}
+.mz-col{flex:1 1 220px;min-width:0;margin:0 6px 12px;padding:13px 16px 14px;border:1px solid var(--mz-b1bd);border-radius:14px;background:var(--mz-b1)}
+.mz-col2{background:var(--mz-b2);border-color:var(--mz-b2bd)}
+.mz-col[data-label]:before{content:attr(data-label);display:block;font-size:14px;font-weight:800;padding:0 0 7px;margin:0 0 8px;color:var(--mz-b1lab);border-bottom:1px solid var(--mz-b1bd)}
+.mz-col2[data-label]:before{color:var(--mz-b2lab);border-bottom-color:var(--mz-b2bd)}
+.mz-steps{margin:0 0 12px}
+.mz-step{display:flex;align-items:flex-start;padding:12px 14px;border-radius:14px;background:var(--mz-step,var(--mz-b2));border:1px solid var(--mz-b2bd)}
+.mz-step-n{flex:0 0 34px;width:34px;height:34px;margin-left:12px;border-radius:50%;background:var(--mz-num,var(--mz-accent));color:#fff;font-weight:800;font-size:16px;line-height:34px;text-align:center}
+.mz-step-b{flex:1 1 auto;min-width:0}
+.mz-step-t{font-weight:800;color:var(--mz-title);line-height:1.8}
+.mz-step-d{margin-top:2px;line-height:1.9}
+.mz-steps-list{counter-reset:mzstep}
+.mz-steps-list .mz-step{counter-increment:mzstep;margin:0 0 10px}
+.mz-steps-list .mz-step:last-child{margin-bottom:0}
+.mz-steps-list .mz-step-n:before{content:counter(mzstep)}
+.mz-arrow{height:20px;padding:5px 15px 0 0;line-height:0}
+.mz-arrow:before{content:"";display:inline-block;border-right:6px solid transparent;border-left:6px solid transparent;border-top:9px solid var(--mz-conn,#9891b4);margin-right:5px}
+.mz-em{font-weight:800;color:var(--mz-title)}
+.mz-v{font-family:'Amiri','Noto Naskh Arabic','Traditional Arabic',serif;font-weight:700;font-size:1.15em;line-height:2}
+.mz-face .sem-aya,.mz-ans .sem-aya,.mz-face .sem-hadith,.mz-ans .sem-hadith{font-weight:700}
+@media (max-width:580px){.mz-q{font-size:19px}.mz-face,.mz-ans{font-size:17px}.mz-box{padding:12px 14px 13px}.mz-col{flex-basis:100%}}
+/* ===== إضافات 5.10–5.11 — تُلصق في آخر قسم mz- في anki/final.css وفي تنسيق نوع الملاحظة «أساسي» ===== */
+.mz-focus{color:var(--mz-accent);font-weight:800;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
+.mz-box.mz-core{font-weight:700;color:var(--mz-title)}
+.mz-corelead{font-weight:800;color:var(--mz-title)}
+.mz-b-edit{background:#f4f4f4;border:1px dashed #b9b9b9}
+.mz-b-edit[data-label]:before{color:#5f5f5f}
+.mz-srcl{margin-top:10px;text-align:left;font-size:12.5px}
+.mz-srcl a{color:var(--mz-sub);text-decoration:none;border-bottom:1px dotted var(--mz-sub)}
+
+/* ===== ملفات المحاضرات المنفصلة + صفحة الفهرس ===== */
+.hero-s{padding:40px 20px 44px}
+.hero-s .series{font-size:40px;text-decoration:none;display:inline-block}
+.hero-s h1{font-size:30px}
+.lnav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;max-width:1180px;margin:0 auto;padding:12px 18px;font-size:15px}
+.lnav a,.lnav span{display:inline-block;padding:7px 14px;border-radius:20px;text-decoration:none;background:var(--paper);border:1px solid var(--line);color:var(--brand);margin:4px 0;min-height:38px}
+.lnav a.home{background:var(--brand);color:#f5efe0;border-color:var(--brand);font-weight:700}
+.lnav .off{color:var(--sub);background:transparent;border-style:dashed}
+.lnav a:hover{background:var(--goldbg)}.lnav a.home:hover{background:var(--brand2)}
+.orient .ed2{font-size:15.5px;color:var(--ink2)}
+main.idx{max-width:960px;margin:0 auto;padding:0 18px}
+.ih{font-family:'El Messiri','Cairo';font-size:28px;color:var(--brand);margin:34px 0 12px}
+.grid{display:flex;flex-wrap:wrap;margin:0 -8px}
+.lc{flex:1 1 280px;margin:0 8px 16px;display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--c,var(--brand));border-radius:18px;padding:16px 18px 14px;transition:transform .15s,box-shadow .15s}
+.lc:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(30,40,70,.09)}
+.lc .no{font-family:'El Messiri','Cairo';font-size:34px;font-weight:700;color:var(--c,var(--brand));line-height:1.2}
+.lc .lt{font-family:'El Messiri','Cairo';font-size:20px;font-weight:700;line-height:1.6;margin:2px 0 6px}
+.lc .lq{font-size:15.5px;color:var(--ink2);line-height:1.8;flex:1}
+.lc .ls{font-size:13.5px;color:var(--sub);margin-top:8px}
+.lc .go{font-size:14.5px;font-weight:700;color:var(--c,var(--brand));margin-top:6px}
+.lc-off{border-top-color:#cfcabd;border-style:dashed;opacity:.75}.lc-off .no,.lc-off .lt{color:var(--sub)}
+.alldl{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;background:#eef6f5;border:1px solid #c7e0dd;border-radius:16px;padding:14px 18px;margin:18px 0 10px}
+.alldl div{flex:1 1 320px;margin-left:12px}.alldl b{display:block;color:var(--accent)}.alldl span{font-size:14.5px;color:var(--ink2)}
+@media(max-width:580px){.hero-s .series{font-size:32px}.hero-s h1{font-size:23px}.lc .no{font-size:28px}.lnav{font-size:13px;padding:10px 8px;flex-wrap:nowrap}.lnav a,.lnav span{flex:1 1 0;text-align:center;margin:4px 3px;padding:7px 4px;min-width:0}}
+
+
+/* إضافات 11–20: الشعر ومعاني الغريب */
+.poem{background:#fbf8f1;border:1px solid #ebe2cc;border-right:4px solid #b9a06a;border-radius:14px;padding:12px 20px 8px;margin:14px 0 16px;text-align:center}
+.poem p{font-family:'Amiri','Noto Naskh Arabic',serif;font-size:1.1em;line-height:2.2;margin:0 0 6px}
+.gloss{margin:10px 0 16px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 16px}
+.gloss .gt{font-size:12.5px;font-weight:800;color:var(--sec);margin-bottom:4px}
+.gloss .gw{display:flex;flex-wrap:wrap;border-top:1px dashed var(--line);padding:5px 0;font-size:15.5px}
+.gloss .gw:first-of-type{border-top:0}
+.gloss .gw b{flex:0 0 130px;color:var(--ink)}.gloss .gw span{flex:1 1 220px;color:var(--ink2)}
+</style>
+</head>
+<body data-lecture-id="stage1_urwa_12">
+<div id="progress"></div>
+<header class="hero hero-s"><div class="in"><a class="series" href="index.html">العروة الوثقى</a><div class="rope"><span></span><b></b><span></span></div><h1>المحاضرة 12</h1><div class="meta">سلسلة في أصل دين الإسلام · 9 سؤال فهم · 33 بطاقة مراجعة</div></div></header>
+<nav class="lnav"><a href="11.html">→ المحاضرة 11</a><a class="home" href="index.html">فهرس السلسلة</a><a href="13.html">المحاضرة 13 ←</a></nav>
+<div class="wrap">
+<aside class="toc"><div class="t">فهرس المحاضرة</div><a href="#orient">لوحة التوجيه</a><a href="#s12-a">ما فائدة معرفة التوحيد بالفطرة؟</a><a href="#s12-b">قاعدة الأسماء والأحكام</a><a href="#s12-c">أهل الفترة: حديث الأربعة</a><a href="#s12-d">لا عذاب إلا برسول: رحمة من الله</a><a href="#s12-e">مثال: المرتد والاستتابة</a><a href="#s12-f">الدليل: حديث عبد بن زمعة</a><a href="#s12-g">تفسير أصل الدين: الإقرار بالله</a><a href="#s12-h">العبادة ليست الركوع والسجود فقط: شبهة جنود فرعون</a><a href="#s12-i">العبادة أعم: «إن الحكم إلا لله»</a><a href="#cards">بطاقات المراجعة</a><a href="index.html">↩ فهرس السلسلة</a><div class="tools"><button type="button" id="fsUp">تكبير الخط +</button><button type="button" id="fsDn">تصغير الخط −</button></div></aside>
+<main>
+<div data-ilm-highlight-zone>
+<div class="ai-note">أُعدّ هذا المحتوى بمساعدة الذكاء الاصطناعي، وقد يحتوي أخطاء، ويُرجى مراجعته.</div><div class="src"><div class="row"><div class="k">نوع المادة</div><div class="v">تفريغ صوتي للمحاضرة 12 من سلسلة «العروة الوثقى».</div></div><div class="row"><div class="k">المنهج</div><div class="v">كلام الشيخ مُعاد تنظيمه بلا حذف لفكرة أو دليل؛ والخلاصات والصناديق الموسومة «تحريرية» إضافة ليست من كلامه. وما بين «» لكلام الشيخ وأسماء الكتب.</div></div></div>
+<div class="orient" id="orient"><div class="lab">السؤال المركزي</div><div class="cq">ما فائدة معرفة التوحيد بالفطرة إذا كان العذاب لا يكون إلا بعد الرسل؟ وما العبادة التي يُفرد الله بها؟</div><div class="lab">الفكرة المحورية</div><div class="idea">من فعل الشرك ثبت له اسمه ولو تخلّف عنه العذاب حتى تقوم الحجة بالرسل؛ وهذه قاعدة «الأسماء والأحكام». ثم يبدأ تفسير أصل الدين بالإقرار بالله، وتصحيح تصور العبادة: ليست الركوع والسجود فقط، والحكم منها.</div><div class="ed">صياغة تحريرية تجمع معنى المحاضرة.</div><div class="lab" style="margin-top:12px">مسار المحاضرة</div><div class="ed2">فائدة الفطرة ← قاعدة الأسماء والأحكام وأدلتها (أهل الفترة، المرتد، حديث عبد بن زمعة) ← تفسير أصل الدين: الإقرار بالله ← تصحيح تصور العبادة</div><div class="lab" style="margin-top:12px">خريطة المحاور</div><div class="mm" id="mm-12"></div></div>
+
+<section class="lec" id="s12" data-s="12">
+<div class="lec-head">
+  <div class="num">المجلس الثاني عشر</div>
+  <h2>قاعدة الأسماء والأحكام، ومدخل معنى العبادة</h2>
+  <span class="fn">فائدة الفطرة ← قاعدة الأسماء والأحكام وأدلتها (أهل الفترة، المرتد، حديث عبد بن زمعة) ← تفسير أصل الدين: الإقرار بالله ← تصحيح تصور العبادة</span>
+</div>
+
+<div class="where"><b>أين نحن</b>تكلمنا في اللقاء الفائت عن أمثلة لقوم ظلّوا على توحيدهم مع شدة الفترة: منهم من نطقت فطرته بذلك، مثل <span class="sem-name sem-sahabi">عمرو بن عبسة</span> رضي الله عنه: «كنت أعلم في الجاهلية أن قريشًا على ضلالة وهي تعبد الأوثان»؛ ومنهم من كان مثل <span class="sem-name">زيد بن عمرو بن نفيل</span>: يسأل عن هذا الدين وينتهج نهجه ولا يدري من يدلّه عليه.</div>
+<div class="story"><div class="st"><span class="sem-name">زيد</span> يسجد للكعبة، ويردّ الذبائح</div>
+<p>ومع ذلك — كما قلنا في اللقاء الماضي — أشعاره الجميلة التي كان يقولها، ومنها أنه كان يتوجه إلى الكعبة ويقول: «أنفي لك عانٍ راغم، مهما تجشّمني فإني جاشم»، ويسجد. هو لا يعرف عبادة على وجهها، ولا يعرف شيئًا من الشرائع.</p>
+<p>وكانوا يقدّمون له الذبائح فيردّها؛ يقولون له: لماذا؟ فيقول لهم: هذه الذبائح ذبحتموها للأوثان، ليست على اسم الله عز وجل. تصوّر!</p></div>
+
+<h3 id="s12-a">ما فائدة معرفة حسن التوحيد وقبح الشرك بالفطرة؟</h3>
+<p>تكلمنا عن قاعدة التحسين والتقبيح، ونريد أن نقول هنا كلمة: ما الذي نستفيده من أن الإنسان يعرف حسن التوحيد ويعرف قبح الشرك بفطرته؟ نستفيد أنه <strong>لا يحتاج في ذلك إلى الرسول</strong>. فاكرين كلام <span class="sem-name sem-scholar">ابن القيم</span> و<span class="sem-name sem-scholar">ابن تيمية</span> الذي ذكرناه المرة الماضية؟ قال بنفس العبارة: لا يحتاج إلى رسول.</p>
+<p>فإذا كان لا يحتاج إلى الرسول، فماذا يعمل الرسول؟ <strong>يذكّرهم فقط</strong>؛ كما ذكر <span class="sem-name sem-scholar">ابن القيم</span> رحمه الله أيضًا — والنصوص عندكم موجودة — أن هؤلاء الرسل يذكّرونهم فقط بعبادة الله عز وجل.</p>
+<p>فإن قيل: فما فائدته الشرعية إذا كان الله لن يعذّب إلا بعد بعثة الرسل؟ ماذا أستفيد من أنه يعرف حسن التوحيد وقبح الشرك؟ قلنا: نستفيد من ذلك <strong>ثبوت الاسم عليه</strong>.</p>
+<div class="chain">
+<div class="c"><b>السبب</b>يعرف الإنسان حسن التوحيد وقبح الشرك بفطرته، فلا يحتاج في ذلك إلى الرسول.</div>
+<div class="ar">↓</div>
+<div class="c"><b>النتيجة</b>الرسل يذكّرونهم فقط بعبادة الله عز وجل.</div>
+<div class="ar">↓</div>
+<div class="c"><b>الحكم</b>فمن فعل الشرك سُمّي مشركًا؛ والعذاب لا يكون إلا بعد بعثة الرسل.</div>
+</div>
+<p>سنتكلم الآن على <span class="sem-name">زيد بن عمرو بن نفيل</span> وأمثاله: ماذا يقال عنهم؟ هؤلاء <strong>الموحدون</strong>، هؤلاء الذين كانوا على التوحيد، على الإبراهيمية؛ هؤلاء «الإبراهيميون»، «الأحناف». لماذا؟ لأنهم بقوا على التوحيد ولم يعملوا الشرك؛ كانوا على أصل هذا الدين. فإذا فعل الإنسان الشرك سُمّي مشركًا.</p>
+<div class="quiz" data-q="q12-1"></div>
+
+<h3 id="s12-b">قاعدة الأسماء والأحكام</h3>
+<div class="key">هذه قاعدة اسمها <strong>«الأسماء والأحكام»</strong>: أنه من الممكن أن يتخلف الحكم عن اسمه، <strong>فيثبت الاسم في باب، وينتفي في أبواب أخرى</strong>.</div>
+<p>يعني ماذا؟ يعني يكون هناك فرق: هذا الرجل فعل الشرك، فما اسمه؟ لا يمكن أن يكون اسمه «مسلم». هذا اسمه. أما الأحكام: هل هذا الرجل سيُعذَّب؟ هنا يقول لك: لا، قد لا يُعجَّل له بعذاب، قد يُنتظر به قليلًا حتى يختبره الله سبحانه وتعالى.</p>
+<div class="cmp">
+  <div class="cap">الاسم والحكم في من فعل الشرك ولم تبلغه الرسالة</div>
+  <div class="r h"><div class="k">المعيار</div><div>الاسم</div><div>الحكم (العذاب)</div></div>
+  <div class="r"><div class="k">الثبوت</div><div>يثبت بفعل الشرك: اسمه مشرك، لا يمكن أن يكون اسمه مسلمًا.</div><div>قد يتخلّف: لا يُعجَّل له بعذاب، ويختبره الله.</div></div>
+</div>
+<div class="quiz" data-q="q12-2"></div>
+
+<h3 id="s12-c">أهل الفترة: حديث الأربعة الذين يحتجّون يوم القيامة</h3>
+<p>هذا مثل من؟ مثل أهل الفترة؛ كقول <span class="sem-name sem-sahabi"><span class="sem-name sem-sahabi">النبي ﷺ</span></span> في الأربعة الذين يحتجّون على الله عز وجل يوم القيامة بحجتهم:</p>
+<blockquote class="hadith-block"><p>«أربعة يحتجّون يوم القيامة: رجل أصمّ لا يسمع شيئًا، ورجل أحمق، ورجل هَرِم، ورجل مات في فترة».</p><span class="who">رواه أحمد — وساقه الشيخ بمعناه</span></blockquote>
+<div class="num">
+<div class="n"><span class="b">1</span><div class="t"><strong>رجل من أهل الفترة</strong>، أي فترة لم يكن فيها رسل؛ يقول: كنت في فترة، ما جاءني رسول أصلًا.</div></div>
+<div class="n"><span class="b">2</span><div class="t"><strong>رجل كبير في السن</strong> (هرم).</div></div>
+<div class="n"><span class="b">3</span><div class="t"><strong>رجل أصم</strong>؛ يقول: أي ربّ، جاء رسولك وأنا أصم لا أسمع، فما سمعت شيئًا.</div></div>
+<div class="n"><span class="b">4</span><div class="t"><strong>رجل لا عقل له</strong> (أحمق)؛ يقول: كان عقلي غير حاضر، ما كان عندي عقل.</div></div>
+</div>
+<p>فيختبرهم الله عز وجل؛ قيل: يبعث لهم رسولًا في المحشر.</p>
+<div class="tree"><span class="root">امتحان أهل الفترة في المحشر</span><div class="kids">
+<div class="kid"><b>إن أبوا:</b> فهم في الدنيا كانوا سيأبون أكثر من ذلك، فيدخلون النار.</div>
+<div class="kid"><b>إن أجابوا:</b> ينقلبون من اسم أنهم مشركون إلى اسم أنهم على التوحيد، ويمضون.</div>
+</div></div>
+<p>ولذلك أهل الفترة أقسام، كما ذكر <span class="sem-name sem-scholar">ابن القيم</span> رحمه الله، وذكر <span class="sem-name sem-scholar">ابن تيمية</span>، وذكر <span class="sem-name sem-scholar">السيوطي</span> وغيره: هم كلهم على أقسام.</p>
+<div class="tree"><span class="root">من أقسام أهل الفترة</span><div class="kids">
+<div class="kid"><b>الأحناف (الإبراهيميون):</b> الذين ذكرناهم، كزيد بن عمرو بن نفيل وغيره من الموحدين؛ هؤلاء موحدون، لا مشكلة.</div>
+<div class="kid"><b>من عمل بالشرك ولم يجد أحدًا ينبّهه:</b> ما قال له أحد شيئًا؛ فاسمه مشرك، ويمتحنه الله.</div>
+</div></div>
+<div class="fix">ذكر الشيخ اسم كتاب للسيوطي في هذا الموضع غير واضح في التفريغ، فلم يُذكر.</div>
+<div class="quiz" data-q="q12-3"></div>
+
+<h3 id="s12-d">لا عذاب إلا برسول: رحمة من الله</h3>
+<p>أليس الله سبحانه وتعالى قادرًا على أن يعذّبهم بالميثاق، فيكون الله عز وجل قد أقام عليهم الحجة؟ بلى؛ بالميثاق هذا سيتذكر. ألم أقل لك يومًا إن ربك سيقول له فيتذكر؟ <span class="sem-aya"><span class="sem-aya">﴿فَبَصَرُكَ الْيَوْمَ حَدِيدٌ﴾</span></span> [ق: 22]؛ عقلك اليوم حديد، سيتذكر.</p>
+<p>لكن انتبه لرحمة الله عز وجل: الله برحمته وفضله وبرّه جعل <strong>لا عذاب إلا برسول</strong>؛ قال:</p>
+<div class="aya-block"><p><span class="sem-aya">﴿وَمَا كُنَّا مُعَذِّبِينَ حَتَّىٰ نَبْعَثَ رَسُولًا﴾</span></p><div class="ref">[الإسراء: 15]</div></div>
+<div class="aya-block"><p><span class="sem-aya">﴿رُّسُلًا مُّبَشِّرِينَ وَمُنذِرِينَ لِئَلَّا يَكُونَ لِلنَّاسِ عَلَى اللَّهِ حُجَّةٌ بَعْدَ الرُّسُلِ﴾</span></p><div class="ref">[النساء: 165]</div></div>
+<p>شايف؟ هذه رحمة من الله؛ لو شاء أن يعذّبه بالميثاق لعذّبه، لكن رحمةً منه جعل هذا من عنده عز وجل.</p>
+<p>ومن أين جئت بهذه القاعدة؟ — اختصارًا، فالقاعدة فيها كلام طويل — ذكرها شيخ الإسلام <span class="sem-name sem-scholar">ابن تيمية</span> رحمه الله في «مجموع الفتاوى»، وأشار إليها <span class="sem-name sem-scholar">ابن القيم</span> في الفرق بين الاسم والحكم، وذكرها <span class="sem-name sem-scholar">ابن رجب</span> رحمه الله في «جامع العلوم والحكم»، وغير واحد من أهل العلم. وهي مسألة كبيرة عظيمة جليلة القدر جدًا في الإسلام: <strong>ثبوت الاسم بعيدًا عن ثبوت العذاب</strong>؛ قد يلزم الاسمَ العذابُ، وقد لا يلزمه.</p>
+<div class="quiz" data-q="q12-4"></div>
+
+<h3 id="s12-e">مثال: المرتد والاستتابة</h3>
+<p>كأن يرتد الإنسان — والعياذ بالله — فيُرفع إلى القاضي، فيقول له القاضي: أنت ارتددت عن الإسلام، فتب إلى الله. هل قتله القاضي على الردة هكذا؟ لا، لم يقتله بعد؛ هو يقول له: تب إلى الله. فيقول: لا. فيقول: خذوه. وعند بعض أهل العلم يُستتاب ثلاثة أيام: يودَع السجن ويُحبس ويُجرى عليه الطعام — يُؤتى له كل يوم بأكل — ثم يأتيه في اليوم الثاني فيقول له، وفي الثالث يقول له، فإذا أبى بعد الثلاثة أيام قتله.</p>
+<div class="lab-org">الأقوال في مدة الاستتابة كما ذكرها الشيخ</div>
+<div class="num">
+<div class="n"><span class="b">1</span><div class="t">ثلاثة أيام.</div></div>
+<div class="n"><span class="b">2</span><div class="t">ثلاث مرات في مجلس واحد.</div></div>
+<div class="n"><span class="b">3</span><div class="t">شهران.</div></div>
+<div class="n"><span class="b">4</span><div class="t">أبدًا.</div></div>
+</div>
+<p>المهم أن هذا الرجل لم يقع عليه العذاب الدنيوي — القتل — أول ما فعل الردة. شايف الفرق؟ <strong>قد يتخلف العذاب عن الاسم</strong>؛ وقد يثبت الاسم في موضع وينتفي في موضع آخر: فيُسمّى مشركًا، ولا يكون في باب العذاب معذَّبًا. خلِّ بالك من هذا الفرق.</p>
+<div class="quiz" data-q="q12-5"></div>
+
+<h3 id="s12-f">الدليل: حديث <span class="sem-name sem-sahabi">عبد بن زمعة</span> «الولد للفراش… واحتجبي منه يا <span class="sem-name sem-sahabi">سودة</span>»</h3>
+<div class="story"><div class="st"><span class="sem-name sem-sahabi">سودة بنت زمعة</span> رضي الله عنها</div>
+<p><span class="sem-name sem-sahabi">عبد بن زمعة</span> رضي الله عنه هو أخو <span class="sem-name sem-sahabi">سودة بنت زمعة</span> رضي الله عنها، زوج <span class="sem-name sem-sahabi"><span class="sem-name sem-sahabi">النبي ﷺ</span></span>، التي تزوجها بعد <span class="sem-name sem-sahabi">خديجة</span> رضي الله عنها: بعد <span class="sem-name sem-sahabi">خديجة</span> عقد <span class="sem-name sem-sahabi"><span class="sem-name sem-sahabi">النبي ﷺ</span></span> على <span class="sem-name sem-sahabi">سودة</span> وعقد على <span class="sem-name sem-sahabi">عائشة</span> رضي الله عنهما، ثم بنى ب<span class="sem-name sem-sahabi">سودة</span>، ولما هاجر إلى المدينة بنى ب<span class="sem-name sem-sahabi">عائشة</span> رضي الله عنها.</p></div>
+<div class="story"><div class="st">الغلام المولود على فراش زمعة</div>
+<p>وُلد ل<span class="sem-name sem-sahabi">عبد بن زمعة</span> على فراش أبيه مولود، فجاء <span class="sem-name sem-sahabi">عبد بن زمعة</span> فقال: يا رسول الله، هذا الولد على فراش أبي، وهو أخي، أنجبه أبي؛ وادّعاه آخر. فقال <span class="sem-name sem-sahabi"><span class="sem-name sem-sahabi">النبي ﷺ</span></span>: «هو لك يا عبد» — يعني أخوك — «الولد للفراش، وللعاهر الحجر»: الزاني لا يأخذ شيئًا. ثم قال ل<span class="sem-name sem-sahabi">سودة</span> رضي الله عنها: «واحتجبي منه يا <span class="sem-name sem-sahabi">سودة</span>».</p></div>
+<p>خلِّ بالك من هذه المسألة: هو أخو <span class="sem-name sem-sahabi">عبد بن زمعة</span>، فهو أخو <span class="sem-name sem-sahabi">سودة بنت زمعة</span> أيضًا؛ فإذا كان هذا الغلام أخاه فهو أخو <span class="sem-name sem-sahabi">سودة</span>، أخوهم كلهم. فما الموضوع؟</p>
+<div class="evid">
+<div class="er"><div class="el">الدليل</div><div class="ev">«هو لك يا عبد، الولد للفراش وللعاهر الحجر… واحتجبي منه يا <span class="sem-name sem-sahabi">سودة</span>».</div></div>
+<div class="er"><div class="el">وجه الدلالة</div><div class="ev">كما يقول <span class="sem-name sem-scholar">ابن تيمية</span> رحمه الله: <strong>ثبت هذا الاسم في النسب، ولم يثبت في المحرمية</strong>.</div></div>
+</div>
+<p>يعني قال: هو أخوك يا <span class="sem-name sem-sahabi">عبد بن زمعة</span>، أخوكم، يرث معك وكل شيء؛ لكن لا تخلي به يا <span class="sem-name sem-sahabi">سودة</span>. لماذا؟ لأن عندي شبهة في المسألة: في موضوع ولادته وادعاء الرجل الآخر له. فمن حيث إنه محرم ل<span class="sem-name sem-sahabi">سودة</span> قال لها: لا؛ انتفى الاسم هنا، كأنه ليس أخاك، كأنه أحد غريب. أما من حيث إنه أخوها في النسب فهو أخوها: ابن زمعة مثلهم، يرث معهم، وغير ذلك من الأحكام.</p>
+<div class="cmp">
+  <div class="cap">ثبوت اسم «الأخ» للغلام في حديث <span class="sem-name sem-sahabi">عبد بن زمعة</span></div>
+  <div class="r h"><div class="k">المعيار</div><div>في النسب</div><div>في المحرمية</div></div>
+  <div class="r"><div class="k">الاسم</div><div>ثبت: هو أخوك يا عبد، أخوكم.</div><div>انتفى: كأنه أحد غريب.</div></div>
+  <div class="r"><div class="k">الأثر</div><div>يرث معهم.</div><div>«واحتجبي منه يا <span class="sem-name sem-sahabi">سودة</span>».</div></div>
+</div>
+<p>فهنا تقدر تفهم كلام الأئمة لما يتكلمون عن أحد من هؤلاء: يثبتون له اسم الفعل الذي فعله، ثم ينفون عنه العذاب. ولهذا موضع آخر إن شاء الله نتكلم فيه لما نتكلم عن مسألة الأحكام: ما حكم الناس، وما حكم من فعل الشرك. سنأتي لهذه القاعدة بشكل مسهب، ونتكلم عليها إسقاطًا لما نتكلم على <strong>المسائل الظاهرة والخفية</strong>؛ وتقسيم المسائل هذا شيء مهم جدًا لا بد لنا من التعريج عليه.</p>
+<div class="quiz" data-q="q12-6"></div>
+
+<h3 id="s12-g">تفسير أصل الدين: الإقرار بالله</h3>
+<p>نريد الآن أن ندخل في تفسير أصل الدين: عبادة الله وحده بلا شريك، ومجانبة الطاغوت، ومخاصمة المشركين — أي بغض المشركين. انظر ماذا عندنا:</p>
+<div class="aya-block"><p><span class="sem-aya">﴿أَنِ اعْبُدُوا اللَّهَ مَا لَكُم مِّنْ إِلَٰهٍ غَيْرُهُ﴾</span></p><div class="ref">[المؤمنون: 32]</div></div>
+<div class="aya-block"><p><span class="sem-aya">﴿أَنِ اعْبُدُوا اللَّهَ وَاجْتَنِبُوا الطَّاغُوتَ﴾</span></p><div class="ref">[النحل: 36]</div></div>
+<p>هذه عبادة الله عز وجل، ولا بد أن نأخذ كل مفردة. قال <span class="sem-name sem-scholar">ابن تيمية</span>: «الإقرار بالله». ما الإقرار بالله؟ <strong>الإقرار بالله ربًّا وإلهًا</strong>: أن يكون عارفًا أن الله سبحانه وتعالى موجود — و«موجود» هنا يقصدون أن الله سبحانه وتعالى حيّ، لا أنه يعبد شيئًا معدومًا. هذا إقرار بوجود الله عز وجل.</p>
+<p>ثم العبادة: ما العبادة؟ أريد أن أعلّق هنا تعليقًا يسيرًا:</p>
+<div class="num">
+<div class="n"><span class="b">1</span><div class="t">هل تقرّ بأن لك ربًّا؟ — الجواب: طبعًا أقرّ.</div></div>
+<div class="n"><span class="b">2</span><div class="t">إذا كنت مقرًّا أن لك ربًّا، فهل تقرّ أن العبادة لا بد أن تُصرف له وحده؟ — تقول: نعم طبعًا، هل سأعبد أحدًا معه؟</div></div>
+<div class="n"><span class="b">3</span><div class="t">إذا كان الأمر كذلك، فما هي العبادة؟</div></div>
+</div>
+<div class="quiz" data-q="q12-7"></div>
+
+<h3 id="s12-h">تصحيح تصور: العبادة ليست الركوع والسجود فقط — شبهة جنود <span class="sem-name">فرعون</span></h3>
+<p>هنا كثير من الناس يظن أن العبادة هي الركوع والسجود. بعض الناس يتكلم في قوله تعالى:</p>
+<div class="aya-block"><p><span class="sem-aya">﴿إِنَّ فِرْعَوْنَ وَهَامَانَ وَجُنُودَهُمَا كَانُوا خَاطِئِينَ﴾</span></p><div class="ref">[القصص: 8]</div></div>
+<p>فيُستدل بهذه الآية على أن جنود <span class="sem-name">فرعون</span> تابعون ل<span class="sem-name">فرعون</span>، و<span class="sem-name">هامان</span> وزير <span class="sem-name">فرعون</span> تابع ل<span class="sem-name">فرعون</span>؛ فيقول: لا، هذا الكلام لا يُنزَّل بعد ذلك على جميع الفراعين، أن من تبعهم يكون مثلهم. نقول له: لماذا؟ ما الذي جعل هذه الآية شيئًا آخر؟ قال: لأن الآية تقول إن <span class="sem-name">فرعون</span> و<span class="sem-name">هامان</span> وجنودهما كانوا خاطئين لأن هؤلاء الجنود كانوا يعبدون <span class="sem-name">فرعون</span>.</p>
+<p>طيب، الجنود كانوا يعبدون <span class="sem-name">فرعون</span>: <strong>ماذا تتصوّر في العبادة</strong> حتى تفكّر أن هؤلاء الجنود غير الجنود الآخرين؟ هو متصوّر أن العبادة هي السجود فقط؛ فلذلك قال: جنود <span class="sem-name">فرعون</span> حقيقةً — وهو يقول لهم: لا إله غيري — أما جنود غيره من الفراعين فليس فيهم شيء.</p>
+<p>طيب، يعني الإنسان إذا بدّل أحكام الله عز وجل ووضع أحكامًا أخرى غير أحكام الله، وطلع له الجنود يقولون: نحن حرسك على هذا، ولا يدع أحدًا يفتح فمه فيقول: أنا لا يعجبني هذا، يا جماعة نحن نريد الحكم لله… يقول: سأضعه لك وأبدّله لك، اعزل هذه الشريعة — فما هذا إذن؟ هو متصوّر أن هذه ليست عبادة.</p>
+<div class="cmp">
+  <div class="cap">قراءتان لآية <span class="sem-aya">﴿إِنَّ فِرْعَوْنَ وَهَامَانَ وَجُنُودَهُمَا كَانُوا خَاطِئِينَ﴾</span></div>
+  <div class="r h"><div class="k">المعيار</div><div>قول المعترض</div><div>تصحيح الشيخ</div></div>
+  <div class="r"><div class="k">تصوّر العبادة</div><div>العبادة السجود فقط.</div><div>العبادة لا تقتصر على الركوع والسجود؛ المسألة أعم.</div></div>
+  <div class="r"><div class="k">مدى الآية</div><div>خاصة بجنود <span class="sem-name">فرعون</span> لأنهم كانوا يعبدونه، ولا تُنزَّل على جنود غيره من الفراعين.</div><div>من بدّل أحكام الله وحرسه جنوده على ذلك: هذا داخل في معنى العبادة.</div></div>
+</div>
+<div class="warn">ومع الأسف يا إخواننا، هؤلاء <strong>يتصدّرون، يكلّمون الناس ويوجّهونهم</strong> — أو فئة من الناس — بهذه الطريقة، وهذا الذي جعلنا نقع فيما وقعنا فيه. فاليوم من يقول لك: «معقول جنود <span class="sem-name">فرعون</span> و<span class="sem-name">هامان</span>؟!»، ومنها خرج: «العسكري الغلبان»، و«العسكري ابن خالتي وابن خالتك»… هذا الكلام الذي يُقال من أين خرج؟ <strong>خرج من مجرد العقل، والقصور في معنى الأصول</strong>.</div>
+<p>والإشكالية أن يُعمَّم. لما أحكي لك إن شاء الله عن تاريخ الديمقراطية: كيف دخلت، وكيف دخلت العلمانية. العلمانية هي الجزء الكبير، والديمقراطية هي <strong>الذراع الإداري للعلمانية</strong>؛ أما العلمانية فـ<strong>أصلها الفصل</strong>: فصل الدين، أو فصل الكنيسة — السلطة الدينية — أي فصل السيطرة والقهر من الله عز وجل عن العباد. وسأقول لك أصول هذا الكلام إن شاء الله بعد ذلك، لتعرف ما الذي لا بد أن نفصّله، كما قلنا في الأول:</p>
+<div class="aya-block"><p><span class="sem-aya">﴿وَكَذَٰلِكَ نُفَصِّلُ الْآيَاتِ وَلِتَسْتَبِينَ سَبِيلُ الْمُجْرِمِينَ﴾</span></p><div class="ref">[الأنعام: 55]</div></div>
+<div class="fix">قدّم الشيخ الآية بقوله: «وكذلك قال ﷺ»، وهي آية من سورة الأنعام.</div>
+<p>لن تستبين سبيل المجرمين يا إخوة <strong>إلا بالتفصيل</strong>؛ لذلك أريد أن أدقق في كل لفظ، ولو أقدر أن أدقق في كل حرف سأدقق.</p>
+<div class="quiz" data-q="q12-8"></div>
+
+<h3 id="s12-i">العبادة أعم: <span class="sem-aya">﴿إِنِ الْحُكْمُ إِلَّا لِلَّهِ ۚ أَمَرَ أَلَّا تَعْبُدُوا إِلَّا إِيَّاهُ﴾</span></h3>
+<p>ما معنى العبادة؟ إذا عرفت معنى العبادة تعلم أن العبادة <strong>لا تقتصر على الركوع والسجود فقط</strong>؛ المسألة غير ذلك تمامًا، المسألة أعمّ من ذلك. ولذا قال الله عز وجل:</p>
+<div class="aya-block"><p><span class="sem-aya">﴿إِنِ الْحُكْمُ إِلَّا لِلَّهِ ۚ أَمَرَ أَلَّا تَعْبُدُوا إِلَّا إِيَّاهُ﴾</span></p><div class="ref">[يوسف: 40]</div></div>
+<div class="evid">
+<div class="er"><div class="el">الدليل</div><div class="ev"><span class="sem-aya">﴿إِنِ الْحُكْمُ إِلَّا لِلَّهِ ۚ أَمَرَ أَلَّا تَعْبُدُوا إِلَّا إِيَّاهُ﴾</span></div></div>
+<div class="er"><div class="el">وجه الدلالة</div><div class="ev">ذكر الحكم، ثم ذكر بعده العبادة؛ <strong>إذن الحكم شيء من العبادة</strong>.</div></div>
+</div>
+<p>أذكره لك إن شاء الله في اللقاء الآتي. وأتمنى أن أعهد إليكم بذلك أمانة في أعناقكم: احفظوا هذا الكلام، وادرسوه، وراجعوه ورائي — أنا الذي أطلب منك — ما أقوله لك لا تأخذه وتمشي. أقول لك: قال الشاطبي، قال <span class="sem-name sem-scholar">ابن القيم</span>، قال فلان؛ أنا أنقل لك كلام أهل العلم، فاذهب راجعه ورائي. وسأذكر لك بعد ذلك إجماعًا، فاذهب ورائي وانظر أين هذا الإجماع، لتستيقن من هذه المسألة وتبصر طريقك إن شاء الله.</p>
+<div class="quiz" data-q="q12-9"></div>
+<div class="takeaway"><div class="tt">خلاصة المجلس الثاني عشر <small>(إضافة تحريرية)</small></div>
+<div class="score" data-s="s12"></div>
+<div class="tk-i">فائدة معرفة التوحيد بالفطرة: أن الإنسان لا يحتاج في ذلك إلى رسول، والرسل يذكّرون؛ فيثبت اسم «المشرك» على من فعل الشرك، والأحناف كزيد موحدون.</div>
+<div class="tk-i">قاعدة الأسماء والأحكام: يمكن أن يتخلف الحكم عن اسمه، فيثبت الاسم في باب وينتفي في آخر؛ والاسم قد يلزمه العذاب وقد لا يلزمه.</div>
+<div class="tk-i">أهل الفترة أقسام، والأربعة (الأصم، الأحمق، الهرم، من مات في فترة) يُمتحنون في المحشر؛ ولا عذاب إلا برسول، رحمةً من الله مع قدرته على التعذيب بالميثاق.</div>
+<div class="tk-i">الأمثلة: المرتد لا يُقتل أول ما يرتد بل يُستتاب، وحديث «الولد للفراش… واحتجبي منه يا <span class="sem-name sem-sahabi">سودة</span>»: ثبت الاسم في النسب ولم يثبت في المحرمية.</div>
+<div class="tk-i">الإقرار بالله: ربًّا وإلهًا، أنه موجود حي؛ والعبادة ليست الركوع والسجود فقط، ومن هنا خطأ من خصّ آية جنود <span class="sem-name">فرعون</span> بهم.</div>
+<div class="tk-i"><span class="sem-aya">﴿إِنِ الْحُكْمُ إِلَّا لِلَّهِ ۚ أَمَرَ أَلَّا تَعْبُدُوا إِلَّا إِيَّاهُ﴾</span>: ذُكر الحكم ثم العبادة، فالحكم من العبادة؛ ولا تستبين سبيل المجرمين إلا بالتفصيل.</div>
+</div>
+<div class="next"><b>الخيط التالي</b>الحكم شيء من العبادة؛ يذكره الشيخ بتفصيله مع معنى العبادة الجامع في اللقاء الآتي.</div>
+
+</section>
+
+</div>
+<div id="cards"><h2>بطاقات المراجعة — المحاضرة 12</h2><div class="score">تُراجَع بعد يومين من القراءة. الملف يضع كل بطاقة في رزمة أولويتها تحت «العروة الوثقى» بوسم السلسلة والمحاضرة ووسم الأولوية؛ وعند الاستيراد: نوع الملاحظة «أساسي» واترك خانة «وسم كل الملحوظات» فارغة.</div><div class="cstage"><div class="cbox" id="cbox"></div></div><div class="cnav"><button type="button" id="cprev">→ السابقة</button><span class="pos" id="cpos"></span><button type="button" id="cnext">التالية ←</button><button type="button" class="dl" id="cdl" >تحميل بطاقات المحاضرة (TSV)</button></div></div>
+</main>
+</div>
+<nav class="lnav"><a href="11.html">→ المحاضرة 11</a><a class="home" href="index.html">فهرس السلسلة</a><a href="13.html">المحاضرة 13 ←</a></nav>
+<footer>العروة الوثقى — المحاضرة 12 · أُعدّ بمساعدة الذكاء الاصطناعي ويُرجى مراجعته</footer>
+<script>
+var ANKI_NAMES={"sahabi": ["النبي ﷺ", "رسول الله ﷺ", "عمرو بن عبسة", "عبد بن زمعة", "سودة بنت زمعة", "سودة", "خديجة", "عائشة", "إبراهيم"], "scholar": ["ابن تيمية", "ابن القيم", "ابن رجب", "السيوطي"], "name": ["زيد بن عمرو بن نفيل", "زيد بن عمرو", "زيد", "فرعون", "هامان"]};
+const CARDS_DATA=[{"id": "c328", "sectionId": "s12-a", "level": 5, "anchor": "زيد بن عمرو بن نفيل: لماذا كان يردّ الذبائح التي يقدّمها له قومه؟", "pattern": "calm", "q": "زيد بن عمرو بن نفيل: لماذا كان يردّ الذبائح التي يقدّمها له قومه؟", "a": "قال: «هذه الذبائح ذبحتموها للأوثان، ليست على اسم الله».", "blocks": [{"type": "ans", "s": "قال:", "e": "الله».", "core": true}], "marks": [{"t": "focus", "w": "لماذا"}], "review": "", "src": "هذه الذبائح ذبحتموها للاوثان ليست على اسم الله"}, {"id": "c329", "sectionId": "s12-a", "level": 5, "anchor": "ماذا كان زيد بن عمرو بن نفيل يفعل متوجهًا إلى الكعبة مع أنه لا يعرف ال", "pattern": "calm", "q": "ماذا كان زيد بن عمرو بن نفيل يفعل متوجهًا إلى الكعبة مع أنه لا يعرف الشرائع؟", "a": "يقول: «أنفي لك عانٍ راغم، مهما تجشّمني فإني جاشم»، ويسجد.", "blocks": [{"type": "ans", "s": "يقول:", "e": "ويسجد.", "core": true}], "marks": [{"t": "focus", "w": "يفعل"}], "review": "", "src": "انه كان يتوجه كده الى الكعبه ويقول انفي لك عان"}, {"id": "c330", "sectionId": "s12-a", "level": 1, "anchor": "ما الذي نستفيده من أن الإنسان يعرف حسن التوحيد وقبح الشرك بفطرته؟", "pattern": "calm", "q": "ما الذي نستفيده من أن الإنسان يعرف حسن التوحيد وقبح الشرك بفطرته؟", "a": "أنه لا يحتاج في ذلك إلى الرسول. وهي عبارة ابن تيمية وابن القيم بنصها: «لا يحتاج إلى رسول».", "blocks": [{"type": "ans", "s": "أنه", "e": "الرسول.", "core": true}, {"type": "alert", "s": "وهي", "e": "رسول»."}], "marks": [{"t": "focus", "w": "نستفيده"}], "review": "", "src": "بنستفيد انه لا يحتاج في ذلك الى الرسول"}, {"id": "c331", "sectionId": "s12-a", "level": 2, "anchor": "إذا كان الإنسان لا يحتاج إلى رسول ليعرف حسن التوحيد، فما وظيفة الرسل ف", "pattern": "calm", "q": "إذا كان الإنسان لا يحتاج إلى رسول ليعرف حسن التوحيد، فما وظيفة الرسل في هذا الأصل؟", "a": "يذكّرونهم فقط بعبادة الله عز وجل.", "blocks": [{"type": "ans", "s": "يذكّرونهم", "e": "وجل.", "core": true}], "marks": [{"t": "focus", "w": "وظيفة الرسل"}], "review": "", "src": "ان هؤلاء الرسل يذكروهم يذكروهم فقط بعباده الله"}, {"id": "c332", "sectionId": "s12-a", "level": 1, "anchor": "الله لا يعذّب إلا بعد بعثة الرسل؛ فما الفائدة الشرعية إذن من معرفة قبح", "pattern": "calm", "q": "الله لا يعذّب إلا بعد بعثة الرسل؛ فما الفائدة الشرعية إذن من معرفة قبح الشرك بالفطرة؟", "a": "ثبوت الاسم عليه: فمن فعل الشرك سُمّي مشركًا.", "blocks": [{"type": "ans", "s": "ثبوت", "e": "مشركًا.", "core": true}], "marks": [{"t": "focus", "w": "الفائدة الشرعية"}], "review": "", "src": "واذا فعل الشرك سمي مشركا"}, {"id": "c333", "sectionId": "s12-a", "level": 2, "anchor": "من «الأحناف» أو «الإبراهيميون» كزيد بن عمرو بن نفيل، ولماذا سُمّوا موح", "pattern": "calm", "q": "من «الأحناف» أو «الإبراهيميون» كزيد بن عمرو بن نفيل، ولماذا سُمّوا موحدين؟", "a": "الذين كانوا على أصل الدين في الجاهلية. سُمّوا موحدين لأنهم بقوا على التوحيد ولم يعملوا الشرك.", "blocks": [{"type": "def", "s": "الذين", "e": "الجاهلية.", "core": true}, {"type": "ans", "s": "سُمّوا", "e": "الشرك."}], "marks": [{"t": "focus", "w": "الأحناف"}], "review": "", "src": "دول الابراهيميون دول الاباره مش كده ليه لانهم"}, {"id": "c334", "sectionId": "s12-b", "level": 1, "anchor": "ما قاعدة «الأسماء والأحكام»؟", "pattern": "method", "q": "ما قاعدة «الأسماء والأحكام»؟", "a": "أنه يمكن أن يتخلف الحكم عن اسمه، فيثبت الاسم في باب وينتفي في أبواب أخرى.", "blocks": [{"type": "rule", "s": "أنه", "e": "أخرى.", "core": true}], "marks": [{"t": "focus", "w": "الأسماء والأحكام"}], "review": "", "src": "ان من الممكن ان يتخلف الحكم عن اسمه فيثبت الاسم"}, {"id": "c335", "sectionId": "s12-b", "level": 4, "anchor": "رجل فعل الشرك ولم تبلغه رسالة: ما الفرق بين اسمه وحكمه؟", "pattern": "compare", "q": "رجل فعل الشرك ولم تبلغه رسالة: ما الفرق بين اسمه وحكمه؟", "a": "الاسم: مشرك؛ لا يمكن أن يكون اسمه مسلمًا. الحكم: قد لا يُعجَّل له بعذاب، ويُنتظر حتى يختبره الله.", "blocks": [{"type": "cols", "parts": [{"s": "الاسم:", "e": "مسلمًا."}, {"s": "الحكم:", "e": "الله."}]}], "marks": [{"t": "focus", "w": "الفرق"}], "review": "", "src": "ممكن ما يتعدلش بعذاب ممكن يستنى شويه ان ربنا"}, {"id": "c336", "sectionId": "s12-b", "level": 2, "anchor": "هل يلزم من ثبوت اسم «المشرك» ثبوت العذاب، بحسب قاعدة الأسماء والأحكام؟", "pattern": "calm", "q": "هل يلزم من ثبوت اسم «المشرك» ثبوت العذاب، بحسب قاعدة الأسماء والأحكام؟", "a": "لا؛ قد يلزم الاسمَ العذابُ، وقد لا يلزمه.", "blocks": [{"type": "ans", "s": "لا؛", "e": "يلزمه.", "core": true}], "marks": [{"t": "focus", "w": "يلزم"}], "review": "", "src": "يعني قد يلزم الاسم مع العذاب وقد لا يلزم مع العذاب"}, {"id": "c337", "sectionId": "s12-c", "level": 2, "anchor": "من «أهل الفترة»؟", "pattern": "calm", "q": "من «أهل الفترة»؟", "a": "من كانوا في فترة لم يكن فيها رسل، فلم يأتهم رسول.", "blocks": [{"type": "def", "s": "من", "e": "رسول.", "core": true}], "marks": [{"t": "focus", "w": "أهل الفترة"}], "review": "", "src": "رجل من اهل الفتره فتره ما كانش فيها رسل يعني"}, {"id": "c338", "sectionId": "s12-c", "level": 3, "anchor": "حديث «أربعة يحتجون يوم القيامة»: من هم؟", "pattern": "method", "q": "حديث «أربعة يحتجون يوم القيامة»: من هم؟", "a": "رجل أصم: جاء الرسول وهو لا يسمع. رجل أحمق: لا عقل له. رجل هرم: كبير في السن. رجل مات في فترة: لم يأته رسول.", "blocks": [{"type": "steps", "seq": false, "items": [{"s": "رجل", "e": "أصم:", "ds": "جاء", "de": "يسمع."}, {"s": "رجل", "e": "أحمق:", "ds": "لا", "de": "له."}, {"s": "رجل", "e": "هرم:", "ds": "كبير", "de": "السن."}, {"s": "رجل", "e": "فترة:", "ds": "لم", "de": "رسول."}]}], "marks": [{"t": "focus", "w": "من هم"}], "review": "", "src": "اربع يدلون على الله عز وجل بحجتهم يوم القيامه"}, {"id": "c339", "sectionId": "s12-c", "level": 3, "anchor": "كيف يُمتحن أهل الفترة يوم القيامة، وما مآلهم بحسب جوابهم؟", "pattern": "compare", "q": "كيف يُمتحن أهل الفترة يوم القيامة، وما مآلهم بحسب جوابهم؟", "a": "قيل: يبعث الله لهم رسولًا في المحشر. إن أبوا: دخلوا النار، فهم في الدنيا كانوا سيأبون أكثر. إن أجابوا: انقلبوا من اسم المشركين إلى اسم التوحيد.", "blocks": [{"type": "ans", "s": "قيل:", "e": "المحشر.", "core": true}, {"type": "cols", "parts": [{"s": "إن", "e": "أكثر."}, {"s": "إن", "e": "التوحيد."}]}], "marks": [{"t": "focus", "w": "كيف يُمتحن"}], "review": "", "src": "قيل يبعث لهم رسولا في المحشر"}, {"id": "c340", "sectionId": "s12-c", "level": 2, "anchor": "من أقسام أهل الفترة، كما ذكرها ابن القيم وابن تيمية والسيوطي: ما القسم", "pattern": "method", "q": "من أقسام أهل الفترة، كما ذكرها ابن القيم وابن تيمية والسيوطي: ما القسمان اللذان ذكرهما الشيخ؟", "a": "الأحناف الموحدون: كزيد بن عمرو بن نفيل؛ لا مشكلة فيهم. من عمل بالشرك ولم يجد من ينبّهه: فاسمه مشرك ويمتحنه الله.", "blocks": [{"type": "steps", "seq": false, "items": [{"s": "الأحناف", "e": "الموحدون:", "ds": "كزيد", "de": "فيهم."}, {"s": "من", "e": "ينبّهه:", "ds": "فاسمه", "de": "الله."}]}], "marks": [{"t": "focus", "w": "القسمان"}], "review": "", "src": "ولذلك بقى اهل الفترهم اقسام كما ذكر ابن القيم"}, {"id": "c341", "sectionId": "s12-d", "level": 3, "anchor": "﴿وَمَا كُنَّا مُعَذِّبِينَ حَتَّىٰ نَبْعَثَ رَسُولًا﴾ — ما القاعدة الت", "pattern": "quran", "q": "﴿وَمَا كُنَّا مُعَذِّبِينَ حَتَّىٰ نَبْعَثَ رَسُولًا﴾ — ما القاعدة التي تقررها، وما وصفها؟", "a": "لا عذاب إلا برسول. وهي رحمة من الله وفضل وبرّ، ولو شاء أن يعذّب بالميثاق لعذّب.", "blocks": [{"type": "ans", "s": "لا", "e": "برسول.", "core": true}, {"type": "wajh", "s": "وهي", "e": "لعذّب."}], "marks": [{"t": "focus", "w": "القاعدة"}], "review": "", "src": "قال وما كنا معذبين حتى نبعث رسولا"}, {"id": "c342", "sectionId": "s12-d", "level": 3, "anchor": "﴿رُّسُلًا مُّبَشِّرِينَ وَمُنذِرِينَ لِئَلَّا يَكُونَ لِلنَّاسِ عَلَى ", "pattern": "quran", "q": "﴿رُّسُلًا مُّبَشِّرِينَ وَمُنذِرِينَ لِئَلَّا يَكُونَ لِلنَّاسِ عَلَى اللَّهِ حُجَّةٌ بَعْدَ الرُّسُلِ﴾ — لماذا استدل بها الشيخ في باب أهل الفترة؟", "a": "على أن الله برحمته جعل العذاب بعد إرسال الرسل، فلا تبقى للناس حجة.", "blocks": [{"type": "ans", "s": "على", "e": "حجة.", "core": true}], "marks": [{"t": "focus", "w": "لماذا استدل"}], "review": "", "src": "قال رسلا مبشرين ومنذرين لاللا يكون للناس على الله حجه"}, {"id": "c343", "sectionId": "s12-d", "level": 3, "anchor": "﴿فَبَصَرُكَ الْيَوْمَ حَدِيدٌ﴾ — بأي معنى استشهد بها الشيخ في مسألة ال", "pattern": "quran", "q": "﴿فَبَصَرُكَ الْيَوْمَ حَدِيدٌ﴾ — بأي معنى استشهد بها الشيخ في مسألة الميثاق؟", "a": "أن الإنسان يوم القيامة يتذكر الميثاق؛ فالله قادر على أن يعذّب به ويقيم به الحجة.", "blocks": [{"type": "ans", "s": "أن", "e": "الحجة.", "core": true}], "marks": [{"t": "focus", "w": "بأي معنى"}], "review": "", "src": "فبصرك اليوم حديد وعقلك اليوم حديد هيفتكر"}, {"id": "c344", "sectionId": "s12-d", "level": 6, "anchor": "من ذكر قاعدة الفرق بين الاسم والحكم من أهل العلم، وفي أي كتب، كما أحال", "pattern": "calm", "q": "من ذكر قاعدة الفرق بين الاسم والحكم من أهل العلم، وفي أي كتب، كما أحال الشيخ؟", "a": "ابن تيمية في «مجموع الفتاوى»، وابن القيم، وابن رجب في «جامع العلوم والحكم»، وغيرهم.", "blocks": [{"type": "ans", "s": "ابن", "e": "وغيرهم.", "core": true}], "marks": [{"t": "focus", "w": "من ذكر"}], "review": "", "src": "ذكرها شيخ الاسلام الاستاذ بن تيميه رحمه الله في الفتاوى"}, {"id": "c345", "sectionId": "s12-e", "level": 3, "anchor": "المرتد يُرفع إلى القاضي فيستتيبه ولا يقتله فورًا: ما وجه الاستشهاد بهذ", "pattern": "calm", "q": "المرتد يُرفع إلى القاضي فيستتيبه ولا يقتله فورًا: ما وجه الاستشهاد بهذا على قاعدة الأسماء والأحكام؟", "a": "أن العذاب الدنيوي (القتل) تخلّف عن الاسم أول ما فعل الردة. فيثبت الاسم في موضع، وينتفي العذاب في موضع آخر.", "blocks": [{"type": "ans", "s": "أن", "e": "الردة.", "core": true}, {"type": "wajh", "s": "فيثبت", "e": "آخر."}], "marks": [{"t": "focus", "w": "وجه الاستشهاد"}], "review": "", "src": "العذاب الدنيوي ده اللي هو القتل ده ما وقعش عليه"}, {"id": "c346", "sectionId": "s12-e", "level": 6, "anchor": "ما الأقوال في مدة استتابة المرتد التي ذكرها الشيخ؟", "pattern": "method", "q": "ما الأقوال في مدة استتابة المرتد التي ذكرها الشيخ؟", "a": "ثلاثة أيام يُحبس ويُجرى عليه الطعام. ثلاث مرات في مجلس واحد. شهران. أبدًا.", "blocks": [{"type": "steps", "seq": false, "items": [{"s": "ثلاثة", "e": "أيام", "ds": "يُحبس", "de": "الطعام."}, {"s": "ثلاث", "e": "واحد."}, {"s": "شهران.", "e": "شهران."}, {"s": "أبدًا.", "e": "أبدًا."}]}], "marks": [{"t": "focus", "w": "الأقوال"}], "review": "", "src": "بعضهم بيقول ثلاث مرات في مجلس واحد بعضهم بيقول شهرين"}, {"id": "c347", "sectionId": "s12-f", "level": 5, "anchor": "قصة الغلام المولود على فراش زمعة: بماذا قضى النبي ﷺ لعبد بن زمعة، وبما", "pattern": "calm", "q": "قصة الغلام المولود على فراش زمعة: بماذا قضى النبي ﷺ لعبد بن زمعة، وبماذا أمر سودة؟", "a": "قال: «هو لك يا عبد، الولد للفراش وللعاهر الحجر». وقال لسودة: «واحتجبي منه يا سودة».", "blocks": [{"type": "ans", "s": "قال:", "e": "الحجر».", "core": true}, {"type": "ans", "s": "وقال", "e": "سودة»."}], "marks": [{"t": "focus", "w": "بماذا قضى"}], "review": "", "src": "فقال النبي صلى الله عليه وسلم هو لك يا عبد"}, {"id": "c348", "sectionId": "s12-f", "level": 3, "anchor": "حديث «الولد للفراش… واحتجبي منه يا سودة»: ما وجه الدلالة على أن الاسم ", "pattern": "calm", "q": "حديث «الولد للفراش… واحتجبي منه يا سودة»: ما وجه الدلالة على أن الاسم يثبت في باب وينتفي في آخر؟", "a": "ثبت اسم الأخ للغلام في النسب، ولم يثبت في المحرمية. كما قال ابن تيمية؛ فهو يرث معهم، ومع ذلك أُمرت سودة بالاحتجاب منه.", "blocks": [{"type": "ans", "s": "ثبت", "e": "المحرمية.", "core": true}, {"type": "wajh", "s": "كما", "e": "منه."}], "marks": [{"t": "focus", "w": "وجه الدلالة"}], "review": "", "src": "ثبت هذا الاسم في النسب ولم يثبت في المحرميه"}, {"id": "c349", "sectionId": "s12-f", "level": 4, "anchor": "في حديث عبد بن زمعة: لماذا أمر النبي ﷺ سودة بالاحتجاب من الغلام مع أنه", "pattern": "compare", "q": "في حديث عبد بن زمعة: لماذا أمر النبي ﷺ سودة بالاحتجاب من الغلام مع أنه أخوها في النسب؟", "a": "لشبهة في ولادته وادعاء رجل آخر له. من حيث النسب: هو أخوها، يرث معهم. من حيث المحرمية: انتفى الاسم، كأنه أجنبي غريب.", "blocks": [{"type": "ans", "s": "لشبهة", "e": "له.", "core": true}, {"type": "cols", "parts": [{"s": "من", "e": "معهم."}, {"s": "من", "e": "غريب."}]}], "marks": [{"t": "focus", "w": "لماذا"}], "review": "", "src": "عشان عندي شبهه هنا في المساله في موضوع الايه ولادته"}, {"id": "c350", "sectionId": "s12-f", "level": 6, "anchor": "سودة بنت زمعة رضي الله عنها: متى تزوجها النبي ﷺ، وما ترتيب عقده وبنائه", "pattern": "calm", "q": "سودة بنت زمعة رضي الله عنها: متى تزوجها النبي ﷺ، وما ترتيب عقده وبنائه بها وبعائشة؟", "a": "تزوجها بعد خديجة؛ عقد على سودة وعائشة، ثم بنى بسودة، ولما هاجر إلى المدينة بنى بعائشة.", "blocks": [{"type": "ans", "s": "تزوجها", "e": "بعائشة.", "core": true}], "marks": [{"t": "focus", "w": "متى تزوجها"}], "review": "", "src": "عقد على سودا وعقد على عائشه رضي الله عنهما ثم بنى بسودا"}, {"id": "c351", "sectionId": "s12-f", "level": 2, "anchor": "كيف تفهم كلام الأئمة حين يُثبتون لمن فعل الشرك اسم فعله، ثم ينفون عنه ", "pattern": "calm", "q": "كيف تفهم كلام الأئمة حين يُثبتون لمن فعل الشرك اسم فعله، ثم ينفون عنه العذاب؟", "a": "على قاعدة الأسماء والأحكام: الاسم يثبت بالفعل، والعذاب قد يتخلف عنه. وتفصيلها عند الكلام على المسائل الظاهرة والخفية.", "blocks": [{"type": "ans", "s": "على", "e": "عنه.", "core": true}, {"type": "alert", "s": "وتفصيلها", "e": "والخفية."}], "marks": [{"t": "focus", "w": "كيف تفهم"}], "review": "", "src": "تقدر تفهم كلام الائمه لما يجي يتكلم عن عن حد من هؤلاء"}, {"id": "c352", "sectionId": "s12-g", "level": 3, "anchor": "بأي آيتين افتتح الشيخ تفسير أصل الدين، وما الذي تجمعانه؟", "pattern": "quran", "q": "بأي آيتين افتتح الشيخ تفسير أصل الدين، وما الذي تجمعانه؟", "a": "﴿أَنِ اعْبُدُوا اللَّهَ مَا لَكُم مِّنْ إِلَٰهٍ غَيْرُهُ﴾ و﴿أَنِ اعْبُدُوا اللَّهَ وَاجْتَنِبُوا الطَّاغُوتَ﴾. تجمعان عبادة الله وحده مع نفي غيره واجتناب الطاغوت.", "blocks": [{"type": "ans", "s": "﴿أَنِ", "e": "الطَّاغُوتَ﴾.", "core": true}, {"type": "wajh", "s": "تجمعان", "e": "الطاغوت."}], "marks": [{"t": "focus", "w": "بأي آيتين"}], "review": "", "src": "ان اعبدوا الله ما لكم من الا غيره ان اعبدوا الله واجتنبوا الطاغوت"}, {"id": "c353", "sectionId": "s12-g", "level": 2, "anchor": "ما المقصود بـ«الإقرار بالله» في تعريف ابن تيمية لأصل الدين؟", "pattern": "calm", "q": "ما المقصود بـ«الإقرار بالله» في تعريف ابن تيمية لأصل الدين؟", "a": "الإقرار بالله ربًّا وإلهًا: أن يعرف أن الله موجود، أي حي.", "blocks": [{"type": "def", "s": "الإقرار", "e": "حي.", "core": true}], "marks": [{"t": "focus", "w": "الإقرار بالله"}], "review": "", "src": "الاقرار بالله ربا واله عز وجل انه يبقى عارف"}, {"id": "c354", "sectionId": "s12-g", "level": 2, "anchor": "ما الأسئلة الثلاثة المتدرجة التي يطرحها الشيخ ليصل إلى وجوب معرفة معنى", "pattern": "method", "q": "ما الأسئلة الثلاثة المتدرجة التي يطرحها الشيخ ليصل إلى وجوب معرفة معنى العبادة؟", "a": "هل تقرّ بأن لك ربًّا؟ نعم. هل تقرّ أن العبادة تُصرف له وحده؟ نعم. فما هي العبادة؟", "blocks": [{"type": "steps", "seq": true, "items": [{"s": "هل", "e": "ربًّا؟", "ds": "نعم.", "de": "نعم."}, {"s": "هل", "e": "وحده؟", "ds": "نعم.", "de": "نعم."}, {"s": "فما", "e": "العبادة؟"}]}], "marks": [{"t": "focus", "w": "الأسئلة الثلاثة"}], "review": "", "src": "اعلق هنا بس تعريف يسير على مساله هل تقر بان لك رب"}, {"id": "c355", "sectionId": "s12-h", "level": 4, "anchor": "﴿إِنَّ فِرْعَوْنَ وَهَامَانَ وَجُنُودَهُمَا كَانُوا خَاطِئِينَ﴾ — قال ", "pattern": "method", "q": "﴿إِنَّ فِرْعَوْنَ وَهَامَانَ وَجُنُودَهُمَا كَانُوا خَاطِئِينَ﴾ — قال قائل: هي خاصة بجنود فرعون لأنهم عبدوه، ولا تتنزّل على جنود غيره. ما ردّ الشيخ؟", "a": "هذا القائل متصوّر أن العبادة السجود فقط. والعبادة لا تقتصر على الركوع والسجود؛ فمن بدّل أحكام الله وحرسه جنوده على ذلك دخل في المعنى.", "blocks": [{"type": "err", "s": "هذا", "e": "فقط.", "core": true}, {"type": "rule", "s": "والعبادة", "e": "المعنى."}], "marks": [{"t": "focus", "w": "ما ردّ الشيخ"}], "review": "", "src": "انت متصور ايه في العباده عشان تفكر ان الجنود دول"}, {"id": "c356", "sectionId": "s12-h", "level": 2, "anchor": "ما التصور الخاطئ الشائع في معنى العبادة الذي ينبّه عليه الشيخ؟", "pattern": "method", "q": "ما التصور الخاطئ الشائع في معنى العبادة الذي ينبّه عليه الشيخ؟", "a": "أن العبادة هي الركوع والسجود فقط. والمسألة أعم من ذلك.", "blocks": [{"type": "err", "s": "أن", "e": "فقط.", "core": true}, {"type": "rule", "s": "والمسألة", "e": "ذلك."}], "marks": [{"t": "focus", "w": "التصور الخاطئ"}], "review": "", "src": "كثير من الناس بيفكر ان العباده دي الركوع سجود"}, {"id": "c357", "sectionId": "s12-h", "level": 4, "anchor": "من أين خرجت عبارات مثل «العسكري الغلبان» و«العسكري ابن خالتي وابن خالت", "pattern": "calm", "q": "من أين خرجت عبارات مثل «العسكري الغلبان» و«العسكري ابن خالتي وابن خالتك» بحسب الشيخ؟", "a": "من مجرد العقل، والقصور في معنى الأصول. وسببه متصدّرون وجّهوا الناس بتصوّر قاصر للعبادة.", "blocks": [{"type": "ans", "s": "من", "e": "الأصول.", "core": true}, {"type": "alert", "s": "وسببه", "e": "للعبادة."}], "marks": [{"t": "focus", "w": "من أين"}], "review": "", "src": "طلع من مجرد العقل والقصور في معنى الاصول"}, {"id": "c358", "sectionId": "s12-h", "level": 2, "anchor": "ما العلاقة بين العلمانية والديمقراطية، وما أصل العلمانية، بحسب الشيخ؟", "pattern": "calm", "q": "ما العلاقة بين العلمانية والديمقراطية، وما أصل العلمانية، بحسب الشيخ؟", "a": "الديمقراطية الذراع الإداري للعلمانية. والعلمانية أصلها الفصل: فصل الدين أو فصل الكنيسة، أي فصل سلطة الله وقهره عن العباد.", "blocks": [{"type": "ans", "s": "الديمقراطية", "e": "للعلمانية.", "core": true}, {"type": "def", "s": "والعلمانية", "e": "العباد."}], "marks": [{"t": "focus", "w": "العلاقة"}], "review": "", "src": "الديمقراطيه دي الزراع الادالي بتاع العلمانيه"}, {"id": "c359", "sectionId": "s12-h", "level": 3, "anchor": "﴿وَكَذَٰلِكَ نُفَصِّلُ الْآيَاتِ وَلِتَسْتَبِينَ سَبِيلُ الْمُجْرِمِين", "pattern": "method", "q": "﴿وَكَذَٰلِكَ نُفَصِّلُ الْآيَاتِ وَلِتَسْتَبِينَ سَبِيلُ الْمُجْرِمِينَ﴾ — ما القاعدة التي يأخذها منها الشيخ؟", "a": "لا تستبين سبيل المجرمين إلا بالتفصيل. ولذلك يدقق في كل لفظ، ولو قدر لدقق في كل حرف.", "blocks": [{"type": "rule", "s": "لا", "e": "بالتفصيل.", "core": true}, {"type": "ans", "s": "ولذلك", "e": "حرف."}], "marks": [{"t": "focus", "w": "القاعدة"}], "review": "", "src": "لن تستين سبيل المجرم المجرمين يا اخوه الا بالتفصيل"}, {"id": "c360", "sectionId": "s12-i", "level": 3, "anchor": "﴿إِنِ الْحُكْمُ إِلَّا لِلَّهِ ۚ أَمَرَ أَلَّا تَعْبُدُوا إِلَّا إِيَّ", "pattern": "quran", "q": "﴿إِنِ الْحُكْمُ إِلَّا لِلَّهِ ۚ أَمَرَ أَلَّا تَعْبُدُوا إِلَّا إِيَّاهُ﴾ — ما وجه دلالتها على أن العبادة أعم من الركوع والسجود؟", "a": "ذكر الحكم ثم ذكر بعده العبادة. إذن الحكم شيء من العبادة.", "blocks": [{"type": "ans", "s": "ذكر", "e": "العبادة.", "core": true}, {"type": "wajh", "s": "إذن", "e": "العبادة."}], "marks": [{"t": "focus", "w": "وجه دلالتها"}], "review": "", "src": "ذكر الحكم وذكر بعد كده العباده اذا هو شيء من العباده"}];
+const QUIZ_DATA=[{"id": "q12-1", "sectionId": "s12", "question": "ما الفائدة الشرعية من معرفة الإنسان حسن التوحيد وقبح الشرك بفطرته، مع أن الله لا يعذّب إلا بعد الرسل؟", "options": ["لا فائدة لها", "ثبوت اسم «المشرك» على من فعل الشرك", "وجوب قتاله فورًا", "أنه يدخل الجنة بلا حساب"], "correctIndex": 1, "explanation": "لا يحتاج في ذلك إلى رسول، والرسل يذكّرون؛ فمن فعل الشرك سُمّي مشركًا."}, {"id": "q12-2", "sectionId": "s12", "question": "رجل فعل الشرك ولم تبلغه رسالة. بحسب قاعدة الأسماء والأحكام:", "options": ["اسمه مسلم ولا يعذَّب", "اسمه مشرك، وقد يتخلف عنه العذاب حتى يُمتحن", "اسمه مشرك ويعذَّب حتمًا بلا امتحان", "لا اسم له"], "correctIndex": 1, "explanation": "يثبت الاسم بفعل الشرك، والحكم (العذاب) قد يتخلف."}, {"id": "q12-3", "sectionId": "s12", "question": "رجل من أهل الفترة امتُحن في المحشر فأجاب الرسول. ما حاله؟", "options": ["يدخل النار", "ينقلب من اسم المشركين إلى اسم التوحيد", "يبقى موقوفًا", "يعود إلى الدنيا"], "correctIndex": 1, "explanation": "إن أجابوا انقلبوا إلى التوحيد، وإن أبوا دخلوا النار."}, {"id": "q12-4", "sectionId": "s12", "question": "لماذا لم يعذّب الله الناس بالميثاق وحده مع أنه حجة؟", "options": ["لأن الميثاق ليس حجة", "رحمةً منه وفضلًا، فجعل لا عذاب إلا برسول", "لأن الناس نسوه فلا يُذكَّرون به", "لأن الميثاق خاص بالأنبياء"], "correctIndex": 1, "explanation": "<span class=\"sem-aya\">﴿وَمَا كُنَّا مُعَذِّبِينَ حَتَّىٰ نَبْعَثَ رَسُولًا﴾</span>؛ ولو شاء لعذّب بالميثاق."}, {"id": "q12-5", "sectionId": "s12", "question": "مرتد رُفع إلى القاضي فاستتابه ثلاثة أيام. ما وجه الاستشهاد بهذا في القاعدة؟", "options": ["أن الردة لا اسم لها", "أن العذاب الدنيوي تخلّف عن الاسم أول ما فعل الردة", "أن القاضي لا يملك القتل", "أن الاستتابة واجبة أبدًا"], "correctIndex": 1, "explanation": "اسمه ثبت بالردة، والقتل لم يقع عليه أول ما فعل."}, {"id": "q12-6", "sectionId": "s12", "question": "في حديث «الولد للفراش… واحتجبي منه يا <span class=\"sem-name sem-sahabi\">سودة</span>»، ثبت اسم الأخ للغلام في:", "options": ["النسب والمحرمية معًا", "النسب دون المحرمية", "المحرمية دون النسب", "لا في النسب ولا في المحرمية"], "correctIndex": 1, "explanation": "كما قال <span class=\"sem-name sem-scholar\">ابن تيمية</span>: ثبت الاسم في النسب ولم يثبت في المحرمية."}, {"id": "q12-7", "sectionId": "s12", "question": "ما المقصود بالإقرار بالله في تعريف أصل الدين؟", "options": ["حفظ أسماء الله", "الإقرار بالله ربًّا وإلهًا: أنه موجود حي", "الإقرار بالرسل فقط", "أداء الصلاة"], "correctIndex": 1, "explanation": "الإقرار بالله ربًّا وإلهًا، و«موجود» أي حي."}, {"id": "q12-8", "sectionId": "s12", "question": "من خصّ آية <span class=\"sem-aya\">﴿إِنَّ فِرْعَوْنَ وَهَامَانَ وَجُنُودَهُمَا كَانُوا خَاطِئِينَ﴾</span> بجنود <span class=\"sem-name\">فرعون</span> وحدهم، أين خطؤه بحسب الشيخ؟", "options": ["في قراءة الآية", "في تصوّر العبادة أنها السجود فقط", "في تاريخ <span class=\"sem-name\">فرعون</span>", "لا خطأ فيه"], "correctIndex": 1, "explanation": "قال: ماذا تتصوّر في العبادة؟ هو متصوّر أن العبادة السجود فقط."}, {"id": "q12-9", "sectionId": "s12", "question": "ما وجه الدلالة في <span class=\"sem-aya\">﴿إِنِ الْحُكْمُ إِلَّا لِلَّهِ ۚ أَمَرَ أَلَّا تَعْبُدُوا إِلَّا إِيَّاهُ﴾</span>؟", "options": ["أن الحكم غير العبادة", "ذكر الحكم ثم العبادة، فالحكم من العبادة", "أن العبادة الصلاة فقط", "أن الحكم للأنبياء"], "correctIndex": 1, "explanation": "إذن الحكم شيء من العبادة."}];
+const MAP_DATA=[{"id": "mm-12", "sectionId": "s12", "center": "الأسماء والأحكام، ومدخل العبادة", "nodes": [{"text": "فائدة معرفة التوحيد بالفطرة", "target": "#s12-a", "color": "#2f6f8f", "children": [{"text": "الرسل يذكّرون", "target": "#s12-a"}]}, {"text": "قاعدة الأسماء والأحكام", "target": "#s12-b", "color": "#8a4f2d", "children": [{"text": "أهل الفترة", "target": "#s12-c"}, {"text": "لا عذاب إلا برسول", "target": "#s12-d"}, {"text": "المرتد", "target": "#s12-e"}, {"text": "حديث عبد بن زمعة", "target": "#s12-f"}]}, {"text": "تفسير أصل الدين", "target": "#s12-g", "color": "#4a6d3a", "children": [{"text": "الإقرار بالله", "target": "#s12-g"}]}, {"text": "معنى العبادة", "target": "#s12-h", "color": "#6a4a8c", "children": [{"text": "شبهة جنود فرعون", "target": "#s12-h"}, {"text": "الحكم من العبادة", "target": "#s12-i"}]}]}];
+</script>
+<script src="ilm-anki.js" data-series="العروة الوثقى" data-lecture="12"></script>
+<script>
+/* واجهة الصفحة فقط — البطاقات وتصديرها من ilm-anki.js (آلية 5.11 — 9-ص) */
+(function(){
+"use strict";
+function $(id){return document.getElementById(id);}
+/* quiz */
+var QZ={};QUIZ_DATA.forEach(function(q){QZ[q.id]=q;});var score={};
+document.querySelectorAll(".quiz[data-q]").forEach(function(box){var q=QZ[box.getAttribute("data-q")];if(!q)return;
+  var h='<div class="qh">سؤال فهم</div><div class="qq">'+q.question+'</div>';
+  q.options.forEach(function(o,i){h+='<button class="op" type="button" data-i="'+i+'">'+o+'</button>';});
+  box.innerHTML=h+'<div class="ex">'+q.explanation+'</div><button class="again" type="button">إعادة المحاولة</button>';});
+document.addEventListener("click",function(e){
+  var b=e.target.closest(".quiz .op");
+  if(b){var box=b.closest(".quiz");if(box.classList.contains("done"))return;var q=QZ[box.getAttribute("data-q")],i=+b.getAttribute("data-i");
+    box.classList.add("done");box.querySelectorAll(".op")[q.correctIndex].classList.add("ok");if(i!==q.correctIndex)b.classList.add("no");
+    (score[q.sectionId]=score[q.sectionId]||{})[q.id]=(i===q.correctIndex);
+    var el=document.querySelector('.score[data-s="'+q.sectionId+'"]');if(el){var s=score[q.sectionId],ok=0,n=0;for(var k in s){n++;if(s[k])ok++;}
+      el.textContent="نتيجتك في أسئلة هذه المحاضرة: "+ok+" من "+n+" (المجموع "+QUIZ_DATA.filter(function(x){return x.sectionId===q.sectionId;}).length+")";}return;}
+  var a=e.target.closest(".quiz .again");if(a){var bx=a.closest(".quiz");bx.classList.remove("done");bx.querySelectorAll(".op").forEach(function(o){o.classList.remove("ok","no");});}
+});
+/* cmp labels for phones */
+document.querySelectorAll(".cmp").forEach(function(t){var h=t.querySelector(".r.h");if(!h)return;var hs=[].map.call(h.children,function(c){return c.textContent;});
+  t.querySelectorAll(".r:not(.h)").forEach(function(r){[].forEach.call(r.children,function(c,i){if(i&&hs[i])c.setAttribute("data-h",hs[i]);});});});
+/* mind map */
+MAP_DATA.forEach(function(m){var host=$(m.id);if(!host)return;
+  var h='<div class="mm-center">'+m.center+'</div><div class="mm-branches">';
+  m.nodes.forEach(function(n){h+='<div class="mm-node" style="--c:'+n.color+'"><a href="'+n.target+'">'+n.text+'</a>';
+    if(n.children&&n.children.length)h+='<div class="mm-kids">'+n.children.map(function(c){return '<a href="'+c.target+'">'+c.text+'</a>';}).join("")+'</div>';
+    h+='</div>';});host.innerHTML=h+'</div>';});
+/* download */
+var dlb=$("cdl");
+if(dlb)dlb.onclick=function(){try{ILM_ANKI.download(CARDS_DATA);}catch(e){alert(e.message);}};
+/* flashcards */
+var box=$("cbox");
+if(box){var list=CARDS_DATA,pos=0;
+  var show=function(){var c=list[pos];box.classList.remove("shown");
+    box.innerHTML='<div class="front">'+ILM_ANKI.front(c)+'</div><div class="back">'+ILM_ANKI.back(c)+'</div><div class="flip">انقر على البطاقة لإظهار الإجابة</div>';
+    $("cpos").textContent=(pos+1)+" / "+list.length;};
+  box.addEventListener("click",function(){box.classList.toggle("shown");});
+  $("cprev").onclick=function(){pos=(pos-1+list.length)%list.length;show();};
+  $("cnext").onclick=function(){pos=(pos+1)%list.length;show();};
+  show();}
+/* progress / toc / font */
+var bar=$("progress"),tl=[].slice.call(document.querySelectorAll(".toc a[href^='#']"));
+var targets=tl.map(function(a){return $(a.getAttribute("href").slice(1));});
+window.addEventListener("scroll",function(){var h=document.documentElement;if(bar)bar.style.width=(h.scrollTop/Math.max(1,h.scrollHeight-h.clientHeight)*100)+"%";
+  var cur=-1;targets.forEach(function(t,i){if(t&&t.getBoundingClientRect().top<120)cur=i;});tl.forEach(function(a,i){a.classList.toggle("on",i===cur);});},{passive:true});
+var fs=18;function setFs(){document.documentElement.style.setProperty("--fs",fs+"px");}
+if($("fsUp")){$("fsUp").onclick=function(){if(fs<22){fs++;setFs();}};$("fsDn").onclick=function(){if(fs>16){fs--;setFs();}};}
+})();
+
+</script>
+<script type="module" src="firebase-sync-manhaj.js"></script>
+<script src="ilm-track.js"></script>
+<script src="ilm-highlight.js" data-lecture-id="stage1_urwa_12"></script>
+</body>
+</html>
