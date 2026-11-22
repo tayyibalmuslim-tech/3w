@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="lecture-status" content="filled">
+<title>العروة الوثقى — المحاضرة 38 | لماذا يتوجه الحكم إلى المعيَّن؟ (1): كلية الشريعة والاستطاعة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@700&family=Cairo:wght@400;600;700;800&family=El+Messiri:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1f2433;--ink2:#3d4457;--sub:#69708a;--bg:#f6f4ef;--paper:#fffdf9;--line:#e4dfd3;
+  --brand:#25305a;--brand2:#3b4b86;--accent:#2a7f7a;--gold:#c9b27c;--goldbg:#f4eedf;
+  --s1:#3a5a98;--s2:#2a7f7a;--s3:#b0623a;--s4:#5a5f8a;--s5:#1e7aa0;--s6:#8c4a6b;--s7:#446a8a;--s8:#5e6b2f;--s9:#7a5636;--s10:#5d5a99;--s11:#2f6f8f;--s12:#8a4f2d;--s13:#4a6d3a;--s14:#6a4a8c;--s15:#2d7a6a;--s16:#9a4a4a;--s17:#3d5f8f;--s18:#7a6a2a;--s19:#5a3f7a;--s20:#2f7a8a;
+  --sec:var(--brand);
+  --sem-aya:#14532d;--sem-hadith:#5b2d90;--sem-sahabi:#8a5a00;--sem-scholar:#8f1d21;
+  --fs:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cairo','Noto Sans Arabic',Tahoma,sans-serif;font-size:var(--fs);line-height:1.95;text-align:right;direction:rtl}
+a{color:inherit}
+.sem-aya{color:var(--sem-aya);font-family:'Amiri','Noto Naskh Arabic',serif;font-size:1.12em}
+.sem-hadith{color:var(--sem-hadith)}
+.sem-name{color:var(--sem-scholar)}
+.sem-name.sem-sahabi,.sem-sahabi{color:var(--sem-sahabi);font-weight:700}
+.sem-name.sem-scholar,.sem-scholar{color:var(--sem-scholar);font-weight:700}
+#progress{position:fixed;top:0;right:0;height:4px;background:linear-gradient(90deg,var(--accent),var(--brand2));width:0;z-index:50}
+/* hero */
+.hero{background:radial-gradient(ellipse at 20% 0%,#3b4b86 0%,#25305a 55%,#1a2142 100%);color:#f3efe4;padding:64px 20px 70px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(201,178,124,.07) 0 2px,transparent 2px 26px)}
+.hero .in{max-width:900px;margin:0 auto;position:relative}
+.hero .series{font-family:'Aref Ruqaa','Amiri',serif;font-size:58px;line-height:1.3;color:#f1e6c8;margin:0}
+.hero .rope{display:flex;align-items:center;margin:14px 0 18px;max-width:420px}
+.hero .rope span{flex:1;height:3px;background:repeating-linear-gradient(90deg,var(--gold) 0 10px,transparent 10px 14px);border-radius:2px}
+.hero .rope b{width:16px;height:16px;border:3px solid var(--gold);border-radius:50%;margin:0 10px}
+.hero h1{font-family:'El Messiri','Cairo',sans-serif;font-size:34px;line-height:1.5;margin:0 0 10px;font-weight:600}
+.hero .meta{font-size:15.5px;color:#d7d2c4}
+.wrap{max-width:1180px;margin:0 auto;display:flex;align-items:flex-start;padding:0 18px}
+main{flex:1 1 auto;min-width:0;max-width:800px;margin:0 auto}
+aside.toc{flex:0 0 250px;position:sticky;top:18px;margin:28px 0 0 26px;order:2;max-height:calc(100vh - 40px);overflow:auto;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:14px 14px 16px;font-size:14.5px;line-height:1.7}
+.toc .t{font-weight:800;color:var(--brand);margin-bottom:6px;font-family:'El Messiri','Cairo'}
+.toc a{display:block;text-decoration:none;padding:4px 8px;border-radius:8px;color:var(--ink2)}
+.toc a.l2{padding-right:20px;font-size:13.5px;color:var(--sub)}
+.toc a:hover,.toc a.on{background:var(--goldbg);color:var(--brand)}
+.tools{display:flex;flex-wrap:wrap;margin-top:10px;border-top:1px solid var(--line);padding-top:10px}
+.tools button{font:inherit;font-size:13px;margin:0 0 6px 6px;padding:5px 10px;border:1px solid var(--line);background:#fff;border-radius:9px;cursor:pointer;color:var(--brand)}
+@media(max-width:1020px){aside.toc{display:none}}
+/* intro cards */
+.ai-note{margin:26px 0 0;background:#fff7e6;border:1px solid #ecd9ae;border-radius:12px;padding:10px 16px;font-size:15px;color:#6b4e16}
+.src{margin:16px 0;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 20px;font-size:16px}
+.src .row{display:flex;flex-wrap:wrap;margin-bottom:2px}.src .k{flex:0 0 120px;color:var(--sub);font-weight:700}.src .v{flex:1 1 300px}
+.orient{margin:22px 0 10px;background:linear-gradient(180deg,#fffdf8,#f7f3e8);border:1px solid #e6dcc3;border-radius:20px;padding:22px 24px}
+.orient .lab{font-size:13px;font-weight:800;color:var(--accent);letter-spacing:.2px}
+.orient .cq{font-family:'El Messiri','Cairo';font-size:23px;color:var(--brand);line-height:1.6;margin:2px 0 14px}
+.orient .idea{font-size:17px;color:var(--ink2);margin-bottom:6px}
+.orient .ed{font-size:12.5px;color:var(--sub)}
+/* mindmap */
+.mm{margin:18px 0 6px}
+.mm-center{display:inline-block;background:var(--brand);color:#f5efe0;border-radius:14px;padding:10px 18px;font-weight:800;font-family:'El Messiri','Cairo';font-size:18px}
+.mm-branches{border-right:3px solid var(--gold);margin:10px 18px 0 0;padding:4px 0 0}
+.mm-node{position:relative;margin:0 0 10px;padding-right:22px}
+.mm-node:before{content:"";position:absolute;right:0;top:20px;width:18px;border-top:3px solid var(--gold)}
+.mm-node>a{display:inline-block;text-decoration:none;background:#fff;border:1px solid var(--line);border-right:5px solid var(--c,var(--brand));border-radius:12px;padding:6px 14px;font-weight:700;color:var(--ink)}
+.mm-node>a:hover{background:var(--goldbg)}
+.mm-kids{margin:6px 22px 0 0;display:flex;flex-wrap:wrap}
+.mm-kids a{font-size:14.5px;text-decoration:none;margin:0 0 6px 8px;padding:3px 11px;border-radius:20px;background:#f1efe8;color:var(--ink2);border:1px solid #e6e1d4}
+.mm-kids a:hover{background:var(--goldbg)}
+/* sections */
+section.lec{--sec:var(--brand);margin:46px 0 0}
+section.lec[data-s="1"]{--sec:var(--s1)}section.lec[data-s="2"]{--sec:var(--s2)}section.lec[data-s="3"]{--sec:var(--s3)}section.lec[data-s="4"]{--sec:var(--s4)}section.lec[data-s="5"]{--sec:var(--s5)}section.lec[data-s="6"]{--sec:var(--s6)}section.lec[data-s="7"]{--sec:var(--s7)}section.lec[data-s="8"]{--sec:var(--s8)}section.lec[data-s="9"]{--sec:var(--s9)}section.lec[data-s="10"]{--sec:var(--s10)}section.lec[data-s="11"]{--sec:var(--s11)}section.lec[data-s="12"]{--sec:var(--s12)}section.lec[data-s="13"]{--sec:var(--s13)}section.lec[data-s="14"]{--sec:var(--s14)}section.lec[data-s="15"]{--sec:var(--s15)}section.lec[data-s="16"]{--sec:var(--s16)}section.lec[data-s="17"]{--sec:var(--s17)}section.lec[data-s="18"]{--sec:var(--s18)}section.lec[data-s="19"]{--sec:var(--s19)}section.lec[data-s="20"]{--sec:var(--s20)}
+.lec-head{position:relative;background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--sec);border-radius:20px;padding:22px 24px 18px;margin-bottom:18px}
+.lec-head .num{font-size:13.5px;font-weight:800;color:var(--sec);letter-spacing:.3px}
+.lec-head h2{font-family:'El Messiri','Cairo';font-size:30px;line-height:1.5;margin:4px 0 6px;color:var(--ink)}
+.lec-head .fn{display:inline-block;font-size:13px;background:var(--goldbg);color:#6b5a2e;border-radius:20px;padding:2px 12px}
+.divider{height:34px;margin:40px 0 0;background:radial-gradient(circle,var(--gold) 3px,transparent 4px) center/26px 34px repeat-x;opacity:.7}
+main h3{font-family:'El Messiri','Cairo';font-size:23px;line-height:1.6;color:var(--sec);margin:32px 0 8px;padding-right:14px;border-right:4px solid var(--sec)}
+main h4{font-size:19px;margin:20px 0 4px;color:var(--ink)}
+main p{margin:0 0 14px}
+.where,.next{border-radius:14px;padding:12px 18px;font-size:16px;margin:0 0 16px}
+.where{background:#eef1f8;border:1px dashed #b9c2dd}
+.next{background:#eef6f5;border:1px dashed #a9cfcb;margin-top:18px}
+.where b,.next b{display:block;font-size:13px;color:var(--sec)}
+/* blocks */
+.aya-block{background:#f0f6f1;border:1px solid #d6e7da;border-right:4px solid #3f7d57;border-radius:14px;padding:12px 20px 10px;margin:14px 0 16px;text-align:center}
+.aya-block p{margin:0;font-size:1.08em;line-height:2.15}
+.aya-block .sem-aya{font-size:1.22em}
+.ref{font-size:13.5px;color:var(--sub);text-align:left}
+blockquote{margin:14px 0 16px;padding:12px 20px 10px;border-radius:14px}
+blockquote p{margin:0 0 6px}
+.hadith-block{background:#f6f3fa;border:1px solid #e6dff0;border-right:4px solid #8b77ad}
+.naql{background:#fbf8f1;border:1px solid #ebe2cc;border-right:4px solid #b9a06a}
+.who{display:block;font-size:13.5px;color:#7a6a45;font-weight:700;margin-top:2px}
+.hadith-block .who{color:#6b5d86}
+.key{background:#eef3fb;border-right:4px solid var(--brand2);border-radius:12px;padding:12px 18px;margin:14px 0}
+.key:before{content:"فكرة محورية";display:block;font-size:12.5px;font-weight:800;color:var(--brand2)}
+.warn{background:#fdf1ea;border-right:4px solid #c46a3b;border-radius:12px;padding:12px 18px;margin:14px 0}
+.warn:before{content:"تنبيه";display:block;font-size:12.5px;font-weight:800;color:#a2512a}
+.fix{background:#fff6e0;border:1px dashed #d8b45d;border-radius:12px;padding:10px 16px;margin:12px 0;font-size:15.5px}
+.fix:before{content:"تصحيح / توضيح تحريري";display:block;font-size:12.5px;font-weight:800;color:#8a6414}
+.ed-note{background:#f3f3f1;border-radius:12px;padding:10px 16px;margin:12px 0;font-size:15.5px;color:var(--ink2)}
+.ed-note:before{content:"إضافة تحريرية (ليست من كلام الشيخ)";display:block;font-size:12.5px;font-weight:800;color:#6c6c64}
+.story{background:#fffaf2;border:1px solid #efdfc4;border-radius:16px;padding:14px 20px 4px;margin:16px 0}
+.story .st{font-weight:800;color:#8a5f2b;font-size:15px;margin-bottom:4px}
+/* structures */
+.lab-org{font-size:12.5px;font-weight:800;color:var(--sec);margin:0 0 6px}
+.cmp{margin:16px 0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.cmp .cap{background:#f4f2ec;padding:8px 16px;font-weight:800;font-size:15px;color:var(--ink2)}
+.cmp .r{display:flex;flex-wrap:wrap;border-top:1px solid var(--line)}
+.cmp .r>div{flex:1 1 200px;padding:10px 16px;font-size:16px;line-height:1.85;min-width:0}
+.cmp .r>div+div{border-right:1px solid var(--line)}
+.cmp .r.h>div{font-weight:800;color:var(--sec);background:#fafaf7}
+.cmp .r>div.k{flex:0 0 140px;font-weight:700;color:var(--sub);background:#fbfaf6}
+@media(max-width:580px){.cmp .r.h{display:none}.cmp .r>div.k{flex-basis:100%;border-bottom:1px dashed var(--line);color:var(--sec)}.cmp .r>div+div{border-right:0;border-top:1px dashed var(--line)}.cmp .r>div[data-h]:before{content:attr(data-h);display:block;font-size:12.5px;font-weight:800;color:var(--sub)}}
+.tree{margin:16px 0;padding:16px;background:#fff;border:1px solid var(--line);border-radius:16px}
+.tree .root{font-weight:800;color:#fff;background:var(--sec);display:inline-block;border-radius:10px;padding:5px 14px}
+.tree .kids{margin:10px 16px 0 0;border-right:2px solid #d7d2c3;padding-right:14px}
+.tree .kid{position:relative;margin:0 0 10px;background:#faf8f3;border:1px solid #ebe5d6;border-radius:12px;padding:8px 14px;font-size:16px}
+.tree .kid:before{content:"";position:absolute;right:-16px;top:20px;width:14px;border-top:2px solid #d7d2c3}
+.tree .kid b{color:var(--sec)}
+.timeline{margin:16px 0;padding:6px 0}
+.tl-i{position:relative;padding:0 46px 14px 0}
+.tl-i:before{content:attr(data-n);position:absolute;right:0;top:2px;width:32px;height:32px;border-radius:50%;background:var(--sec);color:#fff;font-weight:800;text-align:center;line-height:32px;font-size:15px}
+.tl-i:after{content:"";position:absolute;right:15px;top:36px;bottom:0;border-right:2px solid #d4cfbf}
+.tl-i:last-child:after{display:none}
+.tl-i .tt{font-weight:800;color:var(--ink)}
+.tl-i .td{font-size:16px;color:var(--ink2)}
+.chain{display:flex;flex-direction:column;margin:16px 0}
+.chain .c{background:#fff;border:1px solid var(--line);border-right:4px solid var(--sec);border-radius:12px;padding:9px 16px;font-size:16px}
+.chain .c b{display:block;font-size:12.5px;color:var(--sec)}
+.chain .ar{height:22px;text-align:center;color:var(--sec);line-height:22px;font-size:18px}
+.evid{margin:16px 0;border:1px solid #d9e6dd;border-radius:16px;background:#fcfefc;overflow:hidden}
+.evid .er{display:flex;flex-wrap:wrap;border-top:1px solid #e3ede6}
+.evid .er:first-child{border-top:0}
+.evid .el{flex:0 0 120px;padding:9px 14px;font-size:13.5px;font-weight:800;color:#3f6b52;background:#f2f8f3}
+.evid .ev{flex:1 1 260px;padding:9px 16px;font-size:16px;min-width:0}
+@media(max-width:580px){.evid .el{flex-basis:100%}}
+.arg{margin:16px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.arg .claim{background:var(--sec);color:#fff;border-radius:12px;padding:10px 16px;font-weight:700}
+.arg .claim b{display:block;font-size:12.5px;opacity:.85}
+.arg .grp{margin:12px 0 0;display:flex;flex-wrap:wrap}
+.arg .g{flex:1 1 220px;margin:0 0 10px 10px;background:#f7f6fb;border:1px solid #e3e1ee;border-radius:12px;padding:10px 14px;font-size:15.5px}
+.arg .g b{display:block;color:var(--sec);font-size:13px}
+.num{margin:14px 0}
+.num .n{display:flex;align-items:flex-start;margin-bottom:10px}
+.num .n .b{flex:0 0 34px;height:34px;border-radius:10px;background:var(--goldbg);color:#6b5a2e;font-weight:800;text-align:center;line-height:34px;margin-left:12px;border:1px solid #e3d6b4}
+.num .n .t{flex:1;min-width:0}
+.stat{display:flex;flex-wrap:wrap;margin:14px -6px}
+.stat .s{flex:1 1 180px;margin:0 6px 12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;text-align:center}
+.stat .s .v{font-size:34px;font-weight:800;color:var(--sec);line-height:1.3;font-family:'El Messiri','Cairo'}
+.stat .s .d{font-size:14.5px;color:var(--ink2);line-height:1.7}
+/* takeaway */
+.takeaway{margin:26px 0 8px;background:linear-gradient(180deg,#fffaf0,#fbf3e2);border:1px solid #e8d7b0;border-radius:18px;padding:16px 20px}
+.takeaway .tt{font-family:'El Messiri','Cairo';font-weight:700;font-size:19px;color:#7a5b1d}
+.takeaway .tt small{font-size:12px;color:#9b8456;font-family:'Cairo';margin-right:6px}
+.tk-i{position:relative;padding-right:22px;margin:7px 0;font-size:16.5px}
+.tk-i:before{content:"";position:absolute;right:2px;top:12px;width:9px;height:9px;border-radius:50%;background:var(--sec)}
+.score{font-size:13.5px;color:var(--sub);margin-bottom:4px}
+/* quiz */
+.quiz{margin:20px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 18px 12px;box-shadow:0 2px 10px rgba(30,40,70,.04)}
+.quiz .qh{font-size:12.5px;font-weight:800;color:var(--sec);margin-bottom:4px}
+.quiz .qq{font-weight:700;font-size:17px;margin-bottom:8px}
+.quiz button.op{display:block;width:100%;min-height:44px;text-align:right;font:inherit;font-size:16px;line-height:1.7;background:#faf9f5;border:1px solid #e6e1d4;border-radius:12px;padding:8px 14px;margin:0 0 8px;cursor:pointer;color:var(--ink)}
+.quiz button.op:hover{background:var(--goldbg)}
+.quiz button.op.ok{background:#e6f3ec;border-color:#86bf9d}
+.quiz button.op.no{background:#fbe9e4;border-color:#e0a28f}
+.quiz .ex{display:none;font-size:15px;background:#f4f6fb;border-radius:10px;padding:8px 12px;color:var(--ink2)}
+.quiz.done .ex{display:block}
+.quiz .again{display:none;font:inherit;font-size:13px;border:0;background:none;color:var(--brand2);cursor:pointer;padding:4px 0}
+.quiz.done .again{display:inline-block}
+/* cards area */
+#cards{margin:56px 0 20px}
+#cards h2{font-family:'El Messiri','Cairo';font-size:30px;color:var(--brand);margin:0 0 4px}
+.cfil{display:flex;flex-wrap:wrap;margin:10px 0}
+.cfil button,.cnav button,.dl{font:inherit;font-size:14px;margin:0 0 8px 8px;padding:6px 14px;border-radius:20px;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--ink2);min-height:38px}
+.cfil button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+.dl{background:var(--accent);color:#fff;border-color:var(--accent)}
+.cstage{max-width:740px;margin:8px auto}
+.cbox{background:#fff;border:1px solid #dfe3e0;border-radius:18px;padding:20px 22px;cursor:pointer;min-height:220px;box-shadow:0 4px 22px rgba(31,49,46,.06)}
+.cbox .flip{font-size:12.5px;color:var(--sub);text-align:center;margin-top:12px}
+.cbox .back{display:none;margin-top:16px;padding-top:16px;border-top:1px solid #e1e0d8}
+.cbox.shown .back{display:block}
+.cnav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px}
+.cnav .pos{font-size:14px;color:var(--sub);margin:0 10px 8px}
+footer{margin:60px 0 0;background:#1d2547;color:#cfc9b8;padding:26px 20px;text-align:center;font-size:14.5px}
+@media(max-width:580px){
+  body{font-size:17px}.hero{padding:44px 16px 50px}.hero .series{font-size:42px}.hero h1{font-size:25px}
+  .lec-head h2{font-size:24px}main h3{font-size:20px}.wrap{padding:0 12px}
+  .orient{padding:16px}.orient .cq{font-size:19px}.cbox{padding:16px 14px}
+}
+@media print{aside.toc,#progress,.quiz,.cnav,.cfil,.dl,.tools{display:none}.hero{background:#25305a;-webkit-print-color-adjust:exact}}
+
+/* نسخة عرض من قسم mz- في anki/final.css — لعرض البطاقات داخل الصفحة بنفس HTML المُصدَّر */
+.mz-calm{--mz-title:#293c35;--mz-ink:#33423c;--mz-accent:#296257;--mz-sub:#66766f;--mz-line:#e1e0d8;--mz-b1:#e9f3ef;--mz-b1bd:#cfe3da;--mz-b2:#f5f5f1;--mz-b2bd:#e1e0d8;--mz-b2lab:#7d6338;--mz-alert:#f5f0e4;--mz-alertbd:#e6dcc4;--mz-alertlab:#7d6338}
+.mz-compare{--mz-title:#273e5d;--mz-ink:#2f3f55;--mz-accent:#47668c;--mz-sub:#62748b;--mz-line:#d8e1ec;--mz-b1:#e9f1ed;--mz-b1bd:#c9dcd2;--mz-b1lab:#2c6a55;--mz-b2:#f5eee7;--mz-b2bd:#e5d6c6;--mz-b2lab:#9a5a2a;--mz-alert:#eff3f9;--mz-alertbd:#d3dded;--mz-alertlab:#273e5d}
+.mz-quran{--mz-title:#3a3426;--mz-ink:#3a3426;--mz-accent:#7a6030;--mz-sub:#7a7060;--mz-line:#dfd9c8;--mz-b1:#f0ede5;--mz-b1bd:#dfd9c8;--mz-b2:#f0ede5;--mz-b2bd:#dfd9c8;--mz-b2lab:#7a6030;--mz-alert:#f6f1e2;--mz-alertbd:#e6dcc0;--mz-alertlab:#7a6030}
+.mz-method{--mz-title:#332d49;--mz-ink:#3a3550;--mz-accent:#605785;--mz-sub:#6e6890;--mz-line:#e0dcec;--mz-b1:#f2f0f9;--mz-b1bd:#e0dcec;--mz-b2:#e8e5f4;--mz-b2bd:#d5cfe8;--mz-b2lab:#605785;--mz-alert:#f4f0e6;--mz-alertbd:#e6dcc0;--mz-alertlab:#7a6030;--mz-step:#e8e5f4;--mz-conn:#9891b4;--mz-num:#605785;--mz-numink:#fff;--mz-err:#f7ebe5;--mz-errbd:#ecd2c3;--mz-errlab:#995531}
+.mz-face,.mz-ans{direction:rtl;text-align:right;font-family:'Cairo','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif;color:var(--mz-ink);line-height:1.95;font-size:18px;overflow-wrap:break-word}
+.mz-face p,.mz-ans p{margin:0}
+.mz-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:0 0 12px;margin:0 0 16px;border-bottom:1px solid var(--mz-line)}
+.mz-subject{display:flex;align-items:center;font-size:14.5px;font-weight:800;color:var(--mz-accent)}
+.mz-kicker{font-size:12.5px;font-weight:600;color:var(--mz-sub)}
+.mz-ico{display:inline-block;width:20px;height:20px;margin-left:9px;border-radius:6px;background:var(--mz-accent);opacity:.85}
+.mz-label{font-size:12.5px;font-weight:700;color:var(--mz-sub);margin:0 0 4px}
+.mz-q{font-size:21px;line-height:1.95;font-weight:700;color:var(--mz-title)}
+.mz-q .mz-qt{margin:0 0 4px}
+.mz-box{margin:0 0 12px;padding:13px 18px 14px;border:1px solid var(--mz-b1bd);border-radius:14px;background:var(--mz-b1)}
+.mz-box:last-child{margin-bottom:0}
+.mz-box[data-label]:before{content:attr(data-label);display:block;font-size:13px;font-weight:800;color:var(--mz-accent);margin:0 0 4px}
+.mz-b-excl,.mz-b-wajh{background:var(--mz-b2);border-color:var(--mz-b2bd)}
+.mz-b-excl[data-label]:before,.mz-b-wajh[data-label]:before{color:var(--mz-b2lab)}
+.mz-b-alert,.mz-b-exc{background:var(--mz-alert);border-color:var(--mz-alertbd)}
+.mz-b-alert[data-label]:before,.mz-b-exc[data-label]:before{display:inline;margin:0;font-size:inherit;color:var(--mz-alertlab);content:attr(data-label) ": "}
+.mz-b-err{background:var(--mz-err);border-color:var(--mz-errbd)}
+.mz-b-err[data-label]:before{color:var(--mz-errlab);display:inline;margin:0;font-size:inherit;content:attr(data-label) ": "}
+.mz-cols{display:flex;flex-wrap:wrap;margin:0 -6px 6px}
+.mz-col{flex:1 1 220px;min-width:0;margin:0 6px 12px;padding:13px 16px 14px;border:1px solid var(--mz-b1bd);border-radius:14px;background:var(--mz-b1)}
+.mz-col2{background:var(--mz-b2);border-color:var(--mz-b2bd)}
+.mz-col[data-label]:before{content:attr(data-label);display:block;font-size:14px;font-weight:800;padding:0 0 7px;margin:0 0 8px;color:var(--mz-b1lab);border-bottom:1px solid var(--mz-b1bd)}
+.mz-col2[data-label]:before{color:var(--mz-b2lab);border-bottom-color:var(--mz-b2bd)}
+.mz-steps{margin:0 0 12px}
+.mz-step{display:flex;align-items:flex-start;padding:12px 14px;border-radius:14px;background:var(--mz-step,var(--mz-b2));border:1px solid var(--mz-b2bd)}
+.mz-step-n{flex:0 0 34px;width:34px;height:34px;margin-left:12px;border-radius:50%;background:var(--mz-num,var(--mz-accent));color:#fff;font-weight:800;font-size:16px;line-height:34px;text-align:center}
+.mz-step-b{flex:1 1 auto;min-width:0}
+.mz-step-t{font-weight:800;color:var(--mz-title);line-height:1.8}
+.mz-step-d{margin-top:2px;line-height:1.9}
+.mz-steps-list{counter-reset:mzstep}
+.mz-steps-list .mz-step{counter-increment:mzstep;margin:0 0 10px}
+.mz-steps-list .mz-step:last-child{margin-bottom:0}
+.mz-steps-list .mz-step-n:before{content:counter(mzstep)}
+.mz-arrow{height:20px;padding:5px 15px 0 0;line-height:0}
+.mz-arrow:before{content:"";display:inline-block;border-right:6px solid transparent;border-left:6px solid transparent;border-top:9px solid var(--mz-conn,#9891b4);margin-right:5px}
+.mz-em{font-weight:800;color:var(--mz-title)}
+.mz-v{font-family:'Amiri','Noto Naskh Arabic','Traditional Arabic',serif;font-weight:700;font-size:1.15em;line-height:2}
+.mz-face .sem-aya,.mz-ans .sem-aya,.mz-face .sem-hadith,.mz-ans .sem-hadith{font-weight:700}
+@media (max-width:580px){.mz-q{font-size:19px}.mz-face,.mz-ans{font-size:17px}.mz-box{padding:12px 14px 13px}.mz-col{flex-basis:100%}}
+/* ===== إضافات 5.10–5.11 — تُلصق في آخر قسم mz- في anki/final.css وفي تنسيق نوع الملاحظة «أساسي» ===== */
+.mz-focus{color:var(--mz-accent);font-weight:800;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
+.mz-box.mz-core{font-weight:700;color:var(--mz-title)}
+.mz-corelead{font-weight:800;color:var(--mz-title)}
+.mz-b-edit{background:#f4f4f4;border:1px dashed #b9b9b9}
+.mz-b-edit[data-label]:before{color:#5f5f5f}
+.mz-srcl{margin-top:10px;text-align:left;font-size:12.5px}
+.mz-srcl a{color:var(--mz-sub);text-decoration:none;border-bottom:1px dotted var(--mz-sub)}
+
+/* ===== ملفات المحاضرات المنفصلة + صفحة الفهرس ===== */
+.hero-s{padding:40px 20px 44px}
+.hero-s .series{font-size:40px;text-decoration:none;display:inline-block}
+.hero-s h1{font-size:30px}
+.lnav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;max-width:1180px;margin:0 auto;padding:12px 18px;font-size:15px}
+.lnav a,.lnav span{display:inline-block;padding:7px 14px;border-radius:20px;text-decoration:none;background:var(--paper);border:1px solid var(--line);color:var(--brand);margin:4px 0;min-height:38px}
+.lnav a.home{background:var(--brand);color:#f5efe0;border-color:var(--brand);font-weight:700}
+.lnav .off{color:var(--sub);background:transparent;border-style:dashed}
+.lnav a:hover{background:var(--goldbg)}.lnav a.home:hover{background:var(--brand2)}
+.orient .ed2{font-size:15.5px;color:var(--ink2)}
+main.idx{max-width:960px;margin:0 auto;padding:0 18px}
+.ih{font-family:'El Messiri','Cairo';font-size:28px;color:var(--brand);margin:34px 0 12px}
+.grid{display:flex;flex-wrap:wrap;margin:0 -8px}
+.lc{flex:1 1 280px;margin:0 8px 16px;display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--c,var(--brand));border-radius:18px;padding:16px 18px 14px;transition:transform .15s,box-shadow .15s}
+.lc:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(30,40,70,.09)}
+.lc .no{font-family:'El Messiri','Cairo';font-size:34px;font-weight:700;color:var(--c,var(--brand));line-height:1.2}
+.lc .lt{font-family:'El Messiri','Cairo';font-size:20px;font-weight:700;line-height:1.6;margin:2px 0 6px}
+.lc .lq{font-size:15.5px;color:var(--ink2);line-height:1.8;flex:1}
+.lc .ls{font-size:13.5px;color:var(--sub);margin-top:8px}
+.lc .go{font-size:14.5px;font-weight:700;color:var(--c,var(--brand));margin-top:6px}
+.lc-off{border-top-color:#cfcabd;border-style:dashed;opacity:.75}.lc-off .no,.lc-off .lt{color:var(--sub)}
+.alldl{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;background:#eef6f5;border:1px solid #c7e0dd;border-radius:16px;padding:14px 18px;margin:18px 0 10px}
+.alldl div{flex:1 1 320px;margin-left:12px}.alldl b{display:block;color:var(--accent)}.alldl span{font-size:14.5px;color:var(--ink2)}
+@media(max-width:580px){.hero-s .series{font-size:32px}.hero-s h1{font-size:23px}.lc .no{font-size:28px}.lnav{font-size:13px;padding:10px 8px;flex-wrap:nowrap}.lnav a,.lnav span{flex:1 1 0;text-align:center;margin:4px 3px;padding:7px 4px;min-width:0}}
+
+
+/* إضافات 11–20: الشعر ومعاني الغريب */
+.poem{background:#fbf8f1;border:1px solid #ebe2cc;border-right:4px solid #b9a06a;border-radius:14px;padding:12px 20px 8px;margin:14px 0 16px;text-align:center}
+.poem p{font-family:'Amiri','Noto Naskh Arabic',serif;font-size:1.1em;line-height:2.2;margin:0 0 6px}
+.gloss{margin:10px 0 16px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 16px}
+.gloss .gt{font-size:12.5px;font-weight:800;color:var(--sec);margin-bottom:4px}
+.gloss .gw{display:flex;flex-wrap:wrap;border-top:1px dashed var(--line);padding:5px 0;font-size:15.5px}
+.gloss .gw:first-of-type{border-top:0}
+.gloss .gw b{flex:0 0 130px;color:var(--ink)}.gloss .gw span{flex:1 1 220px;color:var(--ink2)}
+
+/* إضافات 33–44 */
+:root{--s33:#2f6a7f;--s34:#7a4f6b;--s35:#556b2f;--s36:#8a5a3a;--s37:#3d5a8a;--s38:#6a3f6a;--s39:#2f7a5f;--s40:#4f6f3a;--s41:#4a5f8a;--s42:#7a6a3a;--s43:#5a4a8a;--s44:#2f6f6f}
+section.lec[data-s="33"]{--sec:var(--s33)}section.lec[data-s="34"]{--sec:var(--s34)}section.lec[data-s="35"]{--sec:var(--s35)}section.lec[data-s="36"]{--sec:var(--s36)}section.lec[data-s="37"]{--sec:var(--s37)}section.lec[data-s="38"]{--sec:var(--s38)}section.lec[data-s="39"]{--sec:var(--s39)}section.lec[data-s="40"]{--sec:var(--s40)}section.lec[data-s="41"]{--sec:var(--s41)}section.lec[data-s="42"]{--sec:var(--s42)}section.lec[data-s="43"]{--sec:var(--s43)}section.lec[data-s="44"]{--sec:var(--s44)}
+.gap{background:#f3f1ea;border:1px dashed #cbc4b1;border-radius:12px;padding:8px 14px;font-size:14.5px;color:var(--sub);margin:10px 0}
+</style>
+</head>
+<body data-lecture-id="stage1_urwa_38">
+<div id="progress"></div>
+<header class="hero hero-s"><div class="in"><a class="series" href="index.html">العروة الوثقى</a><div class="rope"><span></span><b></b><span></span></div><h1>المحاضرة 38</h1><div class="meta">سلسلة في أصل دين الإسلام · 6 سؤال فهم · 34 بطاقة مراجعة</div></div></header>
+<nav class="lnav"><a href="37.html">→ المحاضرة 37</a><a class="home" href="index.html">فهرس السلسلة</a><span class="off">المحاضرة 39 لم تُضف بعد</span></nav>
+<div class="wrap">
+<aside class="toc"><div class="t">فهرس المحاضرة</div><a href="#orient">لوحة التوجيه</a><a href="#s38-a">أين نحن: «ليس كل من وقع في الكفر…»</a><a href="#s38-b">لماذا هذه الحلقة؟ «تعالى ما قالش حاجة»</a><a href="#s38-c">السبب الأول: الشريعة عامة كلية</a><a href="#s38-d">الشاطبي: الأحكام الثلاثة وأسماء الفاعلين</a><a href="#s38-e">لماذا لا نسأل عن العوارض أولًا؟</a><a href="#s38-f">الوجه الأول: العوارض ليست صالحة لكل شيء</a><a href="#s38-g">الوجه الثاني: الأصل الاستطاعة</a><a href="#s38-h">الرخصة جزئية لا تُعمَّم</a><a href="#s38-i">الشاطبي: لو بُنيت الأحكام على خوارق العوائد</a><a href="#s38-j">الخيط التالي: الإرجاء</a><a href="#cards">بطاقات المراجعة</a><a href="index.html">↩ فهرس السلسلة</a><div class="tools"><button type="button" id="fsUp">تكبير الخط +</button><button type="button" id="fsDn">تصغير الخط −</button></div></aside>
+<main>
+<div data-ilm-highlight-zone>
+<div class="ai-note">أُعدّ هذا المحتوى بمساعدة الذكاء الاصطناعي، وقد يحتوي أخطاء، ويُرجى مراجعته.</div><div class="src"><div class="row"><div class="k">نوع المادة</div><div class="v">تفريغ صوتي للمحاضرة 38 من سلسلة «العروة الوثقى».</div></div><div class="row"><div class="k">المنهج</div><div class="v">كلام الشيخ مُعاد تنظيمه بلا حذف لفكرة أو دليل؛ والخلاصات والصناديق الموسومة «تحريرية» إضافة ليست من كلامه. وما بين «» لكلام الشيخ وأسماء الكتب والنقول.</div></div></div>
+<div class="orient" id="orient"><div class="lab">السؤال المركزي</div><div class="cq">لماذا يقع الحكم في المسائل الظاهرة على المعيَّن مباشرة، ولا يُبدأ بالسؤال عن العوارض؟</div><div class="lab">الفكرة المحورية</div><div class="idea">الشريعة عامة كلية: كل مكلف مقصود بعينه بالأمر والنهي وعقوبتهما، فمن فعل المعصية سُمّي عاصيًا ومن فعل الكفر سُمّي كافرًا. والعوارض طارئة لا تصلح كلها لكل حكم، والأصل في الإنسان الاستطاعة؛ ولو بُنيت الأحكام على الاحتمالات النادرة لم ينتظم حكم ولا عقوبة.</div><div class="ed">صياغة تحريرية تجمع معنى المحاضرة.</div><div class="lab" style="margin-top:12px">مسار المحاضرة</div><div class="ed2">ليس كل من وقع في الكفر ← الاستهزاء ← الشريعة كلية ← الأحكام الثلاثة ← لماذا لا نسأل أولًا ← العوارض ليست لكل شيء ← الاستطاعة ← الرخصة جزئية ← خوارق العوائد ← الإرجاء</div><div class="lab" style="margin-top:12px">خريطة المحاور</div><div class="mm" id="mm-38"></div></div>
+
+<section class="lec" id="s38" data-s="38">
+<div class="lec-head">
+  <div class="num">المجلس الثامن والثلاثون</div>
+  <h2>لماذا يتوجه الحكم إلى المعيَّن؟ (1): كلية الشريعة والاستطاعة</h2>
+  <span class="fn">ليس كل من وقع في الكفر ← الاستهزاء ← الشريعة كلية ← الأحكام الثلاثة ← لماذا لا نسأل أولًا ← العوارض ليست لكل شيء ← الاستطاعة ← الرخصة جزئية ← خوارق العوائد ← الإرجاء</span>
+</div>
+
+<div class="where"><b>أين نحن</b>تكلمنا عن الحجة: أنها تقوم <strong>بمجرد البلاغ</strong> في المسائل الظاهرة، و<strong>بالتفهيم وإزالة الشبهة</strong> في المسائل الخفية، وذكرنا الدليل على التفريق. ثم قلنا: لماذا التعيين؟ الحجة قامت — على من؟ على معيَّن. فليس الأمر كما يُقال: «هذا كفر لكن لا يقع على صاحبه».</div>
+
+<h3 id="s38-a">«ليس كل من وقع في الكفر وقع الكفر عليه»</h3>
+<p>خذ بالك من العبارة المتداولة جدًا: <strong>«ليس كل من وقع في الكفر وقع الكفر عليه»</strong> — صحيح، نحن معك في القاعدة؛ لكن انظر ماذا تقول: «ليس كلّ» — نفي للكلية والعموم؛ إذن <strong>هناك بعضٌ</strong> ممن وقع في الكفر يقع عليه الكفر مباشرة.</p>
+<div class="cmp">
+  <div class="cap">«ليس كل من وقع في الكفر وقع الكفر عليه»</div>
+  <div class="r h"><div class="k">المعيار</div><div>المسائل الظاهرة</div><div>المسائل الخفية</div></div>
+  <div class="r"><div class="k">وقوع الحكم</div><div>إذا وقع في الكفر وقع عليه مباشرة — إلا في حيّز يسير يظهر فيه عارض.</div><div>محتملة أصلًا، فيُتكلم فيها باللازم وبالإطلاق.</div></div>
+  <div class="r"><div class="k">العلّة</div><div>ثابتة لأنها ظاهرة، إلا أن يأتي العارض المناسب.</div><div>محتملة في نفسها.</div></div>
+</div>
+<p>هذه الحلقة مهمة جدًا جدًا، أريدك أن تركز فيها كويس قوي: <strong>لماذا المعيَّن؟</strong> لماذا لا يكون الحكم في الظاهر مطلقًا كالخفي؟ ستكون الحلقة «أكاديمية» شوية، لكن لا بد منها.</p>
+
+<h3 id="s38-b">لماذا هذه الحلقة؟ «تعالى ما قالش حاجة»</h3>
+<p>لا بد أن نردّ على من يفعل الشرك ثم يُقال: ليس مشركًا، ويفعل الكفر فيُقال: ليس كفرًا. كما قلت لك: لما خرج الرجل وقال: «قاعدين يقولوا لنا: قال تعالى، قال تعالى… وتعالى ما قالش حاجة من 1400 سنة!» — تكلم عليه بعض المشايخ فقال: هذا كلام كفر غير مسموح به، لكني لا أكفّره. سؤال: لماذا لا تكفّره؟ <strong>هذا مستهزئ بالله</strong>؛ يقول: «تعالى ما قالش حاجة»! والاستهزاء:</p>
+<div class="aya-block"><p><span class="sem-aya">﴿وَلَئِن سَأَلْتَهُمْ لَيَقُولُنَّ إِنَّمَا كُنَّا نَخُوضُ وَنَلْعَبُ قُلْ أَبِاللَّهِ وَآيَاتِهِ وَرَسُولِهِ كُنتُمْ تَسْتَهْزِئُونَ * لَا تَعْتَذِرُوا قَدْ كَفَرْتُم بَعْدَ إِيمَانِكُمْ﴾</span></p><div class="ref">[التوبة: 65–66]</div></div>
+<div class="story"><div class="st">«إنما كنا نخوض ونلعب»</div>
+<p>يقول <span class="sem-name sem-sahabi">عبد الله بن عمر</span> رضي الله عنهما: فلقد رأيت الرجل — أحد هؤلاء الذين قالوا ذلك الكلام — متعلقًا بنِسعة ناقة رسول الله ﷺ، تنكبه الحجارة، وهو يقول: يا رسول الله، والله ما قصدت، إنما كان حديث الركب نقطع به الطريق؛ ولا يزيده رسول الله ﷺ على أن يقول: <span class="sem-aya">﴿أَبِاللَّهِ وَآيَاتِهِ وَرَسُولِهِ كُنتُمْ تَسْتَهْزِئُونَ * لَا تَعْتَذِرُوا قَدْ كَفَرْتُم بَعْدَ إِيمَانِكُمْ﴾</span>.</p></div>
+<div class="evid">
+<div class="er"><div class="el">الدليل</div><div class="ev"><span class="sem-aya">﴿لَا تَعْتَذِرُوا قَدْ كَفَرْتُم بَعْدَ إِيمَانِكُمْ﴾</span>، مع قولهم: «إنما كنا نخوض ونلعب».</div></div>
+<div class="er"><div class="el">وجه الدلالة</div><div class="ev">لم يُقبل عذرهم بعدم القصد في الاستهزاء الصريح، وحُكم عليهم بالكفر بأعيانهم.</div></div>
+</div>
+<p>فانظر إلى تعطيل أحكام الله: يخرج كل واحد يتسوّر على حدود الله، ثم يُقال: «أصله ما يقصدش، أصله جاهل»! لا يُسمح بذلك أبدًا. فركّز في هذه المسألة وخذ بالك منها.</p>
+<div class="quiz" data-q="q38-1"></div>
+
+<h3 id="s38-c">السبب الأول: الشريعة عامة كلية</h3>
+<p>سأقول لك — بعون الله — أسبابًا لكون الحكم على التعيين. <strong>أولًا: الشريعة عامة وكلية.</strong> ما معنى ذلك؟ الأحكام المتعلقة بالإنسان ترتبط بها آثارها: الحكم إما اقتضاء — أمر ونهي — أو تخيير، وفيه العقوبة إن كانت هناك عقوبة.</p>
+
+<h3 id="s38-d">الشاطبي: الأحكام الثلاثة وأسماء الفاعلين</h3>
+<p>يقول <span class="sem-name sem-scholar">الشاطبي</span> رحمه الله في كتابه العظيم «الاعتصام» — كتاب في البدعة، وكما قلت لك «الموافقات» عظيم جدًا وهذا عظيم كذلك فاغتنمه — في تعريف البدع:</p>
+<blockquote class="naql"><p>«ثبت في علم الأصول أن الأحكام المتعلقة بأفعال العباد وأقوالهم ثلاثة: حكم يقتضيه معنى الأمر، كان للإيجاب أو الندب؛ وحكم يقتضيه معنى النهي، كان للكراهة أو التحريم؛ وحكم يقتضيه معنى التخيير، وهو الإباحة. فأفعال العباد وأقوالهم لا تعدو هذه الأقسام الثلاثة: مطلوب فعله، ومطلوب تركه، ومأذون في فعله وتركه… فإن كان محرمًا سُمّي فعله معصية وإثمًا، وسُمّي فاعله عاصيًا وآثمًا».</p><span class="who">الشاطبي — الاعتصام</span></blockquote>
+<div class="tree">
+  <div class="lab-org">النوع</div>
+  <span class="root">الأحكام المتعلقة بأفعال العباد</span>
+  <div class="kids">
+    <div class="kid"><b>ما يقتضيه الأمر</b> — للإيجاب أو الندب: مطلوب فعله.</div>
+    <div class="kid"><b>ما يقتضيه النهي</b> — للكراهة أو التحريم: مطلوب تركه؛ فإن كان محرمًا سُمّي فعله معصية وإثمًا، وفاعله عاصيًا وآثمًا.</div>
+    <div class="kid"><b>ما يقتضيه التخيير</b> — الإباحة: مأذون في فعله وتركه.</div>
+  </div>
+</div>
+<p>أريدك أن تأخذ بالك: لما يكون هناك أمر، فالذي يفعله رجل مؤمن تقي، والذي لا يفعله اسمه عاصٍ وآثم. يعني <strong>الأمر في الأصل للتعيين</strong>: كل مكلف بعينه، ويرتبط بالعقوبة؛ فإذا لم يعمله فهو آثم عاصٍ، وإذا عمله فهو مؤمن مطيع. وكذلك المحرّم منهيّ عنه كل واحد بعينه من المكلفين: إن تركه فهو كويس وتقي، وإن ارتكبه فهو آثم وعاصٍ. فتعرف أن <strong>كل حكم من الأحكام بعقوبته مخاطَب به المكلف</strong>.</p>
+<p>ويزيد الأمر وضوحًا قوله في «الموافقات» حين تكلم عن الأحكام الكلية — الأمر العام والنهي العام، لا المسائل الجزئية كالرخص: <span class="sem-aya">﴿أَقِيمُوا الصَّلَاةَ﴾</span> وإيتاء الزكاة و<span class="sem-aya">﴿وَلَا تَقْرَبُوا الزِّنَا﴾</span>:</p>
+<blockquote class="naql"><p>«ومعنى كونها كلية: أنها لا تختص ببعض المكلفين من حيث هم مكلفون دون بعض، ولا ببعض الأحوال دون بعض، كالصلاة مثلًا؛ فإنها مشروعة على الإطلاق والعموم في كل شخص وفي كل حال».</p><span class="who">الشاطبي — الموافقات</span></blockquote>
+<div class="chain">
+  <div class="c"><b>السبب</b>الأحكام الشرعية عامة لكل مكلف (مسلم، بالغ، عاقل) بعينه.</div>
+  <div class="ar">↓</div>
+  <div class="c"><b>النتيجة</b>العقوبة المرتبطة بالحكم تتوجه إليه بعينه أيضًا.</div>
+  <div class="ar">↓</div>
+  <div class="c"><b>الحكم</b>عمل المعصية فاسمه عاصٍ آثم؛ عمل الشرك فاسمه مشرك؛ عمل الكفر فاسمه كافر — بعينه.</div>
+</div>
+<div class="quiz" data-q="q38-2"></div>
+
+<h3 id="s38-e">لماذا لا نسأل عن العوارض أولًا؟</h3>
+<p>ستقول لي: لكن بعد ذلك لا بد أن نبحث عن العوارض أولًا! أقول: هنا يقع الخطأ؛ لأنه إذا فعل <strong>فعلًا ظاهرًا صريحًا</strong> لا احتمال فيه، أقول له: أنت آثم بهذا الفعل. فيقول: كنت لا أقدر أن أقوم فصلّيت قاعدًا لأني لا أقدر — أقول له: إذن أنت لست آثمًا. خذ بالك: هذا لما <strong>يقدّم لي الاعتذار عند الاستتابة</strong>. أما أن أعتبر العوارض قبل أن أحكم عليه فخطأ من وجهين:</p>
+<div class="num">
+<div class="n"><span class="b">1</span><div class="t"><strong>العوارض ليست كلها صالحة لكل شيء</strong> — فلا بد أن أعرف العارض الذي يقدّمه لأنظر: هل يناسب الحكم أم لا.</div></div>
+<div class="n"><span class="b">2</span><div class="t"><strong>الأصل في الإنسان أنه مطيق للتكليف</strong> — والموانع طارئة.</div></div>
+</div>
+
+<h3 id="s38-f">الوجه الأول: العوارض ليست صالحة لكل شيء</h3>
+<p>قلنا في الدرس الفائت: الرجل إذا كان مكرَهًا:</p>
+<div class="aya-block"><p><span class="sem-aya">﴿مَن كَفَرَ بِاللَّهِ مِن بَعْدِ إِيمَانِهِ إِلَّا مَنْ أُكْرِهَ وَقَلْبُهُ مُطْمَئِنٌّ بِالْإِيمَانِ﴾</span></p><div class="ref">[النحل: 106]</div></div>
+<p>فالإكراه الملجئ هو الذي يبيح الكفر والشرك. رجل وُضع على رقبته السيف — إكراه ملجئ عظيم، سيقتله — وقيل له: قل كلمة الكفر؛ يقول له المفتي: إن أردت أن تدفع عن نفسك القتل فقلها، فيقولها، فنقول: لا شيء عليك. طيب: نفس الرجل، ونفس السيف على رقبته، وقيل له: <strong>اقتل فلانًا</strong> — نقول: لا. يقول: لماذا؟ أنا معذور بالإكراه! نقول: لا؛ نفسك ليست أولى من نفس غيرك — <strong>وهذا بالإجماع</strong>.</p>
+<div class="cmp">
+  <div class="cap">الإكراه الملجئ نفسه، في حكمين</div>
+  <div class="r h"><div class="k">المعيار</div><div>«قل كلمة الكفر»</div><div>«اقتل فلانًا»</div></div>
+  <div class="r"><div class="k">أثر الإكراه</div><div>يبيحها: <span class="sem-aya">﴿إِلَّا مَنْ أُكْرِهَ وَقَلْبُهُ مُطْمَئِنٌّ بِالْإِيمَانِ﴾</span>.</div><div>لا يبيحه بالإجماع؛ نفسه ليست أولى من نفس غيره.</div></div>
+</div>
+<p>إذن الإكراه ليس مانعًا من موانع التكليف في كل الحالات؛ فلا بد لما أُطلق عليه الحكم ثم جاءني بالإكراه أن أنظر: هل هو مناسب أم لا؟ وهذا ما يقوله أهل العلم: <strong>«من قال كذا فقد كفر، يُستتاب، فإن تاب وإلا قُتل»</strong> — وسآتيك بالنصول في ذلك، لكني أضع لك القاعدة أولًا لتفهم الفرق بين الظاهر والخفي في الحكم.</p>
+<div class="warn">حتى لا تأخذ من الخفي فتضعه في الظاهر — <strong>إرجاءً</strong> — أو يحصل لك <strong>غلو</strong> فتأخذ الخفي وتعامله معاملة الظاهر، كالذين يكفّرون المؤوِّلة للصفات ويكفّرون <span class="sem-name sem-scholar">النووي</span> ويحذّرون منه. <span class="sem-aya">﴿قَدْ جَعَلَ اللَّهُ لِكُلِّ شَيْءٍ قَدْرًا﴾</span> [الطلاق: 3].</div>
+<div class="quiz" data-q="q38-3"></div>
+
+<h3 id="s38-g">الوجه الثاني: الأصل الاستطاعة</h3>
+<p>لماذا لا نقول: إذا فعل الفعل الظاهر لا نكفّره حتى نعرف: هل هو عالم أم جاهل، متأوّل أم غير متأوّل؟ لأن <strong>الأصل في الإنسان أنه مطيق للتكليف</strong>:</p>
+<div class="aya-block"><p><span class="sem-aya">﴿لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا﴾</span> <span class="ref">[البقرة: 286]</span> — <span class="sem-aya">﴿لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا مَا آتَاهَا﴾</span> <span class="ref">[الطلاق: 7]</span></p></div>
+<p>مطيق يعني مستطيع. اسمع كلام <span class="sem-name sem-scholar">ابن حزم</span> رحمه الله: الاستطاعة نوعان:</p>
+<div class="cmp">
+  <div class="cap">نوعا الاستطاعة عند ابن حزم</div>
+  <div class="r h"><div class="k">المعيار</div><div>الاستطاعة الجِبِلّية</div><div>الاستطاعة الاختيارية</div></div>
+  <div class="r"><div class="k">حقيقتها</div><div>خلق الله عليها كل أحد.</div><div>التوفيق: أن يرضى الله عنك فيوفقك فتقوم تصلي.</div></div>
+  <div class="r"><div class="k">مثالها</div><div><span class="sem-name">أبو جهل</span> يعرف أن يركع ويسجد؛ ليّن الله ظهره ومفاصله.</div><div><span class="sem-name">أبو جهل</span> لم يُوفَّق لما يعلم الله من سوء قلبه: <span class="sem-aya">﴿وَلَوْ عَلِمَ اللَّهُ فِيهِمْ خَيْرًا لَّأَسْمَعَهُمْ﴾</span>.</div></div>
+</div>
+<p>قال بعضهم رضي الله عنه: <strong>من نظر إلى مفاصله علم أن الله ما ليّنها إلا لعبادته</strong>. فهو قادر على الفعل؛ فلماذا لم يسجد؟ لأن ربنا لم يوفّقه لما يعلم من سوء قلبه.</p>
+<p>تذكرون لما كنا نقول في مسجد الهداية: عندنا <strong>ستة شروط مهمة جدًا للعمل الصالح</strong> نحفظها، كان منها <strong>الشعور بالمنّة</strong>: لما تصلي تقول: اللهم لك الحمد أن مننت عليّ يا ربي وجعلتني أصلي. تقول: عادي، ممكن أصلي! أقول: أجيب لك واحدًا أصحّ مني، والمسجد أقرب إليه مني، ولا يصلي؛ فالله وفّقني وخذله — فاحمد الله على منّته. هذه الاستطاعة الاختيارية. أما <strong>من حيث الاستطاعة الجبلية فكل أحد مؤهل للتكليف</strong>.</p>
+<div class="quiz" data-q="q38-4"></div>
+
+<h3 id="s38-h">الرخصة جزئية لا تُعمَّم</h3>
+<p>تقول: فلماذا شُرعت الرخصة؟ أقول: اسمها <strong>جزئيات</strong> — افهم قضية الكلي والجزئي. جزئيات يعني مخصوصة:</p>
+<div class="story"><div class="st">المبيت بمزدلفة</div>
+<p>لما تنزل من عرفة تبيت بمزدلفة. يقول لك واحد: أقعد ساعة وآخذ بعضي وأنزل على الحرم! أقول: لا، الأصل أن تبيت. يقول: لكن السيدة <span class="sem-name sem-sahabi">أسماء</span>… أقول: هذه اسمها <strong>رخصة</strong>؛ الأصل أن تبيت بمزدلفة، والتعبان يأخذ بعضه بعد نصف الليل وينزل يرمي.</p></div>
+<p>فلا تعاملني بالجزء. لأنك لو قلت: سأسأل عن العارض أولًا — فكأن الناس كلهم غير مؤهلين: وجدت واحدًا لا يصلي، تقول: هذا الرجل لا يصلي فهو آثم؟ — «لا، افرض يكون تعبان، افرض عقله غير موجود، افرض مجنون»! إذن الناس كانوا مخلوقين مجانين؟ مخلوقين غير عقلاء؟ مخلوقين عندهم غضروف وكساح كلهم؟ لا أحد يقول هذا. إنما خُلقوا في <strong>الخِلقة التامة</strong>، ثم بعد التكليف تأتي <strong>موانع التكليف</strong>. فالأصل التكليف، والثاني الموانع.</p>
+<div class="key">الأصل في الإنسان التكليف والاستطاعة، والعوارض طارئة؛ فتُطلب بعد الحكم عند الاعتذار، ولا يُفترض وجودها قبله.</div>
+<div class="quiz" data-q="q38-5"></div>
+
+<h3 id="s38-i">الشاطبي: لو بُنيت الأحكام على خوارق العوائد</h3>
+<p>وقبل أن أشرح لك الإرجاء — الجزء الثاني — اسمع كلامًا آخر للإمام <span class="sem-name sem-scholar">الشاطبي</span> في أننا لو اعتبرنا العوارض والأشياء الاستثنائية ابتداءً لبهدلنا الشرع، وجعلنا الشريعة لا تنفع مع أحد؛ لتعرف ما الذي أوصلنا إلى قضية الديمقراطية والحكم بغير ما أنزل الله، وما الذي حصل في التساهل:</p>
+<blockquote class="naql"><p>«أحدها: أن الأحكام لو وُضعت على حكم انخراق العوائد لم تنتظم لها قاعدة، ولم يرتبط لحكمها مكلف؛ إذ كانت الأفعال كلها داخلة تحت إمكان الموافقة والمخالفة، فلا وجه إلا ويمكن فيه الصحة والفساد، فلا حكم لأحد على فعل من الأفعال بواحد منهما على البتّ. وعند ذلك لا يُحكم بترتب ثواب ولا عقاب، ولا إكرام ولا إهانة، ولا حقن دم ولا إهداره، ولا إنفاذ حكم من حاكم. وما كان هكذا فلا يصح أن يُشرع مع فرض اعتبار المصالح، وهو الذي تُبنى الشريعة عليه».</p><span class="who">الشاطبي — الموافقات، فصل المكاشفة</span></blockquote>
+<div class="chain">
+  <div class="c"><b>السبب</b>بناء الأحكام على الاحتمالات النادرة: «يمكن ما كانش قادر، يمكن عنده حاجة».</div>
+  <div class="ar">↓</div>
+  <div class="c"><b>النتيجة</b>كل فعل يحتمل الصحة والفساد، فلا حكم على فعل على البتّ.</div>
+  <div class="ar">↓</div>
+  <div class="c"><b>المخرج</b>لا ثواب ولا عقاب، ولا حقن دم ولا إهداره، ولا إنفاذ حكم حاكم — وهذا ينقض بناء الشريعة على المصالح.</div>
+</div>
+<p>يفعل الكفر، فتقول: هذا الرجل كفر بذلك — فيقال: لا تقل عليه كذا! فماذا أعمل؟ يتركونه كما هو. فيخرج الرجل الذي قال: «تعالى ما قالش حاجة» فيسبّ الله غدًا عيانًا مباشرة. والمرأة التي خرجت تقول: <strong>«رمضان عادة فرعونية»</strong> تتكلم بمزاجها — لماذا تقول ذلك؟ لأنك لم تُجرِ عليها أحكامًا.</p>
+<p>القاضي المسلم يقيم عليها حدّ الشرع: يقول لها: هذا كفر؛ جحدتِ المعلوم من الدين بالضرورة — رمضان يعرفه العيال الصغار. فإن قالت: تبت إلى الله — ففي قول لبعضهم تُقبل توبتها، وتُعزَّر حتى لا تتكلم في الشرع ثانية.</p>
+<div class="key">بل <strong>المفتي</strong> — رجل معه مؤهلات — لو تخالع في فتواه، فظل يتبع الضعيف والشاذ، يقولون: هذا مفتٍ ماجن لا تُقبل منه فتوى، ويُحجر عليه في الفتيا. فكيف بمن يخرج من عامة الناس ويسبّ ثوابت الشرع ويسبّ الله ورسوله، ثم تقول: «والله مش واخد بالك»؟ هذا يُبهدل الشرع، فلا يبقى للشريعة حكم يُحكم به.</div>
+<div class="quiz" data-q="q38-6"></div>
+
+<div class="takeaway"><div class="tt">خلاصة المجلس الثامن والثلاثين <small>(إضافة تحريرية)</small></div>
+<div class="score" data-s="s38"></div>
+<div class="tk-i">«ليس كل من وقع في الكفر وقع الكفر عليه» نفيٌ للكلية؛ فهناك من يقع عليه مباشرة، وهو في المسائل الظاهرة إلا بعارض.</div>
+<div class="tk-i">المستهزئ لا يُقبل عذره بعدم القصد: <span class="sem-aya">﴿لَا تَعْتَذِرُوا قَدْ كَفَرْتُم بَعْدَ إِيمَانِكُمْ﴾</span>.</div>
+<div class="tk-i">الشريعة عامة كلية (<span class="sem-name sem-scholar">الشاطبي</span>): كل مكلف مقصود بعينه بالأمر والنهي وعقوبتهما؛ فمن فعل المحرم سُمّي عاصيًا آثمًا، ومن فعل الكفر سُمّي كافرًا.</div>
+<div class="tk-i">العوارض تُنظر بعد الحكم عند الاعتذار؛ لأنها ليست صالحة لكل حكم (الإكراه يبيح كلمة الكفر لا القتل بالإجماع)، ولأن الأصل الاستطاعة الجبلية.</div>
+<div class="tk-i">الرخص جزئيات لا يُبنى عليها الأصل؛ ولو بُنيت الأحكام على خوارق العوائد لم ينتظم ثواب ولا عقاب ولا حكم حاكم.</div>
+</div>
+<div class="next" id="s38-j"><b>الخيط التالي</b>السبب الآخر: <strong>الإرجاء</strong> — تأخير العمل عن التأثير في الإيمان — وموقعه بين عقائد الخوارج وأهل السنة، في المجلس الآتي.</div>
+
+</section>
+
+</div>
+<div id="cards"><h2>بطاقات المراجعة — المحاضرة 38</h2><div class="score">تُراجَع بعد يومين من القراءة. الملف يضع كل بطاقة في رزمة أولويتها تحت «العروة الوثقى» بوسم السلسلة والمحاضرة ووسم الأولوية؛ وعند الاستيراد: نوع الملاحظة «أساسي» واترك خانة «وسم كل الملحوظات» فارغة.</div><div class="cstage"><div class="cbox" id="cbox"></div></div><div class="cnav"><button type="button" id="cprev">→ السابقة</button><span class="pos" id="cpos"></span><button type="button" id="cnext">التالية ←</button><button type="button" class="dl" id="cdl" >تحميل بطاقات المحاضرة (TSV)</button></div></div>
+</main>
+</div>
+<nav class="lnav"><a href="37.html">→ المحاضرة 37</a><a class="home" href="index.html">فهرس السلسلة</a><span class="off">المحاضرة 39 لم تُضف بعد</span></nav>
+<footer>العروة الوثقى — المحاضرة 38 · أُعدّ بمساعدة الذكاء الاصطناعي ويُرجى مراجعته</footer>
+<script>
+var ANKI_NAMES={"sahabi": ["النبي ﷺ", "رسول الله ﷺ", "عبد الله بن عمر", "أسماء"], "scholar": ["الشاطبي", "ابن حزم", "النووي"], "name": ["أبو جهل"]};
+const CARDS_DATA=[{"id": "c870", "sectionId": "s38-a", "level": 2, "anchor": "العبارة المتداولة: «ليس كل من وقع في الكفر وقع الكفر عليه». ما الذي يلزم من لفظ «ليس كل»؟", "pattern": "calm", "q": "العبارة المتداولة: «ليس كل من وقع في الكفر وقع الكفر عليه». ما الذي يلزم من لفظ «ليس كل»؟", "a": "أنه نفيٌ للكلية والعموم؛ فهناك بعضٌ ممن وقع في الكفر يقع عليه الكفر مباشرة.", "blocks": [{"type": "ans", "s": "أنه", "e": "والعموم؛", "core": true}, {"type": "ans", "s": "فهناك", "e": "مباشرة."}], "marks": [{"t": "focus", "w": "ليس كل"}], "review": "", "src": "انت بتنسي الكليه والعموم"}, {"id": "c871", "sectionId": "s38-a", "level": 1, "anchor": "ما الفرق بين المسائل الظاهرة والخفية في وقوع حكم الكفر على من وقع فيها؟", "pattern": "compare", "q": "ما الفرق بين المسائل الظاهرة والخفية في وقوع حكم الكفر على من وقع فيها؟", "a": "الظاهرة: إذا وقع في الكفر وقع عليه مباشرة، إلا في حيّز يسير يظهر فيه عارض. الخفية: محتملة أصلًا، فلا يقع الحكم عليه ابتداءً.", "blocks": [{"type": "cols", "parts": [{"s": "الظاهرة:", "e": "عارض."}, {"s": "الخفية:", "e": "ابتداءً."}]}], "marks": [{"t": "focus", "w": "الفرق"}], "review": "", "src": "ان اذا وقع على الكفر وقع عليه مباشره"}, {"id": "c872", "sectionId": "s38-b", "level": 4, "anchor": "رجل قال: «قال تعالى… وتعالى ما قالش حاجة من 1400 سنة». ما الوصف الشرعي لكلامه؟", "pattern": "method", "q": "رجل قال: «قال تعالى… وتعالى ما قالش حاجة من 1400 سنة». ما الوصف الشرعي لكلامه؟", "a": "استهزاء بالله، والاستهزاء كفر: ﴿لَا تَعْتَذِرُوا قَدْ كَفَرْتُم بَعْدَ إِيمَانِكُمْ﴾.", "blocks": [{"type": "ans", "s": "استهزاء", "e": "بالله،", "core": true}, {"type": "rule", "s": "والاستهزاء", "e": "إِيمَانِكُمْ﴾."}], "marks": [{"t": "focus", "w": "الوصف الشرعي"}], "review": "", "src": "ده مستهزئ بالله ده بيقول تعالى ما قالش حاجه"}, {"id": "c873", "sectionId": "s38-b", "level": 3, "anchor": "قال تعالى: ﴿وَلَئِن سَأَلْتَهُمْ لَيَقُولُنَّ إِنَّمَا كُنَّا نَخُوضُ وَنَلْعَبُ قُلْ أَبِاللَّهِ وَآيَاتِهِ وَرَسُولِهِ كُنتُمْ تَسْتَهْزِئُونَ﴾. ما تمامها، وما وجه الدلالة على المعيَّن؟", "pattern": "quran", "q": "قال تعالى: ﴿وَلَئِن سَأَلْتَهُمْ لَيَقُولُنَّ إِنَّمَا كُنَّا نَخُوضُ وَنَلْعَبُ قُلْ أَبِاللَّهِ وَآيَاتِهِ وَرَسُولِهِ كُنتُمْ تَسْتَهْزِئُونَ﴾. ما تمامها، وما وجه الدلالة على المعيَّن؟", "a": "﴿لَا تَعْتَذِرُوا قَدْ كَفَرْتُم بَعْدَ إِيمَانِكُمْ﴾. لم يُقبل عذرهم بعدم القصد في الاستهزاء الصريح، وحُكم عليهم بأعيانهم.", "blocks": [{"type": "ans", "s": "﴿لَا", "e": "إِيمَانِكُمْ﴾.", "core": true}, {"type": "wajh", "s": "لم", "e": "بأعيانهم."}], "marks": [{"t": "focus", "w": "تمامها"}], "review": "", "src": "لا تعتزلوا قد كفرتم بعد ايمانكم"}, {"id": "c874", "sectionId": "s38-b", "level": 5, "anchor": "ماذا رأى عبد الله بن عمر من الرجل الذي قال: «إنما كنا نخوض ونلعب»، وبماذا أجابه النبي ﷺ؟", "pattern": "calm", "q": "ماذا رأى عبد الله بن عمر من الرجل الذي قال: «إنما كنا نخوض ونلعب»، وبماذا أجابه النبي ﷺ؟", "a": "رآه متعلقًا بنِسعة ناقة رسول الله ﷺ تنكبه الحجارة، يقول: إنما كان حديث الركب نقطع به الطريق. فلم يزده ﷺ على: ﴿أَبِاللَّهِ وَآيَاتِهِ وَرَسُولِهِ كُنتُمْ تَسْتَهْزِئُونَ * لَا تَعْتَذِرُوا﴾.", "blocks": [{"type": "ans", "s": "رآه", "e": "الحجارة،", "core": true}, {"type": "ans", "s": "يقول:", "e": "الطريق."}, {"type": "ans", "s": "فلم", "e": "تَعْتَذِرُوا﴾."}], "marks": [{"t": "focus", "w": "عبد الله بن عمر"}], "review": "", "src": "متعلقا بمسع ناقه رسول الله صلى الله عليه وسلم تنكبه الحجاره"}, {"id": "c875", "sectionId": "s38-b", "level": 4, "anchor": "ما خطر قولنا فيمن يتسوّر على حدود الله صراحةً: «أصله ما يقصدش، أصله جاهل»؟", "pattern": "method", "q": "ما خطر قولنا فيمن يتسوّر على حدود الله صراحةً: «أصله ما يقصدش، أصله جاهل»؟", "a": "تعطيل أحكام الله؛ فيخرج كل واحد يتسوّر على حدود الله دون أن يُجرى عليه حكم.", "blocks": [{"type": "err", "s": "تعطيل", "e": "الله؛", "core": true}, {"type": "ans", "s": "فيخرج", "e": "حكم."}], "marks": [{"t": "focus", "w": "خطر"}], "review": "", "src": "فشوف تعطيل احكام الله عز وجل"}, {"id": "c876", "sectionId": "s38-c", "level": 1, "anchor": "ما السبب الأول لكون الحكم في المسائل الظاهرة متوجهًا إلى المعيَّن؟", "pattern": "calm", "q": "ما السبب الأول لكون الحكم في المسائل الظاهرة متوجهًا إلى المعيَّن؟", "a": "أن الشريعة عامة كلية: كل مكلف مقصود بعينه بالأمر والنهي وعقوبتهما.", "blocks": [{"type": "ans", "s": "أن", "e": "كلية:", "core": true}, {"type": "ans", "s": "كل", "e": "وعقوبتهما."}], "marks": [{"t": "focus", "w": "السبب الأول"}], "review": "", "src": "اولا السريعه عامه وكليه"}, {"id": "c877", "sectionId": "s38-d", "level": 2, "anchor": "ما الأحكام الثلاثة المتعلقة بأفعال العباد وأقوالهم، عند الشاطبي في «الاعتصام»؟", "pattern": "method", "q": "ما الأحكام الثلاثة المتعلقة بأفعال العباد وأقوالهم، عند الشاطبي في «الاعتصام»؟", "a": "ما يقتضيه الأمر: للإيجاب أو الندب. ما يقتضيه النهي: للكراهة أو التحريم. ما يقتضيه التخيير: الإباحة.", "blocks": [{"type": "steps", "seq": false, "items": [{"s": "ما", "e": "الندب."}, {"s": "ما", "e": "التحريم."}, {"s": "ما", "e": "الإباحة."}]}], "marks": [{"t": "focus", "w": "الأحكام الثلاثة"}], "review": "", "src": "ان الاحكام المتعلقه بافعال العباد واقواله ثلاثه"}, {"id": "c878", "sectionId": "s38-d", "level": 2, "anchor": "إذا كان المطلوب تركه محرمًا ففُعل، فبماذا يُسمّى الفعل وفاعله، عند الشاطبي؟", "pattern": "calm", "q": "إذا كان المطلوب تركه محرمًا ففُعل، فبماذا يُسمّى الفعل وفاعله، عند الشاطبي؟", "a": "يُسمّى فعله معصية وإثمًا، وفاعله عاصيًا وآثمًا.", "blocks": [{"type": "ans", "s": "يُسمّى", "e": "وآثمًا.", "core": true}], "marks": [{"t": "focus", "w": "يُسمّى"}], "review": "", "src": "سمي فعله معصيه واثما وسمي فاعله عاصيا"}, {"id": "c879", "sectionId": "s38-d", "level": 2, "anchor": "ما المقصود بقول: «الأمر في الأصل للتعيين»؟", "pattern": "calm", "q": "ما المقصود بقول: «الأمر في الأصل للتعيين»؟", "a": "أن كل مكلف مخاطَب به بعينه، ويرتبط بالعقوبة: فمن عمله فهو مطيع، ومن تركه فهو عاصٍ آثم.", "blocks": [{"type": "ans", "s": "أن", "e": "بالعقوبة:", "core": true}, {"type": "ans", "s": "فمن", "e": "آثم."}], "marks": [{"t": "focus", "w": "للتعيين"}], "review": "", "src": "الاصل اصله للتعيين يعني كل مكلف عينه"}, {"id": "c880", "sectionId": "s38-d", "level": 2, "anchor": "ما معنى كون الأحكام الشرعية «كلية» عند الشاطبي في «الموافقات»؟", "pattern": "calm", "q": "ما معنى كون الأحكام الشرعية «كلية» عند الشاطبي في «الموافقات»؟", "a": "لا تختص ببعض المكلفين من حيث هم مكلفون دون بعض، ولا ببعض الأحوال دون بعض؛ كالصلاة مشروعة على الإطلاق والعموم في كل شخص وكل حال.", "blocks": [{"type": "def", "s": "لا", "e": "بعض؛", "core": true}, {"type": "ans", "s": "كالصلاة", "e": "حال."}], "marks": [{"t": "focus", "w": "كلية"}], "review": "", "src": "ومعنى كونها كليه انها لا تختص ببعض المكلفين"}, {"id": "c881", "sectionId": "s38-d", "level": 3, "anchor": "ما أمثلة «الأحكام الكلية» — الأمر العام والنهي العام — التي يقصدها الشاطبي، مقابل المسائل الجزئية؟", "pattern": "quran", "q": "ما أمثلة «الأحكام الكلية» — الأمر العام والنهي العام — التي يقصدها الشاطبي، مقابل المسائل الجزئية؟", "a": "﴿أَقِيمُوا الصَّلَاةَ﴾، وإيتاء الزكاة، و﴿وَلَا تَقْرَبُوا الزِّنَا﴾؛ لا المسائل الجزئية كالرخص.", "blocks": [{"type": "ans", "s": "﴿أَقِيمُوا", "e": "الزِّنَا﴾؛", "core": true}, {"type": "wajh", "s": "لا", "e": "كالرخص."}], "marks": [{"t": "focus", "w": "الأحكام الكلية"}], "review": "", "src": "اقيموا الصلاه الزكاه ولا تقربوا الزنا دي امور عامه"}, {"id": "c882", "sectionId": "s38-d", "level": 3, "anchor": "ما النتيجة المترتبة على كلية الشريعة في أسماء من فعل المعصية أو الشرك أو الكفر؟", "pattern": "method", "q": "ما النتيجة المترتبة على كلية الشريعة في أسماء من فعل المعصية أو الشرك أو الكفر؟", "a": "يتسمّى بها بعينه: عمل معصية فهو عاصٍ، وعمل الشرك فهو مشرك، وعمل الكفر فهو كافر.", "blocks": [{"type": "ans", "s": "يتسمّى", "e": "بعينه:", "core": true}, {"type": "ans", "s": "عمل", "e": "كافر."}], "marks": [{"t": "focus", "w": "النتيجة"}], "review": "", "src": "عمل الشرك يبقى اسمه مشرك عمل الكفر يبقى اسمه كافر"}, {"id": "c883", "sectionId": "s38-e", "level": 2, "anchor": "متى يُنظر في عوارض من فعل فعلًا ظاهرًا صريحًا: قبل الحكم أم بعده؟", "pattern": "method", "q": "متى يُنظر في عوارض من فعل فعلًا ظاهرًا صريحًا: قبل الحكم أم بعده؟", "a": "بعد الحكم، حين يقدّم الاعتذار عند الاستتابة. مثال: صلّى قاعدًا فاعتذر بالعجز، فيُقال: لست آثمًا.", "blocks": [{"type": "rule", "s": "بعد", "e": "الاستتابة.", "core": true}, {"type": "alert", "s": "مثال:", "e": "آثمًا."}], "marks": [{"t": "focus", "w": "قبل الحكم أم بعده"}], "review": "", "src": "لما يقدملي الاعتذار عند الاستتابه"}, {"id": "c884", "sectionId": "s38-e", "level": 2, "anchor": "اعتبار العوارض قبل الحكم في المسائل الظاهرة خطأ من وجهين. ما هما؟", "pattern": "method", "q": "اعتبار العوارض قبل الحكم في المسائل الظاهرة خطأ من وجهين. ما هما؟", "a": "أن العوارض ليست كلها صالحة لكل حكم. أن الأصل في الإنسان أنه مطيق للتكليف.", "blocks": [{"type": "steps", "seq": false, "items": [{"s": "أن", "e": "حكم."}, {"s": "أن", "e": "للتكليف."}]}], "marks": [{"t": "focus", "w": "وجهين"}], "review": "", "src": "خطا من وجهين من ناحيتين"}, {"id": "c885", "sectionId": "s38-f", "level": 3, "anchor": "قال تعالى: ﴿مَن كَفَرَ بِاللَّهِ مِن بَعْدِ إِيمَانِهِ إِلَّا مَنْ أُكْرِهَ وَقَلْبُهُ مُطْمَئِنٌّ بِالْإِيمَانِ﴾. أيّ إكراه هو الذي يبيح الكفر؟", "pattern": "quran", "q": "قال تعالى: ﴿مَن كَفَرَ بِاللَّهِ مِن بَعْدِ إِيمَانِهِ إِلَّا مَنْ أُكْرِهَ وَقَلْبُهُ مُطْمَئِنٌّ بِالْإِيمَانِ﴾. أيّ إكراه هو الذي يبيح الكفر؟", "a": "الإكراه الملجئ. كمن وُضع السيف على رقبته ليقول كلمة الكفر.", "blocks": [{"type": "ans", "s": "الإكراه", "e": "الملجئ.", "core": true}, {"type": "wajh", "s": "كمن", "e": "الكفر."}], "marks": [{"t": "focus", "w": "أيّ إكراه"}], "review": "", "src": "الاكراه الملزئ هو الذي يبيح الكفر والشرك"}, {"id": "c886", "sectionId": "s38-f", "level": 2, "anchor": "الإكراه الملجئ نفسه: ما أثره إذا كان على كلمة الكفر، وإذا كان على قتل معصوم؟", "pattern": "compare", "q": "الإكراه الملجئ نفسه: ما أثره إذا كان على كلمة الكفر، وإذا كان على قتل معصوم؟", "a": "على كلمة الكفر: يبيحها ولا شيء عليه. على قتل معصوم: لا يبيحه بالإجماع؛ فنفسه ليست أولى من نفس غيره.", "blocks": [{"type": "cols", "parts": [{"s": "على", "e": "عليه."}, {"s": "على", "e": "غيره."}]}], "marks": [{"t": "focus", "w": "أثره"}], "review": "", "src": "نقول له لا بس لغيرك يعني نفسك متم نفس غيرك وده بالاجماع"}, {"id": "c887", "sectionId": "s38-f", "level": 2, "anchor": "ما القاعدة المستفادة من أن الإكراه يبيح كلمة الكفر ولا يبيح القتل؟", "pattern": "calm", "q": "ما القاعدة المستفادة من أن الإكراه يبيح كلمة الكفر ولا يبيح القتل؟", "a": "الإكراه ليس مانعًا من موانع التكليف في كل الحالات؛ فلا بد أن يُنظر: هل العارض مناسب للحكم أم لا.", "blocks": [{"type": "rule", "s": "الإكراه", "e": "الحالات؛", "core": true}, {"type": "ans", "s": "فلا", "e": "لا."}], "marks": [{"t": "focus", "w": "القاعدة"}], "review": "", "src": "ما كانش هو مانع من موانع التكليف في كل الحالات"}, {"id": "c888", "sectionId": "s38-f", "level": 3, "anchor": "ما الصيغة التي يُعبّر بها أهل العلم عن الحكم في المسائل الظاهرة، والتي تدل على أن العارض يُنظر بعد الحكم؟", "pattern": "calm", "q": "ما الصيغة التي يُعبّر بها أهل العلم عن الحكم في المسائل الظاهرة، والتي تدل على أن العارض يُنظر بعد الحكم؟", "a": "«من قال كذا فقد كفر، يُستتاب، فإن تاب وإلا قُتل».", "blocks": [{"type": "ans", "s": "«من", "e": "قُتل».", "core": true}], "marks": [{"t": "focus", "w": "الصيغة"}], "review": "", "src": "من قال كذا فقد كفر يستتاب فان تاب والا قتل"}, {"id": "c889", "sectionId": "s38-f", "level": 4, "anchor": "ما الخطآن المتقابلان في نقل الأحكام بين الظاهر والخفي؟", "pattern": "compare", "q": "ما الخطآن المتقابلان في نقل الأحكام بين الظاهر والخفي؟", "a": "أخذ أحكام الخفي ووضعها في الظاهر: إرجاء. أخذ الخفي ومعاملته معاملة الظاهر: غلو، كتكفير المؤوّلة للصفات وتكفير النووي. ﴿قَدْ جَعَلَ اللَّهُ لِكُلِّ شَيْءٍ قَدْرًا﴾.", "blocks": [{"type": "cols", "parts": [{"s": "أخذ", "e": "إرجاء."}, {"s": "أخذ", "e": "النووي."}]}, {"type": "alert", "s": "﴿قَدْ", "e": "قَدْرًا﴾."}], "marks": [{"t": "focus", "w": "الخطآن"}], "review": "", "src": "زي الناس اللي قاعد تكفر المؤوله للصفات"}, {"id": "c890", "sectionId": "s38-g", "level": 3, "anchor": "قال تعالى: ﴿لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا﴾. على أي أصل يُستدل بها في باب العوارض؟", "pattern": "quran", "q": "قال تعالى: ﴿لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا﴾. على أي أصل يُستدل بها في باب العوارض؟", "a": "على أن الأصل في الإنسان أنه مطيق مستطيع للتكليف.", "blocks": [{"type": "ans", "s": "على", "e": "للتكليف.", "core": true}], "marks": [{"t": "focus", "w": "أي أصل"}], "review": "", "src": "الاصل انه مطيق قال الله عز وجل لا يكلف الله نفسا الا وسعاها"}, {"id": "c891", "sectionId": "s38-g", "level": 2, "anchor": "ما نوعا الاستطاعة عند ابن حزم؟", "pattern": "compare", "q": "ما نوعا الاستطاعة عند ابن حزم؟", "a": "الجبلية: خلق الله عليها كل أحد، كقدرة أبي جهل على الركوع والسجود. الاختيارية: التوفيق من الله للعبادة.", "blocks": [{"type": "cols", "parts": [{"s": "الجبلية:", "e": "والسجود."}, {"s": "الاختيارية:", "e": "للعبادة."}]}], "marks": [{"t": "focus", "w": "نوعا الاستطاعة"}], "review": "", "src": "الاستطاعه نوعين النوع الاول استطاعه دبليه"}, {"id": "c892", "sectionId": "s38-g", "level": 3, "anchor": "لماذا لم يسجد أبو جهل مع أنه قادر على الركوع والسجود؟", "pattern": "quran", "q": "لماذا لم يسجد أبو جهل مع أنه قادر على الركوع والسجود؟", "a": "لأن الله لم يوفّقه لما يعلم من سوء قلبه: ﴿وَلَوْ عَلِمَ اللَّهُ فِيهِمْ خَيْرًا لَّأَسْمَعَهُمْ﴾.", "blocks": [{"type": "ans", "s": "لأن", "e": "قلبه:", "core": true}, {"type": "wajh", "s": "﴿وَلَوْ", "e": "لَّأَسْمَعَهُمْ﴾."}], "marks": [{"t": "focus", "w": "أبو جهل"}], "review": "", "src": "ولو علم الله فيهم خيرا لاسمعهم"}, {"id": "c893", "sectionId": "s38-g", "level": 5, "anchor": "ما القول المأثور في دلالة ليونة المفاصل على العبودية؟", "pattern": "calm", "q": "ما القول المأثور في دلالة ليونة المفاصل على العبودية؟", "a": "«من نظر إلى مفاصله علم أن الله ما ليّنها إلا لعبادته».", "blocks": [{"type": "ans", "s": "«من", "e": "لعبادته».", "core": true}], "marks": [{"t": "focus", "w": "المفاصل"}], "review": "", "src": "من نظر الى مفاصله علم ان الله"}, {"id": "c894", "sectionId": "s38-g", "level": 4, "anchor": "ما «الشعور بالمنّة» الذي عُدّ من شروط العمل الصالح الستة؟", "pattern": "calm", "q": "ما «الشعور بالمنّة» الذي عُدّ من شروط العمل الصالح الستة؟", "a": "أن تحمد الله إذا صليت على أن مَنّ عليك ووفّقك، فكم من أصحّ منك وأقرب إلى المسجد لا يصلي؛ فالله وفّقك وخذله.", "blocks": [{"type": "def", "s": "أن", "e": "ووفّقك،", "core": true}, {"type": "ans", "s": "فكم", "e": "وخذله."}], "marks": [{"t": "focus", "w": "الشعور بالمنّة"}], "review": "", "src": "كان منها الشعور بالمن"}, {"id": "c895", "sectionId": "s38-g", "level": 2, "anchor": "من حيث الاستطاعة الجبلية: من المؤهل للتكليف؟", "pattern": "calm", "q": "من حيث الاستطاعة الجبلية: من المؤهل للتكليف؟", "a": "كل أحد.", "blocks": [{"type": "ans", "s": "كل", "e": "أحد.", "core": true}], "marks": [{"t": "focus", "w": "المؤهل"}], "review": "", "src": "الاستطاعه الجبليه كل حد مؤهل للتكليف"}, {"id": "c896", "sectionId": "s38-h", "level": 2, "anchor": "ما منزلة الرخص من الأحكام الكلية؟", "pattern": "calm", "q": "ما منزلة الرخص من الأحكام الكلية؟", "a": "جزئيات مخصوصة، لا يُبنى عليها الأصل.", "blocks": [{"type": "ans", "s": "جزئيات", "e": "الأصل.", "core": true}], "marks": [{"t": "focus", "w": "الرخص"}], "review": "", "src": "اقول لك اسمها جزئيه بقى افهم بقى قضيه الكلي"}, {"id": "c897", "sectionId": "s38-h", "level": 4, "anchor": "حاجّ يريد ترك المبيت بمزدلفة محتجًّا بفعل السيدة أسماء. ما الجواب؟", "pattern": "method", "q": "حاجّ يريد ترك المبيت بمزدلفة محتجًّا بفعل السيدة أسماء. ما الجواب؟", "a": "الأصل أن يبيت بمزدلفة، وما فعلته أسماء رخصة للضعيف ينزل بعد نصف الليل فيرمي.", "blocks": [{"type": "rule", "s": "الأصل", "e": "بمزدلفة،", "core": true}, {"type": "exc", "s": "وما", "e": "فيرمي."}], "marks": [{"t": "focus", "w": "المبيت بمزدلفة"}], "review": "", "src": "يقول لي طب ما هو اصل السيده اسماء"}, {"id": "c898", "sectionId": "s38-h", "level": 3, "anchor": "ما الذي يلزم من السؤال عن العوارض قبل الحكم في كل فعل ظاهر (كترك الصلاة)؟", "pattern": "method", "q": "ما الذي يلزم من السؤال عن العوارض قبل الحكم في كل فعل ظاهر (كترك الصلاة)؟", "a": "كأن الناس خُلقوا مجانين أو غير عقلاء أو عاجزين كلهم؛ والصواب أنهم خُلقوا في الخلقة التامة، فالأصل التكليف ثم تأتي الموانع.", "blocks": [{"type": "err", "s": "كأن", "e": "كلهم؛", "core": true}, {"type": "rule", "s": "والصواب", "e": "الموانع."}], "marks": [{"t": "focus", "w": "يلزم"}], "review": "", "src": "يبقى اذا الناس كانت مخلوقه مجانين"}, {"id": "c899", "sectionId": "s38-i", "level": 2, "anchor": "قال الشاطبي في «الموافقات»: لو وُضعت الأحكام على حكم «انخراق العوائد» لم تنتظم لها قاعدة. ما العلّة؟", "pattern": "calm", "q": "قال الشاطبي في «الموافقات»: لو وُضعت الأحكام على حكم «انخراق العوائد» لم تنتظم لها قاعدة. ما العلّة؟", "a": "لأن الأفعال كلها تدخل تحت إمكان الموافقة والمخالفة، فلا يُحكم على فعل بالصحة أو الفساد على البتّ.", "blocks": [{"type": "ans", "s": "لأن", "e": "والمخالفة،", "core": true}, {"type": "ans", "s": "فلا", "e": "البتّ."}], "marks": [{"t": "focus", "w": "العلّة"}], "review": "", "src": "الاحكام لو وضعت على حكم انخراق العوائد"}, {"id": "c900", "sectionId": "s38-i", "level": 3, "anchor": "ما الذي يتعطل لو بُنيت الأحكام على الاحتمالات النادرة، عند الشاطبي؟", "pattern": "method", "q": "ما الذي يتعطل لو بُنيت الأحكام على الاحتمالات النادرة، عند الشاطبي؟", "a": "لا يُحكم بترتب ثواب ولا عقاب، ولا إكرام ولا إهانة، ولا حقن دم ولا إهداره، ولا إنفاذ حكم من حاكم؛ وهذا لا يصح أن يُشرع مع اعتبار المصالح الذي تُبنى عليه الشريعة.", "blocks": [{"type": "ans", "s": "لا", "e": "حاكم؛", "core": true}, {"type": "ans", "s": "وهذا", "e": "الشريعة."}], "marks": [{"t": "focus", "w": "يتعطل"}], "review": "", "src": "لا يحكم بترتب ثواب ولا عقاب"}, {"id": "c901", "sectionId": "s38-i", "level": 3, "anchor": "امرأة قالت على الملأ: «رمضان عادة فرعونية». ما حكم قولها، وما الذي يفعله القاضي المسلم؟", "pattern": "method", "q": "امرأة قالت على الملأ: «رمضان عادة فرعونية». ما حكم قولها، وما الذي يفعله القاضي المسلم؟", "a": "كفر؛ جحدت المعلوم من الدين بالضرورة، ورمضان يعرفه الصغار. فإن تابت ففي قول لبعضهم تُقبل توبتها وتُعزَّر حتى لا تتكلم في الشرع ثانية.", "blocks": [{"type": "ans", "s": "كفر؛", "e": "الصغار.", "core": true}, {"type": "alert", "s": "فإن", "e": "ثانية."}], "marks": [{"t": "focus", "w": "رمضان عادة فرعونية"}], "review": "", "src": "رمضان ده عاده فرعونيه"}, {"id": "c902", "sectionId": "s38-i", "level": 4, "anchor": "ما حكم المفتي الذي يتبع الضعيف والشاذ في فتواه، وما الذي يُستفاد منه في الحكم على عامة الناس؟", "pattern": "method", "q": "ما حكم المفتي الذي يتبع الضعيف والشاذ في فتواه، وما الذي يُستفاد منه في الحكم على عامة الناس؟", "a": "يُقال: مفتٍ ماجن، لا تُقبل منه فتوى ويُحجر عليه؛ فمن يسبّ ثوابت الشرع من عامة الناس أولى ألا يُترك بلا حكم.", "blocks": [{"type": "ans", "s": "يُقال:", "e": "عليه؛", "core": true}, {"type": "ans", "s": "فمن", "e": "حكم."}], "marks": [{"t": "focus", "w": "المفتي"}], "review": "", "src": "هذا المفتي مفتي ارعن لا يقبل منه"}, {"id": "c903", "sectionId": "s38-j", "level": 2, "anchor": "ما الإرجاء الذي جُعل سببًا آخر لعدم السؤال عن العوارض قبل الحكم؟", "pattern": "calm", "q": "ما الإرجاء الذي جُعل سببًا آخر لعدم السؤال عن العوارض قبل الحكم؟", "a": "تأخير العمل عن التأثير في الإيمان.", "blocks": [{"type": "def", "s": "تأخير", "e": "الإيمان.", "core": true}], "marks": [{"t": "focus", "w": "الإرجاء"}], "review": "", "src": "تاخير العمل عن التاثير في الايه في الايمان"}];
+const QUIZ_DATA=[{"id": "q38-1", "question": "رجل استهزأ بآيات الله ثم قال: «والله ما قصدت، إنما كنا نخوض ونلعب». ما الحكم في ضوء آية التوبة؟", "options": ["يُقبل عذره لعدم القصد", "<span class=\"sem-aya\">﴿لَا تَعْتَذِرُوا قَدْ كَفَرْتُم بَعْدَ إِيمَانِكُمْ﴾</span>", "يُتوقف فيه حتى يُعرف قصده", "عليه كفارة يمين فقط"], "correctIndex": 1, "explanation": "تعلّق الرجل بنِسعة ناقة رسول الله ﷺ يعتذر بأنه حديث الركب، فلم يزده ﷺ على الآية؛ فالاستهزاء الصريح كفر بعينه.", "sectionId": "s38"}, {"id": "q38-2", "question": "ما معنى قول <span class=\"sem-name sem-scholar\">الشاطبي</span> إن أحكام الشريعة «كلية»؟", "options": ["أنها خاصة بالعلماء", "أنها لا تختص ببعض المكلفين دون بعض ولا ببعض الأحوال دون بعض", "أنها مجملة لا تفصيل فيها", "أنها اختيارية"], "correctIndex": 1, "explanation": "قال: «كالصلاة مثلًا؛ فإنها مشروعة على الإطلاق والعموم في كل شخص وفي كل حال»؛ فكل مكلف مقصود بعينه.", "sectionId": "s38"}, {"id": "q38-3", "question": "رجل أُكره إكراهًا ملجئًا على قتل مسلم معصوم. هل يبيح له الإكراه ذلك؟", "options": ["نعم، كما يبيح كلمة الكفر", "لا، بالإجماع؛ فنفسه ليست أولى من نفس غيره", "نعم إن كان القاتل عالمًا", "يجوز مع الدية"], "correctIndex": 1, "explanation": "الإكراه ليس مانعًا من موانع التكليف في كل الحالات؛ فلا بد أن يُنظر: هل العارض يناسب الحكم أم لا.", "sectionId": "s38"}, {"id": "q38-4", "question": "عند <span class=\"sem-name sem-scholar\">ابن حزم</span>، أيّ نوعي الاستطاعة يكفي لتوجّه التكليف إلى كل أحد؟", "options": ["الاستطاعة الاختيارية (التوفيق)", "الاستطاعة الجبلية التي خلق الله عليها كل أحد", "لا يتوجه التكليف إلا بهما معًا", "لا يتوجه إلا للعلماء"], "correctIndex": 1, "explanation": "من حيث الاستطاعة الجبلية كل أحد مؤهل للتكليف؛ فـ<span class=\"sem-name\">أبو جهل</span> قادر على الركوع والسجود، وإنما لم يُوفَّق.", "sectionId": "s38"}, {"id": "q38-5", "question": "شخص يقول: «لا أحكم على تارك الصلاة بالإثم حتى أعرف: لعله مريض، لعله مجنون». ما الخلل في منهجه؟", "options": ["لا خلل؛ هذا هو الورع", "جعل الاحتمالات الطارئة أصلًا، والأصل أن الناس خُلقوا في الخلقة التامة مكلّفين", "أنه لم يسأل القاضي", "أنه لم يجمع أقوال المذاهب"], "correctIndex": 1, "explanation": "الرخص والموانع جزئيات؛ والأصل التكليف ثم تأتي الموانع، وإلا لكان الناس كأنهم خُلقوا مجانين أو عاجزين.", "sectionId": "s38"}, {"id": "q38-6", "question": "على كلام <span class=\"sem-name sem-scholar\">الشاطبي</span> في «الموافقات»، ما عاقبة بناء الأحكام على «انخراق العوائد» (الاحتمالات النادرة)؟", "options": ["زيادة الورع", "لا تنتظم قاعدة: فلا ثواب ولا عقاب ولا حقن دم ولا إهداره ولا إنفاذ حكم حاكم", "تيسير الشريعة على الناس", "تقوية سلطة القضاء"], "correctIndex": 1, "explanation": "قال: «لو وُضعت على حكم انخراق العوائد لم تنتظم لها قاعدة… ولا إنفاذ حكم من حاكم»، وهذا ينافي بناء الشريعة على المصالح.", "sectionId": "s38"}];
+const MAP_DATA=[{"id": "mm-38", "sectionId": "s38", "center": "لماذا يتوجه الحكم إلى المعيَّن؟", "nodes": [{"text": "ليس كل من وقع", "target": "#s38-a", "color": "#2f6a7f", "children": [{"text": "الاستهزاء", "target": "#s38-b"}]}, {"text": "الشريعة كلية", "target": "#s38-c", "color": "#7a4f6b", "children": [{"text": "الأحكام الثلاثة", "target": "#s38-d"}]}, {"text": "لماذا لا نسأل أولًا؟", "target": "#s38-e", "color": "#556b2f", "children": [{"text": "العوارض ليست لكل شيء", "target": "#s38-f"}, {"text": "الأصل الاستطاعة", "target": "#s38-g"}, {"text": "الرخصة جزئية", "target": "#s38-h"}]}, {"text": "خوارق العوائد", "target": "#s38-i", "color": "#8a5a3a"}, {"text": "الإرجاء (آتٍ)", "target": "#s38-j", "color": "#3d5a8a"}]}];
+</script>
+<script src="ilm-anki.js" data-series="العروة الوثقى" data-lecture="38"></script>
+<script>
+/* واجهة الصفحة فقط — البطاقات وتصديرها من ilm-anki.js (آلية 5.11 — 9-ص) */
+(function(){
+"use strict";
+function $(id){return document.getElementById(id);}
+/* quiz */
+var QZ={};QUIZ_DATA.forEach(function(q){QZ[q.id]=q;});var score={};
+document.querySelectorAll(".quiz[data-q]").forEach(function(box){var q=QZ[box.getAttribute("data-q")];if(!q)return;
+  var h='<div class="qh">سؤال فهم</div><div class="qq">'+q.question+'</div>';
+  q.options.forEach(function(o,i){h+='<button class="op" type="button" data-i="'+i+'">'+o+'</button>';});
+  box.innerHTML=h+'<div class="ex">'+q.explanation+'</div><button class="again" type="button">إعادة المحاولة</button>';});
+document.addEventListener("click",function(e){
+  var b=e.target.closest(".quiz .op");
+  if(b){var box=b.closest(".quiz");if(box.classList.contains("done"))return;var q=QZ[box.getAttribute("data-q")],i=+b.getAttribute("data-i");
+    box.classList.add("done");box.querySelectorAll(".op")[q.correctIndex].classList.add("ok");if(i!==q.correctIndex)b.classList.add("no");
+    (score[q.sectionId]=score[q.sectionId]||{})[q.id]=(i===q.correctIndex);
+    var el=document.querySelector('.score[data-s="'+q.sectionId+'"]');if(el){var s=score[q.sectionId],ok=0,n=0;for(var k in s){n++;if(s[k])ok++;}
+      el.textContent="نتيجتك في أسئلة هذه المحاضرة: "+ok+" من "+n+" (المجموع "+QUIZ_DATA.filter(function(x){return x.sectionId===q.sectionId;}).length+")";}return;}
+  var a=e.target.closest(".quiz .again");if(a){var bx=a.closest(".quiz");bx.classList.remove("done");bx.querySelectorAll(".op").forEach(function(o){o.classList.remove("ok","no");});}
+});
+/* cmp labels for phones */
+document.querySelectorAll(".cmp").forEach(function(t){var h=t.querySelector(".r.h");if(!h)return;var hs=[].map.call(h.children,function(c){return c.textContent;});
+  t.querySelectorAll(".r:not(.h)").forEach(function(r){[].forEach.call(r.children,function(c,i){if(i&&hs[i])c.setAttribute("data-h",hs[i]);});});});
+/* mind map */
+MAP_DATA.forEach(function(m){var host=$(m.id);if(!host)return;
+  var h='<div class="mm-center">'+m.center+'</div><div class="mm-branches">';
+  m.nodes.forEach(function(n){h+='<div class="mm-node" style="--c:'+n.color+'"><a href="'+n.target+'">'+n.text+'</a>';
+    if(n.children&&n.children.length)h+='<div class="mm-kids">'+n.children.map(function(c){return '<a href="'+c.target+'">'+c.text+'</a>';}).join("")+'</div>';
+    h+='</div>';});host.innerHTML=h+'</div>';});
+/* download */
+var dlb=$("cdl");
+if(dlb)dlb.onclick=function(){try{ILM_ANKI.download(CARDS_DATA);}catch(e){alert(e.message);}};
+/* flashcards */
+var box=$("cbox");
+if(box){var list=CARDS_DATA,pos=0;
+  var show=function(){var c=list[pos];box.classList.remove("shown");
+    box.innerHTML='<div class="front">'+ILM_ANKI.front(c)+'</div><div class="back">'+ILM_ANKI.back(c)+'</div><div class="flip">انقر على البطاقة لإظهار الإجابة</div>';
+    $("cpos").textContent=(pos+1)+" / "+list.length;};
+  box.addEventListener("click",function(){box.classList.toggle("shown");});
+  $("cprev").onclick=function(){pos=(pos-1+list.length)%list.length;show();};
+  $("cnext").onclick=function(){pos=(pos+1)%list.length;show();};
+  show();}
+/* progress / toc / font */
+var bar=$("progress"),tl=[].slice.call(document.querySelectorAll(".toc a[href^='#']"));
+var targets=tl.map(function(a){return $(a.getAttribute("href").slice(1));});
+window.addEventListener("scroll",function(){var h=document.documentElement;if(bar)bar.style.width=(h.scrollTop/Math.max(1,h.scrollHeight-h.clientHeight)*100)+"%";
+  var cur=-1;targets.forEach(function(t,i){if(t&&t.getBoundingClientRect().top<120)cur=i;});tl.forEach(function(a,i){a.classList.toggle("on",i===cur);});},{passive:true});
+var fs=18;function setFs(){document.documentElement.style.setProperty("--fs",fs+"px");}
+if($("fsUp")){$("fsUp").onclick=function(){if(fs<22){fs++;setFs();}};$("fsDn").onclick=function(){if(fs>16){fs--;setFs();}};}
+})();
+
+</script>
+<script type="module" src="firebase-sync-manhaj.js"></script>
+<script src="ilm-track.js"></script>
+<script src="ilm-highlight.js" data-lecture-id="stage1_urwa_38"></script>
+<!-- HANDOFF (العروة الوثقى 33–44، 4 جلسات بقرار مازن)
+  تمت الجلسة 1 (33–35) والجلسة 2 (36–38). آخر بطاقة في 38 هي آخر id في CARDS_DATA؛ الجلسة التالية تُكمل الترقيم بعده.
+  الجلسة 3: 39–41 | الجلسة 4: 42–44. المعرّفات stage1_urwa_NN، data-lecture="NN"، ألوان --s39..--s44 معرّفة سلفًا في CSS هذه الملفات.
+  39 يبدأ: «لماذا المعين — ذكرنا الأدلة… الإجماع مخصوص، الإرجاء».
+  40: آخر ~1,200 كلمة من التفريغ منسوخة من 39؛ بقرار مازن يُبنى على الجزء السليم (~2,090 كلمة) مع تنبيه ظاهر بالنقص.
+  43: التفريغ ينتهي في منتصف جملة («الإكراه بينفع في حاجة وحاجة كمان لا»)، و44 يكمل منه.
+-->
+</body>
+</html>
