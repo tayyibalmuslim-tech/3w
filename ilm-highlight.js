@@ -825,10 +825,14 @@
   function downloadHighlightsTSV() {
     var cards = collectExportCards();
     if (!cards.length) return;
+    // وسم السلسلة والمحاضرة من ilm-anki.js (مثل العروة_الوثقى::محاضرة_01) حتى لا تُستورد ملاحظاتك بلا وسم
+    var tag = '';
+    try { if (window.ILM_ANKI) tag = window.ILM_ANKI.meta().tag; } catch (e) { tag = ''; }
     var lines = cards.map(function (c) {
-      return cleanTsvField(c.q) + '\t' + cleanTsvField(c.a || '(بدون تعليق)');
+      return cleanTsvField(c.q) + '\t' + cleanTsvField(c.a || '(بدون تعليق)') + (tag ? '\t' + tag : '');
     });
-    var blob = new Blob(['\uFEFF' + lines.join('\n')], { type: 'text/tab-separated-values;charset=utf-8' });
+    var head = tag ? '#separator:tab\n#html:false\n#tags column:3\n' : '\uFEFF';
+    var blob = new Blob([head + lines.join('\n')], { type: 'text/tab-separated-values;charset=utf-8' });
     var url = URL.createObjectURL(blob);
     var a = document.createElement('a');
     a.href = url;

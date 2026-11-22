@@ -166,7 +166,7 @@ overlay.id = 'mc-overlay';
 overlay.innerHTML = `
   <div class="mc-box">
     <div class="mc-head">
-      <h2>منهجي في طلب العلم</h2>
+      <h2>العروة الوثقى</h2>
       <p class="mc-sub">تسجيل الدخول مطلوب لحفظ تقدّمك ومزامنته عبر أجهزتك</p>
     </div>
     <div class="mc-tabs">
