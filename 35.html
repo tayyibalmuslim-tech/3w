@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="lecture-status" content="filled">
+<title>العروة الوثقى — المحاضرة 35 | لماذا «الأسماء والأحكام»؟ وقاعدة ابن القيم في استبانة السبيلين</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@700&family=Cairo:wght@400;600;700;800&family=El+Messiri:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1f2433;--ink2:#3d4457;--sub:#69708a;--bg:#f6f4ef;--paper:#fffdf9;--line:#e4dfd3;
+  --brand:#25305a;--brand2:#3b4b86;--accent:#2a7f7a;--gold:#c9b27c;--goldbg:#f4eedf;
+  --s1:#3a5a98;--s2:#2a7f7a;--s3:#b0623a;--s4:#5a5f8a;--s5:#1e7aa0;--s6:#8c4a6b;--s7:#446a8a;--s8:#5e6b2f;--s9:#7a5636;--s10:#5d5a99;--s11:#2f6f8f;--s12:#8a4f2d;--s13:#4a6d3a;--s14:#6a4a8c;--s15:#2d7a6a;--s16:#9a4a4a;--s17:#3d5f8f;--s18:#7a6a2a;--s19:#5a3f7a;--s20:#2f7a8a;
+  --sec:var(--brand);
+  --sem-aya:#14532d;--sem-hadith:#5b2d90;--sem-sahabi:#8a5a00;--sem-scholar:#8f1d21;
+  --fs:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cairo','Noto Sans Arabic',Tahoma,sans-serif;font-size:var(--fs);line-height:1.95;text-align:right;direction:rtl}
+a{color:inherit}
+.sem-aya{color:var(--sem-aya);font-family:'Amiri','Noto Naskh Arabic',serif;font-size:1.12em}
+.sem-hadith{color:var(--sem-hadith)}
+.sem-name{color:var(--sem-scholar)}
+.sem-name.sem-sahabi,.sem-sahabi{color:var(--sem-sahabi);font-weight:700}
+.sem-name.sem-scholar,.sem-scholar{color:var(--sem-scholar);font-weight:700}
+#progress{position:fixed;top:0;right:0;height:4px;background:linear-gradient(90deg,var(--accent),var(--brand2));width:0;z-index:50}
+/* hero */
+.hero{background:radial-gradient(ellipse at 20% 0%,#3b4b86 0%,#25305a 55%,#1a2142 100%);color:#f3efe4;padding:64px 20px 70px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(201,178,124,.07) 0 2px,transparent 2px 26px)}
+.hero .in{max-width:900px;margin:0 auto;position:relative}
+.hero .series{font-family:'Aref Ruqaa','Amiri',serif;font-size:58px;line-height:1.3;color:#f1e6c8;margin:0}
+.hero .rope{display:flex;align-items:center;margin:14px 0 18px;max-width:420px}
+.hero .rope span{flex:1;height:3px;background:repeating-linear-gradient(90deg,var(--gold) 0 10px,transparent 10px 14px);border-radius:2px}
+.hero .rope b{width:16px;height:16px;border:3px solid var(--gold);border-radius:50%;margin:0 10px}
+.hero h1{font-family:'El Messiri','Cairo',sans-serif;font-size:34px;line-height:1.5;margin:0 0 10px;font-weight:600}
+.hero .meta{font-size:15.5px;color:#d7d2c4}
+.wrap{max-width:1180px;margin:0 auto;display:flex;align-items:flex-start;padding:0 18px}
+main{flex:1 1 auto;min-width:0;max-width:800px;margin:0 auto}
+aside.toc{flex:0 0 250px;position:sticky;top:18px;margin:28px 0 0 26px;order:2;max-height:calc(100vh - 40px);overflow:auto;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:14px 14px 16px;font-size:14.5px;line-height:1.7}
+.toc .t{font-weight:800;color:var(--brand);margin-bottom:6px;font-family:'El Messiri','Cairo'}
+.toc a{display:block;text-decoration:none;padding:4px 8px;border-radius:8px;color:var(--ink2)}
+.toc a.l2{padding-right:20px;font-size:13.5px;color:var(--sub)}
+.toc a:hover,.toc a.on{background:var(--goldbg);color:var(--brand)}
+.tools{display:flex;flex-wrap:wrap;margin-top:10px;border-top:1px solid var(--line);padding-top:10px}
+.tools button{font:inherit;font-size:13px;margin:0 0 6px 6px;padding:5px 10px;border:1px solid var(--line);background:#fff;border-radius:9px;cursor:pointer;color:var(--brand)}
+@media(max-width:1020px){aside.toc{display:none}}
+/* intro cards */
+.ai-note{margin:26px 0 0;background:#fff7e6;border:1px solid #ecd9ae;border-radius:12px;padding:10px 16px;font-size:15px;color:#6b4e16}
+.src{margin:16px 0;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 20px;font-size:16px}
+.src .row{display:flex;flex-wrap:wrap;margin-bottom:2px}.src .k{flex:0 0 120px;color:var(--sub);font-weight:700}.src .v{flex:1 1 300px}
+.orient{margin:22px 0 10px;background:linear-gradient(180deg,#fffdf8,#f7f3e8);border:1px solid #e6dcc3;border-radius:20px;padding:22px 24px}
+.orient .lab{font-size:13px;font-weight:800;color:var(--accent);letter-spacing:.2px}
+.orient .cq{font-family:'El Messiri','Cairo';font-size:23px;color:var(--brand);line-height:1.6;margin:2px 0 14px}
+.orient .idea{font-size:17px;color:var(--ink2);margin-bottom:6px}
+.orient .ed{font-size:12.5px;color:var(--sub)}
+/* mindmap */
+.mm{margin:18px 0 6px}
+.mm-center{display:inline-block;background:var(--brand);color:#f5efe0;border-radius:14px;padding:10px 18px;font-weight:800;font-family:'El Messiri','Cairo';font-size:18px}
+.mm-branches{border-right:3px solid var(--gold);margin:10px 18px 0 0;padding:4px 0 0}
+.mm-node{position:relative;margin:0 0 10px;padding-right:22px}
+.mm-node:before{content:"";position:absolute;right:0;top:20px;width:18px;border-top:3px solid var(--gold)}
+.mm-node>a{display:inline-block;text-decoration:none;background:#fff;border:1px solid var(--line);border-right:5px solid var(--c,var(--brand));border-radius:12px;padding:6px 14px;font-weight:700;color:var(--ink)}
+.mm-node>a:hover{background:var(--goldbg)}
+.mm-kids{margin:6px 22px 0 0;display:flex;flex-wrap:wrap}
+.mm-kids a{font-size:14.5px;text-decoration:none;margin:0 0 6px 8px;padding:3px 11px;border-radius:20px;background:#f1efe8;color:var(--ink2);border:1px solid #e6e1d4}
+.mm-kids a:hover{background:var(--goldbg)}
+/* sections */
+section.lec{--sec:var(--brand);margin:46px 0 0}
+section.lec[data-s="1"]{--sec:var(--s1)}section.lec[data-s="2"]{--sec:var(--s2)}section.lec[data-s="3"]{--sec:var(--s3)}section.lec[data-s="4"]{--sec:var(--s4)}section.lec[data-s="5"]{--sec:var(--s5)}section.lec[data-s="6"]{--sec:var(--s6)}section.lec[data-s="7"]{--sec:var(--s7)}section.lec[data-s="8"]{--sec:var(--s8)}section.lec[data-s="9"]{--sec:var(--s9)}section.lec[data-s="10"]{--sec:var(--s10)}section.lec[data-s="11"]{--sec:var(--s11)}section.lec[data-s="12"]{--sec:var(--s12)}section.lec[data-s="13"]{--sec:var(--s13)}section.lec[data-s="14"]{--sec:var(--s14)}section.lec[data-s="15"]{--sec:var(--s15)}section.lec[data-s="16"]{--sec:var(--s16)}section.lec[data-s="17"]{--sec:var(--s17)}section.lec[data-s="18"]{--sec:var(--s18)}section.lec[data-s="19"]{--sec:var(--s19)}section.lec[data-s="20"]{--sec:var(--s20)}
+.lec-head{position:relative;background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--sec);border-radius:20px;padding:22px 24px 18px;margin-bottom:18px}
+.lec-head .num{font-size:13.5px;font-weight:800;color:var(--sec);letter-spacing:.3px}
+.lec-head h2{font-family:'El Messiri','Cairo';font-size:30px;line-height:1.5;margin:4px 0 6px;color:var(--ink)}
+.lec-head .fn{display:inline-block;font-size:13px;background:var(--goldbg);color:#6b5a2e;border-radius:20px;padding:2px 12px}
+.divider{height:34px;margin:40px 0 0;background:radial-gradient(circle,var(--gold) 3px,transparent 4px) center/26px 34px repeat-x;opacity:.7}
+main h3{font-family:'El Messiri','Cairo';font-size:23px;line-height:1.6;color:var(--sec);margin:32px 0 8px;padding-right:14px;border-right:4px solid var(--sec)}
+main h4{font-size:19px;margin:20px 0 4px;color:var(--ink)}
+main p{margin:0 0 14px}
+.where,.next{border-radius:14px;padding:12px 18px;font-size:16px;margin:0 0 16px}
+.where{background:#eef1f8;border:1px dashed #b9c2dd}
+.next{background:#eef6f5;border:1px dashed #a9cfcb;margin-top:18px}
+.where b,.next b{display:block;font-size:13px;color:var(--sec)}
+/* blocks */
+.aya-block{background:#f0f6f1;border:1px solid #d6e7da;border-right:4px solid #3f7d57;border-radius:14px;padding:12px 20px 10px;margin:14px 0 16px;text-align:center}
+.aya-block p{margin:0;font-size:1.08em;line-height:2.15}
+.aya-block .sem-aya{font-size:1.22em}
+.ref{font-size:13.5px;color:var(--sub);text-align:left}
+blockquote{margin:14px 0 16px;padding:12px 20px 10px;border-radius:14px}
+blockquote p{margin:0 0 6px}
+.hadith-block{background:#f6f3fa;border:1px solid #e6dff0;border-right:4px solid #8b77ad}
+.naql{background:#fbf8f1;border:1px solid #ebe2cc;border-right:4px solid #b9a06a}
+.who{display:block;font-size:13.5px;color:#7a6a45;font-weight:700;margin-top:2px}
+.hadith-block .who{color:#6b5d86}
+.key{background:#eef3fb;border-right:4px solid var(--brand2);border-radius:12px;padding:12px 18px;margin:14px 0}
+.key:before{content:"فكرة محورية";display:block;font-size:12.5px;font-weight:800;color:var(--brand2)}
+.warn{background:#fdf1ea;border-right:4px solid #c46a3b;border-radius:12px;padding:12px 18px;margin:14px 0}
+.warn:before{content:"تنبيه";display:block;font-size:12.5px;font-weight:800;color:#a2512a}
+.fix{background:#fff6e0;border:1px dashed #d8b45d;border-radius:12px;padding:10px 16px;margin:12px 0;font-size:15.5px}
+.fix:before{content:"تصحيح / توضيح تحريري";display:block;font-size:12.5px;font-weight:800;color:#8a6414}
+.ed-note{background:#f3f3f1;border-radius:12px;padding:10px 16px;margin:12px 0;font-size:15.5px;color:var(--ink2)}
+.ed-note:before{content:"إضافة تحريرية (ليست من كلام الشيخ)";display:block;font-size:12.5px;font-weight:800;color:#6c6c64}
+.story{background:#fffaf2;border:1px solid #efdfc4;border-radius:16px;padding:14px 20px 4px;margin:16px 0}
+.story .st{font-weight:800;color:#8a5f2b;font-size:15px;margin-bottom:4px}
+/* structures */
+.lab-org{font-size:12.5px;font-weight:800;color:var(--sec);margin:0 0 6px}
+.cmp{margin:16px 0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.cmp .cap{background:#f4f2ec;padding:8px 16px;font-weight:800;font-size:15px;color:var(--ink2)}
+.cmp .r{display:flex;flex-wrap:wrap;border-top:1px solid var(--line)}
+.cmp .r>div{flex:1 1 200px;padding:10px 16px;font-size:16px;line-height:1.85;min-width:0}
+.cmp .r>div+div{border-right:1px solid var(--line)}
+.cmp .r.h>div{font-weight:800;color:var(--sec);background:#fafaf7}
+.cmp .r>div.k{flex:0 0 140px;font-weight:700;color:var(--sub);background:#fbfaf6}
+@media(max-width:580px){.cmp .r.h{display:none}.cmp .r>div.k{flex-basis:100%;border-bottom:1px dashed var(--line);color:var(--sec)}.cmp .r>div+div{border-right:0;border-top:1px dashed var(--line)}.cmp .r>div[data-h]:before{content:attr(data-h);display:block;font-size:12.5px;font-weight:800;color:var(--sub)}}
+.tree{margin:16px 0;padding:16px;background:#fff;border:1px solid var(--line);border-radius:16px}
+.tree .root{font-weight:800;color:#fff;background:var(--sec);display:inline-block;border-radius:10px;padding:5px 14px}
+.tree .kids{margin:10px 16px 0 0;border-right:2px solid #d7d2c3;padding-right:14px}
+.tree .kid{position:relative;margin:0 0 10px;background:#faf8f3;border:1px solid #ebe5d6;border-radius:12px;padding:8px 14px;font-size:16px}
+.tree .kid:before{content:"";position:absolute;right:-16px;top:20px;width:14px;border-top:2px solid #d7d2c3}
+.tree .kid b{color:var(--sec)}
+.timeline{margin:16px 0;padding:6px 0}
+.tl-i{position:relative;padding:0 46px 14px 0}
+.tl-i:before{content:attr(data-n);position:absolute;right:0;top:2px;width:32px;height:32px;border-radius:50%;background:var(--sec);color:#fff;font-weight:800;text-align:center;line-height:32px;font-size:15px}
+.tl-i:after{content:"";position:absolute;right:15px;top:36px;bottom:0;border-right:2px solid #d4cfbf}
+.tl-i:last-child:after{display:none}
+.tl-i .tt{font-weight:800;color:var(--ink)}
+.tl-i .td{font-size:16px;color:var(--ink2)}
+.chain{display:flex;flex-direction:column;margin:16px 0}
+.chain .c{background:#fff;border:1px solid var(--line);border-right:4px solid var(--sec);border-radius:12px;padding:9px 16px;font-size:16px}
+.chain .c b{display:block;font-size:12.5px;color:var(--sec)}
+.chain .ar{height:22px;text-align:center;color:var(--sec);line-height:22px;font-size:18px}
+.evid{margin:16px 0;border:1px solid #d9e6dd;border-radius:16px;background:#fcfefc;overflow:hidden}
+.evid .er{display:flex;flex-wrap:wrap;border-top:1px solid #e3ede6}
+.evid .er:first-child{border-top:0}
+.evid .el{flex:0 0 120px;padding:9px 14px;font-size:13.5px;font-weight:800;color:#3f6b52;background:#f2f8f3}
+.evid .ev{flex:1 1 260px;padding:9px 16px;font-size:16px;min-width:0}
+@media(max-width:580px){.evid .el{flex-basis:100%}}
+.arg{margin:16px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.arg .claim{background:var(--sec);color:#fff;border-radius:12px;padding:10px 16px;font-weight:700}
+.arg .claim b{display:block;font-size:12.5px;opacity:.85}
+.arg .grp{margin:12px 0 0;display:flex;flex-wrap:wrap}
+.arg .g{flex:1 1 220px;margin:0 0 10px 10px;background:#f7f6fb;border:1px solid #e3e1ee;border-radius:12px;padding:10px 14px;font-size:15.5px}
+.arg .g b{display:block;color:var(--sec);font-size:13px}
+.num{margin:14px 0}
+.num .n{display:flex;align-items:flex-start;margin-bottom:10px}
+.num .n .b{flex:0 0 34px;height:34px;border-radius:10px;background:var(--goldbg);color:#6b5a2e;font-weight:800;text-align:center;line-height:34px;margin-left:12px;border:1px solid #e3d6b4}
+.num .n .t{flex:1;min-width:0}
+.stat{display:flex;flex-wrap:wrap;margin:14px -6px}
+.stat .s{flex:1 1 180px;margin:0 6px 12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;text-align:center}
+.stat .s .v{font-size:34px;font-weight:800;color:var(--sec);line-height:1.3;font-family:'El Messiri','Cairo'}
+.stat .s .d{font-size:14.5px;color:var(--ink2);line-height:1.7}
+/* takeaway */
+.takeaway{margin:26px 0 8px;background:linear-gradient(180deg,#fffaf0,#fbf3e2);border:1px solid #e8d7b0;border-radius:18px;padding:16px 20px}
+.takeaway .tt{font-family:'El Messiri','Cairo';font-weight:700;font-size:19px;color:#7a5b1d}
+.takeaway .tt small{font-size:12px;color:#9b8456;font-family:'Cairo';margin-right:6px}
+.tk-i{position:relative;padding-right:22px;margin:7px 0;font-size:16.5px}
+.tk-i:before{content:"";position:absolute;right:2px;top:12px;width:9px;height:9px;border-radius:50%;background:var(--sec)}
+.score{font-size:13.5px;color:var(--sub);margin-bottom:4px}
+/* quiz */
+.quiz{margin:20px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 18px 12px;box-shadow:0 2px 10px rgba(30,40,70,.04)}
+.quiz .qh{font-size:12.5px;font-weight:800;color:var(--sec);margin-bottom:4px}
+.quiz .qq{font-weight:700;font-size:17px;margin-bottom:8px}
+.quiz button.op{display:block;width:100%;min-height:44px;text-align:right;font:inherit;font-size:16px;line-height:1.7;background:#faf9f5;border:1px solid #e6e1d4;border-radius:12px;padding:8px 14px;margin:0 0 8px;cursor:pointer;color:var(--ink)}
+.quiz button.op:hover{background:var(--goldbg)}
+.quiz button.op.ok{background:#e6f3ec;border-color:#86bf9d}
+.quiz button.op.no{background:#fbe9e4;border-color:#e0a28f}
+.quiz .ex{display:none;font-size:15px;background:#f4f6fb;border-radius:10px;padding:8px 12px;color:var(--ink2)}
+.quiz.done .ex{display:block}
+.quiz .again{display:none;font:inherit;font-size:13px;border:0;background:none;color:var(--brand2);cursor:pointer;padding:4px 0}
+.quiz.done .again{display:inline-block}
+/* cards area */
+#cards{margin:56px 0 20px}
+#cards h2{font-family:'El Messiri','Cairo';font-size:30px;color:var(--brand);margin:0 0 4px}
+.cfil{display:flex;flex-wrap:wrap;margin:10px 0}
+.cfil button,.cnav button,.dl{font:inherit;font-size:14px;margin:0 0 8px 8px;padding:6px 14px;border-radius:20px;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--ink2);min-height:38px}
+.cfil button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
+.dl{background:var(--accent);color:#fff;border-color:var(--accent)}
+.cstage{max-width:740px;margin:8px auto}
+.cbox{background:#fff;border:1px solid #dfe3e0;border-radius:18px;padding:20px 22px;cursor:pointer;min-height:220px;box-shadow:0 4px 22px rgba(31,49,46,.06)}
+.cbox .flip{font-size:12.5px;color:var(--sub);text-align:center;margin-top:12px}
+.cbox .back{display:none;margin-top:16px;padding-top:16px;border-top:1px solid #e1e0d8}
+.cbox.shown .back{display:block}
+.cnav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px}
+.cnav .pos{font-size:14px;color:var(--sub);margin:0 10px 8px}
+footer{margin:60px 0 0;background:#1d2547;color:#cfc9b8;padding:26px 20px;text-align:center;font-size:14.5px}
+@media(max-width:580px){
+  body{font-size:17px}.hero{padding:44px 16px 50px}.hero .series{font-size:42px}.hero h1{font-size:25px}
+  .lec-head h2{font-size:24px}main h3{font-size:20px}.wrap{padding:0 12px}
+  .orient{padding:16px}.orient .cq{font-size:19px}.cbox{padding:16px 14px}
+}
+@media print{aside.toc,#progress,.quiz,.cnav,.cfil,.dl,.tools{display:none}.hero{background:#25305a;-webkit-print-color-adjust:exact}}
+
+/* نسخة عرض من قسم mz- في anki/final.css — لعرض البطاقات داخل الصفحة بنفس HTML المُصدَّر */
+.mz-calm{--mz-title:#293c35;--mz-ink:#33423c;--mz-accent:#296257;--mz-sub:#66766f;--mz-line:#e1e0d8;--mz-b1:#e9f3ef;--mz-b1bd:#cfe3da;--mz-b2:#f5f5f1;--mz-b2bd:#e1e0d8;--mz-b2lab:#7d6338;--mz-alert:#f5f0e4;--mz-alertbd:#e6dcc4;--mz-alertlab:#7d6338}
+.mz-compare{--mz-title:#273e5d;--mz-ink:#2f3f55;--mz-accent:#47668c;--mz-sub:#62748b;--mz-line:#d8e1ec;--mz-b1:#e9f1ed;--mz-b1bd:#c9dcd2;--mz-b1lab:#2c6a55;--mz-b2:#f5eee7;--mz-b2bd:#e5d6c6;--mz-b2lab:#9a5a2a;--mz-alert:#eff3f9;--mz-alertbd:#d3dded;--mz-alertlab:#273e5d}
+.mz-quran{--mz-title:#3a3426;--mz-ink:#3a3426;--mz-accent:#7a6030;--mz-sub:#7a7060;--mz-line:#dfd9c8;--mz-b1:#f0ede5;--mz-b1bd:#dfd9c8;--mz-b2:#f0ede5;--mz-b2bd:#dfd9c8;--mz-b2lab:#7a6030;--mz-alert:#f6f1e2;--mz-alertbd:#e6dcc0;--mz-alertlab:#7a6030}
+.mz-method{--mz-title:#332d49;--mz-ink:#3a3550;--mz-accent:#605785;--mz-sub:#6e6890;--mz-line:#e0dcec;--mz-b1:#f2f0f9;--mz-b1bd:#e0dcec;--mz-b2:#e8e5f4;--mz-b2bd:#d5cfe8;--mz-b2lab:#605785;--mz-alert:#f4f0e6;--mz-alertbd:#e6dcc0;--mz-alertlab:#7a6030;--mz-step:#e8e5f4;--mz-conn:#9891b4;--mz-num:#605785;--mz-numink:#fff;--mz-err:#f7ebe5;--mz-errbd:#ecd2c3;--mz-errlab:#995531}
+.mz-face,.mz-ans{direction:rtl;text-align:right;font-family:'Cairo','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif;color:var(--mz-ink);line-height:1.95;font-size:18px;overflow-wrap:break-word}
+.mz-face p,.mz-ans p{margin:0}
+.mz-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:0 0 12px;margin:0 0 16px;border-bottom:1px solid var(--mz-line)}
+.mz-subject{display:flex;align-items:center;font-size:14.5px;font-weight:800;color:var(--mz-accent)}
+.mz-kicker{font-size:12.5px;font-weight:600;color:var(--mz-sub)}
+.mz-ico{display:inline-block;width:20px;height:20px;margin-left:9px;border-radius:6px;background:var(--mz-accent);opacity:.85}
+.mz-label{font-size:12.5px;font-weight:700;color:var(--mz-sub);margin:0 0 4px}
+.mz-q{font-size:21px;line-height:1.95;font-weight:700;color:var(--mz-title)}
+.mz-q .mz-qt{margin:0 0 4px}
+.mz-box{margin:0 0 12px;padding:13px 18px 14px;border:1px solid var(--mz-b1bd);border-radius:14px;background:var(--mz-b1)}
+.mz-box:last-child{margin-bottom:0}
+.mz-box[data-label]:before{content:attr(data-label);display:block;font-size:13px;font-weight:800;color:var(--mz-accent);margin:0 0 4px}
+.mz-b-excl,.mz-b-wajh{background:var(--mz-b2);border-color:var(--mz-b2bd)}
+.mz-b-excl[data-label]:before,.mz-b-wajh[data-label]:before{color:var(--mz-b2lab)}
+.mz-b-alert,.mz-b-exc{background:var(--mz-alert);border-color:var(--mz-alertbd)}
+.mz-b-alert[data-label]:before,.mz-b-exc[data-label]:before{display:inline;margin:0;font-size:inherit;color:var(--mz-alertlab);content:attr(data-label) ": "}
+.mz-b-err{background:var(--mz-err);border-color:var(--mz-errbd)}
+.mz-b-err[data-label]:before{color:var(--mz-errlab);display:inline;margin:0;font-size:inherit;content:attr(data-label) ": "}
+.mz-cols{display:flex;flex-wrap:wrap;margin:0 -6px 6px}
+.mz-col{flex:1 1 220px;min-width:0;margin:0 6px 12px;padding:13px 16px 14px;border:1px solid var(--mz-b1bd);border-radius:14px;background:var(--mz-b1)}
+.mz-col2{background:var(--mz-b2);border-color:var(--mz-b2bd)}
+.mz-col[data-label]:before{content:attr(data-label);display:block;font-size:14px;font-weight:800;padding:0 0 7px;margin:0 0 8px;color:var(--mz-b1lab);border-bottom:1px solid var(--mz-b1bd)}
+.mz-col2[data-label]:before{color:var(--mz-b2lab);border-bottom-color:var(--mz-b2bd)}
+.mz-steps{margin:0 0 12px}
+.mz-step{display:flex;align-items:flex-start;padding:12px 14px;border-radius:14px;background:var(--mz-step,var(--mz-b2));border:1px solid var(--mz-b2bd)}
+.mz-step-n{flex:0 0 34px;width:34px;height:34px;margin-left:12px;border-radius:50%;background:var(--mz-num,var(--mz-accent));color:#fff;font-weight:800;font-size:16px;line-height:34px;text-align:center}
+.mz-step-b{flex:1 1 auto;min-width:0}
+.mz-step-t{font-weight:800;color:var(--mz-title);line-height:1.8}
+.mz-step-d{margin-top:2px;line-height:1.9}
+.mz-steps-list{counter-reset:mzstep}
+.mz-steps-list .mz-step{counter-increment:mzstep;margin:0 0 10px}
+.mz-steps-list .mz-step:last-child{margin-bottom:0}
+.mz-steps-list .mz-step-n:before{content:counter(mzstep)}
+.mz-arrow{height:20px;padding:5px 15px 0 0;line-height:0}
+.mz-arrow:before{content:"";display:inline-block;border-right:6px solid transparent;border-left:6px solid transparent;border-top:9px solid var(--mz-conn,#9891b4);margin-right:5px}
+.mz-em{font-weight:800;color:var(--mz-title)}
+.mz-v{font-family:'Amiri','Noto Naskh Arabic','Traditional Arabic',serif;font-weight:700;font-size:1.15em;line-height:2}
+.mz-face .sem-aya,.mz-ans .sem-aya,.mz-face .sem-hadith,.mz-ans .sem-hadith{font-weight:700}
+@media (max-width:580px){.mz-q{font-size:19px}.mz-face,.mz-ans{font-size:17px}.mz-box{padding:12px 14px 13px}.mz-col{flex-basis:100%}}
+/* ===== إضافات 5.10–5.11 — تُلصق في آخر قسم mz- في anki/final.css وفي تنسيق نوع الملاحظة «أساسي» ===== */
+.mz-focus{color:var(--mz-accent);font-weight:800;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
+.mz-box.mz-core{font-weight:700;color:var(--mz-title)}
+.mz-corelead{font-weight:800;color:var(--mz-title)}
+.mz-b-edit{background:#f4f4f4;border:1px dashed #b9b9b9}
+.mz-b-edit[data-label]:before{color:#5f5f5f}
+.mz-srcl{margin-top:10px;text-align:left;font-size:12.5px}
+.mz-srcl a{color:var(--mz-sub);text-decoration:none;border-bottom:1px dotted var(--mz-sub)}
+
+/* ===== ملفات المحاضرات المنفصلة + صفحة الفهرس ===== */
+.hero-s{padding:40px 20px 44px}
+.hero-s .series{font-size:40px;text-decoration:none;display:inline-block}
+.hero-s h1{font-size:30px}
+.lnav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;max-width:1180px;margin:0 auto;padding:12px 18px;font-size:15px}
+.lnav a,.lnav span{display:inline-block;padding:7px 14px;border-radius:20px;text-decoration:none;background:var(--paper);border:1px solid var(--line);color:var(--brand);margin:4px 0;min-height:38px}
+.lnav a.home{background:var(--brand);color:#f5efe0;border-color:var(--brand);font-weight:700}
+.lnav .off{color:var(--sub);background:transparent;border-style:dashed}
+.lnav a:hover{background:var(--goldbg)}.lnav a.home:hover{background:var(--brand2)}
+.orient .ed2{font-size:15.5px;color:var(--ink2)}
+main.idx{max-width:960px;margin:0 auto;padding:0 18px}
+.ih{font-family:'El Messiri','Cairo';font-size:28px;color:var(--brand);margin:34px 0 12px}
+.grid{display:flex;flex-wrap:wrap;margin:0 -8px}
+.lc{flex:1 1 280px;margin:0 8px 16px;display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--c,var(--brand));border-radius:18px;padding:16px 18px 14px;transition:transform .15s,box-shadow .15s}
+.lc:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(30,40,70,.09)}
+.lc .no{font-family:'El Messiri','Cairo';font-size:34px;font-weight:700;color:var(--c,var(--brand));line-height:1.2}
+.lc .lt{font-family:'El Messiri','Cairo';font-size:20px;font-weight:700;line-height:1.6;margin:2px 0 6px}
+.lc .lq{font-size:15.5px;color:var(--ink2);line-height:1.8;flex:1}
+.lc .ls{font-size:13.5px;color:var(--sub);margin-top:8px}
+.lc .go{font-size:14.5px;font-weight:700;color:var(--c,var(--brand));margin-top:6px}
+.lc-off{border-top-color:#cfcabd;border-style:dashed;opacity:.75}.lc-off .no,.lc-off .lt{color:var(--sub)}
+.alldl{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;background:#eef6f5;border:1px solid #c7e0dd;border-radius:16px;padding:14px 18px;margin:18px 0 10px}
+.alldl div{flex:1 1 320px;margin-left:12px}.alldl b{display:block;color:var(--accent)}.alldl span{font-size:14.5px;color:var(--ink2)}
+@media(max-width:580px){.hero-s .series{font-size:32px}.hero-s h1{font-size:23px}.lc .no{font-size:28px}.lnav{font-size:13px;padding:10px 8px;flex-wrap:nowrap}.lnav a,.lnav span{flex:1 1 0;text-align:center;margin:4px 3px;padding:7px 4px;min-width:0}}
+
+
+/* إضافات 11–20: الشعر ومعاني الغريب */
+.poem{background:#fbf8f1;border:1px solid #ebe2cc;border-right:4px solid #b9a06a;border-radius:14px;padding:12px 20px 8px;margin:14px 0 16px;text-align:center}
+.poem p{font-family:'Amiri','Noto Naskh Arabic',serif;font-size:1.1em;line-height:2.2;margin:0 0 6px}
+.gloss{margin:10px 0 16px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:10px 16px}
+.gloss .gt{font-size:12.5px;font-weight:800;color:var(--sec);margin-bottom:4px}
+.gloss .gw{display:flex;flex-wrap:wrap;border-top:1px dashed var(--line);padding:5px 0;font-size:15.5px}
+.gloss .gw:first-of-type{border-top:0}
+.gloss .gw b{flex:0 0 130px;color:var(--ink)}.gloss .gw span{flex:1 1 220px;color:var(--ink2)}
+
+/* إضافات 33–44 */
+:root{--s33:#2f6a7f;--s34:#7a4f6b;--s35:#556b2f;--s36:#8a5a3a;--s37:#3d5a8a;--s38:#6a3f6a;--s39:#2f7a5f;--s40:#4f6f3a;--s41:#4a5f8a;--s42:#7a6a3a;--s43:#5a4a8a;--s44:#2f6f6f}
+section.lec[data-s="33"]{--sec:var(--s33)}section.lec[data-s="34"]{--sec:var(--s34)}section.lec[data-s="35"]{--sec:var(--s35)}section.lec[data-s="36"]{--sec:var(--s36)}section.lec[data-s="37"]{--sec:var(--s37)}section.lec[data-s="38"]{--sec:var(--s38)}section.lec[data-s="39"]{--sec:var(--s39)}section.lec[data-s="40"]{--sec:var(--s40)}section.lec[data-s="41"]{--sec:var(--s41)}section.lec[data-s="42"]{--sec:var(--s42)}section.lec[data-s="43"]{--sec:var(--s43)}section.lec[data-s="44"]{--sec:var(--s44)}
+.gap{background:#f3f1ea;border:1px dashed #cbc4b1;border-radius:12px;padding:8px 14px;font-size:14.5px;color:var(--sub);margin:10px 0}
+</style>
+</head>
+<body data-lecture-id="stage1_urwa_35">
+<div id="progress"></div>
+<header class="hero hero-s"><div class="in"><a class="series" href="index.html">العروة الوثقى</a><div class="rope"><span></span><b></b><span></span></div><h1>المحاضرة 35</h1><div class="meta">سلسلة في أصل دين الإسلام · 8 سؤال فهم · 43 بطاقة مراجعة</div></div></header>
+<nav class="lnav"><a href="34.html">→ المحاضرة 34</a><a class="home" href="index.html">فهرس السلسلة</a><span class="off">المحاضرة 36 لم تُضف بعد</span></nav>
+<div class="wrap">
+<aside class="toc"><div class="t">فهرس المحاضرة</div><a href="#orient">لوحة التوجيه</a><a href="#s35-a">أين نحن: كفر الأعيان والكفر المطلق</a><a href="#s35-b">لماذا نشغل أنفسنا بالأسماء؟</a><a href="#s35-c">ابن حزم: الأسماء الشرعية توقيفية</a><a href="#s35-d">الجويني: خطر الإدخال والإخراج</a><a href="#s35-e">ابن تيمية: مسائل الأسماء والأحكام</a><a href="#s35-f">ابن رجب: أول اختلاف وقع في الأمة</a><a href="#s35-g">قاعدة ابن القيم: استبانة السبيلين</a><a href="#s35-h">الصحابة ومعرفة الضد، وأثر عمر</a><a href="#s35-i">الناس في هذا الموضع أربع فرق</a><a href="#s35-j">من الواقع: حين يُجهل سبيل المجرمين</a><a href="#s35-k">الحدّ الشرعي قاضٍ على اللغة</a><a href="#s35-l">الخيط التالي</a><a href="#cards">بطاقات المراجعة</a><a href="index.html">↩ فهرس السلسلة</a><div class="tools"><button type="button" id="fsUp">تكبير الخط +</button><button type="button" id="fsDn">تصغير الخط −</button></div></aside>
+<main>
+<div data-ilm-highlight-zone>
+<div class="ai-note">أُعدّ هذا المحتوى بمساعدة الذكاء الاصطناعي، وقد يحتوي أخطاء، ويُرجى مراجعته.</div><div class="src"><div class="row"><div class="k">نوع المادة</div><div class="v">تفريغ صوتي للمحاضرة 35 من سلسلة «العروة الوثقى».</div></div><div class="row"><div class="k">المنهج</div><div class="v">كلام الشيخ مُعاد تنظيمه بلا حذف لفكرة أو دليل؛ والخلاصات والصناديق الموسومة «تحريرية» إضافة ليست من كلامه. وما بين «» لكلام الشيخ وأسماء الكتب والنقول.</div></div></div>
+<div class="orient" id="orient"><div class="lab">السؤال المركزي</div><div class="cq">لماذا نشغل أنفسنا بأسماء الناس — مسلم وكافر وفاسق ومنافق — وما ثمرة معرفتها بالتفصيل؟</div><div class="lab">الفكرة المحورية</div><div class="idea">الأسماء الشرعية توقيفية، وكل اسم منها يحمل حكمًا يلزمك في الدنيا والآخرة: الموالاة والمعاداة والعصمة والوعد والوعيد. ولا يتم السير إلى الله إلا باستبانة سبيل المؤمنين وسبيل المجرمين تفصيلًا؛ فاللبس يقع بقدر ضعف العلم بالسبيلين، والحد الشرعي للاسم قاضٍ على معناه اللغوي.</div><div class="ed">صياغة تحريرية تجمع معنى المحاضرة.</div><div class="lab" style="margin-top:12px">مسار المحاضرة</div><div class="ed2">كفر الأعيان والمطلق ← لماذا الأسماء ← ابن حزم ← الجويني ← ابن تيمية ← ابن رجب ← قاعدة ابن القيم ← الصحابة وأثر عمر ← الفرق الأربع ← من الواقع ← الحد الشرعي</div><div class="lab" style="margin-top:12px">خريطة المحاور</div><div class="mm" id="mm-35"></div></div>
+
+<section class="lec" id="s35" data-s="35">
+<div class="lec-head">
+  <div class="num">المجلس الخامس والثلاثون</div>
+  <h2>لماذا «الأسماء والأحكام»؟ وقاعدة ابن القيم في استبانة السبيلين</h2>
+  <span class="fn">كفر الأعيان والمطلق ← لماذا الأسماء ← ابن حزم ← الجويني ← ابن تيمية ← ابن رجب ← قاعدة ابن القيم ← الصحابة وأثر عمر ← الفرق الأربع ← من الواقع ← الحد الشرعي</span>
+</div>
+
+<div class="where"><b>أين نحن</b>تكلمنا عن المسائل الظاهرة والخفية، وتقسيم أهل العلم لها، وقلنا: هذا الكلام يتّكئ على <strong>قدر البيان</strong> الذي جعله الله في شريعته؛ فمن الأشياء ما كان البيان فيه واضحًا جدًا للعامة والخاصة، ومنها ما يفهمه ويطّلع عليه العلماء، ومنها ما يخفى على طائفة من الناس أو يدخل الخفاء في مسلكه. وتقسيم هذه المسائل هو الذي يبيّن لنا أن الأحكام المتعلقة بها مختلفة أيضًا.</div>
+
+<h3 id="s35-a">لماذا تكلمنا عن الظاهر والخفي؟ كفر الأعيان والكفر المطلق</h3>
+<p>لما نتكلم عن حكم المشرك: ما الذي جعلنا نتكلم عن المسائل الظاهرة والخفية؟ لأنا قلنا: من حكم بغير ما أنزل الله فهو كافر، ومن دان بذلك فهو كافر، ومن أحلّ ما حرم الله فهو كافر — النصوص الكثيرة التي نقلناها قبل ذلك. وقلنا إن <strong>جناحي الطاغوت</strong>: التشريع — التحريم والتحليل والتشريع للخلق — وعبادة غير الله، وجئنا بأدلة أهل العلم وتعريفاتهم لهذه الأشياء.</p>
+<p>ثم قلنا: لما نقول إن من ردّ حكمًا من أحكام الله كفر، يقول بعضهم: هذا كفر مطلق، ليس له علاقة بالأعيان. فقلنا: لكي نفهم المسألة، هناك <strong>كفر للأعيان</strong> أنفسهم — فلان وفلان — وهناك <strong>كفر مطلق</strong> فعلًا، لا يخص أحدًا من أفراده — كما هو تعريف المطلق. هذا موجود وذاك موجود.</p>
+<div class="cmp">
+  <div class="cap">نوعا الكفر في كلام أهل العلم</div>
+  <div class="r h"><div class="k">المعيار</div><div>كفر الأعيان</div><div>الكفر المطلق</div></div>
+  <div class="r"><div class="k">ما يتناوله</div><div>الأشخاص أنفسهم: فلان وفلان.</div><div>لا يخص أحدًا من أفراده — وهو تعريف المطلق.</div></div>
+</div>
+<p>ولكي نفهم ذلك قلنا: لا بد أن نقسّم المسائل إلى ظاهر وخفي، وننقل أقوال أهل العلم فيهما، فتختلف الأحكام حينئذ. وقلت لك: <strong>تعمّدتُ ألا أنقل عن أئمة الدعوة النجدية</strong>؛ لأنهم يقولون: أول من قسّم هذا التقسيم الشيخ <span class="sem-name sem-scholar">محمد بن عبد الوهاب</span> — وهذا كذب وخطأ؛ الحقيقة أنه من صلب الدين: الدين ليس على درجة واحدة، وإنما فيه ظاهر وفيه خافٍ، وهذا رحمة عظيمة من الله.</p>
+<p>ثم قلنا: <strong>تقسيم العلم من حُسن العلم</strong>، ولا بد أن نفصّل هذه المسائل لتفهمها جيدًا؛ لأن دعوى هؤلاء بالإنكار ودعوى أولئك بالإنكار تحيّرك في النص. فبعد أن عرفنا أن المسائل ظاهرة وخفية، قلنا: ما حكم من جحد مسألة ظاهرة، ومن جحد مسألة خفية؟ هذا لا بد فيه من <strong>إقامة الحجة</strong> الخاصة بالعذاب — هل يستحق فلان هذا العذاب بعينه أم لا.</p>
+
+<h3 id="s35-b">لماذا نشغل أنفسنا بالأسماء؟</h3>
+<p>لما تطرقنا لإقامة الحجة تطرقنا قبلها لفرع آخر: <strong>لماذا نقيم الحجة؟ ولماذا نشغل أنفسنا بأسماء الناس</strong>: هذا مؤمن وهذا كافر، وهذا فاسق وهذا مسلم، وهذا منافق وهذا كاذب؟</p>
+<div class="key">لأن هذا <strong>من أكبر أصول الإسلام</strong>؛ فكل اسم من هذه الأسماء يحمل حكمًا، أنت ملزم أن تقوم به، ووجب عليك في بعض المواضع أن تقوم به.</div>
+<p>وهي مسألة اسمها <strong>«الأسماء والأحكام»</strong>: ما قضية الأسماء في الإسلام؟ ما خطورتها وقدرها؟ وما الذي حصل لنا لما لم نفهم قضية الأسماء والأحكام جيدًا؟ صرنا نأخذ أي اسم من الغرب الكافر أو من الملاحدة، ونعطي صاحبه أحيانًا أنه مسلم وهو ليس مسلمًا، ونرتب عليه أحكامًا إسلامية لا وجود لها فيه.</p>
+<div class="quiz" data-q="q35-1"></div>
+
+<h3 id="s35-c">ابن حزم: الأسماء الشرعية توقيفية</h3>
+<blockquote class="naql"><p>«لا نسمي في الشريعة اسمًا إلا بأن يأمرنا الله تعالى أن نسميه، أو يبيح لنا بالنص أن نسميه؛ لأننا لا ندري مراد الله عز وجل منا إلا بوحي وارد من عنده علينا. ومع هذا فإن الله تعالى يقول منكرًا لمن سمّى في الشريعة شيئًا بغير إذنه عز وجل: <span class="sem-aya">﴿إِنْ هِيَ إِلَّا أَسْمَاءٌ سَمَّيْتُمُوهَا أَنتُمْ وَآبَاؤُكُم مَّا أَنزَلَ اللَّهُ بِهَا مِن سُلْطَانٍ﴾</span>، وقال: <span class="sem-aya">﴿وَعَلَّمَ آدَمَ الْأَسْمَاءَ كُلَّهَا﴾</span>… فنحن لا نسمي مؤمنًا إلا من سماه الله مؤمنًا، ولا نُسقط الإيمان بعد وجوبه إلا عمّن أسقطه الله عنه».</p><span class="who">ابن حزم — الفصل</span></blockquote>
+<div class="evid">
+<div class="er"><div class="el">الدعوى</div><div class="ev">الأسماء في الشريعة توقيفية: لا نسمي إلا بأمر الله أو إباحته بالنص.</div></div>
+<div class="er"><div class="el">الدليل</div><div class="ev"><span class="sem-aya">﴿إِنْ هِيَ إِلَّا أَسْمَاءٌ سَمَّيْتُمُوهَا…﴾</span> [النجم: 23]، و<span class="sem-aya">﴿وَعَلَّمَ آدَمَ الْأَسْمَاءَ كُلَّهَا﴾</span> [البقرة: 31].</div></div>
+<div class="er"><div class="el">العلّة</div><div class="ev">لا ندري مراد الله منا إلا بوحي وارد من عنده.</div></div>
+<div class="er"><div class="el">النتيجة</div><div class="ev">لا نسمي مؤمنًا إلا من سماه الله مؤمنًا، ولا نسقط الإيمان بعد وجوبه إلا عمّن أسقطه الله عنه.</div></div>
+</div>
+<p>خذ بالك من دلالة الآيات في كلام <span class="sem-name sem-scholar">ابن حزم</span>: الأسماء — في الأمور المتعلقة بالدين — توقيفية. فأنت اليوم أمام واحد وقع في الكفر، تقول لي: مسلم، وتقعد تناضل لتقول إنه مسلم! ما موضعك عند الله؟</p>
+
+<h3 id="s35-d">الجويني: خطر الإدخال والإخراج</h3>
+<blockquote class="naql"><p>«إخراج المسلم من الإسلام بعد أن ثبت له خطيرٌ وعظيم، وإدخال الكافر في الإسلام ولم يثبت له ذلك عظيم».</p><span class="who">أبو المعالي الجويني — إمام الحرمين</span></blockquote>
+<p>لا تأتِ عند واحد كافر فتقول: هذا مسلم؛ فتكون قد <strong>سمّيت الكفر إسلامًا</strong>. وستُفاجأ أن بعض أهل العلم يقول إن هذا <strong>ناقض من نواقض الإسلام</strong> — والعياذ بالله — قد يكفر صاحبه؛ لأنه سمّى الكفر إسلامًا.</p>
+<div class="cmp">
+  <div class="cap">الخطأ في الاسم من الجهتين</div>
+  <div class="r h"><div class="k">المعيار</div><div>إخراج المسلم</div><div>إدخال الكافر</div></div>
+  <div class="r"><div class="k">صورته</div><div>بعد أن ثبت له الإسلام.</div><div>ولم يثبت له الإسلام.</div></div>
+  <div class="r"><div class="k">حكمه</div><div>خطير وعظيم.</div><div>عظيم؛ وفيه تسمية الكفر إسلامًا، وعدّه بعض أهل العلم ناقضًا.</div></div>
+</div>
+<div class="quiz" data-q="q35-2"></div>
+
+<h3 id="s35-e">ابن تيمية: مسائل الأسماء والأحكام</h3>
+<p>يقول شيخ الإسلام <span class="sem-name sem-scholar">ابن تيمية</span> رحمه الله: <strong>«أول مسألة تنازعت فيها الأمة من الأصول الكبار هي مسألة الوعيد»</strong> — والوعيد هو العذاب. وقال أيضًا:</p>
+<blockquote class="naql"><p>«يُعلم أن مسائل التكفير والتفسيق هي من مسائل الأسماء والأحكام، التي يتعلق بها الوعد والوعيد في الدار الآخرة، وتتعلق بها الموالاة والمعاداة والقتل والعصمة وغير ذلك في الدار الدنيا؛ فإن الله سبحانه أوجب الجنة للمؤمنين، وحرّم الجنة على الكافرين، وهذا من الأحكام الكلية في كل وقت ومكان».</p><span class="who">ابن تيمية</span></blockquote>
+<div class="cmp">
+  <div class="cap">ما يتعلق بمسائل التكفير والتفسيق</div>
+  <div class="r h"><div class="k">الدار</div><div>الآخرة</div><div>الدنيا</div></div>
+  <div class="r"><div class="k">الأحكام</div><div>الوعد والوعيد: الجنة للمؤمنين محرّمة على الكافرين.</div><div>الموالاة والمعاداة، والقتل والعصمة، وغير ذلك.</div></div>
+</div>
+<p>البعض يقول لك: ماذا ستستفيد لما تقول: هذا كافر وهذا مسلم؟ ماذا استفدت لما تكلمت عن الحاكم بغير ما أنزل الله؟ ويبقى عندك مسلمًا وتثبت له الإسلام! — شيخ الإسلام يقول لك: هذه أحكام تتعلق بالموالاة والمعاداة والقتل والعصمة؛ <strong>المسألة مسألة أحكام</strong>: إذا كان كافرًا فله أحكام. ولذلك يقول أيضًا:</p>
+<blockquote class="naql"><p>«فإن الخطأ في اسم الإيمان ليس كالخطأ في اسم مُحدَث، ولا كالخطأ في غيره من الأسماء؛ إذ كانت أحكام الدنيا والآخرة متعلقة باسم الإيمان والإسلام والكفر والنفاق».</p><span class="who">ابن تيمية</span></blockquote>
+<blockquote class="naql"><p>«وكلام الناس في هذا الاسم وفي مسماه كثير؛ لأنه قطب الدين الذي يدور عليه، وليس في القرآن اسمٌ عُلّق به السعادة والشقاء والمدح والذم والثواب والعقاب أعظم من اسم الإيمان والكفر؛ ولهذا سُمّي هذا الأصل: مسائل الأسماء والأحكام».</p><span class="who">ابن تيمية</span></blockquote>
+<div class="quiz" data-q="q35-3"></div>
+
+<h3 id="s35-f">ابن رجب: أول اختلاف وقع في الأمة</h3>
+<p>ويقول الإمام <span class="sem-name sem-scholar">ابن رجب</span> رحمه الله في «جامع العلوم والحكم» — وهو كتاب مهم جدًا، شرح فيه الأربعين وزاد عليها عشرة أحاديث:</p>
+<blockquote class="naql"><p>«وهذه المسائل — أعني مسائل الإسلام والإيمان والكفر والنفاق — مسائل عظيمة جدًا؛ فإن الله عز وجل علّق بهذه الأسماء السعادة والشقاوة واستحقاق الجنة والنار. والاختلاف في مسمياتها أول اختلاف وقع في هذه الأمة».</p><span class="who">ابن رجب — جامع العلوم والحكم</span></blockquote>
+<p>أول ما بدأ يحصل الجهل بهذه الأسماء بدأ الخلل؛ فخرج الخوارج يتكلمون عن الإيمان بشكل، وبدأت المرجئة تتكلم عن الإيمان بشكل آخر، فقام أهل السنة كالليوث الضراغم يؤصّلون ويثبتون ويستنبطون ويدوّنون حتى ردّوا هذا الزيغ. لكن مع الأسف، مرّ زمن طويل وهذه الأسماء مخلوطة، بل خرج <strong>المذهب التلفيقي</strong> الذي حكيته لك في أول سلسلة «العروة الوثقى»: يوفّق بين الأسماء الغربية المحدثة وبين الأسماء الشرعية، فأُشكل علينا سبيل الإسلام.</p>
+<div class="warn">مجرد أن أقول لك: «أنت تكفيري» صار كفيلًا بأن لا يسمع لك أحد — مع أني لو قلت لك: «هذا غير مصلٍّ» قد تغضب! حتى صارت تُطبع كتب عنوانها «التكفير» — والتكفير حكم شرعي، واسم «الكافر» من الأسماء الشرعية. صحيح أن هناك من عنده غلو كالخوارج، لكن العنوان الصحيح «<strong>الغلو في التكفير</strong>» أو «أخطاء في التكفير»، لا «التكفير» نفسه؛ فالأصل ثابت. كما لا تكتب عن أخطاء الناس في الصلاة: «فتنة الصلاة»!</div>
+<div class="quiz" data-q="q35-4"></div>
+
+<h3 id="s35-g">قاعدة ابن القيم: استبانة السبيلين</h3>
+<p>اسمع ماذا يقول الإمام <span class="sem-name sem-scholar">ابن القيم</span> رحمه الله في أن الإنسان إذا لم يعرف هذه الأسماء ومسمياتها ومدلولاتها بالتفصيل سقط في الجهالة على قدر عدم معرفته. يقول في كتابه «الفوائد» — كلام كسلاسل الذهب، وهو يتكلم عن التفاصيل التي لا تُفهم إلا مفصّلة:</p>
+<blockquote class="naql"><p>«قاعدة جليلة: قال الله تعالى: <span class="sem-aya">﴿وَكَذَٰلِكَ نُفَصِّلُ الْآيَاتِ وَلِتَسْتَبِينَ سَبِيلُ الْمُجْرِمِينَ﴾</span>، وقال: <span class="sem-aya">﴿وَمَن يُشَاقِقِ الرَّسُولَ مِن بَعْدِ مَا تَبَيَّنَ لَهُ الْهُدَىٰ وَيَتَّبِعْ غَيْرَ سَبِيلِ الْمُؤْمِنِينَ نُوَلِّهِ مَا تَوَلَّىٰ﴾</span>. والله تعالى قد بيّن في كتابه سبيل المؤمنين مفصّلة، وسبيل المجرمين مفصّلة، وعاقبة هؤلاء مفصّلة، وعاقبة هؤلاء مفصّلة، وأعمال هؤلاء وأعمال هؤلاء، وأولياء هؤلاء وأولياء هؤلاء، وخذلانه لهؤلاء وتوفيقه لهؤلاء، والأسباب التي وفّق بها هؤلاء والأسباب التي خذل بها هؤلاء؛ وجلّى سبحانه الأمرين في كتابه وكشفهما وأوضحهما وبيّنهما غاية البيان، حتى شاهدتهما البصائر كمشاهدة الأبصار للضياء والظلام».</p><span class="who">ابن القيم — الفوائد</span></blockquote>
+<div class="evid">
+<div class="er"><div class="el">الدليل</div><div class="ev"><span class="sem-aya">﴿وَكَذَٰلِكَ نُفَصِّلُ الْآيَاتِ وَلِتَسْتَبِينَ سَبِيلُ الْمُجْرِمِينَ﴾</span> [الأنعام: 55]، و<span class="sem-aya">﴿وَيَتَّبِعْ غَيْرَ سَبِيلِ الْمُؤْمِنِينَ﴾</span> [النساء: 115].</div></div>
+<div class="er"><div class="el">وجه الدلالة</div><div class="ev">بيّن الله السبيلين — بأعمال أهلهما وأوليائهم وعواقبهم وأسباب التوفيق والخذلان — مفصّلين، حتى شاهدتهما البصائر كمشاهدة الأبصار للضياء والظلام.</div></div>
+</div>
+<blockquote class="naql"><p>«فالعالمون بالله وبكتابه ودينه عرفوا سبيل المؤمنين معرفة تفصيلية، وسبيل المجرمين معرفة تفصيلية، فاستبانت لهم السبيلان كما يستبين للسالك الطريقُ الموصل إلى مقصوده والطريقُ الموصل إلى الهلكة؛ فهؤلاء أعلم الخلق، وأنفعهم للناس، وأنصحهم لهم، وهم الأدلاء الهداة».</p><span class="who">ابن القيم — الفوائد</span></blockquote>
+<div class="quiz" data-q="q35-5"></div>
+
+<h3 id="s35-h">الصحابة ومعرفة الضد، وأثر عمر</h3>
+<blockquote class="naql"><p>«وبذلك برز الصحابة على جميع من أتى بعدهم إلى يوم القيامة؛ فإنهم نشؤوا في سبيل الضلال والكفر والشرك والسبل الموصلة إلى الهلاك وعرفوها مفصّلة، ثم جاءهم الرسول ﷺ فأخرجهم من تلك الظلمات إلى سبيل الهدى وصراط الله المستقيم، فخرجوا من الظلمة الشديدة إلى النور التام، ومن الشرك إلى التوحيد، ومن الجهل إلى العلم، ومن الغي إلى الرشاد، ومن الظلم إلى العدل، ومن الحيرة والعمى إلى الهدى والبصائر؛ فعرفوا مقدار ما نالوه وظفروا به، ومقدار ما كانوا فيه؛ فإن الضد يُظهر حسنَه الضدُّ، وإنما تتبين الأشياء بأضدادها».</p><span class="who">ابن القيم — الفوائد</span></blockquote>
+<p>لما أخرجهم ربنا من الظلمات وأمسكوا النور قالوا: يا الله، كنا في ظلمة شديدة! كانوا عارفين سبيل الضلالة التي نشؤوا فيها رضي الله عنهم، فعرفوا عظمة الإسلام.</p>
+<blockquote class="naql"><p>«فازدادوا رغبةً ومحبةً فيما انتقلوا إليه، ونفرةً وبغضًا لما انتقلوا عنه، وكانوا أحب الناس في التوحيد والإيمان والإسلام، وأبغض الناس في ضده، عالمين بالسبيل على التفصيل. وأما من جاء بعد الصحابة فمنهم من نشأ في الإسلام غير عالم تفصيلَ ضده، فالتبس عليه بعض تفاصيل سبيل المؤمنين بسبيل المجرمين؛ فإن اللبس إنما يقع إذا ضعف العلم بالسبيلين أو أحدهما، كما قال عمر بن الخطاب رضي الله عنه: <strong>إنما تُنقض عرى الإسلام عروةً عروة إذا نشأ في الإسلام من لم يعرف الجاهلية</strong>؛ وهذا من كمال علم عمر رضي الله عنه».</p><span class="who">ابن القيم — الفوائد</span></blockquote>
+<div class="chain">
+  <div class="c"><b>السبب</b>نشأ في الإسلام غير عالم تفصيلَ ضدّه.</div>
+  <div class="ar">↓</div>
+  <div class="c"><b>النتيجة</b>التبس عليه بعض تفاصيل سبيل المؤمنين بسبيل المجرمين؛ فاللبس يقع إذا ضعف العلم بالسبيلين أو أحدهما.</div>
+  <div class="ar">↓</div>
+  <div class="c"><b>المخرج</b>تُنقض عرى الإسلام عروة عروة — كما قال <span class="sem-name sem-sahabi">عمر</span>.</div>
+</div>
+<blockquote class="naql"><p>«فمن لم يعرف سبيل المجرمين ولم تستبن له أوشك أن يظن في بعض سبيلهم أنها من سبيل المؤمنين، كما وقع في هذه الأمة من أمور كثيرة في باب الاعتقاد والعلم والعمل، هي من سبيل المجرمين والكفار وأعداء الرسل، أدخلها من لم يعرف أنها من سبيلهم في سبيل المؤمنين، ودعا إليها، وكفّر من خالفها، واستحلّ منه ما حرّمه الله ورسوله، كما وقع لأكثر أهل البدع من الجهمية والقدرية والخوارج والروافض وأشباههم ممن ابتدع بدعة ودعا إليها وكفّر من خالفها».</p><span class="who">ابن القيم — الفوائد</span></blockquote>
+<div class="quiz" data-q="q35-6"></div>
+
+<h3 id="s35-i">الناس في هذا الموضع أربع فرق</h3>
+<p>ثم قال رحمه الله: <strong>«والناس في هذا الموضع أربع فرق»</strong>:</p>
+<div class="tree">
+  <div class="lab-org">النوع</div>
+  <span class="root">الناس أمام السبيلين</span>
+  <div class="kids">
+    <div class="kid"><b>فرقة عميت عن السبيلين</b> — من أشباه الأنعام، «وهؤلاء بسبيل المجرمين أحضر ولها أسلك»: لا يعرف سبيل الكفار ولا سبيل المؤمنين، فيمشي وراء أكثر الناس — وهم ماشون في سبيل المجرمين. وهذا ما يسميه العلماء <strong>الإعراض عن الدين</strong>: لا يتعلمه ولا يدرسه، وهو من نواقض الإسلام.</div>
+    <div class="kid"><b>فرقة صرفت عنايتها إلى معرفة سبيل المؤمنين دون ضدها</b> — تعرف ما يجب عليك وما يلزمك، ولا تعرف ما تقوله الفرق والكفار في الشرك؛ فهي تعرف جزءًا وتجهل الآخر أو تعرفه مجملًا. وهذا — مع الأسف — حال كثير من الدعوة.</div>
+    <div class="kid"><b>فرقة عرفت سبيل الشر والبدع والكفر مفصّلة، وسبيل المؤمنين مجملة.</b></div>
+    <div class="kid"><b>فرقة — وهي الأولى — استبان لها سبيل المؤمنين وسبيل المجرمين على التفصيل علمًا وعملًا</b> — «وهؤلاء أعلم الخلق».</div>
+  </div>
+</div>
+<p>عرفت الفرق؟ فلا تقل لي: لماذا تحرّف الكلام هكذا؟ لماذا تكلمني في هذا؟ لا بد أن تعرف الأسماء التي سمّاها الله، والأحكام التي تتعلق بها، <strong>حتى تدرس سبيل المؤمنين تفصيلًا</strong>؛ لأنك لن تصل وصولًا كاملًا إلا إذا درسته دراسة تفصيلية، وعلى قدر الإجمال يكون العطب في السير في هذا الطريق.</p>
+<div class="quiz" data-q="q35-7"></div>
+
+<h3 id="s35-j">من الواقع: حين يُجهل سبيل المجرمين</h3>
+<p>هل تعرفون لماذا نفرّط اليوم في أحكام الدين؟ ولماذا يمكن أن يخرج واحد ينبح أصول الدين فيقول: «الزواج المدني»، ولا يوجد في دساتير الأمم كذا… ويقول الكلام على الهواء، ثم يقابله المتكلم باحترام: «إزيك يا أستاذ عمرو»؟ لماذا يحترمه؟ لأنه <strong>لا يعرف سبيل الله مفصّلًا</strong>؛ فسقط في بُنيّات الطريق، وهان عليه الدين؛ فصارت المسألة عنده: «المهم ننجز الأمر، نأخذ المكتسبات» — مكتسبات وأنت تضيّع الشريعة!</p>
+<h4>التداخل الشيعي و«السياحة»</h4>
+<p>ثم لما يحصل التداخل مع الشيعة: يقولون إن الأموال يدفعها هؤلاء… وعِرض النبي ﷺ؟! — لأنه لا يعرف سبيل المؤمنين مفصّلًا ولا سبيل الكافرين مفصّلًا، فيقول: لا مانع، دعهم يدخلوا. لما وجدناها في الأول ظنّها دعوة وقفنا بالمدافع، ولما وجدناها «سياحة» قالوا: السياحة حلال! وسياحتهم هي <strong>المتعة</strong>؛ ونكاح المتعة زنا: هي زانية عاهرة أصلًا لو نكحتها متعة. ويقولون: هذا دين — دين الاثني عشرية الرافضة. فالشاب الغلبان الذي لا يعرف شيئًا يقول: طيب أتزوجها شهرًا أو ساعة! ودولتهم كلها تُخرج أموال النفط على الدعوة؛ فيأخذ المال ويأخذ حظه. هكذا ضلّوا حين دخلوا إلى سبيل الشرك.</p>
+
+<h3 id="s35-k">الحدّ الشرعي قاضٍ على اللغة</h3>
+<p>ولذلك يقول شيخ الإسلام <span class="sem-name sem-scholar">ابن تيمية</span> رحمه الله:</p>
+<blockquote class="naql"><p>«فالنبي ﷺ قد بيّن المراد بهذه الألفاظ بيانًا لا يُحتاج معه إلى الاستدلال على ذلك بالاشتقاق وشواهد استعمال العرب ونحو ذلك؛ فلهذا يجب الرجوع في مسميات هذه الأسماء إلى بيان الله ورسوله فإنه شافٍ كافٍ… فمعاني هذه الأسماء معلومة من حيث الجملة للخاصة والعامة، بل كل من تأمل ما تقوله الخوارج والمرجئة في معنى الإيمان علم بالاضطرار أنه مخالف للرسول… ومن قال في القرآن برأيه فليتبوأ مقعده من النار».</p><span class="who">ابن تيمية</span></blockquote>
+<p>الأسماء التي وردت في القرآن ليست بالضرورة هي المعاني المتعلقة باللغة العربية — وهذا كلام لعلنا نفصّله في موضع آخر. انظر مثلًا:</p>
+<div class="story"><div class="st">«انزل فاجدح لنا»</div>
+<p>كان النبي ﷺ صائمًا، فقال لصحابي: «انزل فاجدح لنا» — يريد الإفطار — والدنيا لا تزال منوّرة، فقال: يا رسول الله، الشمس! قال: «انزل فاجدح لنا»، قال: يا رسول الله، الشمس! فقال: <strong>«إذا أقبل الليل من ها هنا، وأدبر النهار من ها هنا، وغربت الشمس، فقد أفطر الصائم»</strong>.</p></div>
+<p>هذا وقت شرعي، لا «الغروب» الذي تعرفه أنت. وكذلك لما صلّى ﷺ الفجر في أول وقته قال بعضهم: هل أذّن أم ماذا؟ لأنهم لم يكونوا يعرفون وقت الفجر الشرعي. <strong>فالشريعة قاضية: إذا جاء الاسم بالشريعة كان هو القاضي على غيره من المعاني.</strong></p>
+<div class="cmp">
+  <div class="cap">الاسم بين اللغة والشرع</div>
+  <div class="r h"><div class="k">المعيار</div><div>المعنى اللغوي/المعهود</div><div>الحد الشرعي</div></div>
+  <div class="r"><div class="k">مثال الفطر</div><div>الغروب الذي تعرفه أنت؛ والدنيا لا تزال منوّرة.</div><div>«إذا أقبل الليل من ها هنا وأدبر النهار من ها هنا وغربت الشمس فقد أفطر الصائم».</div></div>
+  <div class="r"><div class="k">المرجع</div><div>الاشتقاق وشواهد استعمال العرب.</div><div>بيان الله ورسوله، فإنه شافٍ كافٍ — وهو القاضي على غيره.</div></div>
+</div>
+<div class="quiz" data-q="q35-8"></div>
+
+<p>إذن أيها الإخوة: لكي تعرف سبيل المؤمنين لا بد أن تعرف هذه الأسماء على التفصيل، التي تدلك على سبيل المؤمنين وتفصّل سبيل الكافرين أيضًا. تقول لي: وماذا لما تعرف أن فلانًا كافر؟ أقول لك: أحكام كثيرة جدًا جدًا. ولن يُقال لك: لماذا لم تكفّر فلانًا إذا لم يأتِ الكفر البواح؛ بل يجب عليك أن تكفّره <strong>إذا صنع الكفر البواح</strong>، وكذلك أن <strong>تثبت إسلام المسلم إذا أسلم</strong>. لا بد للإنسان أن يعقل هذا.</p>
+
+<div class="takeaway"><div class="tt">خلاصة المجلس الخامس والثلاثين <small>(إضافة تحريرية)</small></div>
+<div class="score" data-s="s35"></div>
+<div class="tk-i">هناك كفر للأعيان وكفر مطلق لا يخص أحدًا من أفراده؛ ولمعرفة أيهما في المسألة قُسّمت المسائل إلى ظاهرة وخفية.</div>
+<div class="tk-i">الأسماء والأحكام من أكبر أصول الإسلام: كل اسم يحمل حكمًا يلزمك؛ والأسماء الشرعية توقيفية (<span class="sem-name sem-scholar">ابن حزم</span>)، وإدخال الكافر في الإسلام كإخراج المسلم منه عظيم (<span class="sem-name sem-scholar">الجويني</span>).</div>
+<div class="tk-i">مسائل التكفير والتفسيق يتعلق بها الوعد والوعيد في الآخرة والموالاة والمعاداة والعصمة في الدنيا (<span class="sem-name sem-scholar">ابن تيمية</span>)، والاختلاف في مسمياتها أول اختلاف في الأمة (<span class="sem-name sem-scholar">ابن رجب</span>).</div>
+<div class="tk-i">قاعدة <span class="sem-name sem-scholar">ابن القيم</span>: بيّن الله السبيلين مفصّلين، والصحابة برزوا لأنهم عرفوا الضد؛ و«اللبس إنما يقع إذا ضعف العلم بالسبيلين أو أحدهما»، و«تُنقض عرى الإسلام… إذا نشأ من لم يعرف الجاهلية».</div>
+<div class="tk-i">الناس أربع فرق: عميٌ عن السبيلين، ومن عرف سبيل المؤمنين دون ضده، ومن عرف سبيل الشر مفصلًا والمؤمنين مجملًا، ومن استبان له السبيلان تفصيلًا — وهم أعلم الخلق.</div>
+<div class="tk-i">الحد الشرعي للاسم قاضٍ على معناه اللغوي، كما في وقت الفطر الشرعي.</div>
+</div>
+<div class="next" id="s35-l"><b>الخيط التالي</b>ما الأحكام التي تفترق بين المسلم والكافر — في الحكم والولاية والنكاح والميراث والدماء والجنائز والقضاء والولاء والذبائح — جوابًا عن سؤال: «هتستفيد إيه؟».</div>
+
+</section>
+
+</div>
+<div id="cards"><h2>بطاقات المراجعة — المحاضرة 35</h2><div class="score">تُراجَع بعد يومين من القراءة. الملف يضع كل بطاقة في رزمة أولويتها تحت «العروة الوثقى» بوسم السلسلة والمحاضرة ووسم الأولوية؛ وعند الاستيراد: نوع الملاحظة «أساسي» واترك خانة «وسم كل الملحوظات» فارغة.</div><div class="cstage"><div class="cbox" id="cbox"></div></div><div class="cnav"><button type="button" id="cprev">→ السابقة</button><span class="pos" id="cpos"></span><button type="button" id="cnext">التالية ←</button><button type="button" class="dl" id="cdl" >تحميل بطاقات المحاضرة (TSV)</button></div></div>
+</main>
+</div>
+<nav class="lnav"><a href="34.html">→ المحاضرة 34</a><a class="home" href="index.html">فهرس السلسلة</a><span class="off">المحاضرة 36 لم تُضف بعد</span></nav>
+<footer>العروة الوثقى — المحاضرة 35 · أُعدّ بمساعدة الذكاء الاصطناعي ويُرجى مراجعته</footer>
+<script>
+var ANKI_NAMES={"sahabi": ["النبي ﷺ", "رسول الله ﷺ", "الرسول ﷺ", "عمر بن الخطاب", "عمر"], "scholar": ["محمد بن عبد الوهاب", "ابن حزم", "الجويني", "أبو المعالي الجويني", "ابن تيمية", "ابن رجب", "ابن القيم"], "name": []};
+const CARDS_DATA=[{"id": "c733", "sectionId": "s35-a", "level": 1, "anchor": "في كلام أهل العلم عن التكفير: ما الفرق بين «كفر الأعيان» و«الكفر المطلق»؟", "pattern": "compare", "q": "في كلام أهل العلم عن التكفير: ما الفرق بين «كفر الأعيان» و«الكفر المطلق»؟", "a": "كفر الأعيان: يتناول الأشخاص أنفسهم، فلانًا وفلانًا. الكفر المطلق: لا يخص أحدًا من أفراده، وهو تعريف المطلق. والنوعان موجودان؛ ولمعرفة أيهما في المسألة قُسّمت المسائل إلى ظاهرة وخفية.", "blocks": [{"type": "cols", "parts": [{"s": "كفر", "e": "وفلانًا."}, {"s": "الكفر", "e": "المطلق."}]}, {"type": "alert", "s": "والنوعان", "e": "وخفية."}], "marks": [{"t": "focus", "w": "الفرق"}], "review": "", "src": "ان هناك كفر للاعيان نفسهم"}, {"id": "c734", "sectionId": "s35-a", "level": 2, "anchor": "ما «جناحا الطاغوت» اللذان قامت عليهما نصوص التكفير المنقولة؟", "pattern": "calm", "q": "ما «جناحا الطاغوت» اللذان قامت عليهما نصوص التكفير المنقولة؟", "a": "التشريع — التحريم والتحليل والتشريع للخلق — وعبادة غير الله.", "blocks": [{"type": "ans", "s": "التشريع", "e": "الله.", "core": true}], "marks": [{"t": "focus", "w": "جناحا الطاغوت"}], "review": "", "src": "التشريع التحريم والتحليل والتشريع للخلق وعباده غير الله"}, {"id": "c735", "sectionId": "s35-a", "level": 2, "anchor": "على أي أساس يقوم تقسيم المسائل إلى ظاهرة وخفية؟", "pattern": "calm", "q": "على أي أساس يقوم تقسيم المسائل إلى ظاهرة وخفية؟", "a": "على قدر البيان الذي جعله الله في شريعته: فمنها ما بيانه واضح جدًا للعامة والخاصة، ومنها ما يعرفه العلماء، ومنها ما يخفى على طائفة من الناس.", "blocks": [{"type": "ans", "s": "على", "e": "شريعته:", "core": true}, {"type": "ans", "s": "فمنها", "e": "الناس."}], "marks": [{"t": "focus", "w": "أساس"}], "review": "", "src": "انما يتكي على قدر البيان الذي جعله الله"}, {"id": "c736", "sectionId": "s35-a", "level": 2, "anchor": "لماذا يوصف وجود ظاهر وخافٍ في الدين بأنه من صلب الدين؟", "pattern": "calm", "q": "لماذا يوصف وجود ظاهر وخافٍ في الدين بأنه من صلب الدين؟", "a": "لأن الدين ليس على درجة واحدة، وهذا رحمة عظيمة من الله.", "blocks": [{"type": "ans", "s": "لأن", "e": "الله.", "core": true}], "marks": [{"t": "focus", "w": "من صلب الدين"}], "review": "", "src": "ان الدين ليس هو على درجه واحده"}, {"id": "c737", "sectionId": "s35-b", "level": 1, "anchor": "لماذا نشغل أنفسنا بأسماء الناس: مؤمن وكافر وفاسق ومنافق؟", "pattern": "calm", "q": "لماذا نشغل أنفسنا بأسماء الناس: مؤمن وكافر وفاسق ومنافق؟", "a": "لأن ذلك من أكبر أصول الإسلام؛ فكل اسم منها يحمل حكمًا أنت ملزم أن تقوم به في بعض المواضع.", "blocks": [{"type": "ans", "s": "لأن", "e": "الإسلام؛", "core": true}, {"type": "ans", "s": "فكل", "e": "المواضع."}], "marks": [{"t": "focus", "w": "لماذا"}], "review": "", "src": "لان ده من اكبر اصول الاسلام"}, {"id": "c738", "sectionId": "s35-b", "level": 4, "anchor": "ما الذي حصل لما لم تُفهم قضية الأسماء والأحكام جيدًا؟", "pattern": "method", "q": "ما الذي حصل لما لم تُفهم قضية الأسماء والأحكام جيدًا؟", "a": "صرنا نأخذ أي اسم من الغرب الكافر أو الملاحدة، ونعطي صاحبه أنه مسلم وليس بمسلم، ونرتب عليه أحكامًا إسلامية لا وجود لها فيه.", "blocks": [{"type": "err", "s": "صرنا", "e": "فيه.", "core": true}], "marks": [{"t": "focus", "w": "ما الذي حصل"}], "review": "", "src": "بقينا ناخد اي اسم من الغرب الكافر"}, {"id": "c739", "sectionId": "s35-c", "level": 2, "anchor": "ما القاعدة التي قررها ابن حزم في «الفصل» في تسمية الأشياء في الشريعة؟", "pattern": "calm", "q": "ما القاعدة التي قررها ابن حزم في «الفصل» في تسمية الأشياء في الشريعة؟", "a": "لا نسمي في الشريعة اسمًا إلا بأن يأمرنا الله بتسميته أو يبيحه لنا بالنص؛ لأنا لا ندري مراد الله منا إلا بوحي وارد من عنده.", "blocks": [{"type": "rule", "s": "لا", "e": "بالنص؛", "core": true}, {"type": "ans", "s": "لأنا", "e": "عنده."}], "marks": [{"t": "focus", "w": "القاعدة"}], "review": "", "src": "لا نسمي في الشريعه اسما الا بان يامرنا الله"}, {"id": "c740", "sectionId": "s35-c", "level": 3, "anchor": "استدل ابن حزم بقوله تعالى: ﴿إِنْ هِيَ إِلَّا أَسْمَاءٌ سَمَّيْتُمُوهَا أَنتُمْ وَآبَاؤُكُم مَّا أَنزَلَ اللَّهُ بِهَا مِن سُلْطَانٍ﴾. ما وجه الدلالة؟", "pattern": "quran", "q": "استدل ابن حزم بقوله تعالى: ﴿إِنْ هِيَ إِلَّا أَسْمَاءٌ سَمَّيْتُمُوهَا أَنتُمْ وَآبَاؤُكُم مَّا أَنزَلَ اللَّهُ بِهَا مِن سُلْطَانٍ﴾. ما وجه الدلالة؟", "a": "أن الله أنكر على من سمّى في الشريعة شيئًا بغير إذنه؛ فالأسماء الشرعية توقيفية.", "blocks": [{"type": "ans", "s": "أن", "e": "إذنه؛", "core": true}, {"type": "wajh", "s": "فالأسماء", "e": "توقيفية."}], "marks": [{"t": "focus", "w": "وجه الدلالة"}], "review": "", "src": "ان هي الا اسماء سميتموها انتم واباؤكم"}, {"id": "c741", "sectionId": "s35-c", "level": 3, "anchor": "قال تعالى: ﴿وَعَلَّمَ آدَمَ الْأَسْمَاءَ كُلَّهَا﴾. على ماذا استدل بها ابن حزم في باب الأسماء الشرعية؟", "pattern": "quran", "q": "قال تعالى: ﴿وَعَلَّمَ آدَمَ الْأَسْمَاءَ كُلَّهَا﴾. على ماذا استدل بها ابن حزم في باب الأسماء الشرعية؟", "a": "على أن الأسماء من تعليم الله وتوقيفه.", "blocks": [{"type": "ans", "s": "على", "e": "وتوقيفه.", "core": true}], "marks": [{"t": "focus", "w": "ابن حزم"}], "review": "", "src": "وقال وعلم ادم الاسماء كلها"}, {"id": "c742", "sectionId": "s35-c", "level": 2, "anchor": "ما النتيجة التي رتبها ابن حزم على توقيفية الأسماء في اسم «المؤمن»؟", "pattern": "calm", "q": "ما النتيجة التي رتبها ابن حزم على توقيفية الأسماء في اسم «المؤمن»؟", "a": "لا نسمي مؤمنًا إلا من سماه الله مؤمنًا، ولا نسقط الإيمان بعد وجوبه إلا عمّن أسقطه الله عنه.", "blocks": [{"type": "ans", "s": "لا", "e": "مؤمنًا،", "core": true}, {"type": "ans", "s": "ولا", "e": "عنه."}], "marks": [{"t": "focus", "w": "المؤمن"}], "review": "", "src": "فنحن لا نسمي مؤمنا الا من سماه الله مؤمنا"}, {"id": "c743", "sectionId": "s35-d", "level": 3, "anchor": "قال الجويني (إمام الحرمين) في خطر الخطأ في الاسم من الجهتين. ما الجهتان؟", "pattern": "compare", "q": "قال الجويني (إمام الحرمين) في خطر الخطأ في الاسم من الجهتين. ما الجهتان؟", "a": "إخراج المسلم من الإسلام بعد أن ثبت له: خطير وعظيم. إدخال الكافر في الإسلام ولم يثبت له ذلك: عظيم.", "blocks": [{"type": "cols", "parts": [{"s": "إخراج", "e": "وعظيم."}, {"s": "إدخال", "e": "عظيم."}]}], "marks": [{"t": "focus", "w": "الجهتان"}], "review": "", "src": "واخال الكافر في الاسلام ولم يثبت له ذلك عظيم"}, {"id": "c744", "sectionId": "s35-d", "level": 4, "anchor": "ما الذي يقع فيه من يسمّي الكافر مسلمًا؟", "pattern": "method", "q": "ما الذي يقع فيه من يسمّي الكافر مسلمًا؟", "a": "يسمّي الكفر إسلامًا؛ وبعض أهل العلم عدّ ذلك ناقضًا من نواقض الإسلام قد يكفر به صاحبه.", "blocks": [{"type": "err", "s": "يسمّي", "e": "إسلامًا؛", "core": true}, {"type": "alert", "s": "وبعض", "e": "صاحبه."}], "marks": [{"t": "focus", "w": "يسمّي الكافر مسلمًا"}], "review": "", "src": "لانه سمى الكفر اسلام"}, {"id": "c745", "sectionId": "s35-e", "level": 3, "anchor": "ما أول مسألة تنازعت فيها الأمة من الأصول الكبار، عند ابن تيمية؟", "pattern": "calm", "q": "ما أول مسألة تنازعت فيها الأمة من الأصول الكبار، عند ابن تيمية؟", "a": "مسألة الوعيد.", "blocks": [{"type": "ans", "s": "مسألة", "e": "الوعيد.", "core": true}], "marks": [{"t": "focus", "w": "أول مسألة"}], "review": "", "src": "اول مساله تنازعت فيها الامه من الاصول الكبار"}, {"id": "c746", "sectionId": "s35-e", "level": 1, "anchor": "عند ابن تيمية: ما الذي يتعلق بمسائل التكفير والتفسيق (مسائل الأسماء والأحكام) في الآخرة، وما الذي يتعلق بها في الدنيا؟", "pattern": "compare", "q": "عند ابن تيمية: ما الذي يتعلق بمسائل التكفير والتفسيق (مسائل الأسماء والأحكام) في الآخرة، وما الذي يتعلق بها في الدنيا؟", "a": "في الآخرة: الوعد والوعيد؛ فالله أوجب الجنة للمؤمنين وحرّمها على الكافرين. في الدنيا: الموالاة والمعاداة والقتل والعصمة وغير ذلك.", "blocks": [{"type": "cols", "parts": [{"s": "في", "e": "الكافرين."}, {"s": "في", "e": "ذلك."}]}], "marks": [{"t": "focus", "w": "في الآخرة"}], "review": "", "src": "ان مسائل التكفير والتفسيق هي من مسائل الاسماء والاحكام"}, {"id": "c747", "sectionId": "s35-e", "level": 4, "anchor": "يقول قائل: «ماذا ستستفيد لما تقول: هذا كافر وهذا مسلم؟». ما الجواب المأخوذ من كلام ابن تيمية؟", "pattern": "method", "q": "يقول قائل: «ماذا ستستفيد لما تقول: هذا كافر وهذا مسلم؟». ما الجواب المأخوذ من كلام ابن تيمية؟", "a": "المسألة مسألة أحكام: تتعلق بالاسم الموالاة والمعاداة والقتل والعصمة؛ فإذا كان كافرًا فله أحكام.", "blocks": [{"type": "ans", "s": "المسألة", "e": "أحكام.", "core": true}], "marks": [{"t": "focus", "w": "ماذا ستستفيد"}], "review": "", "src": "فالمساله مش مسائل دي مساله احكام"}, {"id": "c748", "sectionId": "s35-e", "level": 2, "anchor": "لماذا ليس الخطأ في اسم الإيمان كالخطأ في غيره من الأسماء، عند ابن تيمية؟", "pattern": "calm", "q": "لماذا ليس الخطأ في اسم الإيمان كالخطأ في غيره من الأسماء، عند ابن تيمية؟", "a": "لأن أحكام الدنيا والآخرة متعلقة باسم الإيمان والإسلام والكفر والنفاق.", "blocks": [{"type": "ans", "s": "لأن", "e": "والنفاق.", "core": true}], "marks": [{"t": "focus", "w": "لماذا"}], "review": "", "src": "فان الخطا في اسم الايمان ليس كالخطا"}, {"id": "c749", "sectionId": "s35-e", "level": 2, "anchor": "لماذا سُمّي هذا الأصل «مسائل الأسماء والأحكام»، عند ابن تيمية؟", "pattern": "calm", "q": "لماذا سُمّي هذا الأصل «مسائل الأسماء والأحكام»، عند ابن تيمية؟", "a": "لأن اسم الإيمان والكفر أعظم اسم في القرآن عُلّق به: السعادة والشقاء، والمدح والذم، والثواب والعقاب.", "blocks": [{"type": "ans", "s": "لأن", "e": "به:", "core": true}, {"type": "ans", "s": "السعادة", "e": "والعقاب."}], "marks": [{"t": "focus", "w": "لماذا سُمّي"}], "review": "", "src": "لذا سمي هذا الاصل مسائل الاسماء والاحكام"}, {"id": "c750", "sectionId": "s35-f", "level": 2, "anchor": "قال ابن رجب في «جامع العلوم والحكم»: مسائل الإسلام والإيمان والكفر والنفاق مسائل عظيمة جدًا. لماذا؟", "pattern": "calm", "q": "قال ابن رجب في «جامع العلوم والحكم»: مسائل الإسلام والإيمان والكفر والنفاق مسائل عظيمة جدًا. لماذا؟", "a": "لأن الله علّق بهذه الأسماء السعادة والشقاوة واستحقاق الجنة والنار.", "blocks": [{"type": "ans", "s": "لأن", "e": "والنار.", "core": true}], "marks": [{"t": "focus", "w": "لماذا"}], "review": "", "src": "فان الله عز وجل علق بهذه الاسماء السعاده"}, {"id": "c751", "sectionId": "s35-f", "level": 3, "anchor": "ما أول اختلاف وقع في هذه الأمة، عند ابن رجب؟", "pattern": "calm", "q": "ما أول اختلاف وقع في هذه الأمة، عند ابن رجب؟", "a": "الاختلاف في مسميات الإسلام والإيمان والكفر والنفاق. فخرج الخوارج والمرجئة يتكلمون في الإيمان، وقام أهل السنة يؤصّلون حتى ردّوا الزيغ.", "blocks": [{"type": "ans", "s": "الاختلاف", "e": "والنفاق.", "core": true}, {"type": "alert", "s": "فخرج", "e": "الزيغ."}], "marks": [{"t": "focus", "w": "أول اختلاف"}], "review": "", "src": "والاختلاف في مسمياتها اول اختلاف وقع في هذه الامه"}, {"id": "c752", "sectionId": "s35-f", "level": 4, "anchor": "ما «المذهب التلفيقي» الذي أشكل بسببه سبيل الإسلام بعد اختلاط الأسماء؟", "pattern": "calm", "q": "ما «المذهب التلفيقي» الذي أشكل بسببه سبيل الإسلام بعد اختلاط الأسماء؟", "a": "مذهب يوفّق بين الأسماء الغربية المحدثة وبين الأسماء الشرعية.", "blocks": [{"type": "def", "s": "مذهب", "e": "الشرعية.", "core": true}], "marks": [{"t": "focus", "w": "المذهب التلفيقي"}], "review": "", "src": "خرج البعض عشان يقول يوفق بين الا الاسماء الغربيه"}, {"id": "c753", "sectionId": "s35-f", "level": 4, "anchor": "صدرت كتب عنوانها «التكفير» تحذّر من الحكم بالكفر. ما الخطأ في هذا العنوان؟", "pattern": "method", "q": "صدرت كتب عنوانها «التكفير» تحذّر من الحكم بالكفر. ما الخطأ في هذا العنوان؟", "a": "أن التكفير حكم شرعي واسم «الكافر» من الأسماء الشرعية، فالأصل ثابت؛ والصواب «الغلو في التكفير» أو «أخطاء في التكفير»، كما لا تُسمّى أخطاء المصلين «فتنة الصلاة».", "blocks": [{"type": "err", "s": "أن", "e": "ثابت؛", "core": true}, {"type": "ans", "s": "والصواب", "e": "الصلاة»."}], "marks": [{"t": "focus", "w": "الخطأ"}], "review": "", "src": "اقول الغلو في التكفير يبقى الاصل ثابت"}, {"id": "c754", "sectionId": "s35-g", "level": 3, "anchor": "استهل ابن القيم «قاعدة جليلة» في «الفوائد» بقوله تعالى: ﴿وَكَذَٰلِكَ نُفَصِّلُ الْآيَاتِ وَلِتَسْتَبِينَ سَبِيلُ الْمُجْرِمِينَ﴾. ما الذي قرره بها؟", "pattern": "quran", "q": "استهل ابن القيم «قاعدة جليلة» في «الفوائد» بقوله تعالى: ﴿وَكَذَٰلِكَ نُفَصِّلُ الْآيَاتِ وَلِتَسْتَبِينَ سَبِيلُ الْمُجْرِمِينَ﴾. ما الذي قرره بها؟", "a": "أن الله بيّن في كتابه سبيل المؤمنين مفصّلة وسبيل المجرمين مفصّلة، بأعمال هؤلاء وهؤلاء، وأوليائهم، وعواقبهم، وتوفيقه لهؤلاء وخذلانه لهؤلاء وأسبابهما، حتى شاهدتهما البصائر كمشاهدة الأبصار للضياء والظلام.", "blocks": [{"type": "ans", "s": "أن", "e": "مفصّلة،", "core": true}, {"type": "wajh", "s": "بأعمال", "e": "والظلام."}], "marks": [{"t": "focus", "w": "قاعدة جليلة"}], "review": "", "src": "وكذلك نفصل الايات ولتبين سبيل المجرمين"}, {"id": "c755", "sectionId": "s35-g", "level": 3, "anchor": "قال تعالى: ﴿وَمَن يُشَاقِقِ الرَّسُولَ مِن بَعْدِ مَا تَبَيَّنَ لَهُ الْهُدَىٰ وَيَتَّبِعْ غَيْرَ سَبِيلِ الْمُؤْمِنِينَ نُوَلِّهِ مَا تَوَلَّىٰ﴾. لماذا قرنها ابن القيم بآية استبانة سبيل المجرمين؟", "pattern": "quran", "q": "قال تعالى: ﴿وَمَن يُشَاقِقِ الرَّسُولَ مِن بَعْدِ مَا تَبَيَّنَ لَهُ الْهُدَىٰ وَيَتَّبِعْ غَيْرَ سَبِيلِ الْمُؤْمِنِينَ نُوَلِّهِ مَا تَوَلَّىٰ﴾. لماذا قرنها ابن القيم بآية استبانة سبيل المجرمين؟", "a": "لبيان أن هناك سبيلين متمايزين: سبيل المؤمنين وسبيل المجرمين، وكلاهما مفصّل في الكتاب.", "blocks": [{"type": "ans", "s": "لبيان", "e": "الكتاب.", "core": true}], "marks": [{"t": "focus", "w": "قرنها"}], "review": "", "src": "ويتبع غير سبيل المؤمنين نوله ما تولى"}, {"id": "c756", "sectionId": "s35-g", "level": 2, "anchor": "من «أعلم الخلق وأنفعهم للناس وأنصحهم لهم» في قاعدة ابن القيم؟", "pattern": "calm", "q": "من «أعلم الخلق وأنفعهم للناس وأنصحهم لهم» في قاعدة ابن القيم؟", "a": "العالمون بالله وكتابه ودينه، الذين عرفوا سبيل المؤمنين وسبيل المجرمين معرفة تفصيلية، فاستبانت لهم كما يستبين للسالك الطريق الموصل إلى مقصوده والموصل إلى الهلكة.", "blocks": [{"type": "ans", "s": "العالمون", "e": "تفصيلية،", "core": true}, {"type": "ans", "s": "فاستبانت", "e": "الهلكة."}], "marks": [{"t": "focus", "w": "أعلم الخلق"}], "review": "", "src": "فالعالمون بالله وبكتابه ودينه عرفوا سبيل المؤمنين"}, {"id": "c757", "sectionId": "s35-h", "level": 5, "anchor": "لماذا برز الصحابة على جميع من أتى بعدهم، عند ابن القيم؟", "pattern": "calm", "q": "لماذا برز الصحابة على جميع من أتى بعدهم، عند ابن القيم؟", "a": "لأنهم نشؤوا في سبيل الضلال والكفر والشرك وعرفوه مفصّلًا، ثم أخرجهم الرسول ﷺ إلى النور التام، فعرفوا مقدار ما نالوه ومقدار ما كانوا فيه.", "blocks": [{"type": "ans", "s": "لأنهم", "e": "مفصّلًا،", "core": true}, {"type": "ans", "s": "ثم", "e": "فيه."}], "marks": [{"t": "focus", "w": "برز الصحابة"}], "review": "", "src": "وبذلك برز الصحابه على جميع من اتى بعدهم"}, {"id": "c758", "sectionId": "s35-h", "level": 2, "anchor": "ما القاعدة التي علّل بها ابن القيم عِظَم معرفة الصحابة بالإسلام بعد الجاهلية؟", "pattern": "calm", "q": "ما القاعدة التي علّل بها ابن القيم عِظَم معرفة الصحابة بالإسلام بعد الجاهلية؟", "a": "«الضد يُظهر حسنَه الضدُّ، وإنما تتبين الأشياء بأضدادها».", "blocks": [{"type": "rule", "s": "«الضد", "e": "بأضدادها».", "core": true}], "marks": [{"t": "focus", "w": "القاعدة"}], "review": "", "src": "فان الضد يظهر من الضد"}, {"id": "c759", "sectionId": "s35-h", "level": 3, "anchor": "ما الذي ترتب على معرفة الصحابة بالسبيلين تفصيلًا، عند ابن القيم؟", "pattern": "calm", "q": "ما الذي ترتب على معرفة الصحابة بالسبيلين تفصيلًا، عند ابن القيم؟", "a": "ازدادوا رغبة ومحبة فيما انتقلوا إليه، ونفرة وبغضًا لما انتقلوا عنه؛ فكانوا أحب الناس في التوحيد والإيمان، وأبغض الناس في ضده.", "blocks": [{"type": "ans", "s": "ازدادوا", "e": "عنه؛", "core": true}, {"type": "ans", "s": "فكانوا", "e": "ضده."}], "marks": [{"t": "focus", "w": "ترتب"}], "review": "", "src": "فازدادوا رغبه و فيما فيما انتقلوا اليه"}, {"id": "c760", "sectionId": "s35-h", "level": 2, "anchor": "متى يقع اللبس بين سبيل المؤمنين وسبيل المجرمين، عند ابن القيم؟", "pattern": "calm", "q": "متى يقع اللبس بين سبيل المؤمنين وسبيل المجرمين، عند ابن القيم؟", "a": "إنما يقع اللبس إذا ضعف العلم بالسبيلين أو أحدهما. كمن نشأ في الإسلام غير عالم تفصيلَ ضده.", "blocks": [{"type": "rule", "s": "إنما", "e": "أحدهما.", "core": true}, {"type": "ans", "s": "كمن", "e": "ضده."}], "marks": [{"t": "focus", "w": "متى يقع اللبس"}], "review": "", "src": "فان اللبس انما يقع اذا ضعف العلم بالسبيلين"}, {"id": "c761", "sectionId": "s35-h", "level": 5, "anchor": "ما قول عمر بن الخطاب الذي استشهد به ابن القيم في نقض عرى الإسلام؟", "pattern": "calm", "q": "ما قول عمر بن الخطاب الذي استشهد به ابن القيم في نقض عرى الإسلام؟", "a": "«إنما تُنقض عرى الإسلام عروةً عروة إذا نشأ في الإسلام من لم يعرف الجاهلية». قال ابن القيم: وهذا من كمال علم عمر رضي الله عنه.", "blocks": [{"type": "ans", "s": "«إنما", "e": "الجاهلية».", "core": true}, {"type": "alert", "s": "قال", "e": "عنه."}], "marks": [{"t": "focus", "w": "عرى الإسلام"}], "review": "", "src": "انما تنقذ عرى الاسلام عروه عروه"}, {"id": "c762", "sectionId": "s35-h", "level": 4, "anchor": "ما عاقبة من لم يعرف سبيل المجرمين ولم تستبن له، عند ابن القيم؟", "pattern": "method", "q": "ما عاقبة من لم يعرف سبيل المجرمين ولم تستبن له، عند ابن القيم؟", "a": "أوشك أن يظن في بعض سبيلهم أنها من سبيل المؤمنين، فيدخلها في سبيلهم ويدعو إليها ويكفّر من خالفها، كما وقع لأكثر أهل البدع من الجهمية والقدرية والخوارج والروافض.", "blocks": [{"type": "err", "s": "أوشك", "e": "خالفها،", "core": true}, {"type": "ans", "s": "كما", "e": "والروافض."}], "marks": [{"t": "focus", "w": "عاقبة"}], "review": "", "src": "فمن لم يعرف سبيل المجرمين ولم ولم ولم تستدل له"}, {"id": "c763", "sectionId": "s35-i", "level": 1, "anchor": "قال ابن القيم: «والناس في هذا الموضع أربع فرق». ما هي؟", "pattern": "method", "q": "قال ابن القيم: «والناس في هذا الموضع أربع فرق». ما هي؟", "a": "فرقة عميت عن السبيلين، من أشباه الأنعام. فرقة صرفت عنايتها إلى معرفة سبيل المؤمنين دون ضدها. فرقة عرفت سبيل الشر والبدع والكفر مفصّلة وسبيل المؤمنين مجملة. فرقة — وهي الأولى — استبان لها السبيلان على التفصيل علمًا وعملًا، وهم أعلم الخلق.", "blocks": [{"type": "steps", "seq": false, "items": [{"s": "فرقة", "e": "الأنعام."}, {"s": "فرقة", "e": "ضدها."}, {"s": "فرقة", "e": "مجملة."}, {"s": "فرقة", "e": "الخلق."}]}], "marks": [{"t": "focus", "w": "أربع فرق"}], "review": "", "src": "ثم قال رحمه الله الناس في هذا الموضع اربع فرق"}, {"id": "c764", "sectionId": "s35-i", "level": 3, "anchor": "الفرقة التي عميت عن السبيلين من أشباه الأنعام: إلى أي السبيلين هي أقرب، عند ابن القيم؟", "pattern": "calm", "q": "الفرقة التي عميت عن السبيلين من أشباه الأنعام: إلى أي السبيلين هي أقرب، عند ابن القيم؟", "a": "«هؤلاء بسبيل المجرمين أحضر ولها أسلك»؛ لأنهم يمشون وراء أكثر الناس وهم في سبيل المجرمين.", "blocks": [{"type": "ans", "s": "«هؤلاء", "e": "أسلك»؛", "core": true}, {"type": "ans", "s": "لأنهم", "e": "المجرمين."}], "marks": [{"t": "focus", "w": "أقرب"}], "review": "", "src": "وهؤلاء بسبيل المجرمين احضر ولها اسك"}, {"id": "c765", "sectionId": "s35-i", "level": 4, "anchor": "حال من لا يعرف سبيل الكفار ولا سبيل المؤمنين، فلا يتعلم الدين ولا يدرسه: ما اسمه عند العلماء، وما حكمه؟", "pattern": "method", "q": "حال من لا يعرف سبيل الكفار ولا سبيل المؤمنين، فلا يتعلم الدين ولا يدرسه: ما اسمه عند العلماء، وما حكمه؟", "a": "الإعراض عن الدين، وهو من نواقض الإسلام.", "blocks": [{"type": "ans", "s": "الإعراض", "e": "الدين،", "core": true}, {"type": "rule", "s": "وهو", "e": "الإسلام."}], "marks": [{"t": "focus", "w": "ما اسمه"}], "review": "", "src": "بيسميه العلماء الاعراض عن الدين"}, {"id": "c766", "sectionId": "s35-i", "level": 4, "anchor": "ما خلل من يعرف ما يجب عليه من سبيل المؤمنين، ولا يعرف ما تقوله الفرق والكفار في الشرك؟", "pattern": "method", "q": "ما خلل من يعرف ما يجب عليه من سبيل المؤمنين، ولا يعرف ما تقوله الفرق والكفار في الشرك؟", "a": "يعرف جزءًا ويجهل الآخر أو يعرفه مجملًا، وهو حال كثير من الدعوة.", "blocks": [{"type": "err", "s": "يعرف", "e": "الدعوة.", "core": true}], "marks": [{"t": "focus", "w": "خلل"}], "review": "", "src": "فبقى عارف جزء ومش عارف الجزء الثاني"}, {"id": "c767", "sectionId": "s35-i", "level": 2, "anchor": "لماذا يجب أن تُدرس الأسماء الشرعية وأحكامها بالتفصيل؟", "pattern": "calm", "q": "لماذا يجب أن تُدرس الأسماء الشرعية وأحكامها بالتفصيل؟", "a": "لأن السالك لا يصل وصولًا كاملًا إلا بدراسة سبيل المؤمنين تفصيلًا، وعلى قدر الإجمال يكون العطب في السير.", "blocks": [{"type": "ans", "s": "لأن", "e": "تفصيلًا،", "core": true}, {"type": "rule", "s": "وعلى", "e": "السير."}], "marks": [{"t": "focus", "w": "بالتفصيل"}], "review": "", "src": "وعلى قدر الاجمال على قدر العصب في السير"}, {"id": "c768", "sectionId": "s35-j", "level": 4, "anchor": "يقال في «الزواج المدني» على الهواء، ثم يُقابَل قائله بالاحترام. ما التشخيص المقرر لهذا الحال؟", "pattern": "method", "q": "يقال في «الزواج المدني» على الهواء، ثم يُقابَل قائله بالاحترام. ما التشخيص المقرر لهذا الحال؟", "a": "لا يعرف سبيل الله مفصّلًا، فسقط في بُنيّات الطريق وهان عليه الدين، فصار همّه «إنجاز الأمر وأخذ المكتسبات» وهو يضيّع الشريعة.", "blocks": [{"type": "err", "s": "لا", "e": "الدين،", "core": true}, {"type": "ans", "s": "فصار", "e": "الشريعة."}], "marks": [{"t": "focus", "w": "التشخيص"}], "review": "", "src": "اصل ما يعرفش سير ربنا مفصله"}, {"id": "c769", "sectionId": "s35-j", "level": 4, "anchor": "سُمّي التداخل الشيعي «سياحة» فقيل: السياحة حلال. ما الذي غاب عن القائل؟", "pattern": "method", "q": "سُمّي التداخل الشيعي «سياحة» فقيل: السياحة حلال. ما الذي غاب عن القائل؟", "a": "أن «سياحتهم» هي المتعة، ونكاح المتعة زنا، وأنه دين الاثني عشرية الرافضة يُنفق عليه من أموال دولتهم؛ فلم يعرف سبيل المؤمنين ولا سبيل الكافرين مفصّلًا.", "blocks": [{"type": "err", "s": "أن", "e": "زنا،", "core": true}, {"type": "ans", "s": "وأنه", "e": "مفصّلًا."}], "marks": [{"t": "focus", "w": "ما الذي غاب"}], "review": "", "src": "لو نكحت متعه امراه زانيه هي زانيه"}, {"id": "c770", "sectionId": "s35-k", "level": 2, "anchor": "إلى أي شيء يُرجع في مسميات الأسماء الشرعية (الإيمان والكفر...) عند ابن تيمية؟", "pattern": "calm", "q": "إلى أي شيء يُرجع في مسميات الأسماء الشرعية (الإيمان والكفر...) عند ابن تيمية؟", "a": "إلى بيان الله ورسوله فإنه شافٍ كافٍ، لا إلى الاشتقاق وشواهد استعمال العرب؛ لأن النبي ﷺ بيّن المراد بها بيانًا لا يُحتاج معه إلى ذلك.", "blocks": [{"type": "ans", "s": "إلى", "e": "كافٍ،", "core": true}, {"type": "ans", "s": "لا", "e": "ذلك."}], "marks": [{"t": "focus", "w": "يُرجع"}], "review": "", "src": "فلهذا يجب الرجوع في مسميات هذه الاسماء"}, {"id": "c771", "sectionId": "s35-k", "level": 6, "anchor": "بأي حديث ختم ابن تيمية تقريره وجوب الرجوع في معاني أسماء الإيمان إلى بيان الله ورسوله؟", "pattern": "quran", "q": "بأي حديث ختم ابن تيمية تقريره وجوب الرجوع في معاني أسماء الإيمان إلى بيان الله ورسوله؟", "a": "«ومن قال في القرآن برأيه فليتبوأ مقعده من النار».", "blocks": [{"type": "ans", "s": "«ومن", "e": "النار».", "core": true}], "marks": [{"t": "focus", "w": "بأي حديث"}], "review": "", "src": "ومن قال في القران برايه فيتبوا مقعده من النار"}, {"id": "c772", "sectionId": "s35-k", "level": 3, "anchor": "ما الذي يعلمه بالاضطرار من تأمل ما تقوله الخوارج والمرجئة في معنى الإيمان، عند ابن تيمية؟", "pattern": "calm", "q": "ما الذي يعلمه بالاضطرار من تأمل ما تقوله الخوارج والمرجئة في معنى الإيمان، عند ابن تيمية؟", "a": "أنه مخالف للرسول ﷺ.", "blocks": [{"type": "ans", "s": "أنه", "e": "ﷺ.", "core": true}], "marks": [{"t": "focus", "w": "بالاضطرار"}], "review": "", "src": "كل من تامل ما تقوله الخوارج والمرجئه في معنى الايمان"}, {"id": "c773", "sectionId": "s35-k", "level": 3, "anchor": "قال النبي ﷺ: «إذا أقبل الليل من ها هنا وأدبر النهار من ها هنا وغربت الشمس فقد أفطر الصائم». ما سبب الحديث، وما الذي يُستفاد منه في باب الأسماء؟", "pattern": "quran", "q": "قال النبي ﷺ: «إذا أقبل الليل من ها هنا وأدبر النهار من ها هنا وغربت الشمس فقد أفطر الصائم». ما سبب الحديث، وما الذي يُستفاد منه في باب الأسماء؟", "a": "قال لصحابي وهو صائم: «انزل فاجدح لنا»، فقال: يا رسول الله، الشمس! — والدنيا منوّرة. فبيّن الوقت الشرعي للفطر؛ والاسم إذا جاء بالشريعة كان حدّه الشرعي قاضيًا على غيره من المعاني.", "blocks": [{"type": "ans", "s": "قال", "e": "منوّرة.", "core": true}, {"type": "wajh", "s": "فبيّن", "e": "المعاني."}], "marks": [{"t": "focus", "w": "سبب الحديث"}], "review": "", "src": "قال انزل فز تحيه فقال يا رسول الله الشمس"}, {"id": "c774", "sectionId": "s35-k", "level": 2, "anchor": "إذا تعارض المعنى المعهود للاسم مع حدّه الشرعي، فأيهما يُقدَّم؟", "pattern": "calm", "q": "إذا تعارض المعنى المعهود للاسم مع حدّه الشرعي، فأيهما يُقدَّم؟", "a": "الشريعة قاضية: إذا جاء الاسم بالشريعة كان هو القاضي على غيره من المعاني.", "blocks": [{"type": "rule", "s": "الشريعة", "e": "المعاني.", "core": true}], "marks": [{"t": "focus", "w": "أيهما يُقدَّم"}], "review": "", "src": "فلذلك الشريعه قاضيه اذا جاء الاسم بالشريعه"}, {"id": "c775", "sectionId": "s35-k", "level": 1, "anchor": "ما الواجبان المترتبان على معرفة الأسماء الشرعية في الحكم على الناس؟", "pattern": "method", "q": "ما الواجبان المترتبان على معرفة الأسماء الشرعية في الحكم على الناس؟", "a": "أن تكفّر من صنع الكفر البواح. وأن تثبت إسلام المسلم إذا أسلم.", "blocks": [{"type": "steps", "seq": false, "items": [{"s": "أن", "e": "البواح."}, {"s": "وأن", "e": "أسلم."}]}], "marks": [{"t": "focus", "w": "الواجبان"}], "review": "", "src": "وكذلك ان تثبت اسلام المسلم اذا اسلم"}];
+const QUIZ_DATA=[{"id": "q35-1", "question": "لماذا تُعدّ معرفة أسماء الناس الشرعية (مسلم، كافر، فاسق، منافق) من أكبر أصول الإسلام؟", "options": ["لأنها تُشبع حب الاطلاع", "لأن كل اسم منها يحمل حكمًا يلزم المسلم القيام به", "لأنها تُغني عن العمل", "لأنها من فروع الفقه الخلافية"], "correctIndex": 1, "explanation": "كل اسم يحمل حكمًا أنت ملزم أن تقوم به في بعض المواضع؛ ولهذا سُميت «الأسماء والأحكام».", "sectionId": "s35"}, {"id": "q35-2", "question": "شخص يصرّ على وصف من وقع في الكفر البواح بأنه «مسلم». ما الخطر الذي نبّه عليه الكلام المنقول عن <span class=\"sem-name sem-scholar\">الجويني</span> وبعض أهل العلم؟", "options": ["لا خطر فيه؛ فالأحوط الإدخال", "أنه سمّى الكفر إسلامًا، وعدّه بعض أهل العلم ناقضًا", "أنه خطأ لغوي فقط", "أنه مكروه كراهة تنزيه"], "correctIndex": 1, "explanation": "«إدخال الكافر في الإسلام ولم يثبت له ذلك عظيم»؛ ومن سمّى الكافر مسلمًا سمّى الكفر إسلامًا.", "sectionId": "s35"}, {"id": "q35-3", "question": "عند <span class=\"sem-name sem-scholar\">ابن تيمية</span>، ما الذي يتعلق بمسائل التكفير والتفسيق في الدار الدنيا؟", "options": ["لا شيء؛ فهي أحكام أخروية فقط", "الموالاة والمعاداة والقتل والعصمة", "الألقاب والمناصب العلمية فقط", "آداب الكلام فقط"], "correctIndex": 1, "explanation": "قال: يتعلق بها الوعد والوعيد في الآخرة، والموالاة والمعاداة والقتل والعصمة وغير ذلك في الدنيا.", "sectionId": "s35"}, {"id": "q35-4", "question": "صدر كتاب عنوانه «التكفير» يحذّر من الحكم بالكفر عمومًا. ما الاعتراض المقرر عليه؟", "options": ["لا اعتراض؛ فالتكفير بدعة", "التكفير حكم شرعي، والصواب أن يكون الحديث عن «الغلو في التكفير» لا عن الأصل", "يجب أن يكون العنوان «فتنة الصلاة»", "العنوان صحيح لأن الكافر ليس اسمًا شرعيًا"], "correctIndex": 1, "explanation": "اسم «الكافر» من الأسماء الشرعية والأصل ثابت؛ فيُقال «الغلو في التكفير» أو «أخطاء في التكفير»، كما لا يُقال لأخطاء المصلين «فتنة الصلاة».", "sectionId": "s35"}, {"id": "q35-5", "question": "في قاعدة <span class=\"sem-name sem-scholar\">ابن القيم</span>، من هم «أعلم الخلق وأنفعهم للناس»؟", "options": ["من عرف سبيل المؤمنين وحده", "من عرف سبيل المؤمنين وسبيل المجرمين معرفة تفصيلية", "من اعتزل الناس", "من حفظ المتون"], "correctIndex": 1, "explanation": "«فالعالمون بالله… عرفوا سبيل المؤمنين معرفة تفصيلية وسبيل المجرمين معرفة تفصيلية… فهؤلاء أعلم الخلق».", "sectionId": "s35"}, {"id": "q35-6", "question": "شاب نشأ في الإسلام ولم يعرف تفاصيل الجاهلية، فاستحسن أمرًا هو من سبيل المجرمين. بأي عبارة يُفسَّر حاله؟", "options": ["«اللبس إنما يقع إذا ضعف العلم بالسبيلين أو أحدهما»", "«الضرورات تبيح المحظورات»", "«كل مجتهد مصيب»", "«الأصل في الأشياء الإباحة»"], "correctIndex": 0, "explanation": "قال <span class=\"sem-name sem-scholar\">ابن القيم</span>: من نشأ غير عالم تفصيل ضده التبس عليه؛ واستشهد بقول <span class=\"sem-name sem-sahabi\">عمر</span>: «إنما تنقض عرى الإسلام عروة عروة إذا نشأ في الإسلام من لم يعرف الجاهلية».", "sectionId": "s35"}, {"id": "q35-7", "question": "من الفرق الأربع عند <span class=\"sem-name sem-scholar\">ابن القيم</span>: «فرقة صرفت عنايتها إلى معرفة سبيل المؤمنين دون ضدها». ما خللها؟", "options": ["لا خلل؛ هي أعلم الخلق", "تعرف جزءًا وتجهل الآخر أو تعرفه مجملًا، فتلتبس عليها تفاصيل سبيل المجرمين", "عميت عن السبيلين", "عرفت الشر مفصلًا فقط"], "correctIndex": 1, "explanation": "تعرف ما يجب وما يلزم، ولا تعرف ما يقوله الكفار والفرق؛ وأعلم الخلق من استبان له السبيلان تفصيلًا علمًا وعملًا.", "sectionId": "s35"}, {"id": "q35-8", "question": "قال النبي ﷺ: «إذا أقبل الليل من ها هنا وأدبر النهار من ها هنا وغربت الشمس فقد أفطر الصائم». ما القاعدة المستفادة في باب الأسماء؟", "options": ["المعنى اللغوي مقدَّم على الشرعي", "إذا جاء الاسم بالشريعة كان حدّه الشرعي قاضيًا على غيره من المعاني", "الأسماء الشرعية مجملة لا يُعرف معناها", "يُرجع في الأسماء إلى العرف وحده"], "correctIndex": 1, "explanation": "الصحابي رأى الدنيا منوّرة فقال «الشمس!»، فبيّن ﷺ الوقت الشرعي؛ و«يجب الرجوع في مسميات هذه الأسماء إلى بيان الله ورسوله» كما قال <span class=\"sem-name sem-scholar\">ابن تيمية</span>.", "sectionId": "s35"}];
+const MAP_DATA=[{"id": "mm-35", "sectionId": "s35", "center": "الأسماء والأحكام واستبانة السبيلين", "nodes": [{"text": "كفر الأعيان والمطلق", "target": "#s35-a", "color": "#2f6a7f", "children": [{"text": "لماذا الأسماء؟", "target": "#s35-b"}]}, {"text": "أقوال الأئمة", "target": "#s35-c", "color": "#7a4f6b", "children": [{"text": "ابن حزم", "target": "#s35-c"}, {"text": "الجويني", "target": "#s35-d"}, {"text": "ابن تيمية", "target": "#s35-e"}, {"text": "ابن رجب", "target": "#s35-f"}]}, {"text": "قاعدة ابن القيم", "target": "#s35-g", "color": "#556b2f", "children": [{"text": "الصحابة وأثر عمر", "target": "#s35-h"}, {"text": "الفرق الأربع", "target": "#s35-i"}]}, {"text": "من الواقع", "target": "#s35-j", "color": "#8a5a3a"}, {"text": "الحد الشرعي قاضٍ", "target": "#s35-k", "color": "#3d5a8a"}]}];
+</script>
+<script src="ilm-anki.js" data-series="العروة الوثقى" data-lecture="35"></script>
+<script>
+/* واجهة الصفحة فقط — البطاقات وتصديرها من ilm-anki.js (آلية 5.11 — 9-ص) */
+(function(){
+"use strict";
+function $(id){return document.getElementById(id);}
+/* quiz */
+var QZ={};QUIZ_DATA.forEach(function(q){QZ[q.id]=q;});var score={};
+document.querySelectorAll(".quiz[data-q]").forEach(function(box){var q=QZ[box.getAttribute("data-q")];if(!q)return;
+  var h='<div class="qh">سؤال فهم</div><div class="qq">'+q.question+'</div>';
+  q.options.forEach(function(o,i){h+='<button class="op" type="button" data-i="'+i+'">'+o+'</button>';});
+  box.innerHTML=h+'<div class="ex">'+q.explanation+'</div><button class="again" type="button">إعادة المحاولة</button>';});
+document.addEventListener("click",function(e){
+  var b=e.target.closest(".quiz .op");
+  if(b){var box=b.closest(".quiz");if(box.classList.contains("done"))return;var q=QZ[box.getAttribute("data-q")],i=+b.getAttribute("data-i");
+    box.classList.add("done");box.querySelectorAll(".op")[q.correctIndex].classList.add("ok");if(i!==q.correctIndex)b.classList.add("no");
+    (score[q.sectionId]=score[q.sectionId]||{})[q.id]=(i===q.correctIndex);
+    var el=document.querySelector('.score[data-s="'+q.sectionId+'"]');if(el){var s=score[q.sectionId],ok=0,n=0;for(var k in s){n++;if(s[k])ok++;}
+      el.textContent="نتيجتك في أسئلة هذه المحاضرة: "+ok+" من "+n+" (المجموع "+QUIZ_DATA.filter(function(x){return x.sectionId===q.sectionId;}).length+")";}return;}
+  var a=e.target.closest(".quiz .again");if(a){var bx=a.closest(".quiz");bx.classList.remove("done");bx.querySelectorAll(".op").forEach(function(o){o.classList.remove("ok","no");});}
+});
+/* cmp labels for phones */
+document.querySelectorAll(".cmp").forEach(function(t){var h=t.querySelector(".r.h");if(!h)return;var hs=[].map.call(h.children,function(c){return c.textContent;});
+  t.querySelectorAll(".r:not(.h)").forEach(function(r){[].forEach.call(r.children,function(c,i){if(i&&hs[i])c.setAttribute("data-h",hs[i]);});});});
+/* mind map */
+MAP_DATA.forEach(function(m){var host=$(m.id);if(!host)return;
+  var h='<div class="mm-center">'+m.center+'</div><div class="mm-branches">';
+  m.nodes.forEach(function(n){h+='<div class="mm-node" style="--c:'+n.color+'"><a href="'+n.target+'">'+n.text+'</a>';
+    if(n.children&&n.children.length)h+='<div class="mm-kids">'+n.children.map(function(c){return '<a href="'+c.target+'">'+c.text+'</a>';}).join("")+'</div>';
+    h+='</div>';});host.innerHTML=h+'</div>';});
+/* download */
+var dlb=$("cdl");
+if(dlb)dlb.onclick=function(){try{ILM_ANKI.download(CARDS_DATA);}catch(e){alert(e.message);}};
+/* flashcards */
+var box=$("cbox");
+if(box){var list=CARDS_DATA,pos=0;
+  var show=function(){var c=list[pos];box.classList.remove("shown");
+    box.innerHTML='<div class="front">'+ILM_ANKI.front(c)+'</div><div class="back">'+ILM_ANKI.back(c)+'</div><div class="flip">انقر على البطاقة لإظهار الإجابة</div>';
+    $("cpos").textContent=(pos+1)+" / "+list.length;};
+  box.addEventListener("click",function(){box.classList.toggle("shown");});
+  $("cprev").onclick=function(){pos=(pos-1+list.length)%list.length;show();};
+  $("cnext").onclick=function(){pos=(pos+1)%list.length;show();};
+  show();}
+/* progress / toc / font */
+var bar=$("progress"),tl=[].slice.call(document.querySelectorAll(".toc a[href^='#']"));
+var targets=tl.map(function(a){return $(a.getAttribute("href").slice(1));});
+window.addEventListener("scroll",function(){var h=document.documentElement;if(bar)bar.style.width=(h.scrollTop/Math.max(1,h.scrollHeight-h.clientHeight)*100)+"%";
+  var cur=-1;targets.forEach(function(t,i){if(t&&t.getBoundingClientRect().top<120)cur=i;});tl.forEach(function(a,i){a.classList.toggle("on",i===cur);});},{passive:true});
+var fs=18;function setFs(){document.documentElement.style.setProperty("--fs",fs+"px");}
+if($("fsUp")){$("fsUp").onclick=function(){if(fs<22){fs++;setFs();}};$("fsDn").onclick=function(){if(fs>16){fs--;setFs();}};}
+})();
+
+</script>
+<script type="module" src="firebase-sync-manhaj.js"></script>
+<script src="ilm-track.js"></script>
+<script src="ilm-highlight.js" data-lecture-id="stage1_urwa_35"></script>
+<!-- HANDOFF (العروة الوثقى 33–44، 4 جلسات بقرار مازن)
+  الجلسة 1 (هذه): 33–35 تمت. آخر بطاقة c775؛ الجلسة التالية تبدأ من c776.
+  الجلسة 2: 36–38 | الجلسة 3: 39–41 | الجلسة 4: 42–44. المعرّفات stage1_urwa_NN، data-lecture="NN"، ألوان --s36..--s44 معرّفة سلفًا في CSS هذه الملفات.
+  36 يبدأ: «كنا بنتكلم عن الحجة… لماذا تكفر الكافر» (أحكام المسلم والكافر).
+  40: آخر ~1,200 كلمة من التفريغ منسوخة من 39؛ بقرار مازن يُبنى على الجزء السليم (~2,090 كلمة) مع تنبيه ظاهر بالنقص.
+  43: التفريغ ينتهي في منتصف جملة («الإكراه بينفع في حاجة وحاجة كمان لا»)، و44 يكمل منه.
+  الملاحة: 35 ← «المحاضرة 36 لم تُضف بعد»؛ و33 → «المحاضرات 21–32 لم تُضف بعد».
+-->
+</body>
+</html>
