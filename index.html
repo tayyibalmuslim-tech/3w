@@ -4,320 +4,377 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="lecture-status" content="filled">
-<title>العروة الوثقى — فهرس المحاضرات 01–44 | أصل دين الإسلام</title>
+<title>العروة الوثقى — فهرس المحاضرات | أصل دين الإسلام</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@700&family=Cairo:wght@400;600;700;800&family=El+Messiri:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#1f2433;--ink2:#3d4457;--sub:#69708a;--bg:#f6f4ef;--paper:#fffdf9;--line:#e4dfd3;
   --brand:#25305a;--brand2:#3b4b86;--accent:#2a7f7a;--gold:#c9b27c;--goldbg:#f4eedf;
-  --s1:#3a5a98;--s2:#2a7f7a;--s3:#b0623a;--s4:#5a5f8a;--s5:#1e7aa0;--s6:#8c4a6b;--s7:#446a8a;--s8:#5e6b2f;--s9:#7a5636;--s10:#5d5a99;
-  --sec:var(--brand);
-  --sem-aya:#14532d;--sem-hadith:#5b2d90;--sem-sahabi:#8a5a00;--sem-scholar:#8f1d21;
   --fs:18px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:'Cairo','Noto Sans Arabic',Tahoma,sans-serif;font-size:var(--fs);line-height:1.95;text-align:right;direction:rtl}
 a{color:inherit}
-.sem-aya{color:var(--sem-aya);font-family:'Amiri','Noto Naskh Arabic',serif;font-size:1.12em}
-.sem-hadith{color:var(--sem-hadith)}
-.sem-name{color:var(--sem-scholar)}
-.sem-name.sem-sahabi,.sem-sahabi{color:var(--sem-sahabi);font-weight:700}
-.sem-name.sem-scholar,.sem-scholar{color:var(--sem-scholar);font-weight:700}
-#progress{position:fixed;top:0;right:0;height:4px;background:linear-gradient(90deg,var(--accent),var(--brand2));width:0;z-index:50}
-/* hero */
-.hero{background:radial-gradient(ellipse at 20% 0%,#3b4b86 0%,#25305a 55%,#1a2142 100%);color:#f3efe4;padding:64px 20px 70px;position:relative;overflow:hidden}
+button{font:inherit}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+
+/* ===== الرأس ===== */
+.hero{background:radial-gradient(ellipse at 20% 0%,#3b4b86 0%,#25305a 55%,#1a2142 100%);color:#f3efe4;padding:60px 20px 64px;position:relative;overflow:hidden}
 .hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(201,178,124,.07) 0 2px,transparent 2px 26px)}
-.hero .in{max-width:900px;margin:0 auto;position:relative}
+.hero .in{max-width:960px;margin:0 auto;position:relative}
 .hero .series{font-family:'Aref Ruqaa','Amiri',serif;font-size:58px;line-height:1.3;color:#f1e6c8;margin:0}
 .hero .rope{display:flex;align-items:center;margin:14px 0 18px;max-width:420px}
 .hero .rope span{flex:1;height:3px;background:repeating-linear-gradient(90deg,var(--gold) 0 10px,transparent 10px 14px);border-radius:2px}
 .hero .rope b{width:16px;height:16px;border:3px solid var(--gold);border-radius:50%;margin:0 10px}
 .hero h1{font-family:'El Messiri','Cairo',sans-serif;font-size:34px;line-height:1.5;margin:0 0 10px;font-weight:600}
 .hero .meta{font-size:15.5px;color:#d7d2c4}
-.wrap{max-width:1180px;margin:0 auto;display:flex;align-items:flex-start;padding:0 18px}
-main{flex:1 1 auto;min-width:0;max-width:800px;margin:0 auto}
-aside.toc{flex:0 0 250px;position:sticky;top:18px;margin:28px 0 0 26px;order:2;max-height:calc(100vh - 40px);overflow:auto;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:14px 14px 16px;font-size:14.5px;line-height:1.7}
-.toc .t{font-weight:800;color:var(--brand);margin-bottom:6px;font-family:'El Messiri','Cairo'}
-.toc a{display:block;text-decoration:none;padding:4px 8px;border-radius:8px;color:var(--ink2)}
-.toc a.l2{padding-right:20px;font-size:13.5px;color:var(--sub)}
-.toc a:hover,.toc a.on{background:var(--goldbg);color:var(--brand)}
-.tools{display:flex;flex-wrap:wrap;margin-top:10px;border-top:1px solid var(--line);padding-top:10px}
-.tools button{font:inherit;font-size:13px;margin:0 0 6px 6px;padding:5px 10px;border:1px solid var(--line);background:#fff;border-radius:9px;cursor:pointer;color:var(--brand)}
-@media(max-width:1020px){aside.toc{display:none}}
-/* intro cards */
+
+main.idx{max-width:960px;margin:0 auto;padding:0 18px}
 .ai-note{margin:26px 0 0;background:#fff7e6;border:1px solid #ecd9ae;border-radius:12px;padding:10px 16px;font-size:15px;color:#6b4e16}
-.src{margin:16px 0;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px 20px;font-size:16px}
-.src .row{display:flex;flex-wrap:wrap;margin-bottom:2px}.src .k{flex:0 0 120px;color:var(--sub);font-weight:700}.src .v{flex:1 1 300px}
-.orient{margin:22px 0 10px;background:linear-gradient(180deg,#fffdf8,#f7f3e8);border:1px solid #e6dcc3;border-radius:20px;padding:22px 24px}
-.orient .lab{font-size:13px;font-weight:800;color:var(--accent);letter-spacing:.2px}
-.orient .cq{font-family:'El Messiri','Cairo';font-size:23px;color:var(--brand);line-height:1.6;margin:2px 0 14px}
+.ih{font-family:'El Messiri','Cairo';font-size:28px;color:var(--brand);margin:34px 0 4px}
+.ih-sub{font-size:14.5px;color:var(--sub);margin:0 0 12px}
+
+/* ===== لوحة التقدّم ===== */
+.dash{display:flex;flex-wrap:wrap;margin:18px -6px 0}
+.tile{flex:1 1 150px;margin:0 6px 12px;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:12px 16px}
+.tile .v{font-family:'El Messiri','Cairo';font-size:28px;font-weight:700;color:var(--brand);line-height:1.35}
+.tile .v small{font-size:15px;color:var(--sub);font-family:'Cairo';font-weight:600}
+.tile .d{font-size:13.5px;color:var(--sub);line-height:1.6}
+.tile .bar{margin-top:8px}
+a.cont{flex:2 1 300px;display:block;text-decoration:none;background:var(--brand);border-color:var(--brand);color:#f3efe4;position:relative;overflow:hidden}
+a.cont:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(201,178,124,.08) 0 2px,transparent 2px 22px)}
+a.cont>*{position:relative}
+a.cont .d{color:#d7d2c4}
+a.cont .v{color:#f1e6c8;font-size:20px;line-height:1.6}
+a.cont .go{display:inline-block;margin-top:6px;font-size:14px;font-weight:700;color:var(--gold)}
+a.cont:hover{background:var(--brand2)}
+.cont.all-done{background:var(--accent);border-color:var(--accent)}
+.last{font-size:13px;color:#cfc8b4;margin-top:2px}
+
+/* ===== السؤال المركزي ===== */
+.orient{margin:10px 0 0;background:linear-gradient(180deg,#fffdf8,#f7f3e8);border:1px solid #e6dcc3;border-radius:20px;padding:20px 24px}
+.orient .lab{font-size:13px;font-weight:800;color:var(--accent)}
+.orient .cq{font-family:'El Messiri','Cairo';font-size:22px;color:var(--brand);line-height:1.6;margin:2px 0 12px}
 .orient .idea{font-size:17px;color:var(--ink2);margin-bottom:6px}
 .orient .ed{font-size:12.5px;color:var(--sub)}
-/* mindmap */
-.mm{margin:18px 0 6px}
-.mm-center{display:inline-block;background:var(--brand);color:#f5efe0;border-radius:14px;padding:10px 18px;font-weight:800;font-family:'El Messiri','Cairo';font-size:18px}
-.mm-branches{border-right:3px solid var(--gold);margin:10px 18px 0 0;padding:4px 0 0}
-.mm-node{position:relative;margin:0 0 10px;padding-right:22px}
-.mm-node:before{content:"";position:absolute;right:0;top:20px;width:18px;border-top:3px solid var(--gold)}
-.mm-node>a{display:inline-block;text-decoration:none;background:#fff;border:1px solid var(--line);border-right:5px solid var(--c,var(--brand));border-radius:12px;padding:6px 14px;font-weight:700;color:var(--ink)}
-.mm-node>a:hover{background:var(--goldbg)}
-.mm-kids{margin:6px 22px 0 0;display:flex;flex-wrap:wrap}
-.mm-kids a{font-size:14.5px;text-decoration:none;margin:0 0 6px 8px;padding:3px 11px;border-radius:20px;background:#f1efe8;color:var(--ink2);border:1px solid #e6e1d4}
-.mm-kids a:hover{background:var(--goldbg)}
-/* sections */
-section.lec{--sec:var(--brand);margin:46px 0 0}
-section.lec[data-s="1"]{--sec:var(--s1)}section.lec[data-s="2"]{--sec:var(--s2)}section.lec[data-s="3"]{--sec:var(--s3)}section.lec[data-s="4"]{--sec:var(--s4)}section.lec[data-s="5"]{--sec:var(--s5)}
-.lec-head{position:relative;background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--sec);border-radius:20px;padding:22px 24px 18px;margin-bottom:18px}
-.lec-head .num{font-size:13.5px;font-weight:800;color:var(--sec);letter-spacing:.3px}
-.lec-head h2{font-family:'El Messiri','Cairo';font-size:30px;line-height:1.5;margin:4px 0 6px;color:var(--ink)}
-.lec-head .fn{display:inline-block;font-size:13px;background:var(--goldbg);color:#6b5a2e;border-radius:20px;padding:2px 12px}
-.divider{height:34px;margin:40px 0 0;background:radial-gradient(circle,var(--gold) 3px,transparent 4px) center/26px 34px repeat-x;opacity:.7}
-main h3{font-family:'El Messiri','Cairo';font-size:23px;line-height:1.6;color:var(--sec);margin:32px 0 8px;padding-right:14px;border-right:4px solid var(--sec)}
-main h4{font-size:19px;margin:20px 0 4px;color:var(--ink)}
-main p{margin:0 0 14px}
-.where,.next{border-radius:14px;padding:12px 18px;font-size:16px;margin:0 0 16px}
-.where{background:#eef1f8;border:1px dashed #b9c2dd}
-.next{background:#eef6f5;border:1px dashed #a9cfcb;margin-top:18px}
-.where b,.next b{display:block;font-size:13px;color:var(--sec)}
-/* blocks */
-.aya-block{background:#f0f6f1;border:1px solid #d6e7da;border-right:4px solid #3f7d57;border-radius:14px;padding:12px 20px 10px;margin:14px 0 16px;text-align:center}
-.aya-block p{margin:0;font-size:1.08em;line-height:2.15}
-.aya-block .sem-aya{font-size:1.22em}
-.ref{font-size:13.5px;color:var(--sub);text-align:left}
-blockquote{margin:14px 0 16px;padding:12px 20px 10px;border-radius:14px}
-blockquote p{margin:0 0 6px}
-.hadith-block{background:#f6f3fa;border:1px solid #e6dff0;border-right:4px solid #8b77ad}
-.naql{background:#fbf8f1;border:1px solid #ebe2cc;border-right:4px solid #b9a06a}
-.who{display:block;font-size:13.5px;color:#7a6a45;font-weight:700;margin-top:2px}
-.hadith-block .who{color:#6b5d86}
-.key{background:#eef3fb;border-right:4px solid var(--brand2);border-radius:12px;padding:12px 18px;margin:14px 0}
-.key:before{content:"فكرة محورية";display:block;font-size:12.5px;font-weight:800;color:var(--brand2)}
-.warn{background:#fdf1ea;border-right:4px solid #c46a3b;border-radius:12px;padding:12px 18px;margin:14px 0}
-.warn:before{content:"تنبيه";display:block;font-size:12.5px;font-weight:800;color:#a2512a}
-.fix{background:#fff6e0;border:1px dashed #d8b45d;border-radius:12px;padding:10px 16px;margin:12px 0;font-size:15.5px}
-.fix:before{content:"تصحيح / توضيح تحريري";display:block;font-size:12.5px;font-weight:800;color:#8a6414}
-.ed-note{background:#f3f3f1;border-radius:12px;padding:10px 16px;margin:12px 0;font-size:15.5px;color:var(--ink2)}
-.ed-note:before{content:"إضافة تحريرية (ليست من كلام الشيخ)";display:block;font-size:12.5px;font-weight:800;color:#6c6c64}
-.story{background:#fffaf2;border:1px solid #efdfc4;border-radius:16px;padding:14px 20px 4px;margin:16px 0}
-.story .st{font-weight:800;color:#8a5f2b;font-size:15px;margin-bottom:4px}
-/* structures */
-.lab-org{font-size:12.5px;font-weight:800;color:var(--sec);margin:0 0 6px}
-.cmp{margin:16px 0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
-.cmp .cap{background:#f4f2ec;padding:8px 16px;font-weight:800;font-size:15px;color:var(--ink2)}
-.cmp .r{display:flex;flex-wrap:wrap;border-top:1px solid var(--line)}
-.cmp .r>div{flex:1 1 200px;padding:10px 16px;font-size:16px;line-height:1.85;min-width:0}
-.cmp .r>div+div{border-right:1px solid var(--line)}
-.cmp .r.h>div{font-weight:800;color:var(--sec);background:#fafaf7}
-.cmp .r>div.k{flex:0 0 140px;font-weight:700;color:var(--sub);background:#fbfaf6}
-@media(max-width:580px){.cmp .r.h{display:none}.cmp .r>div.k{flex-basis:100%;border-bottom:1px dashed var(--line);color:var(--sec)}.cmp .r>div+div{border-right:0;border-top:1px dashed var(--line)}.cmp .r>div[data-h]:before{content:attr(data-h);display:block;font-size:12.5px;font-weight:800;color:var(--sub)}}
-.tree{margin:16px 0;padding:16px;background:#fff;border:1px solid var(--line);border-radius:16px}
-.tree .root{font-weight:800;color:#fff;background:var(--sec);display:inline-block;border-radius:10px;padding:5px 14px}
-.tree .kids{margin:10px 16px 0 0;border-right:2px solid #d7d2c3;padding-right:14px}
-.tree .kid{position:relative;margin:0 0 10px;background:#faf8f3;border:1px solid #ebe5d6;border-radius:12px;padding:8px 14px;font-size:16px}
-.tree .kid:before{content:"";position:absolute;right:-16px;top:20px;width:14px;border-top:2px solid #d7d2c3}
-.tree .kid b{color:var(--sec)}
-.timeline{margin:16px 0;padding:6px 0}
-.tl-i{position:relative;padding:0 46px 14px 0}
-.tl-i:before{content:attr(data-n);position:absolute;right:0;top:2px;width:32px;height:32px;border-radius:50%;background:var(--sec);color:#fff;font-weight:800;text-align:center;line-height:32px;font-size:15px}
-.tl-i:after{content:"";position:absolute;right:15px;top:36px;bottom:0;border-right:2px solid #d4cfbf}
-.tl-i:last-child:after{display:none}
-.tl-i .tt{font-weight:800;color:var(--ink)}
-.tl-i .td{font-size:16px;color:var(--ink2)}
-.chain{display:flex;flex-direction:column;margin:16px 0}
-.chain .c{background:#fff;border:1px solid var(--line);border-right:4px solid var(--sec);border-radius:12px;padding:9px 16px;font-size:16px}
-.chain .c b{display:block;font-size:12.5px;color:var(--sec)}
-.chain .ar{height:22px;text-align:center;color:var(--sec);line-height:22px;font-size:18px}
-.evid{margin:16px 0;border:1px solid #d9e6dd;border-radius:16px;background:#fcfefc;overflow:hidden}
-.evid .er{display:flex;flex-wrap:wrap;border-top:1px solid #e3ede6}
-.evid .er:first-child{border-top:0}
-.evid .el{flex:0 0 120px;padding:9px 14px;font-size:13.5px;font-weight:800;color:#3f6b52;background:#f2f8f3}
-.evid .ev{flex:1 1 260px;padding:9px 16px;font-size:16px;min-width:0}
-@media(max-width:580px){.evid .el{flex-basis:100%}}
-.arg{margin:16px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px}
-.arg .claim{background:var(--sec);color:#fff;border-radius:12px;padding:10px 16px;font-weight:700}
-.arg .claim b{display:block;font-size:12.5px;opacity:.85}
-.arg .grp{margin:12px 0 0;display:flex;flex-wrap:wrap}
-.arg .g{flex:1 1 220px;margin:0 0 10px 10px;background:#f7f6fb;border:1px solid #e3e1ee;border-radius:12px;padding:10px 14px;font-size:15.5px}
-.arg .g b{display:block;color:var(--sec);font-size:13px}
-.num{margin:14px 0}
-.num .n{display:flex;align-items:flex-start;margin-bottom:10px}
-.num .n .b{flex:0 0 34px;height:34px;border-radius:10px;background:var(--goldbg);color:#6b5a2e;font-weight:800;text-align:center;line-height:34px;margin-left:12px;border:1px solid #e3d6b4}
-.num .n .t{flex:1;min-width:0}
-.stat{display:flex;flex-wrap:wrap;margin:14px -6px}
-.stat .s{flex:1 1 180px;margin:0 6px 12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 14px;text-align:center}
-.stat .s .v{font-size:34px;font-weight:800;color:var(--sec);line-height:1.3;font-family:'El Messiri','Cairo'}
-.stat .s .d{font-size:14.5px;color:var(--ink2);line-height:1.7}
-/* takeaway */
-.takeaway{margin:26px 0 8px;background:linear-gradient(180deg,#fffaf0,#fbf3e2);border:1px solid #e8d7b0;border-radius:18px;padding:16px 20px}
-.takeaway .tt{font-family:'El Messiri','Cairo';font-weight:700;font-size:19px;color:#7a5b1d}
-.takeaway .tt small{font-size:12px;color:#9b8456;font-family:'Cairo';margin-right:6px}
-.tk-i{position:relative;padding-right:22px;margin:7px 0;font-size:16.5px}
-.tk-i:before{content:"";position:absolute;right:2px;top:12px;width:9px;height:9px;border-radius:50%;background:var(--sec)}
-.score{font-size:13.5px;color:var(--sub);margin-bottom:4px}
-/* quiz */
-.quiz{margin:20px 0;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 18px 12px;box-shadow:0 2px 10px rgba(30,40,70,.04)}
-.quiz .qh{font-size:12.5px;font-weight:800;color:var(--sec);margin-bottom:4px}
-.quiz .qq{font-weight:700;font-size:17px;margin-bottom:8px}
-.quiz button.op{display:block;width:100%;min-height:44px;text-align:right;font:inherit;font-size:16px;line-height:1.7;background:#faf9f5;border:1px solid #e6e1d4;border-radius:12px;padding:8px 14px;margin:0 0 8px;cursor:pointer;color:var(--ink)}
-.quiz button.op:hover{background:var(--goldbg)}
-.quiz button.op.ok{background:#e6f3ec;border-color:#86bf9d}
-.quiz button.op.no{background:#fbe9e4;border-color:#e0a28f}
-.quiz .ex{display:none;font-size:15px;background:#f4f6fb;border-radius:10px;padding:8px 12px;color:var(--ink2)}
-.quiz.done .ex{display:block}
-.quiz .again{display:none;font:inherit;font-size:13px;border:0;background:none;color:var(--brand2);cursor:pointer;padding:4px 0}
-.quiz.done .again{display:inline-block}
-/* cards area */
-#cards{margin:56px 0 20px}
-#cards h2{font-family:'El Messiri','Cairo';font-size:30px;color:var(--brand);margin:0 0 4px}
-.cfil{display:flex;flex-wrap:wrap;margin:10px 0}
-.cfil button,.cnav button,.dl{font:inherit;font-size:14px;margin:0 0 8px 8px;padding:6px 14px;border-radius:20px;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--ink2);min-height:38px}
-.cfil button.on{background:var(--brand);color:#fff;border-color:var(--brand)}
-.dl{background:var(--accent);color:#fff;border-color:var(--accent)}
-.cstage{max-width:740px;margin:8px auto}
-.cbox{background:#fff;border:1px solid #dfe3e0;border-radius:18px;padding:20px 22px;cursor:pointer;min-height:220px;box-shadow:0 4px 22px rgba(31,49,46,.06)}
-.cbox .flip{font-size:12.5px;color:var(--sub);text-align:center;margin-top:12px}
-.cbox .back{display:none;margin-top:16px;padding-top:16px;border-top:1px solid #e1e0d8}
-.cbox.shown .back{display:block}
-.cnav{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:12px}
-.cnav .pos{font-size:14px;color:var(--sub);margin:0 10px 8px}
+
+/* ===== أدوات البحث والعرض ===== */
+.find{display:flex;flex-wrap:wrap;align-items:center;margin:6px -4px 14px}
+.find .q{flex:1 1 300px;position:relative;margin:0 4px 8px}
+.find input{width:100%;font:inherit;font-size:16px;padding:9px 44px 9px 16px;border:1px solid var(--line);border-radius:14px;background:#fff;min-height:46px;color:var(--ink)}
+.find input:focus{outline:none;border-color:var(--brand2);box-shadow:0 0 0 3px rgba(59,75,134,.15)}
+.find .q:before{content:"";position:absolute;right:16px;top:50%;width:13px;height:13px;margin-top:-9px;border:2px solid var(--sub);border-radius:50%}
+.find .q:after{content:"";position:absolute;right:14px;top:50%;width:7px;height:2px;margin-top:5px;background:var(--sub);transform:rotate(-45deg)}
+.find .kb{position:absolute;left:12px;top:50%;margin-top:-11px;font-size:12px;color:var(--sub);border:1px solid var(--line);border-radius:6px;padding:0 6px;line-height:20px;background:#faf9f5}
+.seg{display:flex;margin:0 4px 8px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+.seg button{border:0;background:none;padding:0 14px;min-height:44px;cursor:pointer;color:var(--ink2);font-size:14px}
+.seg button+button{border-right:1px solid var(--line)}
+.seg button[aria-pressed="true"]{background:var(--brand);color:#fff}
+.tbtn{margin:0 4px 8px;border:1px solid var(--line);background:#fff;border-radius:12px;padding:0 14px;min-height:46px;cursor:pointer;color:var(--brand);font-size:14px}
+.tbtn:hover,.seg button:hover{background:var(--goldbg);color:var(--brand)}
+.seg button[aria-pressed="true"]:hover{background:var(--brand2);color:#fff}
+
+/* ===== الحبل والعُقَد ===== */
+.rope-v{position:relative;padding-right:46px}
+.rope-v:before{content:"";position:absolute;right:18px;top:10px;bottom:10px;width:4px;background:repeating-linear-gradient(180deg,var(--gold) 0 12px,transparent 12px 17px);border-radius:2px}
+.part{position:relative;margin:0 0 16px}
+.ph{position:relative;display:flex;flex-wrap:wrap;align-items:center;width:100%;text-align:right;background:var(--paper);border:1px solid var(--line);border-right:6px solid var(--c);border-radius:18px;padding:14px 18px 14px 46px;cursor:pointer;color:var(--ink)}
+.ph:hover{box-shadow:0 6px 20px rgba(30,40,70,.08)}
+.pk{position:absolute;right:-48px;top:12px;width:38px;height:38px;border-radius:50%;background:var(--c);border:3px solid var(--gold);color:#fff;font-family:'El Messiri','Cairo';font-weight:700;font-size:17px;line-height:32px;text-align:center;box-shadow:0 0 0 4px var(--bg)}
+.ph .pl{flex-basis:100%;font-size:12.5px;font-weight:800;color:var(--c);line-height:1.6}
+.ph .pn{font-family:'El Messiri','Cairo';font-size:23px;font-weight:700;line-height:1.5;margin-left:12px}
+.ph .pm{font-size:14px;color:var(--sub)}
+.chev{position:absolute;left:16px;top:20px;width:12px;height:12px;border-left:3px solid var(--sub);border-bottom:3px solid var(--sub);transform:rotate(-45deg);transition:transform .2s}
+[aria-expanded="true"]>.chev{transform:rotate(135deg);top:25px}
+.pb{position:relative;margin:12px 0 4px;padding-right:34px}
+.pb:before{content:"";position:absolute;right:9px;top:4px;bottom:16px;width:3px;background:repeating-linear-gradient(180deg,#d9c99f 0 9px,transparent 9px 13px);border-radius:2px}
+
+.bab{position:relative;margin:0 0 9px}
+.bh,.bh-static{position:relative;display:flex;flex-wrap:wrap;align-items:center;width:100%;text-align:right;background:#fff;border:1px solid var(--line);border-radius:14px;padding:9px 16px 10px 40px;color:var(--ink)}
+.bh{cursor:pointer}
+.bh:hover{background:#fffcf4;border-color:#dccfae}
+.bh .chev{top:16px;left:14px;width:9px;height:9px;border-width:2.5px}
+.bh[aria-expanded="true"]>.chev{top:20px}
+.bk{position:absolute;right:-32px;top:15px;width:18px;height:18px;border-radius:50%;border:3px solid var(--gold);background:var(--paper);box-shadow:0 0 0 3px var(--bg)}
+.bab.full .bk{background:var(--c)}
+.bab.part-done .bk{background:linear-gradient(0deg,var(--c) 50%,var(--paper) 50%)}
+.bn{font-weight:700;font-size:16.5px;line-height:1.7;margin-left:10px}
+.bm{font-size:13px;color:var(--sub)}
+.bab.empty .bh-static{background:transparent;border-style:dashed;padding-left:16px}
+.bab.empty .bn{color:var(--sub);font-weight:600}
+.bab.empty .bk{border-color:#ddd3bb}
+.bb{margin:8px 0 6px}
+
+/* شريط التقدّم: المنشور (فاتح) والمُتَمّ (غامق) */
+.bar{flex-basis:100%;height:6px;background:#ece8dd;border-radius:6px;position:relative;overflow:hidden;margin-top:7px}
+.bar i{position:absolute;top:0;bottom:0;right:0;border-radius:6px}
+.bar .b{background:var(--c,var(--brand));opacity:.25}
+.bar .d{background:var(--c,var(--brand))}
+
+/* ===== المحاضرات ===== */
+.ll{margin:0}
+.lr{position:relative;background:var(--paper);border:1px solid var(--line);color:var(--ink)}
+.lr-a{display:flex;text-decoration:none;color:inherit;min-width:0}
+.lr-no{font-family:'El Messiri','Cairo';font-weight:700;color:var(--c)}
+.lr-b{display:flex;flex-direction:column;min-width:0;flex:1}
+.lr-t{font-weight:700;line-height:1.65}
+.lr-q{font-size:14.5px;color:var(--ink2);line-height:1.8}
+.lr-s{font-size:12.5px;color:var(--sub);line-height:1.8}
+.badge{font-style:normal;display:inline-block;background:#fdf1ea;color:#a2512a;border:1px solid #efcfbd;border-radius:20px;padding:0 8px;margin-right:6px;font-size:12px;line-height:1.7}
+.nx{font-style:normal;display:inline-block;background:var(--goldbg);color:#6b5a2e;border:1px solid #e3d6b4;border-radius:20px;padding:0 8px;margin-right:6px;font-size:12px;font-weight:700;line-height:1.7}
+.ck{flex:0 0 auto;width:40px;height:40px;border-radius:50%;border:2px solid #d8d2c2;background:#fff;color:transparent;font-size:18px;font-weight:800;cursor:pointer;line-height:1}
+.ck:hover{border-color:var(--c);color:var(--c)}
+.ck[aria-pressed="true"]{background:var(--c);border-color:var(--c);color:#fff}
+.lr.is-done .lr-t{color:var(--sub)}
+.lr.is-next{box-shadow:0 0 0 2px var(--gold)}
+mark{background:#f7e7b0;color:inherit;border-radius:3px;padding:0 1px}
+
+.view-list .lr{display:flex;align-items:center;border-right:4px solid var(--c);border-radius:12px;margin:0 0 6px}
+.view-list .lr-a{flex:1;align-items:baseline;padding:7px 12px}
+.view-list .lr-no{flex:0 0 42px;font-size:19px}
+.view-list .lr-q{display:none}
+.view-list .ck{margin:0 8px 0 10px}
+.view-list .lr-a:hover{background:#fffaf0}
+
+.view-cards{display:flex;flex-wrap:wrap;margin:0 -6px}
+.view-cards .lr{flex:1 1 260px;margin:0 6px 12px;border-top:5px solid var(--c);border-radius:16px;transition:transform .15s,box-shadow .15s}
+.view-cards .lr:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(30,40,70,.09)}
+.view-cards .lr-a{flex-direction:column;padding:12px 16px 12px 58px;height:100%}
+.view-cards .lr-no{font-size:30px;line-height:1.25}
+.view-cards .lr-t{font-family:'El Messiri','Cairo';font-size:18.5px;margin:2px 0 4px}
+.view-cards .lr-q{flex:1}
+.view-cards .ck{position:absolute;left:12px;top:12px}
+
+.gap{flex-basis:100%;font-size:13.5px;color:var(--sub);border:1px dashed #d8d2c2;border-radius:10px;padding:4px 12px;margin:0 0 6px}
+.view-cards .gap{margin:0 6px 12px}
+.view-list .lr .bl,.view-cards .lr .bl{font-size:12px;color:var(--c);font-weight:700}
+
+/* ===== نتائج البحث ===== */
+.res-h{font-size:14.5px;color:var(--sub);margin:0 0 10px}
+.res-miss{background:var(--paper);border:1px dashed #d8d2c2;border-radius:12px;padding:8px 14px;margin:0 0 8px;font-size:15px;color:var(--ink2)}
+
+/* ===== ملاحظات وبطاقات ===== */
+.src{margin:24px 0 0;background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:14px 20px;font-size:15px}
+.src .k{font-weight:800;color:var(--sub);font-size:13.5px}
+.src ul{margin:4px 0 0;padding:0 18px 0 0}
+.src li{margin:0 0 4px;line-height:1.85}
+.alldl{background:#eef6f5;border:1px solid #c7e0dd;border-radius:16px;padding:14px 18px;margin:14px 0 10px}
+.alldl b{display:block;color:var(--accent)}.alldl span{font-size:14.5px;color:var(--ink2)}
+.err{background:#fdf1ea;border:1px solid #efcfbd;border-radius:12px;padding:12px 16px;color:#8a3f1d}
 footer{margin:60px 0 0;background:#1d2547;color:#cfc9b8;padding:26px 20px;text-align:center;font-size:14.5px}
+
 @media(max-width:580px){
-  body{font-size:17px}.hero{padding:44px 16px 50px}.hero .series{font-size:42px}.hero h1{font-size:25px}
-  .lec-head h2{font-size:24px}main h3{font-size:20px}.wrap{padding:0 12px}
-  .orient{padding:16px}.orient .cq{font-size:19px}.cbox{padding:16px 14px}
+  body{font-size:17px}.hero{padding:42px 16px 48px}.hero .series{font-size:42px}.hero h1{font-size:25px}
+  main.idx{padding:0 12px}.orient{padding:16px}.orient .cq{font-size:19px}
+  .rope-v{padding-right:36px}.rope-v:before{right:13px}.pk{right:-38px;width:32px;height:32px;line-height:26px;font-size:15px}
+  .ph{padding:12px 14px 12px 40px}.ph .pn{font-size:20px}
+  .pb{padding-right:26px}.pb:before{right:6px}.bk{right:-27px;width:16px;height:16px}
+  .view-list .lr-no{flex-basis:34px;font-size:17px}.view-list .lr-a{padding:6px 10px}.view-list .ck{width:36px;height:36px;margin:0 6px 0 8px}
+  .find .kb{display:none}
 }
-@media print{aside.toc,#progress,.quiz,.cnav,.cfil,.dl,.tools{display:none}.hero{background:#25305a;-webkit-print-color-adjust:exact}}
-
-/* نسخة عرض من قسم mz- في anki/final.css — لعرض البطاقات داخل الصفحة بنفس HTML المُصدَّر */
-.mz-calm{--mz-title:#293c35;--mz-ink:#33423c;--mz-accent:#296257;--mz-sub:#66766f;--mz-line:#e1e0d8;--mz-b1:#e9f3ef;--mz-b1bd:#cfe3da;--mz-b2:#f5f5f1;--mz-b2bd:#e1e0d8;--mz-b2lab:#7d6338;--mz-alert:#f5f0e4;--mz-alertbd:#e6dcc4;--mz-alertlab:#7d6338}
-.mz-compare{--mz-title:#273e5d;--mz-ink:#2f3f55;--mz-accent:#47668c;--mz-sub:#62748b;--mz-line:#d8e1ec;--mz-b1:#e9f1ed;--mz-b1bd:#c9dcd2;--mz-b1lab:#2c6a55;--mz-b2:#f5eee7;--mz-b2bd:#e5d6c6;--mz-b2lab:#9a5a2a;--mz-alert:#eff3f9;--mz-alertbd:#d3dded;--mz-alertlab:#273e5d}
-.mz-quran{--mz-title:#3a3426;--mz-ink:#3a3426;--mz-accent:#7a6030;--mz-sub:#7a7060;--mz-line:#dfd9c8;--mz-b1:#f0ede5;--mz-b1bd:#dfd9c8;--mz-b2:#f0ede5;--mz-b2bd:#dfd9c8;--mz-b2lab:#7a6030;--mz-alert:#f6f1e2;--mz-alertbd:#e6dcc0;--mz-alertlab:#7a6030}
-.mz-method{--mz-title:#332d49;--mz-ink:#3a3550;--mz-accent:#605785;--mz-sub:#6e6890;--mz-line:#e0dcec;--mz-b1:#f2f0f9;--mz-b1bd:#e0dcec;--mz-b2:#e8e5f4;--mz-b2bd:#d5cfe8;--mz-b2lab:#605785;--mz-alert:#f4f0e6;--mz-alertbd:#e6dcc0;--mz-alertlab:#7a6030;--mz-step:#e8e5f4;--mz-conn:#9891b4;--mz-num:#605785;--mz-numink:#fff;--mz-err:#f7ebe5;--mz-errbd:#ecd2c3;--mz-errlab:#995531}
-.mz-face,.mz-ans{direction:rtl;text-align:right;font-family:'Cairo','Noto Sans Arabic','Segoe UI',Tahoma,sans-serif;color:var(--mz-ink);line-height:1.95;font-size:18px;overflow-wrap:break-word}
-.mz-face p,.mz-ans p{margin:0}
-.mz-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:0 0 12px;margin:0 0 16px;border-bottom:1px solid var(--mz-line)}
-.mz-subject{display:flex;align-items:center;font-size:14.5px;font-weight:800;color:var(--mz-accent)}
-.mz-kicker{font-size:12.5px;font-weight:600;color:var(--mz-sub)}
-.mz-ico{display:inline-block;width:20px;height:20px;margin-left:9px;border-radius:6px;background:var(--mz-accent);opacity:.85}
-.mz-label{font-size:12.5px;font-weight:700;color:var(--mz-sub);margin:0 0 4px}
-.mz-q{font-size:21px;line-height:1.95;font-weight:700;color:var(--mz-title)}
-.mz-q .mz-qt{margin:0 0 4px}
-.mz-box{margin:0 0 12px;padding:13px 18px 14px;border:1px solid var(--mz-b1bd);border-radius:14px;background:var(--mz-b1)}
-.mz-box:last-child{margin-bottom:0}
-.mz-box[data-label]:before{content:attr(data-label);display:block;font-size:13px;font-weight:800;color:var(--mz-accent);margin:0 0 4px}
-.mz-b-excl,.mz-b-wajh{background:var(--mz-b2);border-color:var(--mz-b2bd)}
-.mz-b-excl[data-label]:before,.mz-b-wajh[data-label]:before{color:var(--mz-b2lab)}
-.mz-b-alert,.mz-b-exc{background:var(--mz-alert);border-color:var(--mz-alertbd)}
-.mz-b-alert[data-label]:before,.mz-b-exc[data-label]:before{display:inline;margin:0;font-size:inherit;color:var(--mz-alertlab);content:attr(data-label) ": "}
-.mz-b-err{background:var(--mz-err);border-color:var(--mz-errbd)}
-.mz-b-err[data-label]:before{color:var(--mz-errlab);display:inline;margin:0;font-size:inherit;content:attr(data-label) ": "}
-.mz-cols{display:flex;flex-wrap:wrap;margin:0 -6px 6px}
-.mz-col{flex:1 1 220px;min-width:0;margin:0 6px 12px;padding:13px 16px 14px;border:1px solid var(--mz-b1bd);border-radius:14px;background:var(--mz-b1)}
-.mz-col2{background:var(--mz-b2);border-color:var(--mz-b2bd)}
-.mz-col[data-label]:before{content:attr(data-label);display:block;font-size:14px;font-weight:800;padding:0 0 7px;margin:0 0 8px;color:var(--mz-b1lab);border-bottom:1px solid var(--mz-b1bd)}
-.mz-col2[data-label]:before{color:var(--mz-b2lab);border-bottom-color:var(--mz-b2bd)}
-.mz-steps{margin:0 0 12px}
-.mz-step{display:flex;align-items:flex-start;padding:12px 14px;border-radius:14px;background:var(--mz-step,var(--mz-b2));border:1px solid var(--mz-b2bd)}
-.mz-step-n{flex:0 0 34px;width:34px;height:34px;margin-left:12px;border-radius:50%;background:var(--mz-num,var(--mz-accent));color:#fff;font-weight:800;font-size:16px;line-height:34px;text-align:center}
-.mz-step-b{flex:1 1 auto;min-width:0}
-.mz-step-t{font-weight:800;color:var(--mz-title);line-height:1.8}
-.mz-step-d{margin-top:2px;line-height:1.9}
-.mz-steps-list{counter-reset:mzstep}
-.mz-steps-list .mz-step{counter-increment:mzstep;margin:0 0 10px}
-.mz-steps-list .mz-step:last-child{margin-bottom:0}
-.mz-steps-list .mz-step-n:before{content:counter(mzstep)}
-.mz-arrow{height:20px;padding:5px 15px 0 0;line-height:0}
-.mz-arrow:before{content:"";display:inline-block;border-right:6px solid transparent;border-left:6px solid transparent;border-top:9px solid var(--mz-conn,#9891b4);margin-right:5px}
-.mz-em{font-weight:800;color:var(--mz-title)}
-.mz-v{font-family:'Amiri','Noto Naskh Arabic','Traditional Arabic',serif;font-weight:700;font-size:1.15em;line-height:2}
-.mz-face .sem-aya,.mz-ans .sem-aya,.mz-face .sem-hadith,.mz-ans .sem-hadith{font-weight:700}
-@media (max-width:580px){.mz-q{font-size:19px}.mz-face,.mz-ans{font-size:17px}.mz-box{padding:12px 14px 13px}.mz-col{flex-basis:100%}}
-/* ===== إضافات 5.10–5.11 — تُلصق في آخر قسم mz- في anki/final.css وفي تنسيق نوع الملاحظة «أساسي» ===== */
-.mz-focus{color:var(--mz-accent);font-weight:800;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:6px}
-.mz-box.mz-core{font-weight:700;color:var(--mz-title)}
-.mz-corelead{font-weight:800;color:var(--mz-title)}
-.mz-b-edit{background:#f4f4f4;border:1px dashed #b9b9b9}
-.mz-b-edit[data-label]:before{color:#5f5f5f}
-.mz-srcl{margin-top:10px;text-align:left;font-size:12.5px}
-.mz-srcl a{color:var(--mz-sub);text-decoration:none;border-bottom:1px dotted var(--mz-sub)}
-
-/* ===== ملفات المحاضرات المنفصلة + صفحة الفهرس ===== */
-.hero-s{padding:40px 20px 44px}
-.hero-s .series{font-size:40px;text-decoration:none;display:inline-block}
-.hero-s h1{font-size:30px}
-.lnav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;max-width:1180px;margin:0 auto;padding:12px 18px;font-size:15px}
-.lnav a,.lnav span{display:inline-block;padding:7px 14px;border-radius:20px;text-decoration:none;background:var(--paper);border:1px solid var(--line);color:var(--brand);margin:4px 0;min-height:38px}
-.lnav a.home{background:var(--brand);color:#f5efe0;border-color:var(--brand);font-weight:700}
-.lnav .off{color:var(--sub);background:transparent;border-style:dashed}
-.lnav a:hover{background:var(--goldbg)}.lnav a.home:hover{background:var(--brand2)}
-.orient .ed2{font-size:15.5px;color:var(--ink2)}
-main.idx{max-width:960px;margin:0 auto;padding:0 18px}
-.ih{font-family:'El Messiri','Cairo';font-size:28px;color:var(--brand);margin:34px 0 12px}
-.grid{display:flex;flex-wrap:wrap;margin:0 -8px}
-.lc{flex:1 1 280px;margin:0 8px 16px;display:flex;flex-direction:column;text-decoration:none;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-top:6px solid var(--c,var(--brand));border-radius:18px;padding:16px 18px 14px;transition:transform .15s,box-shadow .15s}
-.lc:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(30,40,70,.09)}
-.lc .no{font-family:'El Messiri','Cairo';font-size:34px;font-weight:700;color:var(--c,var(--brand));line-height:1.2}
-.lc .lt{font-family:'El Messiri','Cairo';font-size:20px;font-weight:700;line-height:1.6;margin:2px 0 6px}
-.lc .lq{font-size:15.5px;color:var(--ink2);line-height:1.8;flex:1}
-.lc .ls{font-size:13.5px;color:var(--sub);margin-top:8px}
-.lc .go{font-size:14.5px;font-weight:700;color:var(--c,var(--brand));margin-top:6px}
-.lc-off{border-top-color:#cfcabd;border-style:dashed;opacity:.75}.lc-off .no,.lc-off .lt{color:var(--sub)}
-.alldl{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;background:#eef6f5;border:1px solid #c7e0dd;border-radius:16px;padding:14px 18px;margin:18px 0 10px}
-.alldl div{flex:1 1 320px;margin-left:12px}.alldl b{display:block;color:var(--accent)}.alldl span{font-size:14.5px;color:var(--ink2)}
-@media(max-width:580px){.hero-s .series{font-size:32px}.hero-s h1{font-size:23px}.lc .no{font-size:28px}.lnav{font-size:13px;padding:10px 8px;flex-wrap:nowrap}.lnav a,.lnav span{flex:1 1 0;text-align:center;margin:4px 3px;padding:7px 4px;min-width:0}}
-
+@media print{.find,.dash a.cont,.ck,.chev,.tbtn{display:none}.hero{background:#25305a;-webkit-print-color-adjust:exact}.bb[hidden]{display:block!important}}
 </style>
 </head>
 <body>
-<div id="progress"></div>
-<header class="hero"><div class="in"><p class="series">العروة الوثقى</p><div class="rope"><span></span><b></b><span></span></div><h1>أصل دين الإسلام — فهرس المحاضرات</h1><div class="meta">سلسلة مجالس قصيرة كانت تُلقى قبل الدرس الأصلي · المحاضرات 01–44</div></div></header>
-<main class="idx"><div class="ai-note">أُعدّ هذا المحتوى بمساعدة الذكاء الاصطناعي، وقد يحتوي أخطاء، ويُرجى مراجعته.</div><div class="orient" id="orient"><div class="lab">السؤال المركزي للسلسلة</div><div class="cq">ما أصل دين الإسلام الذي لا يكون المرء مسلمًا إلا به، ولماذا يجب حسمه في زمن الفتن والاختلاط؟</div><div class="lab">الفكرة المحورية</div><div class="idea">أصل الدين هو الشهادتان — العروة الوثقى — وهو غير «أصول الدين» التي هي لوازمه؛ ومن نقض الأصل خرج من الإسلام، ومن أخطأ في اللوازم مع بقاء الأصل بقي معه أصل الدين.</div><div class="ed">صياغة تحريرية تجمع معنى المحاضرات المنشورة.</div><div class="lab" style="margin-top:14px">خريطة المحاور</div><div class="mm" id="mm-main"></div></div><h2 class="ih">المحاضرات</h2><div class="grid"><a class="lc" href="01.html" style="--c:var(--s1)"><span class="no">01</span><span class="lt">لماذا نتكلم في أصل الدين الآن؟</span><span class="lq">لماذا يجب حسم أصل الدين في زمن الفتن واختلاط المناهج؟</span><span class="ls">14 بطاقة · 6 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="02.html" style="--c:var(--s2)"><span class="no">02</span><span class="lt">أصل الدين غير أصول الدين</span><span class="lq">ما الفرق بين أصل الدين وأصول الدين، وما أثر هذا الفرق في الحكم على الناس؟</span><span class="ls">27 بطاقة · 6 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="03.html" style="--c:var(--s3)"><span class="no">03</span><span class="lt">الفقه تفصيل لا إجمال، وجذور «المذهب التلفيقي»</span><span class="lq">لماذا كان التفصيل منهج أهل السنة، وكيف نشأ المذهب التلفيقي الذي يجمع بين الشريعة وقوانين الغرب؟</span><span class="ls">35 بطاقة · 7 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="04.html" style="--c:var(--s4)"><span class="no">04</span><span class="lt">الدليل على أن «لا إله إلا الله» هي أصل دين الإسلام</span><span class="lq">ما الدليل من القرآن والسنة وأقوال العلماء على أن الشهادتين هما أصل الدين؟</span><span class="ls">28 بطاقة · 5 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="05.html" style="--c:var(--s5)"><span class="no">05</span><span class="lt">فضل الشهادتين: لماذا تُقبل على هذا الأصل؟</span><span class="lq">ما فضل لا إله إلا الله الذي يدفعك إلى تعلّم معناها وشروطها؟</span><span class="ls">21 بطاقة · 7 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="06.html" style="--c:var(--s6)"><span class="no">06</span><span class="lt">معنى «لا إله إلا الله»: النفي والإثبات</span><span class="lq">ما معنى «لا إله إلا الله» كما تدل عليه آيات القرآن وفهم المفسرين؟</span><span class="ls">31 بطاقة · 9 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="07.html" style="--c:var(--s7)"><span class="no">07</span><span class="lt">الحنيف، و«أسلمتُ وجهي لله وتخلّيت»</span><span class="lq">كيف تدل السنة وكلام العلماء على أن الشهادة لا تتم إلا بالإثبات والنفي معًا؟</span><span class="ls">28 بطاقة · 8 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="08.html" style="--c:var(--s8)"><span class="no">08</span><span class="lt">تعريف أصل الدين، ومدخل الفطرة</span><span class="lq">ما التعريف الجامع لأصل الدين، ولماذا كان هذا القدر معلومًا بالفطرة؟</span><span class="ls">28 بطاقة · 7 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="09.html" style="--c:var(--s9)"><span class="no">09</span><span class="lt">أصل الدين مركوز في الفطرة: الميثاق والتحسين والتقبيح</span><span class="lq">ما الدليل على أن أصل الدين معلوم بالفطرة والعقل، وما موقع الرسل والعقوبة منه؟</span><span class="ls">31 بطاقة · 6 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="10.html" style="--c:var(--s10)"><span class="no">10</span><span class="lt">الفطرة هي الإسلام، والحب الجبلي والشرعي</span><span class="lq">ما الفطرة التي يولد عليها الإنسان، وما أثرها، ولماذا يضلّ عنها من يضلّ؟</span><span class="ls">34 بطاقة · 6 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="11.html" style="--c:#2f6f8f"><span class="no">11</span><span class="lt">أهل الفطرة في الجاهلية: قسّ بن ساعدة وزيد بن عمرو</span><span class="lq">هل وُجد من عرف التوحيد وأنكر الشرك بفطرته قبل البعثة؟ ومن هم؟</span><span class="ls">50 بطاقة · 10 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="12.html" style="--c:#8a4f2d"><span class="no">12</span><span class="lt">قاعدة الأسماء والأحكام، ومدخل معنى العبادة</span><span class="lq">ما فائدة معرفة التوحيد بالفطرة إذا كان العذاب لا يكون إلا بعد الرسل؟ وما العبادة؟</span><span class="ls">33 بطاقة · 9 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="13.html" style="--c:#4a6d3a"><span class="no">13</span><span class="lt">معنى العبادة: اسم جامع، وكُنهها الحب والذل</span><span class="lq">ما العبادة التي يجب أن تُصرف لله وحده، وما جوهرها؟</span><span class="ls">37 بطاقة · 9 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="14.html" style="--c:#6a4a8c"><span class="no">14</span><span class="lt">تحقيق العبادة: المحبة، والإخلاص والمتابعة</span><span class="lq">كيف تتحقق عبادة الله وحده، ومتى يُقبل العمل؟</span><span class="ls">35 بطاقة · 9 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="15.html" style="--c:#2d7a6a"><span class="no">15</span><span class="lt">المحبة أصل العبادة، وقواعد العبودية الأربع</span><span class="lq">ما حقيقة محبة الله التي هي أصل العبادة، وعلى أي قواعد تقوم العبودية؟</span><span class="ls">30 بطاقة · 8 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="16.html" style="--c:#9a4a4a"><span class="no">16</span><span class="lt">الشرك الأكبر: أن تجعل لله ندًّا</span><span class="lq">ما الشرك الأكبر الذي ينقض «لا إله إلا الله»، وكيف يقع فيه من لا يعرف الجاهلية؟</span><span class="ls">42 بطاقة · 10 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="17.html" style="--c:#3d5f8f"><span class="no">17</span><span class="lt">الخلق والأمر: مقدمة الطاغوت</span><span class="lq">لماذا لم ينفع المشركين إقرارهم بالخالق؟ وما الإقرار الذي يتحقق به التوحيد؟</span><span class="ls">35 بطاقة · 8 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="18.html" style="--c:#7a6a2a"><span class="no">18</span><span class="lt">تعريف الطاغوت: ما تجاوز به العبد حدّه</span><span class="lq">ما الطاغوت الذي لا يصح التوحيد إلا بالكفر به، وما أنواعه؟</span><span class="ls">35 بطاقة · 10 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="19.html" style="--c:#5a3f7a"><span class="no">19</span><span class="lt">النهي عن التحاكم لغير شرع الله، ولا أنصاف حلول</span><span class="lq">لماذا لا يجوز التنازل عن حكم الله ولو في حكم واحد أو لمدة مؤقتة؟</span><span class="ls">48 بطاقة · 12 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="20.html" style="--c:#2f7a8a"><span class="no">20</span><span class="lt">مخالفة أهل الكتاب، ومقدمة «معنى الدين»</span><span class="lq">لماذا شدّد الإسلام في مخالفة أهل الكتاب، وما علاقة ذلك بمعنى «الدين»؟</span><span class="ls">33 بطاقة · 9 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="21.html" style="--c:#4a5f9a"><span class="no">21</span><span class="lt">معنى «الدين»، والطواغيت دين آخر</span><span class="lq">ما معنى «الدين» في لغة العرب والقرآن، ولماذا يكون التنازل عن شيء منه دخولًا في دين آخر؟</span><span class="ls">41 بطاقة · 8 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="22.html" style="--c:#2b7468"><span class="no">22</span><span class="lt">حقيقة الطاغوت: جناحا العبادة والتشريع</span><span class="lq">ما حقيقة الطاغوت الذي لا يتحقق التوحيد إلا بالكفر به، وما جناحاه اللذان يطير بهما؟</span><span class="ls">40 بطاقة · 10 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="23.html" style="--c:#9a5b35"><span class="no">23</span><span class="lt">كيف عُبدت الأصنام: قصة ودّ وسواع</span><span class="lq">كيف انتقل قوم موحّدون إلى عبادة الأصنام، وما الذي يحذّرنا منه ذلك اليوم؟</span><span class="ls">39 بطاقة · 9 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="24.html" style="--c:#56628e"><span class="no">24</span><span class="lt">عمرو بن لحي: أصل التشريع والأصنام</span><span class="lq">كيف بدّل عمرو بن لحي ملة إبراهيم مع بقاء شعائر منها، ولماذا بدأ بالتشريع قبل الأصنام؟</span><span class="ls">40 بطاقة · 9 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="25.html" style="--c:#24779a"><span class="no">25</span><span class="lt">الترهيب من الشرك (1): العصمة والاجتناب</span><span class="lq">كيف يجمع المسلم بين التحرّز من تكفير من قال «لا إله إلا الله» بلا قاطع، والفرار من الشرك ووسائله؟</span><span class="ls">35 بطاقة · 8 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="26.html" style="--c:#7f4d6e"><span class="no">26</span><span class="lt">الترهيب من الشرك (2): لا عمل بلا أصل</span><span class="lq">لماذا لم ينفع الوليد وأبا طالب وابن جدعان ثناؤهم ودفاعهم وإحسانهم، وما علاقة الشرك الأصغر بالأكبر؟</span><span class="ls">31 بطاقة · 7 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="27.html" style="--c:#4d6a3e"><span class="no">27</span><span class="lt">الترهيب من الشرك (3): سدّ الذرائع</span><span class="lq">كيف سدّت الشريعة كل طريق يوصل إلى الشرك الأكبر، ولو لم يقصد صاحبه الشرك؟</span><span class="ls">33 بطاقة · 9 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="28.html" style="--c:#6b5294"><span class="no">28</span><span class="lt">قاعدة عمل الأمة، ونشوء البدع</span><span class="lq">لماذا يُرجع إلى عمل الأمة وما كان عليه السلف في فهم الحكم، وكيف تنشأ البدع حين يُترك ذلك؟</span><span class="ls">27 بطاقة · 8 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="29.html" style="--c:#2e7a74"><span class="no">29</span><span class="lt">الوحي أو الهوى، والعلم اللدني، وجحد حرف</span><span class="lq">ما حكم من رأى أنه يسعه الخروج عن الشريعة — ولو مؤقتًا — أو ردّ حرفًا منها، أو أقرّ بها وامتنع عن التزامها؟</span><span class="ls">33 بطاقة · 10 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="30.html" style="--c:#8d5040"><span class="no">30</span><span class="lt">نقول أهل العلم في التحاكم لغير الشرع</span><span class="lq">ماذا قال أهل العلم عبر القرون فيمن استحلّ ما حرّم الله، أو تحاكم إلى غير شرعه، أو سوّغ اتباع شريعة غيره؟</span><span class="ls">32 بطاقة · 8 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="31.html" style="--c:#3f5e8c"><span class="no">31</span><span class="lt">من رأى جواز الكفر: التصديق والالتزام</span><span class="lq">ما حكم من لا يفعل الشرك بنفسه لكنه يرى جوازه لغيره، ولماذا يُلحق بالفاعل؟</span><span class="ls">35 بطاقة · 10 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="32.html" style="--c:#6f6430"><span class="no">32</span><span class="lt">الإطلاق والتعيين: الظاهرة والخفية</span><span class="lq">متى يُطلق الحكم على النوع دون المعيّن، ومتى يُحكم على المعيّن بعينه؟ وما أصل التفريق بين المسائل الظاهرة والخفية؟</span><span class="ls">36 بطاقة · 10 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="33.html" style="--c:#2f6a7f"><span class="no">33</span><span class="lt">أدلة السلف على التفريق بين الظاهر والخفي</span><span class="lq">هل التفريق بين المسائل الظاهرة والخفية قول محدَث، أم هو منهج السلف في الحكم على المخالف؟</span><span class="ls">33 بطاقة · 7 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="34.html" style="--c:#7a4f6b"><span class="no">34</span><span class="lt">مفردات الظاهر والخفي، ومدخل الحجة</span><span class="lq">ما أمثلة المسائل الظاهرة والخفية في كلام أهل العلم، وما علاقة ذلك بالحجة والعذاب؟</span><span class="ls">44 بطاقة · 8 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="35.html" style="--c:#556b2f"><span class="no">35</span><span class="lt">الأسماء والأحكام، واستبانة السبيلين</span><span class="lq">لماذا نشغل أنفسنا بأسماء الناس — مسلم وكافر وفاسق ومنافق — وما ثمرة معرفتها بالتفصيل؟</span><span class="ls">43 بطاقة · 8 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="36.html" style="--c:#8a5a3a"><span class="no">36</span><span class="lt">أحكام المسلم والكافر: «هتستفيد إيه؟»</span><span class="lq">ماذا نستفيد من معرفة المسلم من الكافر؟ وما الأحكام التي تتعلق بكل اسم؟</span><span class="ls">47 بطاقة · 6 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="37.html" style="--c:#3d5a8a"><span class="no">37</span><span class="lt">إقامة الحجة، وتلازم الظاهر والباطن</span><span class="lq">كيف تُقام الحجة في المسائل الظاهرة والخفية؟ ولماذا يُحكم في الظاهر بالفعل دون سؤال عن النية؟</span><span class="ls">47 بطاقة · 8 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="38.html" style="--c:#6a3f6a"><span class="no">38</span><span class="lt">لماذا المعيَّن؟ كلية الشريعة والاستطاعة</span><span class="lq">لماذا يقع الحكم في المسائل الظاهرة على المعيَّن مباشرة، ولا يُبدأ بالسؤال عن العوارض؟</span><span class="ls">34 بطاقة · 6 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="39.html" style="--c:#2f7a5f"><span class="no">39</span><span class="lt">لماذا المعيَّن؟ الإجماع مخصوص، والإرجاء</span><span class="lq">لماذا لا يصح أن يُقال: «الحكم بالكفر في كلام العلماء مطلق لا يتناول الأعيان»؟</span><span class="ls">39 بطاقة · 6 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="40.html" style="--c:#4f6f3a"><span class="no">40</span><span class="lt">الردة والاستتابة، والإذن بالكفر وإعمال العارض</span><span class="lq">ما دلالة الردة والاستتابة على التعيين؟ وما الفرق بين إعمال العارض خطأً والإذن بالكفر؟ (التفريغ ناقص من آخره)</span><span class="ls">21 بطاقة · 5 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="41.html" style="--c:#4a5f8a"><span class="no">41</span><span class="lt">عوارض الأهلية: بعد الحكم، وبحسب العلّة</span><span class="lq">متى يُنظر في عوارض الأهلية، وكيف نعرف أن العارض يرفع هذا الحكم بعينه؟</span><span class="ls">38 بطاقة · 7 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="42.html" style="--c:#7a6a3a"><span class="no">42</span><span class="lt">الظاهر والخفي في التطبيق، والاجتهاد</span><span class="lq">كيف تعامل العلماء مع المسائل الظاهرة والخفية في الحكم، وهل يُعذر المجتهد إذا أخطأ في أصول الدين؟</span><span class="ls">35 بطاقة · 6 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="43.html" style="--c:#5a4a8a"><span class="no">43</span><span class="lt">عارض الخطأ، ومدخل الإكراه</span><span class="lq">متى يُعذر المخطئ؟ وما الفرق بين خطأ المجتهد وخطأ الذاهل الذي «أخطأ من شدة الفرح»؟ (التفريغ ينتهي في منتصف جملة، ويكمله 44)</span><span class="ls">34 بطاقة · 6 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a><a class="lc" href="44.html" style="--c:#2f6f6f"><span class="no">44</span><span class="lt">لا اجتهاد في الأصول، والإكراه والاضطرار</span><span class="lq">لماذا لا يُقبل «الاجتهاد» في أصول الدين؟ وما الإكراه الذي يبيح كلمة الكفر، ولماذا لا يصح وصف الشرك بأنه «ضرورة»؟</span><span class="ls">42 بطاقة · 9 سؤال فهم</span><span class="go">اقرأ المحاضرة ←</span></a></div><div class="src"><div class="row"><div class="k">تنبيه السلسلة</div><div class="v">المحاضرات 01–44 منشورة هنا ملفًا لكل محاضرة؛ والملف القديم المجمّع للمحاضرات 08–10 خارج المستودع تحلّ محله هذه الملفات. وترتيب 09 («لا زلنا») ثم 10 («توقفنا») هو الترتيب المعتمد.</div></div></div><div class="alldl"><div><b>بطاقات المراجعة (1534 بطاقة)</b><span>تُحمَّل من صفحة كل محاضرة؛ وكل بطاقة تنزل تلقائيًا في رزمة «العروة الوثقى» بحسب أولويتها، بوسم «العروة_الوثقى::محاضرة_NN».</span></div></div></main>
+<header class="hero"><div class="in"><p class="series">العروة الوثقى</p><div class="rope"><span></span><b></b><span></span></div><h1>أصل دين الإسلام — فهرس المحاضرات</h1><div class="meta" id="heroMeta">سلسلة مجالس قصيرة كانت تُلقى قبل الدرس الأصلي</div></div></header>
+
+<main class="idx">
+<div class="ai-note">أُعدّ هذا المحتوى بمساعدة الذكاء الاصطناعي، وقد يحتوي أخطاء، ويُرجى مراجعته.</div>
+
+<div class="dash" id="dash" aria-live="polite"></div>
+
+<div class="orient"><div class="lab">السؤال المركزي للسلسلة</div><div class="cq">ما أصل دين الإسلام الذي لا يكون المرء مسلمًا إلا به، ولماذا يجب حسمه في زمن الفتن والاختلاط؟</div><div class="lab">الفكرة المحورية</div><div class="idea">أصل الدين هو الشهادتان — العروة الوثقى — وهو غير «أصول الدين» التي هي لوازمه؛ ومن نقض الأصل خرج من الإسلام، ومن أخطأ في اللوازم مع بقاء الأصل بقي معه أصل الدين.</div><div class="ed">صياغة تحريرية تجمع معنى المحاضرات المنشورة.</div></div>
+
+<h2 class="ih">مسار السلسلة</h2>
+<p class="ih-sub">كل عقدة كبيرة قسم، وكل عقدة صغيرة باب. اضغط على العقدة لتفتح محاضراتها، وعلّم ✓ ما أتممته. الأقسام والأبواب مأخوذة من عناوين حلقات القناة، وصياغتها تحريرية.</p>
+
+<div class="find">
+  <div class="q"><label for="q" hidden>ابحث في المحاضرات</label><input id="q" type="search" placeholder="ابحث برقم أو كلمة: الطاغوت، 32، الفطرة…" autocomplete="off"><span class="kb">/</span></div>
+  <div class="seg" role="group" aria-label="طريقة العرض"><button type="button" data-view="list" aria-pressed="true">قائمة</button><button type="button" data-view="cards" aria-pressed="false">بطاقات</button></div>
+  <button type="button" class="tbtn" id="openAll">افتح الكل</button>
+  <button type="button" class="tbtn" id="closeAll">اطوِ الكل</button>
+</div>
+
+<div id="results" hidden></div>
+<div class="rope-v" id="rope"><noscript><p class="err">الفهرس يحتاج تفعيل JavaScript. يمكنك فتح <a href="01.html">المحاضرة 01</a> والتنقل بين المحاضرات بأزرار «التالية/السابقة» داخل كل صفحة.</p></noscript></div>
+
+<div class="src" id="notes"></div>
+<div class="alldl" id="alldl"></div>
+</main>
 <footer>العروة الوثقى · أصل دين الإسلام · أُعدّ بمساعدة الذكاء الاصطناعي ويُرجى مراجعته</footer>
+
+<script src="lectures.js"></script>
 <script>
-;
-const QUIZ_DATA=[];
-const MAP_DATA=[{"id": "mm-main", "sectionId": "all", "center": "أصل دين الإسلام — العروة الوثقى", "nodes": [{"text": "لماذا الآن؟ الفتن والاختلاط", "target": "01.html", "color": "#3a5a98", "children": [{"text": "إيمان بلا انتماء", "target": "01.html#s1-d"}, {"text": "رؤيا ابن سلام", "target": "01.html#s1-f"}, {"text": "وصية يعقوب", "target": "01.html#s1-g"}]}, {"text": "أصل الدين غير أصوله", "target": "02.html", "color": "#2a7f7a", "children": [{"text": "مثال الشجرة", "target": "02.html#s2-c"}, {"text": "لا اجتهاد في الأصول", "target": "02.html#s2-e"}, {"text": "تطوّر البدع", "target": "02.html#s2-f"}]}, {"text": "التفصيل ونقد التلفيق", "target": "03.html", "color": "#b0623a", "children": [{"text": "الجمع والتفرقة", "target": "03.html#s3-b"}, {"text": "الغزو الفكري", "target": "03.html#s3-e"}, {"text": "ثلاث فرق أمام الغرب", "target": "03.html#s3-h"}]}, {"text": "أدلة أن الشهادتين الأصل", "target": "04.html", "color": "#5a5f8a", "children": [{"text": "من القرآن", "target": "04.html#s4-b"}, {"text": "من السنة", "target": "04.html#s4-c"}, {"text": "أقوال العلماء", "target": "04.html#s4-d"}]}, {"text": "فضل الشهادتين", "target": "05.html", "color": "#1e7aa0", "children": [{"text": "أسماؤها في القرآن", "target": "05.html#s5-a"}, {"text": "الشفاعة والنجاة", "target": "05.html#s5-d"}, {"text": "المؤمن والذنب", "target": "05.html#s5-f"}]}, {"text": "معنى الشهادة وتعريف أصل الدين", "target": "06.html", "color": "#8c4a6b", "children": [{"text": "06 النفي والإثبات", "target": "06.html#s6-i"}, {"text": "07 الحنيف وآيات الإسلام", "target": "07.html#s7-a"}, {"text": "08 تعريف أصل الدين", "target": "08.html#s8-b"}]}, {"text": "الفطرة وأهلها والأسماء والأحكام", "target": "09.html", "color": "#7a5636", "children": [{"text": "09 الأقوال الثلاثة", "target": "09.html#s9-e"}, {"text": "10 الفطرة هي الإسلام", "target": "10.html#s10-b"}, {"text": "10 الحب الجبلي والشرعي", "target": "10.html#s10-e"}, {"text": "11 قسّ وزيد بن عمرو", "target": "11.html#s11-b"}, {"text": "12 الأسماء والأحكام", "target": "12.html#s12-b"}]}, {"text": "معنى العبادة وتحقيقها ونقيضها", "target": "13.html", "color": "#4a6d3a", "children": [{"text": "13 العبادة اسم جامع", "target": "13.html#s13-c"}, {"text": "13 الحب والذل", "target": "13.html#s13-g"}, {"text": "14 الإخلاص والمتابعة", "target": "14.html#s14-e"}, {"text": "15 المحبة والقواعد الأربع", "target": "15.html#s15-f"}, {"text": "16 الشرك الأكبر", "target": "16.html#s16-d"}, {"text": "17 الخلق والأمر", "target": "17.html#s17-e"}]}, {"text": "الطاغوت والتحاكم ومعنى الدين", "target": "18.html", "color": "#7a6a2a", "children": [{"text": "18 تعريف الطاغوت", "target": "18.html#s18-e"}, {"text": "19 لا أنصاف حلول", "target": "19.html#s19-l"}, {"text": "20 معنى الدين", "target": "20.html#s20-i"}, {"text": "21 معاني الدين", "target": "21.html#s21-d"}, {"text": "22 جناحا الطاغوت", "target": "22.html#s22-c"}, {"text": "23 ودّ وسواع", "target": "23.html#s23-d"}, {"text": "24 عمرو بن لحي", "target": "24.html#s24-c"}]}, {"text": "الترهيب من الشرك وأحكامه", "target": "25.html", "color": "#7f4d6e", "children": [{"text": "25–27 الترهيب وسدّ الذرائع", "target": "25.html#s25-a"}, {"text": "28 عمل الأمة", "target": "28.html#s28-a"}, {"text": "29 الوحي أو الهوى", "target": "29.html#s29-a"}, {"text": "30 نقول العلماء", "target": "30.html#s30-a"}, {"text": "31 من رأى الجواز", "target": "31.html#s31-b"}, {"text": "32 الظاهرة والخفية", "target": "32.html#s32-d"}]}, {"text": "الظاهر والخفي والأسماء والأحكام", "target": "33.html", "color": "#2f6a7f", "children": [{"text": "33 التفريق عند السلف", "target": "33.html#s33-g"}, {"text": "34 الحجة توجب العذاب", "target": "34.html#s34-h"}, {"text": "35 استبانة السبيلين", "target": "35.html#s35-g"}]}, {"text": "الحجة والحكم على المعيَّن", "target": "36.html", "color": "#8a5a3a", "children": [{"text": "36 أحكام المسلم والكافر", "target": "36.html#s36-h"}, {"text": "37 البلاغ وإزالة الشبهة", "target": "37.html#s37-c"}, {"text": "37 تلازم الظاهر والباطن", "target": "37.html#s37-h"}, {"text": "38 الشريعة كلية", "target": "38.html#s38-c"}]}, {"text": "الإجماع والإرجاء وعوارض الأهلية", "target": "39.html", "color": "#2f7a5f", "children": [{"text": "39 الإجماع مخصوص", "target": "39.html#s39-b"}, {"text": "39 قول وعمل واعتقاد", "target": "39.html#s39-h"}, {"text": "40 الإذن بالكفر", "target": "40.html#s40-g"}, {"text": "41 تعريف المانع", "target": "41.html#s41-c"}]}, {"text": "الاجتهاد والخطأ والإكراه", "target": "42.html", "color": "#5a4a8a", "children": [{"text": "42 الاجتهاد في الفروع لا الأصول", "target": "42.html"}, {"text": "43 الخطأ والإكراه: التعريف والشروط", "target": "43.html#s43-j"}, {"text": "44 الاضطرار والإكراه", "target": "44.html#s44-j"}]}]}];
-</script>
-<script>
-/* واجهة الصفحة فقط — البطاقات وتصديرها من ilm-anki.js (آلية 5.11 — 9-ص) */
+/* فهرس العروة الوثقى — الحبل والعقد. البيانات كلها في lectures.js */
 (function(){
 "use strict";
+var U=window.URWA, rope=document.getElementById("rope");
 function $(id){return document.getElementById(id);}
-/* quiz */
-var QZ={};QUIZ_DATA.forEach(function(q){QZ[q.id]=q;});var score={};
-document.querySelectorAll(".quiz[data-q]").forEach(function(box){var q=QZ[box.getAttribute("data-q")];if(!q)return;
-  var h='<div class="qh">سؤال فهم</div><div class="qq">'+q.question+'</div>';
-  q.options.forEach(function(o,i){h+='<button class="op" type="button" data-i="'+i+'">'+o+'</button>';});
-  box.innerHTML=h+'<div class="ex">'+q.explanation+'</div><button class="again" type="button">إعادة المحاولة</button>';});
-document.addEventListener("click",function(e){
-  var b=e.target.closest(".quiz .op");
-  if(b){var box=b.closest(".quiz");if(box.classList.contains("done"))return;var q=QZ[box.getAttribute("data-q")],i=+b.getAttribute("data-i");
-    box.classList.add("done");box.querySelectorAll(".op")[q.correctIndex].classList.add("ok");if(i!==q.correctIndex)b.classList.add("no");
-    (score[q.sectionId]=score[q.sectionId]||{})[q.id]=(i===q.correctIndex);
-    var el=document.querySelector('.score[data-s="'+q.sectionId+'"]');if(el){var s=score[q.sectionId],ok=0,n=0;for(var k in s){n++;if(s[k])ok++;}
-      el.textContent="نتيجتك في أسئلة هذه المحاضرة: "+ok+" من "+n+" (المجموع "+QUIZ_DATA.filter(function(x){return x.sectionId===q.sectionId;}).length+")";}return;}
-  var a=e.target.closest(".quiz .again");if(a){var bx=a.closest(".quiz");bx.classList.remove("done");bx.querySelectorAll(".op").forEach(function(o){o.classList.remove("ok","no");});}
-});
-/* cmp labels for phones */
-document.querySelectorAll(".cmp").forEach(function(t){var h=t.querySelector(".r.h");if(!h)return;var hs=[].map.call(h.children,function(c){return c.textContent;});
-  t.querySelectorAll(".r:not(.h)").forEach(function(r){[].forEach.call(r.children,function(c,i){if(i&&hs[i])c.setAttribute("data-h",hs[i]);});});});
-/* mind map */
-MAP_DATA.forEach(function(m){var host=$(m.id);if(!host)return;
-  var h='<div class="mm-center">'+m.center+'</div><div class="mm-branches">';
-  m.nodes.forEach(function(n){h+='<div class="mm-node" style="--c:'+n.color+'"><a href="'+n.target+'">'+n.text+'</a>';
-    if(n.children&&n.children.length)h+='<div class="mm-kids">'+n.children.map(function(c){return '<a href="'+c.target+'">'+c.text+'</a>';}).join("")+'</div>';
-    h+='</div>';});host.innerHTML=h+'</div>';});
-/* progress / toc / font */
-var bar=$("progress"),tl=[].slice.call(document.querySelectorAll(".toc a[href^='#']"));
-var targets=tl.map(function(a){return $(a.getAttribute("href").slice(1));});
-window.addEventListener("scroll",function(){var h=document.documentElement;if(bar)bar.style.width=(h.scrollTop/Math.max(1,h.scrollHeight-h.clientHeight)*100)+"%";
-  var cur=-1;targets.forEach(function(t,i){if(t&&t.getBoundingClientRect().top<120)cur=i;});tl.forEach(function(a,i){a.classList.toggle("on",i===cur);});},{passive:true});
-var fs=18;function setFs(){document.documentElement.style.setProperty("--fs",fs+"px");}
-if($("fsUp")){$("fsUp").onclick=function(){if(fs<22){fs++;setFs();}};$("fsDn").onclick=function(){if(fs>16){fs--;setFs();}};}
-})();
+if(!U||!U.lectures||!U.parts){rope.innerHTML='<p class="err">تعذّر تحميل بيانات الفهرس (lectures.js). تأكد أن الملف مرفوع بجوار index.html.</p>';return;}
 
+U.lectures.sort(function(a,b){return a.n-b.n;});
+var LEC={};U.lectures.forEach(function(l){LEC[l.n]=l;});
+var ORD=["الأول","الثاني","الثالث","الرابع","الخامس","السادس","السابع","الثامن"];
+var AR="٠١٢٣٤٥٦٧٨٩";
+
+function pad(n){return n<10?"0"+n:String(n);}
+function lid(n){return U.idPrefix+pad(n);}
+function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v);}catch(e){return null;}}
+/* القراءة من نفس مفتاح ilm-track (ilm_ + المعرّف) حتى تظهر الصفحة فورًا قبل اكتمال المزامنة */
+function isDone(n){if(window.IlmTrack){try{return window.IlmTrack.isDone(lid(n));}catch(e){}}return ls("ilm_"+lid(n))==="1";}
+function setDone(n,val){
+  if(window.IlmTrack){try{window.IlmTrack.setDone(lid(n),val);return;}catch(e){}}
+  ls("ilm_"+lid(n),val?"1":"0");ls("ilm_sync_ts",String(Date.now()));
+}
+function rng(a,b){return a===b?"الحلقة "+a:"الحلقات "+a+"–"+b;}
+function babOf(n){for(var i=0;i<U.parts.length;i++){var p=U.parts[i];for(var j=0;j<p.abwab.length;j++){var b=p.abwab[j];if(n>=b.from&&n<=b.to)return {p:p,b:b,pi:i};}}return null;}
+function stats(a,b){var s={total:b-a+1,built:0,done:0};for(var n=a;n<=b;n++)if(LEC[n]){s.built++;if(isDone(n))s.done++;}return s;}
+function bar(s,title){var bw=(s.built/s.total*100).toFixed(1),dw=(s.done/s.total*100).toFixed(1);
+  return '<span class="bar" role="img" aria-label="'+(title||"")+'"><i class="b" style="width:'+bw+'%"></i><i class="d" style="width:'+dw+'%"></i></span>';}
+function nextLec(){for(var i=0;i<U.lectures.length;i++)if(!isDone(U.lectures[i].n))return U.lectures[i].n;return null;}
+
+/* حالة الطيّ والعرض */
+var OPEN={};try{OPEN=JSON.parse(ls("urwa_open")||"{}")||{};}catch(e){OPEN={};}
+function saveOpen(){ls("urwa_open",JSON.stringify(OPEN));}
+var VIEW=ls("urwa_view")==="cards"?"cards":"list";
+if(!Object.keys(OPEN).length){ /* أول زيارة: افتح باب المحاضرة التالية */
+  var f=babOf(nextLec()||U.lectures[U.lectures.length-1].n);
+  if(f){OPEN[f.p.id]=1;OPEN["b"+f.b.from]=1;}
+}
+
+/* ===== المحاضرة ===== */
+function lecHTML(l,color,hl,showBab){
+  var d=isDone(l.n),nx=(l.n===NEXT);
+  return '<div class="lr'+(d?' is-done':'')+(nx?' is-next':'')+'" style="--c:'+color+'">'+
+    '<a class="lr-a" href="'+pad(l.n)+'.html" data-n="'+l.n+'"><span class="lr-no">'+pad(l.n)+'</span><span class="lr-b">'+
+    (showBab?'<span class="bl">'+showBab+'</span>':'')+
+    '<span class="lr-t">'+hl(l.t)+'</span><span class="lr-q">'+hl(l.q)+'</span>'+
+    '<span class="lr-s">'+l.cards+' بطاقة · '+l.quiz+' سؤال فهم'+(nx?'<em class="nx">التالية</em>':'')+(l.note?'<em class="badge">'+l.note+'</em>':'')+'</span></span></a>'+
+    '<button class="ck" type="button" data-n="'+l.n+'" aria-pressed="'+d+'" title="'+(d?"ألغِ علامة الإتمام":"علّمها: أتممتها")+'" aria-label="أتممت المحاضرة '+pad(l.n)+'">✓</button></div>';
+}
+function plain(s){return s;}
+
+/* ===== الباب ===== */
+function babHTML(b,color){
+  var s=stats(b.from,b.to),id="b"+b.from;
+  if(!s.built)return '<div class="bab empty"><span class="bk" aria-hidden="true"></span><div class="bh-static"><span class="bn">'+b.name+'</span><span class="bm">'+rng(b.from,b.to)+' · لم تُنشر بعد</span></div></div>';
+  var open=!!OPEN[id],cls=(s.done&&s.done===s.total)?" full":(s.done?" part-done":"");
+  var h='<div class="bab'+cls+'" style="--c:'+color+'"><span class="bk" aria-hidden="true"></span>'+
+    '<button class="bh" type="button" data-k="'+id+'" aria-expanded="'+open+'" aria-controls="x'+id+'"><span class="bn">'+b.name+'</span>'+
+    '<span class="bm">'+rng(b.from,b.to)+' · منشور '+s.built+' من '+s.total+(s.done?' · أتممت '+s.done:'')+'</span>'+bar(s,"منشور "+s.built+" وأتممت "+s.done+" من "+s.total)+'<span class="chev" aria-hidden="true"></span></button>'+
+    '<div class="bb ll view-'+VIEW+'" id="x'+id+'"'+(open?'':' hidden')+'>';
+  var run=null;
+  for(var n=b.from;n<=b.to;n++){
+    if(LEC[n]){if(run){h+='<div class="gap">'+rng(run[0],run[1])+' · لم تُنشر بعد</div>';run=null;}h+=lecHTML(LEC[n],color,plain);}
+    else{if(run)run[1]=n;else run=[n,n];}
+  }
+  if(run)h+='<div class="gap">'+rng(run[0],run[1])+' · لم تُنشر بعد</div>';
+  return h+'</div></div>';
+}
+
+/* ===== القسم ===== */
+function partHTML(p,i){
+  var s=stats(p.from,p.to),open=!!OPEN[p.id];
+  return '<div class="part" style="--c:'+p.color+'">'+
+    '<button class="ph" type="button" data-k="'+p.id+'" aria-expanded="'+open+'" aria-controls="x'+p.id+'">'+
+    '<span class="pk" aria-hidden="true">'+AR[i+1]+'</span><span class="pl">القسم '+(ORD[i]||i+1)+'</span>'+
+    '<span class="pn">'+p.name+'</span><span class="pm">'+rng(p.from,p.to)+' · '+p.abwab.length+' أبواب · '+(s.built?'منشور '+s.built+(s.done?' · أتممت '+s.done:''):'لم يُنشر منه بعد')+'</span>'+
+    bar(s,"منشور "+s.built+" وأتممت "+s.done+" من "+s.total)+'<span class="chev" aria-hidden="true"></span></button>'+
+    '<div class="pb" id="x'+p.id+'"'+(open?'':' hidden')+'>'+p.abwab.map(function(b){return babHTML(b,p.color);}).join("")+'</div></div>';
+}
+
+/* ===== لوحة التقدّم ===== */
+function dashHTML(){
+  var all=stats(1,U.total),cards=0;U.lectures.forEach(function(l){cards+=l.cards;});
+  var nx=NEXT,last=parseInt(ls("urwa_last")||"0",10),h="";
+  if(nx){var L=LEC[nx];h+='<a class="tile cont" href="'+pad(nx)+'.html" data-n="'+nx+'"><div class="d">'+(all.done?"أكمل من حيث توقفت":"ابدأ من هنا")+'</div><div class="v">'+pad(nx)+' — '+L.t+'</div>'+
+      (last&&LEC[last]&&last!==nx?'<div class="last">آخر ما فتحت: '+pad(last)+' — '+LEC[last].t+'</div>':'')+'<span class="go">افتح المحاضرة ←</span></a>';}
+  else h+='<div class="tile cont all-done"><div class="d">أتممت كل المنشور</div><div class="v">ما شاء الله — '+all.built+' محاضرة</div><div class="last">المحاضرات الجديدة تظهر هنا عند نشرها.</div></div>';
+  h+='<div class="tile" style="--c:var(--accent)"><div class="v">'+all.done+' <small>من '+all.built+'</small></div><div class="d">محاضرة أتممتها</div>'+bar({total:all.built||1,built:all.built,done:all.done},"أتممت "+all.done+" من "+all.built)+'</div>';
+  h+='<div class="tile" style="--c:var(--brand)"><div class="v">'+all.built+' <small>من '+U.total+'</small></div><div class="d">حلقة منشورة هنا</div>'+bar(all,"منشور "+all.built+" من "+U.total)+'</div>';
+  h+='<div class="tile"><div class="v">'+cards.toLocaleString("en-US")+'</div><div class="d">بطاقة مراجعة في المنشور</div></div>';
+  return h;
+}
+
+/* ===== البحث ===== */
+function digits(s){return s.replace(/[٠-٩]/g,function(c){return AR.indexOf(c);});}
+function norm(s){return digits(String(s)).replace(/[ً-ْٰـ]/g,"").replace(/[أإآٱ]/g,"ا").replace(/ة/g,"ه").replace(/ى/g,"ي").replace(/[«»"“”]/g,"").toLowerCase();}
+function esc(s){return s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");}
+function search(q){
+  var box=$("results"),raw=q.trim();
+  if(!raw){box.hidden=true;box.innerHTML="";rope.hidden=false;return;}
+  rope.hidden=true;box.hidden=false;
+  var nq=norm(raw),h="",hits=[],num=/^\d+$/.test(nq)?parseInt(nq,10):null;
+  var re=null;try{re=new RegExp("("+esc(raw)+")","g");}catch(e){}
+  function hl(s){return re?s.replace(re,"<mark>$1</mark>"):s;}
+  if(num!==null){
+    if(LEC[num])hits.push(LEC[num]);
+    else if(num>=1&&num<=U.total){var w=babOf(num);h+='<div class="res-miss">'+rng(num,num)+' من باب «'+(w?w.b.name:"")+'» — لم تُنشر بعد.</div>';}
+    else h+='<div class="res-miss">لا توجد حلقة بهذا الرقم؛ آخر حلقة معروفة '+U.total+'.</div>';
+  } else {
+    U.lectures.forEach(function(l){var w=babOf(l.n);
+      if(norm(l.t+" "+l.q+" "+(l.note||"")).indexOf(nq)>-1||(w&&norm(w.b.name).indexOf(nq)>-1))hits.push(l);});
+  }
+  var list='<div class="ll view-'+VIEW+'">'+hits.map(function(l){var w=babOf(l.n);return lecHTML(l,w?w.p.color:"var(--brand)",hl,w?w.b.name:"");}).join("")+'</div>';
+  box.innerHTML='<p class="res-h">'+(num!==null&&!hits.length?"":hits.length?hits.length+" نتيجة في المحاضرات المنشورة":"لا نتائج في المحاضرات المنشورة")+'</p>'+h+list;
+}
+
+/* ===== الرسم ===== */
+var NEXT=null;
+function render(focusSel){
+  NEXT=nextLec();
+  rope.innerHTML=U.parts.map(partHTML).join("");
+  $("dash").innerHTML=dashHTML();
+  var all=stats(1,U.total);
+  $("heroMeta").textContent="سلسلة مجالس قصيرة كانت تُلقى قبل الدرس الأصلي · "+U.parts.length+" أقسام · منشور هنا "+all.built+" من "+U.total+" حلقة";
+  if($("q").value.trim())search($("q").value);
+  if(focusSel){var el=document.querySelector(focusSel);if(el)el.focus();}
+}
+function notesHTML(){
+  return '<div class="k">ملاحظات على السلسلة</div><ul>'+
+    '<li>كل محاضرة منشورة ملف مستقل باسم رقمها (01.html…)، ويحلّ محل الملف القديم المجمّع للمحاضرات 08–10. وترتيب 09 («لا زلنا») ثم 10 («توقفنا») هو المعتمد هنا.</li>'+
+    (U.channelNotes||[]).map(function(t){return '<li>'+t+'</li>';}).join("")+'</ul>';
+}
+function dlHTML(){var c=0;U.lectures.forEach(function(l){c+=l.cards;});
+  return '<b>بطاقات المراجعة ('+c.toLocaleString("en-US")+' بطاقة)</b><span>تُحمَّل من صفحة كل محاضرة، وكل بطاقة تنزل تلقائيًا في رزمة «العروة الوثقى» بحسب أولويتها، بوسم «العروة_الوثقى::محاضرة_NN».</span>';}
+
+/* ===== الأحداث ===== */
+document.addEventListener("click",function(e){
+  var t=e.target.closest(".ph,.bh");
+  if(t){var k=t.getAttribute("data-k"),body=$("x"+k),open=t.getAttribute("aria-expanded")!=="true";
+    t.setAttribute("aria-expanded",open);body.hidden=!open;if(open)OPEN[k]=1;else delete OPEN[k];saveOpen();return;}
+  var c=e.target.closest(".ck");
+  if(c){var n=+c.getAttribute("data-n");setDone(n,!isDone(n));
+    render((c.closest("#results")?"#results ":"#rope ")+'.ck[data-n="'+n+'"]');return;}
+  var a=e.target.closest("a[data-n]");if(a)ls("urwa_last",a.getAttribute("data-n"));
+  var v=e.target.closest(".seg button");
+  if(v){VIEW=v.getAttribute("data-view");ls("urwa_view",VIEW);
+    document.querySelectorAll(".seg button").forEach(function(b){b.setAttribute("aria-pressed",b===v);});render();}
+});
+function setAll(open){
+  OPEN={};if(open)U.parts.forEach(function(p){OPEN[p.id]=1;p.abwab.forEach(function(b){if(stats(b.from,b.to).built)OPEN["b"+b.from]=1;});});
+  saveOpen();render();
+}
+$("openAll").onclick=function(){setAll(true);};
+$("closeAll").onclick=function(){setAll(false);};
+$("q").addEventListener("input",function(){search(this.value);});
+$("q").addEventListener("keydown",function(e){if(e.key==="Escape"){this.value="";search("");}});
+document.addEventListener("keydown",function(e){
+  if(e.key==="/"&&!/input|textarea/i.test((document.activeElement||{}).tagName||"")){e.preventDefault();$("q").focus();}
+});
+/* بعد المزامنة السحابية (ilm-track) أعد الرسم بالبيانات الأحدث */
+window.addEventListener("ilm-track-synced",function(){render();});
+
+document.querySelectorAll(".seg button").forEach(function(b){b.setAttribute("aria-pressed",b.getAttribute("data-view")===VIEW);});
+$("notes").innerHTML=notesHTML();
+$("alldl").innerHTML=dlHTML();
+render();
+})();
 </script>
+<!-- الترتيب مقصود: وحدة المزامنة أولًا ثم ilm-track (defer) حتى يجد ManhajCloud جاهزًا -->
 <script type="module" src="firebase-sync-manhaj.js"></script>
+<script defer src="ilm-track.js"></script>
 </body>
 </html>
